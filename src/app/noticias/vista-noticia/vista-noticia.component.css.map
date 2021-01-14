@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "vista-noticia.component.scss"
+    ],
+    "names": [],
+    "file": "vista-noticia.component.css"
+}
