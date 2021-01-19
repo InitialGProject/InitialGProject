@@ -1,13 +1,11 @@
-.container {
-    display: grid;
-}
-
-p, #Logo {
-    margin-top: -45px;
-    margin-bottom: -100px;
-    text-align: center;
+#Logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #Perfil {
-    float: right;
+    display: block;
+    margin-left: auto;
+    margin-right: none;
 }
