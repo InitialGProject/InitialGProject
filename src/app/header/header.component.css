@@ -1,1 +1,15 @@
-/* No CSS *//*# sourceMappingURL=header.component.css.map */
+.container {
+  display: -ms-grid;
+  display: grid;
+}
+
+p, #Logo {
+  margin-top: -45px;
+  margin-bottom: -100px;
+  text-align: center;
+}
+
+#Perfil {
+  float: right;
+}
+/*# sourceMappingURL=header.component.css.map */
