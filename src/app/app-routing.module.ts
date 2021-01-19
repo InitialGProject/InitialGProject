@@ -12,8 +12,6 @@ import { VistaJuegosComponent } from './juegos/vista-juegos/vista-juegos.compone
 
 import { VistaForoComponent } from './foro/vista-foro/vista-foro.component';
 
-import { JuegodadosComponent } from './juegos/juegodados/juegodados.component';
-
 const routes: Routes = [
   {
     path: 'vista-noticias',
@@ -38,10 +36,6 @@ const routes: Routes = [
   {
     path:'detalle-torneo',
     component: DetalleTorneosComponent
-  },
-  {
-    path: 'juegodados',
-    component: JuegodadosComponent
   }
 ];
 
