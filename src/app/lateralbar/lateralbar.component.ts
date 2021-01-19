@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as $ from 'jquery';
+//import * as $ from 'jquery';
 
 @Component({
   selector: 'app-lateralbar',
@@ -10,12 +10,12 @@ export class LateralbarComponent {
 
   constructor() { }
 
-  ngOnInit() {
+  /*ngOnInit() {
     //Toggle Click Function
     $("#menu-toggle").click(function (e) {
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
-  }
+  }*/
 
 }
