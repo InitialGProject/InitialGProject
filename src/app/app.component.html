@@ -1,13 +1,8 @@
-<div class="container">
+<!-- <div class="container"> -->
+    
     <app-header></app-header>
-    <boot-app-nav [opciones]=opciones colorfondo="bg-info" (presionopcion)="presion($event)"></boot-app-nav>
-    <!--<div style="text-align: center;">
-        <a routerLink="/torneos">Ver Torneos</a>
-        <div>
-        </div>
-    </div>-->
-
+    <app-nav [opciones]=opciones (presionopcion)="presion($event)"></app-nav>
     <app-lateralbar></app-lateralbar>
 
     <router-outlet></router-outlet>
-</div>
+<!-- </div> -->

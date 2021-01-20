@@ -1,1 +1,16 @@
-/* No CSS *//*# sourceMappingURL=vista-torneos.component.css.map */
+div,
+h2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+li > strong {
+  font-size: xx-large;
+}
+
+.torneos {
+  margin-top: 20%;
+}
+/*# sourceMappingURL=vista-torneos.component.css.map */

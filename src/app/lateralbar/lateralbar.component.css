@@ -1,12 +1,18 @@
 /* The sidebar menu */
-.lateralbar {
+.sidebar {
   height: auto;
   /* Full-height: remove this if you want "auto" height */
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  /* Set the width of the sidebar */
   position: fixed;
   /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+  /* Stay on top */
+  margin-top: 7%;
   right: 0;
-  background-color: #111;
-  /* Black */
+  border: 1px solid red;
   overflow-x: hidden;
   /* Disable horizontal scroll */
 }
@@ -22,12 +28,6 @@
 /* When you mouse over the navigation links, change their color */
 .lateralbar a:hover {
   color: #f1f1f1;
-}
-
-/* Style page content */
-.container {
-  width: 100%;
-  /* Set the width of the sidebar */
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
