@@ -6,7 +6,6 @@ import { VistaNoticiaComponent } from './noticias/vista-noticia/vista-noticia.co
 import { VistaAudiovisualesComponent } from './audiovisuales/vista-audiovisuales/vista-audiovisuales.component';
 
 import { VistaTorneosComponent } from './torneos/vista-torneos/vista-torneos.component';
-import { DetalleTorneosComponent } from './torneos/detalle-torneos/detalle-torneos.component';
 
 import { VistaJuegosComponent } from './juegos/vista-juegos/vista-juegos.component';
 
@@ -32,10 +31,6 @@ const routes: Routes = [
   {
     path: 'vista-torneos',
     component: VistaTorneosComponent
-  },
-  {
-    path:'detalle-torneo',
-    component: DetalleTorneosComponent
   }
 ];
 
