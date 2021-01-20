@@ -1,6 +1,5 @@
 // version1
 
-
 // body {
 //     overflow-x: hidden;
 // }
@@ -38,42 +37,49 @@
 //     }
 // }
 
-
-
 // version2
 
+body {
+  line-height: 1.6em;
+}
 
- /* The sidebar menu */
- .sidebar {
-    height: auto; /* Full-height: remove this if you want "auto" height */
-    width: max-content; /* Set the width of the sidebar */
-    //box-sizing: border-box;
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    margin-top: 7%;
-    right: 0;
-    border: 1px solid red;
-    // background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    
+hr {
+  background-color: #818181;
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: max-content; /* Set the width of the sidebar */
+  //box-sizing: border-box;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  margin-top: 7%;
+  right: 0;
+  //border: 1px solid red;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+/* The navigation menu links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
   }
-  
-  /* The navigation menu links */
-  .lateralbar a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    color: #818181;
-    display: block;
+  .sidebar a {
+    font-size: 18px;
   }
-  
-  /* When you mouse over the navigation links, change their color */
-  .lateralbar a:hover {
-    color: #f1f1f1;
-  }
-  
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .lateralbar {padding-top: 15px;}
-    .lateralbar a {font-size: 18px;}
-  } 
+}
