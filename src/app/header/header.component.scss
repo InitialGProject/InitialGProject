@@ -1,3 +1,8 @@
+.container{
+    width: 100%;
+    background-color: white;
+}
+
 #Logo {
     display: block;
     margin-left: auto;
@@ -5,7 +10,11 @@
 }
 
 #Perfil {
-    display: block;
-    margin-left: auto;
-    margin-right: none;
+    position: absolute;
+    // display: block;
+    margin-left: 75%;
+    // margin-left: auto;
+    // margin-right: none;
+    top: 0;
+    
 }
