@@ -1,24 +1,38 @@
 header{
-    width: 100%;
-    background-color: white;
     position: fixed;
-    top: 0;
-    z-index: 1; /* Stay on top */
-}
-
-#Logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 15%;
-}
-
-#Perfil {
-    position: absolute;
     // display: block;
-    margin-left: 75%;
-    // margin-left: auto;
-    // margin-right: none;
+    width: 100%;
+    // height: 11%;
+    // background-color: white;
+    background-image: url("../../assets/img/head.jpg");
+    // background-size: cover;
+    // background-attachment: fixed;
     top: 0;
-    
+    // z-index: 1; /* Stay on top */
+
+    #logo{
+        // margin-left: auto;
+        // margin-right: auto;
+        // width: 100%;
+        // display: block;
+
+        // #Logo {
+        //     // display: block;
+            
+        //     width: 15%;
+            
+        // }
+    }
+
+    #Perfil {
+        // position: absolute;
+        display: block;
+        width: 5%;
+        margin-left: 75%;
+        // margin-left: auto;
+        // margin-right: none;
+        top: 0;
+        right: 0;
+        
+    }
 }
