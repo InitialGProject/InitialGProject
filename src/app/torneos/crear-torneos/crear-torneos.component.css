@@ -15,4 +15,8 @@ section {
 li > strong {
   font-size: xx-large;
 }
+
+input, select {
+  margin-bottom: 10%;
+}
 /*# sourceMappingURL=crear-torneos.component.css.map */
