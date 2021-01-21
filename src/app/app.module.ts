@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { HeaderComponent } from './header/header.component';
 import { LateralbarComponent } from './lateralbar/lateralbar.component';
+import { TorneosModule } from './torneos/torneos.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LateralbarComponent } from './lateralbar/lateralbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TorneosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

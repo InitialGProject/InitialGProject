@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACJ,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,GAAG;EAChB,aAAa,EAAE,IAAI;EACnB,cAAc,EAAE,IAAI;EACpB,YAAY,EAAE,IAAI;CACrB;;AAED,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,EAAE,GAAG,MAAM,CAAC;EACR,SAAS,EAAE,QAAQ;CACtB",
     "sources": [
         "crear-torneos.component.scss"
     ],

@@ -1,1 +1,18 @@
-/* No CSS *//*# sourceMappingURL=crear-torneos.component.css.map */
+section {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 12%;
+  padding-right: 1.5%;
+  padding-bottom: 1.5%;
+  padding-left: 1.5%;
+}
+
+.card {
+  width: auto;
+}
+
+li > strong {
+  font-size: xx-large;
+}
+/*# sourceMappingURL=crear-torneos.component.css.map */
