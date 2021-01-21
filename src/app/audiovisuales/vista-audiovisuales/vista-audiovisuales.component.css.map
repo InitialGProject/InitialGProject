@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,GAAG;CAClB;;AAED,AAAA,OAAO,CAAC;EACJ,YAAY,EAAE,GAAG;CACpB;;AAED,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,GAAG;CACb",
     "sources": [
         "vista-audiovisuales.component.scss"
     ],

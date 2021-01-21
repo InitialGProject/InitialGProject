@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=vista-audiovisuales.component.css.map */
+.row {
+  margin-top: 10%;
+}
+
+.iframe {
+  margin-right: 10%;
+}
+
+.card {
+  width: 80%;
+}
+/*# sourceMappingURL=vista-audiovisuales.component.css.map */
