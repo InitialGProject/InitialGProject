@@ -1,13 +1,45 @@
-div,
-h2 {
+section {
     justify-content: center;
+    padding: 12%;
+}
+
+li, li > strong {
     text-align: center;
+    font-family: "RockWell";
+    background-color: #818181;
+    color: black;
 }
 
 li > strong {
     font-size: xx-large;
+    color: gold;
 }
 
-.row {
-    margin-top: 10%;
+.actual, .crear, .retro {
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5%;
+}
+
+.card, .card-body {
+    background-color: #818181;
+}
+
+.btn {
+    color: #12bb00;
+    background-color: #006fbb;
+    font-weight: bolder;
+}
+
+h3 {
+    text-align: center;
+    font-family: "RockWell";
+    color: #bb0011;
+}
+
+h4 {
+    text-align: center;
+    font-family: "RockWell";
 }

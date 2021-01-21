@@ -1,16 +1,23 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Routes, RouterModule } from '@angular/router';
 
-import { AppRoutingModule } from '../app-routing.module';
 import { VistaTorneosComponent } from './vista-torneos/vista-torneos.component';
 import { CrearTorneosComponent } from './crear-torneos/crear-torneos.component';
 
+const torneos: Routes = [
+  {
+    path: 'vista-torneo',
+    component: VistaTorneosComponent
+  },
+  {
+    path: 'crearTorneo',
+    component: CrearTorneosComponent
+  },
+];
 
 @NgModule({
   declarations: [CrearTorneosComponent, VistaTorneosComponent],
-  imports: [
-    CommonModule,
-    AppRoutingModule
-  ]
+  imports: [RouterModule.forChild(torneos)],
+  exports: [RouterModule]
 })
-export class NoticiasModule { }
+export class TorneosModule { }

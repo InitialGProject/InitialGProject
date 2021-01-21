@@ -11,30 +11,62 @@ export class VistaTorneosComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
-    $("#detalleTorneoJuegos").on("click", function (ev) {
-    
+
+    $("#detalleTorneoJuegos").one("click", function (ev) {
+
       ev.preventDefault();
 
       $("#juegosActuales").append("<div id='juegosCopia'></div>");
-      $("#InfoJuegos").clone().appendTo("#juegosCopia");
+      $("<section id='copiaJuegos'>Texto de Ejemplo</section>").appendTo("#juegosCopia");
 
-      $("#crearTorneo").toggle();
-      $("#juegosRetro").toggle();
+      $("#crearTorneo").hide();
+      $("#juegosRetro").hide();
+
+      $("#copiaJuegos").css({
+        "position": 'absolute', "width": '100%', "margin-top": '-184%', "margin-left": '87%', "height": '100%',
+        "padding": '5%', "background-color": '#818181', "border": '5px solid white', "border-left": 'none',
+        "border-radius": '0.25rem',
+      });
+
+      $(this).on("click", function (ev) {
+
+        ev.preventDefault();
+
+        $("#juegosCopia").toggle();
+        $("#crearTorneo").toggle();
+        $("#juegosRetro").toggle();
+
+      });
 
       return false;
 
     });
 
-    $("#detalleTorneoRetro").on("click", function (ev) {
-    
+    $("#detalleTorneoRetro").one("click", function (ev) {
+
       ev.preventDefault();
 
-      $("#juegosRetro").append("<div id='juegosCopia'></div>");
-      $("#InfoRetro").clone().appendTo("#juegosCopia");
+      $("#juegosRetro").append("<div id='juegosCopiaRetro'></div>");
+      $("<section id='copiaRetro'>Texto de Ejemplo</section>").appendTo("#juegosCopiaRetro");
 
-      $("#crearTorneo").toggle();
-      $("#juegosActuales").toggle();
+      $("#crearTorneo").hide();
+      $("#juegosActuales").hide();
+
+      $("#copiaRetro").css({
+        "position": 'absolute', "width": '100%', "margin-top": '-184%', "margin-left": '87%', "height": '100%',
+        "padding": '5%', "background-color": '#818181', "border": '5px solid white', "border-left": 'none',
+        "border-radius": '0.25rem'
+      });
+
+      $(this).on("click", function (ev) {
+
+        ev.preventDefault();
+
+        $("#juegosCopiaRetro").toggle();
+        $("#crearTorneo").toggle();
+        $("#juegosActuales").toggle();
+
+      });
 
       return false;
 
