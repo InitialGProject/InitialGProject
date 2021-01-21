@@ -1,1 +1,8 @@
-/* No CSS *//*# sourceMappingURL=vista-foro.component.css.map */
+.row {
+  margin-top: 10%;
+}
+
+p, h5 {
+  color: #818181;
+}
+/*# sourceMappingURL=vista-foro.component.css.map */
