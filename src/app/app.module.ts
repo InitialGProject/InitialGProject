@@ -7,13 +7,15 @@ import { NavComponent } from './nav/nav.component';
 import { HeaderComponent } from './header/header.component';
 import { LateralbarComponent } from './lateralbar/lateralbar.component';
 import { TorneosModule } from './torneos/torneos.module';
+import { PruebaComponent } from './prueba/prueba.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     HeaderComponent,
-    LateralbarComponent
+    LateralbarComponent,
+    PruebaComponent
   ],
   imports: [
     BrowserModule,
