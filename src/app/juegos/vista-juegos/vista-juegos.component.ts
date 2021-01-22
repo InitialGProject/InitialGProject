@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-juegos-vista-juegos',
@@ -9,7 +10,13 @@ export class VistaJuegosComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    $('a').each(function(){
+    if($(this).attr('href')==""){
+      $(this).hide();
+    }
+    });
+
   }
 
 }
