@@ -4,4 +4,8 @@ section {
   justify-content: center;
   padding: 12%;
 }
+
+.hide {
+  display: none;
+}
 /*# sourceMappingURL=vista-juegos.component.css.map */
