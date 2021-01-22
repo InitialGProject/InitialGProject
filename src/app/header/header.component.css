@@ -1,1 +1,25 @@
-/* No CSS *//*# sourceMappingURL=header.component.css.map */
+div.total {
+  display: block;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-image: url("../../assets/img/fondoHeader.jpg");
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+
+div.total .Logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+div.total .Perfil {
+  position: absolute;
+  width: 5%;
+  margin-left: 75%;
+  top: 0;
+  right: 0;
+}
+/*# sourceMappingURL=header.component.css.map */
