@@ -2,7 +2,11 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
+  padding-top: 2.5%;
+  padding-right: 5%;
+  padding-bottom: 2.5%;
+  padding-left: 5%;
+  width: 50%;
 }
 
 li, li > strong {
