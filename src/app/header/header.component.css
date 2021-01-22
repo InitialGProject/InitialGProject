@@ -5,7 +5,7 @@ div.total {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background-color: white;
+  background-image: url("../../assets/img/fondoHeader.jpg");
   background-size: initial;
   background-repeat: no-repeat;
   top: 0;
@@ -14,12 +14,10 @@ div.total {
 }
 
 div.total .Logo {
-  position: absolute;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 20%;
-  display: block;
+  width: 15%;
 }
 
 div.total .Perfil {

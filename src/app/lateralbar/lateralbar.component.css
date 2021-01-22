@@ -4,6 +4,7 @@ hr {
 
 /* The sidebar menu */
 .sidebar {
+  margin-top: 9%;
   height: 100%;
   /* Full-height: remove this if you want "auto" height */
   width: -webkit-max-content;

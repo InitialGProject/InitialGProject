@@ -1,27 +1,24 @@
-div.total{
+div.total {
     position: fixed;
     display: block;
     width: 100%;
     height: max-content;
 
-    
     // float: top;
-    background-color: white;
-    // background-image: url("../../assets/img/fondoHeader.jpg");
+    // background-color: white;
+    background-image: url("../../assets/img/fondoHeader.jpg");
     background-size: initial;
     background-repeat: no-repeat;
     // background-attachment: fixed;
     top: 0;
     z-index: 1; /* Stay on top */
 
-    .Logo{
-        position: absolute;
+    .Logo {
+        // position: absolute;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 20%;
-        display: block;
-
+        width: 15%;
     }
 
     .Perfil {
@@ -29,9 +26,7 @@ div.total{
         // display: block;
         width: 5%;
         margin-left: 75%;
-        
         top: 0;
         right: 0;
-        
     }
 }
