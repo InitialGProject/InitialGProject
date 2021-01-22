@@ -1,0 +1,23 @@
+[
+null,
+{"id":1,"expanded":true,"name":"Plaza central","order":2,"parentId":13,"scrollX":1781.4545454545455,"scrollY":996},
+{"id":2,"expanded":true,"name":"Galeria Norte","order":3,"parentId":1,"scrollX":440,"scrollY":700.6666666666666},
+{"id":3,"expanded":true,"name":"Zona urbana","order":4,"parentId":2,"scrollX":952,"scrollY":700.6666666666666},
+{"id":4,"expanded":true,"name":"Salida Norte","order":10,"parentId":13,"scrollX":1092,"scrollY":614.6666666666666},
+{"id":5,"expanded":true,"name":"Bosque del Oeste","order":12,"parentId":16,"scrollX":805,"scrollY":633},
+{"id":6,"expanded":true,"name":"Bo2","order":13,"parentId":5,"scrollX":499,"scrollY":433},
+{"id":7,"expanded":false,"name":"Altar","order":15,"parentId":5,"scrollX":757,"scrollY":439},
+{"id":8,"expanded":true,"name":"Posada","order":5,"parentId":3,"scrollX":489.3333333333333,"scrollY":608.6666666666666},
+{"id":9,"expanded":false,"name":"Casa1","order":7,"parentId":3,"scrollX":450.6666666666667,"scrollY":608.6666666666666},
+{"id":10,"expanded":false,"name":"Prision","order":9,"parentId":12,"scrollX":489.3333333333333,"scrollY":608.6666666666666},
+{"id":11,"expanded":false,"name":"Cuarto","order":6,"parentId":8,"scrollX":489.3333333333333,"scrollY":608.6666666666666},
+{"id":12,"expanded":true,"name":"Gremio Av","order":8,"parentId":3,"scrollX":499,"scrollY":433},
+{"id":13,"expanded":true,"name":"Juego","order":1,"parentId":0,"scrollX":1781.4545454545455,"scrollY":996},
+{"id":14,"expanded":false,"name":"Lago sagrado","order":14,"parentId":6,"scrollX":1092,"scrollY":614.6666666666666},
+{"id":15,"expanded":false,"name":"Camino de montaña","order":20,"parentId":4,"scrollX":2161.090909090909,"scrollY":1873.0909090909092},
+{"id":16,"expanded":true,"name":"Entrada del bosque del Oeste","order":11,"parentId":4,"scrollX":1092,"scrollY":614.6666666666666},
+{"id":17,"expanded":true,"name":"Quest1","order":16,"parentId":16,"scrollX":1197.6,"scrollY":1039.2},
+{"id":18,"expanded":false,"name":"Q11","order":17,"parentId":17,"scrollX":1197.6,"scrollY":1039.2},
+{"id":19,"expanded":false,"name":"Q12","order":18,"parentId":17,"scrollX":1197.6,"scrollY":1039.2},
+{"id":20,"expanded":false,"name":"Q13","order":19,"parentId":17,"scrollX":499,"scrollY":433}
+]
