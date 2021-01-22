@@ -1,4 +1,9 @@
-.row {
-  margin-top: 10%;
+.container {
+  background-color: white;
+  margin-top: 12%;
+}
+
+.container h2 {
+  color: white;
 }
 /*# sourceMappingURL=vista-noticia.component.css.map */

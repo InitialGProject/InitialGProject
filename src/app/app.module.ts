@@ -7,10 +7,8 @@ import { NavComponent } from './nav/nav.component';
 import { HeaderComponent } from './header/header.component';
 import { LateralbarComponent } from './lateralbar/lateralbar.component';
 import { TorneosModule } from './torneos/torneos.module';
-<<<<<<< HEAD
-=======
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
->>>>>>> 57fec9920cfc6e58166730d44c432bef8ad003e0
 
 @NgModule({
   declarations: [

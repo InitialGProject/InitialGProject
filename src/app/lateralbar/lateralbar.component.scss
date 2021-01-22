@@ -39,9 +39,6 @@
 
 // version2
 
-body {
-  line-height: 1.6em;
-}
 
 hr {
   background-color: #818181;
@@ -54,7 +51,7 @@ hr {
   //box-sizing: border-box;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
-  margin-top: 7%;
+  // margin-top: 7%;
   right: 0;
   //border: 1px solid red;
   background-color: #111; /* Black */

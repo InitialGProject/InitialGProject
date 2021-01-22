@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,UAAU,EAAE,GAAG;CAClB",
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EAEN,gBAAgB,EAAE,KAAK;EAEvB,UAAU,EAAE,GAAG;CAOlB;;AAXD,AAQI,UARM,CAQN,EAAE,CAAA;EACE,KAAK,EAAE,KAAK;CACf",
     "sources": [
         "vista-noticia.component.scss"
     ],

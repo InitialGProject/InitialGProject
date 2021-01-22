@@ -1,8 +1,36 @@
 nav {
-  color: limegreen;
+  color: brown;
+  font-weight: bold;
+  font-size: large;
   width: 100%;
   margin-top: 5%;
+  max-height: 10%;
   z-index: 1;
   /* Stay on top */
+}
+
+nav ul {
+  text-align: center;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: bg-dark;
+}
+
+nav a:hover {
+  background-color: brown;
+}
+
+nav li {
+  font-weight: bold;
+  list-style: none;
+  color: black;
+  display: contents;
+}
+
+nav li:hover {
+  color: black;
 }
 /*# sourceMappingURL=nav.component.css.map */

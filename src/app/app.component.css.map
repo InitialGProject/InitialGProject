@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,OAAO,CAAA;EACH,QAAQ,EAAE,KAAK;CAClB",
+    "mappings": "",
     "sources": [
         "app.component.scss"
     ],
