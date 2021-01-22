@@ -1,5 +1,7 @@
-.col-md-4 {
-  padding-top: 15%;
-  padding-right: 10%;
+section {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 12%;
 }
 /*# sourceMappingURL=vista-juegos.component.css.map */

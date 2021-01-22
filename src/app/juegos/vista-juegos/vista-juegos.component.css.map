@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AACA,AAAA,SAAS,CAAA;EACL,WAAW,EAAE,GAAG;EAChB,aAAa,EAAE,GAAG;CACrB",
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACJ,gBAAgB,EAAE,MAAM;EACpB,aAAa,EAAE,MAAM;EACjB,eAAe,EAAE,MAAM;EAC/B,OAAO,EAAE,GAAG;CACb",
     "sources": [
         "vista-juegos.component.scss"
     ],
