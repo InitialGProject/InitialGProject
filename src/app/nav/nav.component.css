@@ -2,11 +2,6 @@ nav {
   color: brown;
   font-weight: bold;
   font-size: large;
-  width: 100%;
-  margin-top: 5%;
-  max-height: 10%;
-  z-index: 1;
-  /* Stay on top */
 }
 
 nav ul {

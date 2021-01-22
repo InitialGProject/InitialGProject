@@ -36,7 +36,7 @@
   </nav> -->
 
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-expand-md  bg-dark">
+<nav class="navbar navbar-expand-lg navbar-expand-md  bg-dark">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
     aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -46,14 +46,7 @@
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
       <li class="nav-item active" *ngFor="let opcion of opciones;let i=index">
         <a class="nav-link" (click)="presion(i+1)">{{opcion}}</a>
-        <!-- <a routerLink="./vista-noticias" title="Logo InitialG">{{opcion}}</a> -->
-        <!-- <a class="nav-link" routerLink=(click)="presion(i+1)">{{opcion}}</a>  -->
-        <!-- <a *ngFor="let item of opciones" [routerLink]=" {{opciones.routerLink}} ">
-            {{opcion}}
-          </a> -->
-
-        <!-- <a class="nav-link" (click)="presion(i+1)" [routerLink]=i>{{opcion}}</a> -->
-
+       
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">

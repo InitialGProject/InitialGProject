@@ -2,7 +2,7 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 12%;
+  width: 10%;
 }
 
 li, li > strong {
