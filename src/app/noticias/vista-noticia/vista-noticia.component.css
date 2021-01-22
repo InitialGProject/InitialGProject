@@ -3,8 +3,8 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 4%;
-  padding-right: 55%;
   padding-bottom: 4%;
+  padding-left: 4%;
 }
 
 h2 {
