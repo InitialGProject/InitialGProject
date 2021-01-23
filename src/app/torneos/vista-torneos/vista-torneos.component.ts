@@ -28,7 +28,7 @@ export class VistaTorneosComponent implements OnInit {
       $("#juegosRetro").hide();
 
       $("#copiaJuegos").css({
-        "position": 'absolute', "width": '100%', "margin-top": '-167%', "margin-left": '72%', "height": '100%',
+        "position": 'absolute', "width": '100%', "margin-top": '-150%', "margin-left": '72%', "height": '100%',
         "padding": '5%', "background-color": '#818181', "border": '5px solid white', "border-left": 'none',
         "border-radius": '0.25rem',
       });
@@ -63,7 +63,7 @@ export class VistaTorneosComponent implements OnInit {
       $("#juegosActuales").hide();
 
       $("#copiaRetro").css({
-        "position": 'absolute', "width": '100%', "margin-top": '-167%', "margin-left": '72%', "height": '100%',
+        "position": 'absolute', "width": '100%', "margin-top": '-175%', "margin-left": '72%', "height": '100%',
         "padding": '5%', "background-color": '#818181', "border": '5px solid white', "border-left": 'none',
         "border-radius": '0.25rem'
       });

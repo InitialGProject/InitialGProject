@@ -4,129 +4,131 @@
 
   <!-- Componente Vista Torneos -->
 
-  <div class="row">
+  <div class="container">
+    <div class="row">
 
-    <!-- Ver Torneos Actuales -->
+      <!-- Ver Torneos Actuales -->
 
-    <div id="juegosActuales" class="col-md-5">
+      <div id="juegosActuales" class="col-md-4">
 
-      <mat-card>
-        <mat-card-header>
+        <mat-card>
+          <mat-card-header>
 
-          <div mat-card-avatar>
+            <div mat-card-avatar>
 
-            <img class="avatar" mat-card-image src="../../../assets/img/perfil.png" alt="Imagen del Creador">
+              <img class="avatar" mat-card-image src="../../../assets/img/perfil.png" alt="Imagen del Creador">
 
-          </div>
+            </div>
 
-          <h3>
-            <mat-card-title>
+            <h3>
+              <mat-card-title>
 
-              Juegos Actuales
+                Juegos Actuales
 
-            </mat-card-title>
-          </h3>
-        </mat-card-header>
-        
-        <hr>
-        <img class="actual" mat-card-image src="../../../assets/img/torneos/actual.png" alt="Imagen del Torneo">
+              </mat-card-title>
+            </h3>
+          </mat-card-header>
 
-        <mat-card-content>
+          <hr>
+          <img class="actual" mat-card-image src="../../../assets/img/torneos/actual.png" alt="Imagen del Torneo">
 
-          <h4> Torneo Juegos InitialG </h4>
+          <mat-card-content>
 
-          <ul class="list-group list-group-flush">
+            <h4> Torneo Juegos </h4>
 
-            <li class="list-group-item">Premio: <strong> 150€ </strong> </li>
+            <ul class="list-group list-group-flush">
 
-            <li class="list-group-item">Participantes: </li>
+              <li class="list-group-item">Premio: <strong> 150€ </strong> </li>
 
-            <li class="list-group-item">Descripción: </li>
+              <li class="list-group-item">Participantes: </li>
 
-            <a id="detalleTorneoJuegos" href="#" class="btn mat-button">Información</a>
+              <li class="list-group-item">Descripción: </li>
 
-          </ul>
-        </mat-card-content>
-      </mat-card>
+              <a id="detalleTorneoJuegos" href="#" class="btn mat-button">Información</a>
+
+            </ul>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <!-- Crear Torneos + Mejorar Suscripcion -->
+
+      <div id="crearTorneo" class="col-md-4">
+        <mat-card>
+          <mat-card-header>
+            <h3>
+              <mat-card-title>
+
+                Crea un Torneo
+
+              </mat-card-title>
+            </h3>
+          </mat-card-header>
+
+          <hr>
+          <img class="crear" mat-card-image src="../../../assets/img/torneos/crear.png" alt="Crear Torneo">
+
+          <mat-card-content>
+
+            <h4> ... </h4>
+
+            <ul class="list-group list-group-flush">
+
+              <li class="list-group-item">
+
+                <!-- <a href="./suscripciones" class="btn btn-primary">Mejora tu Servicio</a> -->
+                <a routerLink="../crearTorneo" class="btn">Crear Torneo</a>
+
+              </li>
+
+            </ul>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <!-- Ver Torneos Retro-->
+
+      <div id="juegosRetro" class="col-md-4">
+        <mat-card>
+          <mat-card-header>
+
+            <div mat-card-avatar>
+
+              <img class="avatar" mat-card-image src="../../../assets/img/perfil.png" alt="Imagen del Creador">
+
+            </div>
+
+            <h3>
+              <mat-card-title>
+
+                Juegos Retro
+
+              </mat-card-title>
+            </h3>
+          </mat-card-header>
+
+          <hr>
+          <img class="retro" mat-card-image src="../../../assets/img/torneos/retro.png" alt="Imagen del Torneo">
+
+          <mat-card-content>
+
+            <h4> Torneo Juegos Retro </h4>
+
+            <ul class="list-group list-group-flush">
+
+              <li class="list-group-item">Premio: <strong> 50€ </strong> </li>
+
+              <li class="list-group-item">Participantes: </li>
+
+              <li class="list-group-item">Descripción: </li>
+
+              <a id="detalleTorneoRetro" href="#" class="btn mat-button">Información</a>
+
+            </ul>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
     </div>
-
-    <!-- Crear Torneos + Mejorar Suscripcion -->
-
-    <div id="crearTorneo" class="col-md-2">
-      <mat-card>
-        <mat-card-header>
-          <h3>
-            <mat-card-title>
-
-              Crea un Torneo
-
-            </mat-card-title>
-          </h3>
-        </mat-card-header>
-
-        <hr>
-        <img class="crear" mat-card-image src="../../../assets/img/torneos/crear.png" alt="Crear Torneo">
-
-        <mat-card-content>
-
-          <h4> ... </h4>
-
-          <ul class="list-group list-group-flush">
-
-            <li class="list-group-item">
-
-              <!-- <a href="./suscripciones" class="btn btn-primary">Mejora tu Servicio</a> -->
-              <a routerLink="../crearTorneo" class="btn">Crear Torneo</a>
-
-            </li>
-
-          </ul>
-        </mat-card-content>
-      </mat-card>
-    </div>
-
-    <!-- Ver Torneos Retro-->
-
-    <div id="juegosRetro" class="col-md-5">
-      <mat-card>
-        <mat-card-header>
-
-          <div mat-card-avatar>
-
-            <img class="avatar" mat-card-image src="../../../assets/img/perfil.png" alt="Imagen del Creador">
-
-          </div>
-
-          <h3>
-            <mat-card-title>
-
-              Juegos Retro
-
-            </mat-card-title>
-          </h3>
-        </mat-card-header>
-
-        <hr>
-        <img class="retro" mat-card-image src="../../../assets/img/torneos/retro.png" alt="Imagen del Torneo">
-
-        <mat-card-content>
-
-          <h4> Torneo Juegos Retro InitialG </h4>
-
-          <ul class="list-group list-group-flush">
-
-            <li class="list-group-item">Premio: <strong> 50€ </strong> </li>
-
-            <li class="list-group-item">Participantes: </li>
-
-            <li class="list-group-item">Descripción: </li>
-
-            <a id="detalleTorneoRetro" href="#" class="btn mat-button">Información</a>
-
-          </ul>
-        </mat-card-content>
-      </mat-card>
-    </div>
-
   </div>
 </section>

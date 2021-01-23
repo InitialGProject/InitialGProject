@@ -11,7 +11,6 @@ section {
 }
 
 .mat-card {
-  width: 40%;
   padding: 0%;
   background-color: #818181;
 }
@@ -58,6 +57,7 @@ li > strong {
   font-weight: bolder;
   font-size: xx-large;
   color: #bb0011;
+  padding-right: 5%;
   margin-top: 2%;
 }
 
