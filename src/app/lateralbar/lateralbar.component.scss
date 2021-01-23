@@ -39,9 +39,9 @@
 
 // version2
 
-body {
-  line-height: 1.6em;
-}
+
+
+
 
 hr {
   background-color: #818181;
@@ -49,12 +49,14 @@ hr {
 
 /* The sidebar menu */
 .sidebar {
+  // position: fixed;
+  // margin-top: 9%;
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: max-content; /* Set the width of the sidebar */
   //box-sizing: border-box;
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  // position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
-  margin-top: 7%;
+  // margin-top: 7%;
   right: 0;
   //border: 1px solid red;
   background-color: #111; /* Black */

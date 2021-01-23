@@ -1,6 +1,26 @@
 section {
-    justify-content: center;
-    padding: 12%;
+    padding-top: 2.5%;
+    padding-right: 2%;
+    padding-bottom: 2.5%;
+    padding-left: 5%;
+}
+
+.mat-card-image:nth-child(1) {
+    padding-top: 50%;
+    margin-left: 15%;
+}
+
+.mat-card {
+    width: 40%;
+    padding: 0%;
+    background-color: #818181;
+}
+
+.mat-button {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 li, li > strong {
@@ -12,6 +32,7 @@ li, li > strong {
 
 li > strong {
     font-size: xx-large;
+    font-weight: bolder;
     color: gold;
 }
 
@@ -23,23 +44,27 @@ li > strong {
     margin-bottom: 5%;
 }
 
-.card, .card-body {
-    background-color: #818181;
-}
-
 .btn {
     color: #12bb00;
     background-color: #006fbb;
     font-weight: bolder;
+    font-size: large;
+    font-family: "RockWell";
 }
 
-h3 {
+.mat-card-title, h3 {
     text-align: center;
     font-family: "RockWell";
+    font-weight: bolder;
+    font-size: xx-large;
     color: #bb0011;
+    margin-top: 2%;
 }
 
 h4 {
+    margin: auto;
     text-align: center;
     font-family: "RockWell";
+    font-weight: bolder;
+    color: black;
 }

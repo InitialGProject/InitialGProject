@@ -1,4 +1,13 @@
-.row {
-  margin-top: 10%;
+section {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 4%;
+}
+
+h2 {
+  color: white;
 }
 /*# sourceMappingURL=vista-noticia.component.css.map */

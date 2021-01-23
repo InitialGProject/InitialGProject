@@ -1,7 +1,40 @@
 nav{
-    color: limegreen;
+    color: brown;
+    font-weight: bold;
+    font-size: large;
     // position: fixed;
-    width: 100%;
-    margin-top: 5%;
-    z-index: 1; /* Stay on top */
+    // width: 100%;
+    // margin-top: 5%;
+    // max-height: 10%;
+    // z-index: 1; /* Stay on top */
+    
+    ul{
+        text-align: center;
+        // top: 0;
+        // padding-inline-start: 0px;
+        cursor: pointer;
+    }
+    a {
+        text-decoration: none;
+        background-color: bg-dark;
+        // width: 100%;
+        // padding: 1.5%;
+        // padding-top: 3%;
+    }
+    a:hover {
+        background-color: brown;
+    }
+    li{
+        font-weight: bold;
+        list-style: none;
+        // font-size: 1.5vw;
+        color: black;
+        display: contents;
+    }
+    li:hover{
+        color: black;
+    
+    }
+
+
 }

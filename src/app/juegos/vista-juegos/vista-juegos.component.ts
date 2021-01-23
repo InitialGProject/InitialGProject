@@ -11,10 +11,10 @@ export class VistaJuegosComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    $('a').each(function(){
-    if($(this).attr('href')==""){
-      $(this).hide();
-    }
+    $('a').each(function () {
+      if ($(this).attr('href') == "") {
+        $(this).hide();
+      }
     });
 
   }
