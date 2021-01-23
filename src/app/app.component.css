@@ -1,1 +1,6 @@
-/* No CSS *//*# sourceMappingURL=app.component.css.map */
+.barra-lateral {
+  background-color: black;
+  border: solid 3px darkred;
+  border-top: none;
+}
+/*# sourceMappingURL=app.component.css.map */
