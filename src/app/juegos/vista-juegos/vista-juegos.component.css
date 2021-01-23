@@ -1,12 +1,9 @@
 section {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 12%;
+  padding: 5%;
 }
 
-.hide {
-  display: none;
+.row {
+  padding-top: 5%;
 }
 
 a {
@@ -15,10 +12,10 @@ a {
 }
 
 img {
-  margin-top: 5px;
-  margin-left: 5px;
+  margin-top: 2px;
+  margin-left: 2px;
   border-radius: 25px;
-  height: 180px;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,8 +31,8 @@ img {
   background-image: -webkit-gradient(linear, left top, right top, from(#00C0FF), color-stop(49%, #FFCF00), color-stop(80%, #FC4F4F), to(#00C0FF));
   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
   border-radius: 20px;
-  height: 190px;
-  width: 330px;
+  height: 124px;
+  width: 217px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
