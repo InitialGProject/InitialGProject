@@ -8,4 +8,62 @@ section {
 .hide {
   display: none;
 }
+
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+img {
+  margin-top: 13px;
+  margin-left: 10px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rainbow-button {
+  background-image: -webkit-gradient(linear, left top, right top, from(#00C0FF), color-stop(49%, #FFCF00), color-stop(80%, #FC4F4F), to(#00C0FF));
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rainbow-button:after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rainbow-button:hover {
+  -webkit-animation: slidebg 2s linear infinite;
+          animation: slidebg 2s linear infinite;
+}
+
+@-webkit-keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
 /*# sourceMappingURL=vista-juegos.component.css.map */
