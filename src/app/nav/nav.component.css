@@ -1,31 +1,74 @@
-nav {
-  color: brown;
-  font-weight: bold;
-  font-size: large;
+button {
+  background-color: black;
+  color: white;
 }
 
-nav ul {
-  text-align: center;
-  cursor: pointer;
+button:hover {
+  background-color: limegreen;
 }
 
-nav a {
+input {
+  background-color: black;
+  color: limegreen;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: darkred;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar a {
+  color: white;
   text-decoration: none;
-  background-color: bg-dark;
 }
 
-nav a:hover {
-  background-color: brown;
+.dropdown {
+  float: left;
 }
 
-nav li {
-  font-weight: bold;
-  list-style: none;
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
   color: black;
-  display: contents;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-nav li:hover {
-  color: black;
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 /*# sourceMappingURL=nav.component.css.map */

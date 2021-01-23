@@ -1,32 +1,28 @@
-div.total {
+header {
     // position: fixed;
-    display: block;
+    // display: block;
     // width: 100%;
-    height: max-content;
+    // height: max-content;
 
-    // float: top;
-    // background-color: white;
-    background-image: url("../../assets/img/fondoHeader.jpg");
-    background-size: initial;
-    background-repeat: no-repeat;
-    // background-attachment: fixed;
-    // top: 0;
-    // z-index: 1; /* Stay on top */
+    background-image: url("../../assets/img/banner.png");
+    top: 0;
+    z-index: 1; /* Stay on top */
+
+
+  width: 100%;
+  background-position: center;
+  color:#fff;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 
     .Logo {
-        // position: absolute;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 15%;
-    }
-
-    .Perfil {
-        position: absolute;
         // display: block;
-        width: 5%;
+        text-align: center;
+    }
+    .Perfil {
+        display: block;
+        // width: 5%;
         margin-left: 75%;
-        top: 0;
-        right: 0;
+        // top: 0;
+        // right: 0;
     }
 }

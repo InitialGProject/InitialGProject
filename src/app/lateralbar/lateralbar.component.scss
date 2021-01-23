@@ -41,47 +41,89 @@
 
 
 
+.barra-lateral{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 3rem;
+  right: 0;
+
+  a{
+    // list-style: none;
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke: 1px darkred; 
+  }
+
+  // width: 20%;
+  // height: 100%;
+  
+  // background-color: yellow;
+  padding-top: 2rem;
+  // font-size: 20px;
+
+  // top: 0;
+  // position: sticky;
+  // // background-color: darkred;
+  // width: 20%;
+  // margin-left: 80%;
+  // // height: max-content;
+  // z-index: 1;
+
+  //   // top: 0;
+  //   right: 0;
+  //   background-color: gray;
+  //   height: 100%; /* Full-height: remove this if you want "auto" height */
+  //   width: 20%; /* Set the width of the sidebar */
+  //   //box-sizing: border-box;
+  //   // position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  //   // z-index: 1; /* Stay on top */
+  //   // margin-top: 7%;
+  //   right: 0;
+  //   //border: 1px solid red;
+  //   background-color: #111; /* Black */
+  //   overflow-x: hidden; /* Disable horizontal scroll */
+}
+
 
 
 hr {
   background-color: #818181;
 }
 
-/* The sidebar menu */
-.sidebar {
-  // position: fixed;
-  // margin-top: 9%;
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: max-content; /* Set the width of the sidebar */
-  //box-sizing: border-box;
-  // position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  // margin-top: 7%;
-  right: 0;
-  //border: 1px solid red;
-  background-color: #111; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-}
+// /* The sidebar menu */
+// .barra-lateral {
+//   // margin-top: 9%;
+//   height: 100%; /* Full-height: remove this if you want "auto" height */
+//   width: max-content; /* Set the width of the sidebar */
+//   //box-sizing: border-box;
+//   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+//   // z-index: 1; /* Stay on top */
+//   // margin-top: 7%;
+//   right: 0;
+//   //border: 1px solid red;
+//   background-color: #111; /* Black */
+//   overflow-x: hidden; /* Disable horizontal scroll */
+// }
 
-/* The navigation menu links */
-.sidebar a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  color: #818181;
-  display: block;
-}
+// /* The navigation menu links */
+// .sidebar a {
+//   padding: 6px 8px 6px 16px;
+//   text-decoration: none;
+//   color: #818181;
+//   display: block;
+// }
 
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-  color: #f1f1f1;
-}
+// /* When you mouse over the navigation links, change their color */
+// .sidebar a:hover {
+//   color: #f1f1f1;
+// }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {
-    padding-top: 15px;
-  }
-  .sidebar a {
-    font-size: 18px;
-  }
-}
+// /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+// @media screen and (max-height: 450px) {
+//   .sidebar {
+//     padding-top: 15px;
+//   }
+//   .sidebar a {
+//     font-size: 18px;
+//   }
+// }
