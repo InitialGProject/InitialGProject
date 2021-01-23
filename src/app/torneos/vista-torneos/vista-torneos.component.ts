@@ -6,6 +6,7 @@ import * as $ from 'jquery';
   templateUrl: './vista-torneos.component.html',
   styleUrls: ['./vista-torneos.component.scss']
 })
+
 export class VistaTorneosComponent implements OnInit {
 
   constructor() { }
@@ -19,11 +20,15 @@ export class VistaTorneosComponent implements OnInit {
       $("#juegosActuales").append("<div id='juegosCopia'></div>");
       $("<section id='copiaJuegos'>Texto de Ejemplo</section>").appendTo("#juegosCopia");
 
+      $(".mat-card").css({
+        "width": "80%"
+      });
+
       $("#crearTorneo").hide();
       $("#juegosRetro").hide();
 
       $("#copiaJuegos").css({
-        "position": 'absolute', "width": '100%', "margin-top": '-184%', "margin-left": '87%', "height": '100%',
+        "position": 'absolute', "width": '100%', "margin-top": '-167%', "margin-left": '72%', "height": '100%',
         "padding": '5%', "background-color": '#818181', "border": '5px solid white', "border-left": 'none',
         "border-radius": '0.25rem',
       });
@@ -35,6 +40,7 @@ export class VistaTorneosComponent implements OnInit {
         $("#juegosCopia").toggle();
         $("#crearTorneo").toggle();
         $("#juegosRetro").toggle();
+        $(".mat-card").css({ "width": "80%" });
 
       });
 
@@ -49,11 +55,15 @@ export class VistaTorneosComponent implements OnInit {
       $("#juegosRetro").append("<div id='juegosCopiaRetro'></div>");
       $("<section id='copiaRetro'>Texto de Ejemplo</section>").appendTo("#juegosCopiaRetro");
 
+      $(".mat-card").css({
+        "width": "80%"
+      });
+
       $("#crearTorneo").hide();
       $("#juegosActuales").hide();
 
       $("#copiaRetro").css({
-        "position": 'absolute', "width": '100%', "margin-top": '-184%', "margin-left": '87%', "height": '100%',
+        "position": 'absolute', "width": '100%', "margin-top": '-167%', "margin-left": '72%', "height": '100%',
         "padding": '5%', "background-color": '#818181', "border": '5px solid white', "border-left": 'none',
         "border-radius": '0.25rem'
       });
@@ -65,6 +75,7 @@ export class VistaTorneosComponent implements OnInit {
         $("#juegosCopiaRetro").toggle();
         $("#crearTorneo").toggle();
         $("#juegosActuales").toggle();
+        $(".mat-card").css({ "width": "80%" });
 
       });
 
