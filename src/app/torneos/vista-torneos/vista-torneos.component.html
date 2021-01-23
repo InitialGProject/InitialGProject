@@ -4,109 +4,131 @@
 
   <!-- Componente Vista Torneos -->
 
-  <div class="row">
+  <div class="container">
+    <div class="row">
 
-    <div id="juegosActuales" class="col-lg-4 mb-4">
+      <!-- Ver Torneos Actuales -->
 
-      <div class="card">
+      <div id="juegosActuales" class="col-md-4">
 
-        <h3 class="card-header">Juegos</h3>
+        <mat-card>
+          <mat-card-header>
 
-        <div id="InfoJuegos" class="card-body">
+            <div mat-card-avatar>
 
-          <img class="actual" src="../../../assets/img/torneos/actual.png" alt="">
+              <img class="avatar" mat-card-image src="../../../assets/img/perfil.png" alt="Imagen del Creador">
 
-          <h4> Torneo Juegos IntialG </h4>
+            </div>
 
-        </div>
+            <h3>
+              <mat-card-title>
 
-        <ul class="list-group list-group-flush">
+                Juegos Actuales
 
-          <li class="list-group-item">Premio: <strong> 150€ </strong> </li>
+              </mat-card-title>
+            </h3>
+          </mat-card-header>
 
-          <li class="list-group-item">Participantes: </li>
+          <hr>
+          <img class="actual" mat-card-image src="../../../assets/img/torneos/actual.png" alt="Imagen del Torneo">
 
-          <li class="list-group-item">Descripción: </li>
+          <mat-card-content>
 
-          <li class="list-group-item">
+            <h4> Torneo Juegos </h4>
 
-            <a id="detalleTorneoJuegos" href="#" class="btn">Información</a>
+            <ul class="list-group list-group-flush">
 
-          </li>
+              <li class="list-group-item">Premio: <strong> 150€ </strong> </li>
 
-        </ul>
+              <li class="list-group-item">Participantes: </li>
 
+              <li class="list-group-item">Descripción: </li>
+
+              <a id="detalleTorneoJuegos" href="#" class="btn mat-button">Información</a>
+
+            </ul>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <!-- Crear Torneos + Mejorar Suscripcion -->
+
+      <div id="crearTorneo" class="col-md-4">
+        <mat-card>
+          <mat-card-header>
+            <h3>
+              <mat-card-title>
+
+                Crea un Torneo
+
+              </mat-card-title>
+            </h3>
+          </mat-card-header>
+
+          <hr>
+          <img class="crear" mat-card-image src="../../../assets/img/torneos/crear.png" alt="Crear Torneo">
+
+          <mat-card-content>
+
+            <h4> ... </h4>
+
+            <ul class="list-group list-group-flush">
+
+              <li class="list-group-item">
+
+                <!-- <a href="./suscripciones" class="btn btn-primary">Mejora tu Servicio</a> -->
+                <a routerLink="../crearTorneo" class="btn">Crear Torneo</a>
+
+              </li>
+
+            </ul>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <!-- Ver Torneos Retro-->
+
+      <div id="juegosRetro" class="col-md-4">
+        <mat-card>
+          <mat-card-header>
+
+            <div mat-card-avatar>
+
+              <img class="avatar" mat-card-image src="../../../assets/img/perfil.png" alt="Imagen del Creador">
+
+            </div>
+
+            <h3>
+              <mat-card-title>
+
+                Juegos Retro
+
+              </mat-card-title>
+            </h3>
+          </mat-card-header>
+
+          <hr>
+          <img class="retro" mat-card-image src="../../../assets/img/torneos/retro.png" alt="Imagen del Torneo">
+
+          <mat-card-content>
+
+            <h4> Torneo Juegos Retro </h4>
+
+            <ul class="list-group list-group-flush">
+
+              <li class="list-group-item">Premio: <strong> 50€ </strong> </li>
+
+              <li class="list-group-item">Participantes: </li>
+
+              <li class="list-group-item">Descripción: </li>
+
+              <a id="detalleTorneoRetro" href="#" class="btn mat-button">Información</a>
+
+            </ul>
+          </mat-card-content>
+        </mat-card>
       </div>
 
     </div>
-
-    <!-- Crear Torneos + Mejorar Suscripcion -->
-
-    <div id="crearTorneo" class="col-lg-4 mb-4">
-
-      <div class="card card-outline-primary">
-
-        <h3 class="card-header">Crear Torneo</h3>
-
-        <div class="card-body">
-
-          <img class="crear" src="../../../assets/img/torneos/crear.png" alt="">
-
-          <h4>...</h4>
-
-        </div>
-
-        <ul class="list-group list-group-flush">
-
-          <li class="list-group-item">
-
-            <!-- <a href="./suscripciones" class="btn btn-primary">Mejora tu Servicio</a> -->
-            <a routerLink="../crearTorneo" class="btn">Crear Torneo</a>
-
-          </li>
-
-        </ul>
-
-      </div>
-
-    </div>
-
-    <!-- Ver Torneos Retro-->
-
-    <div id="juegosRetro" class="col-lg-4 mb-4">
-
-      <div class="card">
-
-        <h3 class="card-header">Juegos Retro</h3>
-
-        <div class="card-body">
-
-          <img class="retro" src="../../../assets/img/torneos/retro.png" alt="">
-
-          <h4> Torneo Juegos Retro IntialG </h4>
-
-        </div>
-
-        <ul class="list-group list-group-flush">
-
-          <li class="list-group-item">Premio: <strong> 50€ </strong> </li>
-
-          <li class="list-group-item">Participantes: </li>
-
-          <li class="list-group-item">Descripción: </li>
-
-          <li class="list-group-item">
-
-            <a id="detalleTorneoRetro" href="#" class="btn">Información</a>
-
-          </li>
-
-        </ul>
-
-      </div>
-
-    </div>
-
   </div>
-
 </section>
