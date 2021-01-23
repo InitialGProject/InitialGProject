@@ -9,7 +9,7 @@
 .barra-lateral a {
   text-decoration: none;
   color: white;
-  -webkit-text-stroke: 1px darkred;
+  -webkit-text-stroke: 1px #bb0011;
 }
 
 hr {

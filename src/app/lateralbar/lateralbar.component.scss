@@ -42,6 +42,7 @@
 
 
 .barra-lateral{
+  // estos 4 no se tocan
   position: -webkit-sticky;
   position: sticky;
   top: 3rem;
@@ -51,7 +52,7 @@
     // list-style: none;
     text-decoration: none;
     color: white;
-    -webkit-text-stroke: 1px darkred; 
+    -webkit-text-stroke: 1px #bb0011; 
   }
 
   // width: 20%;
