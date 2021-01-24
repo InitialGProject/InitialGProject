@@ -20,10 +20,6 @@ export class VistaTorneosComponent implements OnInit {
       $("#juegosActuales").append("<div id='juegosCopia'></div>");
       $("<section id='copiaJuegos'>Texto de Ejemplo</section>").appendTo("#juegosCopia");
 
-      $(".mat-card").css({
-        "width": "80%"
-      });
-
       $("#crearTorneo").hide();
       $("#juegosRetro").hide();
 
@@ -40,7 +36,6 @@ export class VistaTorneosComponent implements OnInit {
         $("#juegosCopia").toggle();
         $("#crearTorneo").toggle();
         $("#juegosRetro").toggle();
-        $(".mat-card").css({ "width": "80%" });
 
       });
 
@@ -54,10 +49,6 @@ export class VistaTorneosComponent implements OnInit {
 
       $("#juegosRetro").append("<div id='juegosCopiaRetro'></div>");
       $("<section id='copiaRetro'>Texto de Ejemplo</section>").appendTo("#juegosCopiaRetro");
-
-      $(".mat-card").css({
-        "width": "80%"
-      });
 
       $("#crearTorneo").hide();
       $("#juegosActuales").hide();
@@ -75,7 +66,6 @@ export class VistaTorneosComponent implements OnInit {
         $("#juegosCopiaRetro").toggle();
         $("#crearTorneo").toggle();
         $("#juegosActuales").toggle();
-        $(".mat-card").css({ "width": "80%" });
 
       });
 

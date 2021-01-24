@@ -5,42 +5,31 @@ section {
   padding-left: 5%;
 }
 
-.mat-card-image:nth-child(1) {
-  padding-top: 50%;
-  margin-left: 15%;
+.container {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .mat-card {
-  padding: 0%;
   background-color: #818181;
+  min-height: 100%;
 }
 
-.mat-button {
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
+.crearTorneo {
+  background-color: goldenrod;
 }
 
-li, li > strong {
-  text-align: center;
-  font-family: "RockWell";
-  background-color: #818181;
-  color: black;
-}
-
-li > strong {
-  font-size: xx-large;
-  font-weight: bolder;
-  color: gold;
+.crearTorneoBoton {
+  background-color: goldenrod;
 }
 
 .actual, .crear, .retro {
   display: block;
   width: 100%;
-  margin-right: auto;
   margin-left: auto;
-  margin-bottom: 5%;
+  margin-right: auto;
+  height: 50%;
 }
 
 .btn {
@@ -49,16 +38,19 @@ li > strong {
   font-weight: bolder;
   font-size: large;
   font-family: "RockWell";
+  margin-right: 9.25%;
+  margin-top: 5%;
+  margin-left: 0%;
+  margin-bottom: 0%;
 }
 
-.mat-card-title, h3 {
+h3 {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   font-family: "RockWell";
   font-weight: bolder;
-  font-size: xx-large;
   color: #bb0011;
-  padding-right: 5%;
-  margin-top: 2%;
 }
 
 h4 {
