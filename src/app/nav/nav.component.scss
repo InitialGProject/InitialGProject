@@ -72,12 +72,73 @@ input{
     text-decoration: none;
     display: block;
     text-align: left;
+    background-color: #bb0011;
   }
   
   .dropdown-content a:hover {
     background-color: #ddd;
+    
   }
   
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  /*Codigo añadido para el efecto de recuadro*/
+    //Si no gusta borrar de aqui para abajo
+  /*Fondos*/
+  .effect01 {
+      overflow: hidden;
+      transition: all 0.5s ease-in-out;
+  }
+
+  /*Textos*/
+  .effect01 span {
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.2s ease-out;
+      z-index: 2;
+  }
+
+  .effect01:hover span {
+      letter-spacing: 0.13em;
+      color: #333;
+  }
+
+  /*Iluminacion*/
+  .effect01:after {
+      background: #FFF;
+      content: "";
+      height: 155px;
+      left: -75px;
+      opacity: .8;
+      position: absolute;
+      top: -50px;
+      -webkit-transform: rotate(35deg);
+      transform: rotate(35deg);
+      width: 50px;
+      -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      /*easeOutCirc*/
+      z-index: 1;
+  }
+
+  .effect01:hover:after {
+      background: #FFF;
+      opacity: 0;
+      left: 120%;
+      -webkit-transform: rotate(40deg);
+      transform: rotate(40deg);
+  }
+
+  .effect02{
+        position: relative;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+  }
+  
+  .effect02:hover {
+    background-color: #e00f0f;
+    -webkit-box-shadow: 0px 0px 0px 4px black inset;
+        box-shadow: 0px 0px 0px 4px black inset;
+}
+
