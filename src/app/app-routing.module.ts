@@ -5,11 +5,14 @@ import { VistaNoticiaComponent } from './noticias/vista-noticia/vista-noticia.co
 
 import { VistaAudiovisualesComponent } from './audiovisuales/vista-audiovisuales/vista-audiovisuales.component';
 
+import { VistaVideosComponent } from './audiovisuales/vista-videos/vista-videos.component';
+
 import { VistaTorneosComponent } from './torneos/vista-torneos/vista-torneos.component';
 
 import { VistaJuegosComponent } from './juegos/vista-juegos/vista-juegos.component';
 
 import { VistaForoComponent } from './foro/vista-foro/vista-foro.component';
+import { VistaStreammingsComponent } from './audiovisuales/vista-streammings/vista-streammings.component';
 
 const routes: Routes = [
   {
@@ -19,6 +22,14 @@ const routes: Routes = [
   {
     path: 'vista-audiovisuales',
     component: VistaAudiovisualesComponent
+  },
+  {
+    path: 'vista-videos',
+    component: VistaVideosComponent
+  },
+  {
+    path: 'vista-streammings',
+    component: VistaStreammingsComponent
   },
   {
     path: 'vista-juegos',

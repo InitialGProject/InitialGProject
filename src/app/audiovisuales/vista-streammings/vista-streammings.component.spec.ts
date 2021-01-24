@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StreammingsComponent } from './streammings.component';
+import { vista-streammingsComponent } from './vista-streammings.component';
 
-describe('StreammingsComponent', () => {
-  let component: StreammingsComponent;
-  let fixture: ComponentFixture<StreammingsComponent>;
+describe('vista-streammingsComponent', () => {
+  let component: vista-streammingsComponent;
+  let fixture: ComponentFixture<vista-streammingsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ StreammingsComponent ]
+      declarations: [ vista-streammingsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(StreammingsComponent);
+    fixture = TestBed.createComponent(vista-streammingsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
