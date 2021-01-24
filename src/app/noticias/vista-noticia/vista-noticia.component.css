@@ -1,5 +1,27 @@
+h2 {
+  color: #006fbb;
+  margin-left: 3%;
+}
+
 .card {
-  margin: 4%;
-  padding-left: 2%;
+  margin-bottom: 1%;
+  border: solid 5px #006fbb;
+}
+
+.card .mat-card-image {
+  max-width: 100%;
+  border-right: solid 1px gray;
+}
+
+.card .card-header {
+  height: 20%;
+}
+
+.card .card-body {
+  height: 60%;
+}
+
+.card .card-footer {
+  height: 20%;
 }
 /*# sourceMappingURL=vista-noticia.component.css.map */

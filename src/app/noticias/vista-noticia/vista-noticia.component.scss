@@ -8,11 +8,38 @@
 //     width: 100%;
 // }
 
-// // h2 {
-// //     color: white;
-// // }
+h2 {
+    color: #006fbb;
+    margin-left: 3%;
+}
 
 .card{
-    margin: 4%;
-    padding-left: 2%;
+    // margin: 1%;
+    margin-bottom: 1%;
+    border: solid 5px #006fbb;
+    
+    // .image{
+    //     // height: 100%;
+    //     img{
+    //         max-width: 5rem;
+    //     }
+    // }
+
+    .mat-card-image{
+        max-width: 100%;
+        border-right: solid 1px gray;
+    }
+
+    .card-header{
+        height: 20%;
+    }
+
+    .card-body{
+        height: 60%;
+    }
+
+    .card-footer{
+        height: 20%;
+        // bottom: 0%;
+    }
 }
