@@ -9,24 +9,28 @@ import * as $ from 'jquery';
 
 export class VistaTorneosComponent implements OnInit {
 
-  constructor() { }
+  constructor() { } 
 
   ngOnInit() {
+
+    // Información Juegos Actuales
 
     $("#detalleTorneoJuegos").one("click", function (ev) {
 
       ev.preventDefault();
 
       $("#juegosActuales").append("<div id='juegosCopia'></div>");
-      $("<section id='copiaJuegos'>Texto de Ejemplo</section>").appendTo("#juegosCopia");
+      $("<mat-card id='copiaJuegos'>" +
+        "<mat-card-content>Texto de Ejemplo</mat-card-content>" +
+        "</mat-card>").appendTo("#juegosCopia");
 
       $("#crearTorneo").hide();
       $("#juegosRetro").hide();
 
       $("#copiaJuegos").css({
-        "position": 'absolute', "width": '100%', "margin-top": '-150%', "margin-left": '72%', "height": '100%',
-        "padding": '5%', "background-color": '#818181', "border": '5px solid white', "border-left": 'none',
-        "border-radius": '0.25rem',
+        "position": 'absolute', "width": '100%', "margin-left": '43.5%', "height": '100%', "padding": '5%',
+        "background-color": '#818181', "border": '5px solid', "border-left": 'none', "border-radius": '0.25rem',
+        "top": '0'
       });
 
       $(this).on("click", function (ev) {
@@ -43,20 +47,24 @@ export class VistaTorneosComponent implements OnInit {
 
     });
 
+    // Información Juegos Retro
+
     $("#detalleTorneoRetro").one("click", function (ev) {
 
       ev.preventDefault();
 
       $("#juegosRetro").append("<div id='juegosCopiaRetro'></div>");
-      $("<section id='copiaRetro'>Texto de Ejemplo</section>").appendTo("#juegosCopiaRetro");
+      $("<mat-card id='copiaRetro'>" +
+        "<mat-card-content>Texto de Ejemplo</mat-card-content>" +
+        "</mat-card>").appendTo("#juegosCopiaRetro");
 
       $("#crearTorneo").hide();
       $("#juegosActuales").hide();
 
       $("#copiaRetro").css({
-        "position": 'absolute', "width": '100%', "margin-top": '-175%', "margin-left": '72%', "height": '100%',
-        "padding": '5%', "background-color": '#818181', "border": '5px solid white', "border-left": 'none',
-        "border-radius": '0.25rem'
+        "position": 'absolute', "width": '100%', "margin-left": '43.5%', "height": '100%', "padding": '5%',
+        "background-color": '#818181', "border": '5px solid', "border-left": 'none', "border-radius": '0.25rem',
+        "top": '0'
       });
 
       $(this).on("click", function (ev) {
