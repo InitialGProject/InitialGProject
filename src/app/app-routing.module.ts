@@ -1,18 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+// Noticias
 import { VistaNoticiaComponent } from './noticias/vista-noticia/vista-noticia.component';
 
+// AudioVisuales
 import { VistaAudiovisualesComponent } from './audiovisuales/vista-audiovisuales/vista-audiovisuales.component';
-
 import { VistaVideosComponent } from './audiovisuales/vista-videos/vista-videos.component';
+import { VistaStreammingsComponent } from './audiovisuales/vista-streammings/vista-streammings.component';
 
-import { VistaTorneosComponent } from './torneos/vista-torneos/vista-torneos.component';
-
+// Juegos
 import { VistaJuegosComponent } from './juegos/vista-juegos/vista-juegos.component';
 
+// Torneos
+import { VistaTorneosComponent } from './torneos/vista-torneos/vista-torneos.component';
+
+// Foro
 import { VistaForoComponent } from './foro/vista-foro/vista-foro.component';
-import { VistaStreammingsComponent } from './audiovisuales/vista-streammings/vista-streammings.component';
 
 const routes: Routes = [
   {
@@ -36,12 +40,11 @@ const routes: Routes = [
     component: VistaJuegosComponent
   },
   {
-    path: 'vista-foro',
-    component: VistaForoComponent
-  },
-  {
     path: 'vista-torneos',
     component: VistaTorneosComponent
+  }, {
+    path: 'vista-foro',
+    component: VistaForoComponent
   }
 ];
 
@@ -49,4 +52,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
