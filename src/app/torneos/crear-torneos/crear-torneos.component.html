@@ -77,21 +77,27 @@
 
               <input type="text" name="calleEvento" id="calleEvento" placeholder="Calle del Evento" required>
 
+              <br>
+
               <mat-form-field appearance="fill">
+
                 <mat-label>Duración del Evento</mat-label>
-                <mat-date-range-input formGroup=[range] [rangePicker]="picker">
-                  <input matStartDate formControlName="start" placeholder="Fecha de Inicio">
+
+                <mat-date-range-input [formGroup]="range" [rangePicker]="picker">
+                  <input matStartDate formControlName="start" placeholder="Fecha Inicio">
                   <input matEndDate formControlName="end" placeholder="Fecha de Fin">
                 </mat-date-range-input>
+
                 <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-date-range-picker #picker></mat-date-range-picker>
 
                 <mat-error *ngIf="range.controls.start.hasError('matStartDateInvalid')">Fecha de Inicio Invalida
                 </mat-error>
                 <mat-error *ngIf="range.controls.end.hasError('matEndDateInvalid')">Fecha de Fin Invalida</mat-error>
+
               </mat-form-field>
 
-              <p>Selected range: {{range.value | json}}</p>
+              <br>
 
               <input type="number" name="participantes" id="participantes" placeholder="Número de Participantes"
                 min="50" required>
