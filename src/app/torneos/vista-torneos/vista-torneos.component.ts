@@ -9,7 +9,7 @@ import * as $ from 'jquery';
 
 export class VistaTorneosComponent implements OnInit {
 
-  constructor() { } 
+  constructor() { }
 
   ngOnInit() {
 
@@ -19,7 +19,7 @@ export class VistaTorneosComponent implements OnInit {
 
       ev.preventDefault();
 
-      $("#juegosActuales").append("<div id='juegosCopia'></div>");
+      $("#juegosActuales").append("<div id='juegosCopia' style='margin: 7%;margin-top: -16%;'></div>");
       $("<mat-card id='copiaJuegos'>" +
         "<mat-card-content>Texto de Ejemplo</mat-card-content>" +
         "</mat-card>").appendTo("#juegosCopia");
@@ -28,9 +28,9 @@ export class VistaTorneosComponent implements OnInit {
       $("#juegosRetro").hide();
 
       $("#copiaJuegos").css({
-        "position": 'absolute', "width": '100%', "margin-left": '43.5%', "height": '100%', "padding": '5%',
+        "position": 'absolute', "width": '100%', "margin-left": '43.5%', "height": '99.65%', "padding": '5%',
         "background-color": '#818181', "border": '5px solid', "border-left": 'none', "border-radius": '0.25rem',
-        "top": '0'
+        "top": '3.5%'
       });
 
       $(this).on("click", function (ev) {
@@ -62,9 +62,9 @@ export class VistaTorneosComponent implements OnInit {
       $("#juegosActuales").hide();
 
       $("#copiaRetro").css({
-        "position": 'absolute', "width": '100%', "margin-left": '43.5%', "height": '100%', "padding": '5%',
+        "position": 'absolute', "width": '100%', "margin-left": '43.5%', "height": '92.65%', "padding": '5%',
         "background-color": '#818181', "border": '5px solid', "border-left": 'none', "border-radius": '0.25rem',
-        "top": '0'
+        "top": '3.5%'
       });
 
       $(this).on("click", function (ev) {
