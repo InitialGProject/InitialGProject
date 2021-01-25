@@ -9,10 +9,14 @@ section {
     width: auto;
 }
 
+.mat-form-field {
+    background-color: #818181;
+}
+
 li > strong {
     font-size: xx-large;
 }
 
-input, select {
+select {
     margin-bottom: 10%;
 }
