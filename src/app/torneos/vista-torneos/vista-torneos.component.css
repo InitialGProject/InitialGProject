@@ -1,19 +1,17 @@
-section {
-  padding-top: 2.5%;
-  padding-right: 2%;
-  padding-bottom: 2.5%;
-  padding-left: 5%;
-}
-
 .container {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
+  padding: 2.5% 2%;
 }
 
 .mat-card {
   background-color: #818181;
   min-height: 100%;
+}
+
+.tarjeta {
+  padding: 1rem;
 }
 
 .crearTorneo {
@@ -24,7 +22,9 @@ section {
   background-color: goldenrod;
 }
 
-.actual, .crear, .retro {
+.actual,
+.crear,
+.retro {
   display: block;
   width: 100%;
   margin-left: auto;
