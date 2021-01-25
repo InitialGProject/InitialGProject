@@ -1,8 +1,13 @@
+.form-control{
+  max-width: 11rem;
+}
+
 button {
-  background-color: black;
+  background: linear-gradient(to bottom, black 0%, #534c4c 50%, black 100%);
   color: white;
   &:hover {
-    background-color: limegreen;
+    transition: all .5s ease-in-out;
+    background: linear-gradient(to bottom, black 0%, limegreen 50%, black 100%);
   }
 }
 
@@ -15,19 +20,21 @@ input {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #bb0011;
+  // background-color: #bb0011;
+  background: linear-gradient(to bottom, #bb0011 0%, #be6464 30%, #bb0011 60%, #bb0011 70%, black 100%);
   width: 100%;
   z-index: 1;
   padding: 0 1rem;
 
   a {
-    // float: left;
-    // font-size: 16px;
     color: white;
-    // text-align: center;
-    // padding: 14px 16px;
     text-decoration: none;
     padding: 0 15px;
+
+    &:hover{
+      transition: all 1s ease-in-out;
+      text-shadow: 1px 0px 1px white;
+    }
   }
 }
 
@@ -38,10 +45,11 @@ input {
   // border: none;
   // outline: none;
   // overflow: hidden;
-}
-
-.dropdown:hover {
-  background-color: black;
+  &:hover {
+    background-color: black;
+    -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
 }
 
 .dropdown-content {
@@ -49,131 +57,144 @@ input {
   left: 0;
   top: 2.8rem;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  width: 8.6rem;
+  // box-shadow: 0px 8px 16px 0px black;
   z-index: 1;
-}
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  background-color: #bb0011;
-}
+  a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color: #818181;
+    color: white;
 
-.dropdown-content a:hover {
-  background-color: #ddd;
-  // -webkit-box-shadow: 0px 0px 0px 2px black inset;
-  // box-shadow: 0px 0px 0px 2px black inset;
+    &:hover {
+      background-color: #bb0011;
+      color: white;
+      // -webkit-box-shadow: 0px 0px 0px 2px black inset;
+      // box-shadow: 0px 0px 0px 2px black inset;
+    }
+  }
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+@media screen and (min-width: 1010px) {
+  
 /*Fondos*/
-.effect01 {
-  overflow: hidden;
-  transition: all 0.5s ease-in-out;
-}
+  .effect01 {
+    overflow: hidden;
+    // transition: all 1s ease-in-out;
 
-/*Textos*/
-.effect01:hover {
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.2s ease-out;
-  z-index: 2;
-  background-color: black;
-}
+    &:hover {
+      // -webkit-transition: all 1s ease-out;
+      // transition: all 0.2s ease-out;
+      z-index: 2;
+      background-color: black;
+    }
 
-/*Iluminacion*/
-.effect01:after {
-  background: #fff;
-  content: "";
-  height: 155px;
-  left: -75px;
-  top: -50px;
-  width: 50px;
-  opacity: 0.8;
-  position: absolute;
-  -webkit-transform: rotate(35deg);
-  transform: rotate(35deg);
-  -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  /*easeOutCirc*/
-  z-index: 1;
-}
+    /*Iluminacion*/
+    &:after {
+      // background: white;
+      content: "";
+      height: 155px;
+      left: -75px;
+      top: -50px;
+      width: 50px;
+      opacity: 0.8;
+      position: absolute;
+      -webkit-transform: rotate(35deg);
+      transform: rotate(35deg);
+      -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      /*easeOutCirc*/
+      z-index: 1;
+    }
 
-.effect01:hover:after {
-  background: #fff;
-  opacity: 0;
-  left: 120%;
-  -webkit-transform: rotate(40deg);
-  transform: rotate(40deg);
-}
-
-.effect02 {
-  position: relative;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.effect02:hover {
-  background-color: #bb0011;
-  // -webkit-box-shadow: 0px 0px 0px 4px black inset;
-  //     box-shadow: 0px 0px 0px 4px black inset;
-  // border-radius: 50px 50px 0px 0px;
-  background-color: black;
-  //   -webkit-transform: rotate(20deg);
-  // transform: rotate(20deg);
+    &:hover:after {
+      background: white;
+      opacity: 0;
+      left: 120%;
+      // -webkit-transform: rotate(40deg);
+      // transform: rotate(40deg);
+    }
+    
+  }
+  
+  // .effect02 {
+    // position: relative;
+    // -webkit-transition: all 0.3s ease-in-out;
+    // transition: all 0.3s ease-in-out;
+    
+    // &:hover {
+      // background-color: #bb0011;
+      // -webkit-box-shadow: 0px 0px 0px 4px black inset;
+      //     box-shadow: 0px 0px 0px 4px black inset;
+      // border-radius: 50px 50px 0px 0px;
+      // background-color: black;
+      //   -webkit-transform: rotate(20deg);
+      // transform: rotate(20deg);
+    // }
+  // }
 }
 
 a.icon {
   display: none;
 }
 
-@media screen and (max-width: 1050px) {
-  a:not(:first-child),
-  .dropdown {
+@media screen and (max-width: 1010px) {
+  a:not(:first-child), .dropdown, .buscador {
     display: none;
   }
   a.icon {
     float: right;
     display: block;
-    font-size: 15px;
+    font-size: 2rem;
   }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1010px) {
   .navbar.responsive {
     position: sticky;
     top: 0;
-  }
 
-  .navbar.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive .dropdown {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .navbar.responsive .dropdown {
-    float: none;
-  }
+    a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      // width: 10%;
+      &:hover{
+        background-color: black;
+      }
+    }
 
-  .navbar.responsive .dropdown-content {
-    position: relative;
-  }
+    .dropdown, .navbar.responsive .buscador {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  
+    .dropdown-content {
+      position: relative;
+      // padding-top: -3rem;
+      width: max-content;
+      top: 0;
 
-  .navbar.responsive .dropdown {
-    display: block;
-    width: 100%;
-    text-align: left;
+      a{
+        padding: 0 2rem;
+      }
+    }
+
+    .dropdown {
+      width: 90%;
+      display: inline-flex;
+
+    }
   }
 }

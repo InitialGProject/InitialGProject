@@ -1,6 +1,6 @@
 .barra-lateral {
-  background-color: black;
-  border: solid 5px #bb0011;
+  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(20%, #cecece), color-stop(70%, #818181), to(black));
+  background: linear-gradient(to right, black 0%, #cecece 20%, #818181 70%, black 100%);
   border-top: none;
   padding-bottom: 3%;
 }

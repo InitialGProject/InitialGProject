@@ -24,7 +24,7 @@ export class NavComponent implements OnInit {
     const dialogRef = this.dialog.open(VistaReglamentoComponent);
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
+      console.log('Dialog result: ${result}');
     });
   }
 
