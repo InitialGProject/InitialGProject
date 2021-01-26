@@ -22,9 +22,7 @@
   background-color: goldenrod;
 }
 
-.actual,
-.crear,
-.retro {
+.actual, .crear, .retro {
   display: block;
   width: 100%;
   margin-left: auto;
@@ -59,5 +57,27 @@ h4 {
   font-family: "RockWell";
   font-weight: bolder;
   color: black;
+}
+
+.juegosCopia {
+  margin: 7%;
+  margin-top: -16%;
+}
+
+.mostrar {
+  display: block;
+}
+
+.copiaJuegos {
+  position: absolute;
+  width: 100%;
+  margin-left: 43.5%;
+  height: 99.65%;
+  padding: 5%;
+  background-color: #818181;
+  border: "5px solid";
+  border-left: "none";
+  border-radius: 0.25rem;
+  top: 3.5%;
 }
 /*# sourceMappingURL=vista-torneos.component.css.map */

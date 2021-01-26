@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+//import * as $ from 'jquery';
 
 @Component({
   selector: 'app-vista-torneos',
@@ -11,9 +11,17 @@ export class VistaTorneosComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+  }
 
-    // Información Juegos Actuales
+  copiaJuegos() {
+    var copiaJuegos = document.getElementById("juegosCopia");
+    copiaJuegos.classList.add("mostrar, juegosCopia");
+  }
+
+}
+
+/* Información Juegos Actuales
 
     $("#detalleTorneoJuegos").one("click", function (ev) {
 
@@ -80,7 +88,4 @@ export class VistaTorneosComponent implements OnInit {
       return false;
 
     });
-
-  }
-
-}
+*/

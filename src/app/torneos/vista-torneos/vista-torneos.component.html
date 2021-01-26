@@ -23,10 +23,19 @@
 
           <h4> Torneo Juegos </h4>
 
-          <a id="detalleTorneoJuegos" href="#" class="btn mat-button">Información</a>
+          <a (click)="copiaJuegos()" id="detalleTorneoJuegos" href="#" class="btn mat-button">Información</a>
           <a routerLink="../torneoActual" class="btn mat-button">Ver más</a>
 
         </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class='juegosCopia' id='juegosCopia' style="display: none;">
+
+      <mat-card class='copiaJuegos'>
+
+        <mat-card-content>Texto de Ejemplo</mat-card-content>
+
       </mat-card>
     </div>
 
