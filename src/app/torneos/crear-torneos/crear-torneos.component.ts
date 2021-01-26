@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-// Controlador de fechas de Formularios
-import { FormGroup, FormControl } from '@angular/forms';
+// Modulos de Formularios de Angular Material
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-crear-torneos',

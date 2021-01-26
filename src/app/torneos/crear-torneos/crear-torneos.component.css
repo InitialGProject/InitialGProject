@@ -1,15 +1,11 @@
-section {
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+.container {
   margin-right: auto;
   margin-left: auto;
+  padding: 2.5% 2%;
 }
 
 .card {
   width: auto;
-}
-
-.mat-form-field {
   background-color: #818181;
 }
 
@@ -17,7 +13,7 @@ li > strong {
   font-size: xx-large;
 }
 
-select {
+select, .mat-form-field {
   margin-bottom: 10%;
 }
 /*# sourceMappingURL=crear-torneos.component.css.map */

@@ -1,122 +1,144 @@
 <!-- Contenido del Componente Crear Torneo -->
 
-<section>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-md-12 col-lg-6 col-sm-12 col-xs-12">
+      <div class="card h-100">
+        <div class="card-body">
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-md-4"></div>
-      <div class="col-lg-6 col-md-4">
-        <div class="card h-100">
-          <div class="card-body">
+          <form action="./vista-torneos">
 
-            <form action="./vista-torneos">
+            <input type="text" name="nombreEvento" id="nombreEvento" placeholder="Nombre del Evento" required>
 
-              <input type="text" name="nombreEvento" id="nombreEvento" placeholder="Nombre del Evento" required>
+            <select required name="tipoEvento" class="form-control">
+              <option selected disabled value="">Tipo de Evento</option>
+              <option value="Normales">Juegos Normales</option>
+              <option value="Retro">Juegos Retro</option>
+            </select>
 
-              <select required name="tipoEvento" class="form-control">
-                <option selected disabled value="">Tipo de Evento</option>
-                <option value="Normales">Juegos Normales</option>
-                <option value="Retro">Juegos Retro</option>
-              </select>
+            <select required name="provincia" class="form-control">
+              <option selected disabled value="">Provincia</option>
+              <option value="Álava/Araba">Álava/Araba</option>
+              <option value="Albacete">Albacete</option>
+              <option value="Alicante">Alicante</option>
+              <option value="Almería">Almería</option>
+              <option value="Asturias">Asturias</option>
+              <option value="Ávila">Ávila</option>
+              <option value="Badajoz">Badajoz</option>
+              <option value="Baleares">Baleares</option>
+              <option value="Barcelona">Barcelona</option>
+              <option value="Burgos">Burgos</option>
+              <option value="Cáceres">Cáceres</option>
+              <option value="Cádiz">Cádiz</option>
+              <option value="Cantabria">Cantabria</option>
+              <option value="Castellón">Castellón</option>
+              <option value="Ceuta">Ceuta</option>
+              <option value="Ciudad Real">Ciudad Real</option>
+              <option value="Córdoba">Córdoba</option>
+              <option value="Cuenca">Cuenca</option>
+              <option value="Gerona/Girona">Gerona/Girona</option>
+              <option value="Granada">Granada</option>
+              <option value="Guadalajara">Guadalajara</option>
+              <option value="Guipúzcoa/Gipuzkoa">Guipúzcoa/Gipuzkoa</option>
+              <option value="Huelva">Huelva</option>
+              <option value="Huesca">Huesca</option>
+              <option value="Jaén">Jaén</option>
+              <option value="La Coruña/A Coruña">La Coruña/A Coruña</option>
+              <option value="La Rioja">La Rioja</option>
+              <option value="Las Palmas">Las Palmas</option>
+              <option value="León">León</option>
+              <option value="Lérida/Lleida">Lérida/Lleida</option>
+              <option value="Lugo">Lugo</option>
+              <option value="Madrid">Madrid</option>
+              <option value="Málaga">Málaga</option>
+              <option value="Melilla">Melilla</option>
+              <option value="Murcia">Murcia</option>
+              <option value="Navarra">Navarra</option>
+              <option value="Orense/Ourense">Orense/Ourense</option>
+              <option value="Palencia">Palencia</option>
+              <option value="Pontevedra">Pontevedra</option>
+              <option value="Salamanca">Salamanca</option>
+              <option value="Segovia">Segovia</option>
+              <option value="Sevilla">Sevilla</option>
+              <option value="Soria">Soria</option>
+              <option value="Tarragona">Tarragona</option>
+              <option value="Tenerife">Tenerife</option>
+              <option value="Teruel">Teruel</option>
+              <option value="Toledo">Toledo</option>
+              <option value="Valencia">Valencia</option>
+              <option value="Valladolid">Valladolid</option>
+              <option value="Vizcaya/Bizkaia">Vizcaya/Bizkaia</option>
+              <option value="Zamora">Zamora</option>
+              <option value="Zaragoza">Zaragoza</option>
+            </select>
+<!--
+            <mat-form-field>
 
-              <select required name="provincia" class="form-control">
-                <option selected disabled value="">Provincia</option>
-                <option value="Álava/Araba">Álava/Araba</option>
-                <option value="Albacete">Albacete</option>
-                <option value="Alicante">Alicante</option>
-                <option value="Almería">Almería</option>
-                <option value="Asturias">Asturias</option>
-                <option value="Ávila">Ávila</option>
-                <option value="Badajoz">Badajoz</option>
-                <option value="Baleares">Baleares</option>
-                <option value="Barcelona">Barcelona</option>
-                <option value="Burgos">Burgos</option>
-                <option value="Cáceres">Cáceres</option>
-                <option value="Cádiz">Cádiz</option>
-                <option value="Cantabria">Cantabria</option>
-                <option value="Castellón">Castellón</option>
-                <option value="Ceuta">Ceuta</option>
-                <option value="Ciudad Real">Ciudad Real</option>
-                <option value="Córdoba">Córdoba</option>
-                <option value="Cuenca">Cuenca</option>
-                <option value="Gerona/Girona">Gerona/Girona</option>
-                <option value="Granada">Granada</option>
-                <option value="Guadalajara">Guadalajara</option>
-                <option value="Guipúzcoa/Gipuzkoa">Guipúzcoa/Gipuzkoa</option>
-                <option value="Huelva">Huelva</option>
-                <option value="Huesca">Huesca</option>
-                <option value="Jaén">Jaén</option>
-                <option value="La Coruña/A Coruña">La Coruña/A Coruña</option>
-                <option value="La Rioja">La Rioja</option>
-                <option value="Las Palmas">Las Palmas</option>
-                <option value="León">León</option>
-                <option value="Lérida/Lleida">Lérida/Lleida</option>
-                <option value="Lugo">Lugo</option>
-                <option value="Madrid">Madrid</option>
-                <option value="Málaga">Málaga</option>
-                <option value="Melilla">Melilla</option>
-                <option value="Murcia">Murcia</option>
-                <option value="Navarra">Navarra</option>
-                <option value="Orense/Ourense">Orense/Ourense</option>
-                <option value="Palencia">Palencia</option>
-                <option value="Pontevedra">Pontevedra</option>
-                <option value="Salamanca">Salamanca</option>
-                <option value="Segovia">Segovia</option>
-                <option value="Sevilla">Sevilla</option>
-                <option value="Soria">Soria</option>
-                <option value="Tarragona">Tarragona</option>
-                <option value="Tenerife">Tenerife</option>
-                <option value="Teruel">Teruel</option>
-                <option value="Toledo">Toledo</option>
-                <option value="Valencia">Valencia</option>
-                <option value="Valladolid">Valladolid</option>
-                <option value="Vizcaya/Bizkaia">Vizcaya/Bizkaia</option>
-                <option value="Zamora">Zamora</option>
-                <option value="Zaragoza">Zaragoza</option>
-              </select>
+              <mat-label>Email</mat-label>
 
-              <input type="text" name="calleEvento" id="calleEvento" placeholder="Calle del Evento" required>
+              <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+                placeholder="Ex. pat@example.com">
 
-              <br>
+              <mat-hint>Errors appear instantly!</mat-hint>
 
-              <mat-form-field appearance="fill">
+              <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                Please enter a valid email address
+              </mat-error>
 
-                <mat-label>Duración del Evento</mat-label>
+              <mat-error *ngIf="emailFormControl.hasError('required')">
+                 <strong>required</strong>
 
-                <mat-date-range-input [formGroup]="range" [rangePicker]="picker">
-                  <input matStartDate formControlName="start" placeholder="Fecha Inicio">
-                  <input matEndDate formControlName="end" placeholder="Fecha de Fin">
-                </mat-date-range-input>
+              </mat-error>
+            </mat-form-field>
+          -->
+            <br>
 
-                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                <mat-date-range-picker #picker></mat-date-range-picker>
+            <mat-form-field>
 
-                <mat-error *ngIf="range.controls.start.hasError('matStartDateInvalid')">Fecha de Inicio Invalida
-                </mat-error>
-                <mat-error *ngIf="range.controls.end.hasError('matEndDateInvalid')">Fecha de Fin Invalida</mat-error>
+              <mat-label>Duración del Evento</mat-label>
 
-              </mat-form-field>
+              <mat-date-range-input [formGroup]="range" [rangePicker]="picker" required>
+                <input matStartDate formControlName="start" placeholder="Fecha Inicio" required>
+                <input matEndDate formControlName="end" placeholder="Fecha de Fin" required>
+              </mat-date-range-input>
 
-              <br>
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-date-range-picker #picker></mat-date-range-picker>
 
-              <input type="number" name="participantes" id="participantes" placeholder="Número de Participantes"
-                min="50" required>
+              <mat-error *ngIf="range.controls.start.hasError('matStartDateInvalid')">Fecha de Inicio Invalida
+              </mat-error>
+              <mat-error *ngIf="range.controls.end.hasError('matEndDateInvalid')">Fecha de Fin Invalida</mat-error>
 
-              <label for="premio">Premio:
+            </mat-form-field>
 
-                <input type="number" name="premio" id="premio" placeholder="Introduzca Cantidad" min="50" required> €
+            <br>
 
-              </label>
+            <mat-form-field>
 
-              <br>
+              <mat-label>Participantes</mat-label>
+              <input matInput type="number" min="50" max="500" placeholder="Número Participantes" required>
 
-              <input type="submit" value="Crear">
+            </mat-form-field>
 
-            </form>
-          </div>
+            <br>
+
+            <mat-form-field>
+
+              <mat-label>Premio</mat-label>
+              <input matInput type="number" min="10" max="1000" required>
+              <span matPrefix>€&nbsp;</span>
+
+            </mat-form-field>
+
+            <br>
+
+            <input type="submit" value="Crear">
+
+          </form>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4"></div>
     </div>
+    <div class="col-lg-3"></div>
   </div>
-</section>
+</div>
