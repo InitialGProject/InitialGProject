@@ -1,76 +1,79 @@
-<section>
+<input class="video-filter" type="search" placeholder="Buscar en videos" aria-label="Search" (change)="searchFunction($event.target.value)">
+<article class="video">
+    <figure>      
+        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[0]}}">
+        <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[0] +'/hqdefault.jpg'}}"></a>          
+    </figure>
+    <figure>      
+        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[1]}">
+        <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[1] +'/hqdefault.jpg'}}"></a>          
+    </figure>
+    <figure>      
+        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[2]}}">
+        <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[2] +'/hqdefault.jpg'}}"></a>          
+    </figure>       
+</article>
+<article class="video">
+    <figure>      
+        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[3]}}">
+        <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[3] +'/hqdefault.jpg'}}"></a>          
+    </figure>
+    <figure>      
+        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[4]}">
+        <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[4] +'/hqdefault.jpg'}}"></a>          
+    </figure>
+    <figure>      
+        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[5]}}">
+        <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[5] +'/hqdefault.jpg'}}"></a>          
+    </figure>       
+</article>
+<article class="video">
+    <figure>      
+        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[6]}}">
+        <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[6] +'/hqdefault.jpg'}}"></a>          
+    </figure>
+    <figure>      
+        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[7]}">
+        <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[7] +'/hqdefault.jpg'}}"></a>          
+    </figure>
+    <figure>      
+        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[8]}}">
+        <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[8] +'/hqdefault.jpg'}}"></a>          
+    </figure>       
+</article>
+<article class="video">
+    <figure>      
+        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[9]}}">
+        <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[9] +'/hqdefault.jpg'}}"></a>          
+    </figure>
+    <figure>      
+        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[10]}">
+        <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[10] +'/hqdefault.jpg'}}"></a>          
+    </figure>
+    <figure>      
+        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[11]}}">
+        <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[11] +'/hqdefault.jpg'}}"></a>          
+    </figure>       
+</article>
+<script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 
-    <h1 class="my-4">Videos</h1>
+  <script src="js/jquery.fancybox.min.js"></script>
 
-    <div class="row">
-
-        <div class="col-lg-4 col-sm-4 portfolio-item">
-
-            <div class="card h-40">
-
-                <iframe width="max" height="215" src="https://www.youtube.com/embed/Fn3g25ZEbak" frameborder="1"
-                    allowfullscreen></iframe>
-
-            </div>
-
-        </div>
-
-        <div class="col-lg-4 col-sm-4 portfolio-item">
-
-            <div class="card h-40">
-
-                <iframe width="max" height="215" src="https://www.youtube.com/embed/DPW6fkcM-14" frameborder="1"
-                    allowfullscreen></iframe>
-
-            </div>
-
-        </div>
-
-        <div class="col-lg-4 col-sm-4 portfolio-item">
-
-            <div class="card h-40">
-
-                <iframe width="max" height="215" src="https://www.youtube.com/embed/1UhFWoDZLxA" frameborder="1"
-                    allowfullscreen></iframe>
-
-            </div>
-
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-4 col-sm-4 portfolio-item">
-
-            <div class="card h-40">
-
-                <iframe width="max" height="215" src="https://www.youtube.com/embed/Fn3g25ZEbak" frameborder="1"
-                    allowfullscreen></iframe>
-
-            </div>
-
-        </div>
-
-        <div class="col-lg-4 col-sm-4 portfolio-item">
-
-            <div class="card h-40">
-
-                <iframe width="max" height="215" src="https://www.youtube.com/embed/DPW6fkcM-14" frameborder="1"
-                    allowfullscreen></iframe>
-
-            </div>
-
-        </div>
-
-        <div class="col-lg-4 col-sm-4 portfolio-item">
-
-            <div class="card h-40">
-
-                <iframe width="max" height="215" src="https://www.youtube.com/embed/1UhFWoDZLxA" frameborder="1"
-                    allowfullscreen></iframe>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+  <script>
+    $(document).ready(function() {
+      $('.fancybox').fancybox({
+        padding   : 0,
+        maxWidth  : '100%',
+        maxHeight : '100%',
+        width   : 560,
+        height    : 315,
+        autoSize  : true,
+        closeClick  : true,
+        openEffect  : 'elastic',
+        closeEffect : 'elastic'
+      });
+    });
+  </script>
