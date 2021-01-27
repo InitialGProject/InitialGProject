@@ -1,17 +1,3 @@
-.form-control {
-  max-width: 11rem;
-}
-
-button {
-  background-color: black;
-  color: white;
-}
-
-button i {
-  right: 0;
-  color: white;
-}
-
 input {
   background-color: black;
 }
@@ -29,7 +15,6 @@ input {
 .navbar a {
   color: white;
   text-decoration: none;
-  padding: 0 15px;
 }
 
 .navbar a:hover {
@@ -78,7 +63,10 @@ input {
   display: block;
 }
 
-@media screen and (min-width: 1010px) {
+@media screen and (min-width: 800px) {
+  .login {
+    display: none;
+  }
   /*Fondos*/
   .effect01 {
     overflow: hidden;
@@ -114,35 +102,33 @@ a.icon {
   display: none;
 }
 
-@media screen and (max-width: 1010px) {
-  a:not(:first-child), .dropdown, .buscador {
+@media screen and (max-width: 800px) {
+  .navbar {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .navbar a:not(:first-child), .navbar .dropdown, .navbar .buscador {
     display: none;
   }
-  a.icon {
-    float: right;
+  .navbar a.icon {
     display: block;
     font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 1010px) {
-  .navbar.responsive {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-  }
-  .navbar.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .navbar.responsive a.icon:hover {
+  .navbar a.icon:hover {
     background-color: black;
   }
-  .navbar.responsive .dropdown, .navbar.responsive .navbar.responsive .buscador {
-    float: none;
+  .navbar .login {
     display: block;
-    text-align: left;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar.responsive .login {
+    display: none;
   }
   .navbar.responsive .dropdown-content {
     position: relative;

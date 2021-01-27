@@ -2,6 +2,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 3rem;
+  padding-top: .5rem;
   right: 0;
 }
 
@@ -28,5 +29,20 @@
   background-color: black;
   width: 100%;
   height: 10rem;
+}
+
+.buscador {
+  margin: auto;
+  width: auto;
+}
+
+button {
+  background-color: black;
+  color: white;
+}
+
+button i {
+  right: 0;
+  color: white;
 }
 /*# sourceMappingURL=lateralbar.component.css.map */

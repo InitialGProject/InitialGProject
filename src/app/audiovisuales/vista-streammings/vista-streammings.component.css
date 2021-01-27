@@ -1,10 +1,10 @@
-/* No CSS *//*# sourceMappingURL=vista-streammings.component.css.map */
-.responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-  }
+.row .cuadro {
+  margin: 2% 0;
+  height: 100%;
+}
+
+.row .responsive-iframe {
+  width: 100%;
+  height: 19rem;
+}
+/*# sourceMappingURL=vista-streammings.component.css.map */

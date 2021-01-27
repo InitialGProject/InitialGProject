@@ -26,4 +26,10 @@ header .Perfil img {
   background-color: #bb0011;
   width: 5.2rem;
 }
+
+@media screen and (max-width: 600px) {
+  header .Perfil {
+    display: none;
+  }
+}
 /*# sourceMappingURL=header.component.css.map */
