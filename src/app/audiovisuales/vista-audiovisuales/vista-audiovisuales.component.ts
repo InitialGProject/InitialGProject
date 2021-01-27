@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-let apiKey = "AIzaSyAeoW2rf-X11QTEKKOCgRZ6VZX3vA7xfiU"
-let url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&maxResults=15&key=AIzaSyAeoW2rf-X11QTEKKOCgRZ6VZX3vA7xfiU&"
+let apiKey = "AIzaSyAeoW2rf-X11QTEKKOCgRZ6VZX3vA7xfiU&"
+let url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&maxResults=15&key="
 let videos
 let word = "&q="
 @Component({
@@ -19,7 +19,7 @@ export class VistaAudiovisualesComponent implements OnInit {
   pageTitle = "VIDEOS"  
   videosFromApi = videos
   searchFunction = (text) => {
-    fetch(url+word+text).then((resp) => { 
+    fetch(url+apiKey+word+text).then((resp) => { 
       resp.json().then((jsonResp) => {
          let aux = []
          jsonResp.items.forEach(element => {

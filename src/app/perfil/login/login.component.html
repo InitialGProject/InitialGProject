@@ -2,9 +2,10 @@
 <p style="color: #f1f1f1; font-size: larger;">Si le dais al boton verde login, en la consola pone true(sesion iniciada) y os lleva a inicio
     <br>Si haceis click en el avatar del login saldra false(sesion cerrada) y se queda aqui</p>
 
-<form action="/action_page.php" method="post">
+<!-- <form action="/action_page.php" method="post"> -->
+    <form>
     <div class="imgcontainer">
-        <a routerLink="./login" (click)="logout()">
+        <a (click)="logout()">
             <img src="../../assets/img/perfil.png" alt="Avatar" class="avatar">
         </a>
     </div>
@@ -16,7 +17,7 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
 
-        <button><a routerLink="/" (click)="login()">Login</a></button>
+        <button><a (click)="login()">Login</a></button>
         <label>
             <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>

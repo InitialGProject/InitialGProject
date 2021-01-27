@@ -1,7 +1,7 @@
 <div class="navbar" id="navbar">
 
   <div class="dropdown effect01">
-    <a routerLink='/vista-noticias' class="dropbtn">NOTICIAS</a>
+    <a routerLink='/vista-noticias'>NOTICIAS</a>
   </div>
 
   <div class="dropdown">
@@ -29,15 +29,71 @@
     <a routerLink='/vista-foro'>FORO</a>
   </div>
 
-  <div class="dropdown effect01">
-    <a routerLink='/login'>LOGIN</a>
+  <div class="dropdown login effect01">
+    <a routerLink='/'>INICIO</a>
   </div>
 
-  <form class="buscador form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Buscar en la página" aria-label="Search">
-    <button class="btn my-1 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
-  </form>
+  <div class="dropdown login effect01">
+    <a routerLink='/login'>LOGIN</a>
+  </div>
 
   <a class="icon">&#9776;</a>
 
 </div>
+
+
+
+
+<!-- 
+
+<nav class="navbar sticky-top navbar-expand-lg" style="background-color: #bb0011;">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" style="background-color: black;"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/vista-noticias">NOTICIAS</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" routerLink='/vista-audiovisuales' id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          VIDEOS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink='/vista-streammings'>STREAMINGS</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" routerLink='/vista-juegos' id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          JUEGOS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink='/vista-streammings'>RETRO</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" routerLink='/vista-audiovisuales' id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          TORNEOS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink='/vista-streammings'>REGLAMENTO</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/vista-foro">FORO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/login">PERFIL</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> 
+  </div>
+</nav> -->

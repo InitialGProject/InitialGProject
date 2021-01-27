@@ -22,5 +22,9 @@ header {
             background-color: #bb0011;
             width: 5.2rem;
         }
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
     }
 }
