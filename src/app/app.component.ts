@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { AuthGuardService } from './services/auth-guard.service';
 
 @Component({
   selector: 'app-root',
@@ -7,27 +8,43 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  opciones = [
-    "NOTICIAS", "VIDEOS", "JUEGOS", "TORNEOS", "FORO"
-  ];
 
-  presion(op: number) {
-    switch (op) {
-      case 1:
-        window.location.href = '/vista-noticias';
-        break;
-      case 2:
-        window.location.href = '/vista-audiovisuales';
-        break;
-      case 3:
-        window.location.href = '/vista-juegos';
-        break;
-      case 4:
-        window.location.href = '/vista-torneos';
-        break;
-      case 5:
-        window.location.href = '/vista-foro';
-        break;
-    }
+  login: boolean;
+
+  constructor(private auth: AuthGuardService) {
+    this.auth.isLoggedIn()
+      .subscribe(
+        data => {
+          this.login = data;
+          console.log('login', this.login);
+
+        },
+        error => {
+          console.log(error);
+        });
   }
+
+  // opciones = [
+  //   "NOTICIAS", "VIDEOS", "JUEGOS", "TORNEOS", "FORO"
+  // ];
+
+  // presion(op: number) {
+  //   switch (op) {
+  //     case 1:
+  //       window.location.href = '/vista-noticias';
+  //       break;
+  //     case 2:
+  //       window.location.href = '/vista-audiovisuales';
+  //       break;
+  //     case 3:
+  //       window.location.href = '/vista-juegos';
+  //       break;
+  //     case 4:
+  //       window.location.href = '/vista-torneos';
+  //       break;
+  //     case 5:
+  //       window.location.href = '/vista-foro';
+  //       break;
+  //   }
+  // }
 }

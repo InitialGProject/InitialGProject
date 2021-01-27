@@ -1,28 +1,26 @@
 header {
-    // position: fixed;
-    // display: block;
-    // width: 100%;
-    // height: max-content;
 
     background-image: url("../../assets/img/banner.png");
     top: 0;
     z-index: 1; /* Stay on top */
-
-
-  width: 100%;
-  background-position: center;
-  color:#fff;
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    color:#fff;
 
     .Logo {
-        // display: block;
         text-align: center;
     }
     .Perfil {
+        position: absolute;
+        text-align: right;
         display: block;
-        // width: 5%;
-        margin-left: 75%;
-        // top: 0;
-        // right: 0;
+        top: 0;
+        right: 0;
+        img{
+            border-radius: 50%;
+            background-color: #bb0011;
+            width: 5.2rem;
+        }
     }
 }

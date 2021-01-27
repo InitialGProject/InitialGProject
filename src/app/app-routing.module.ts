@@ -18,6 +18,10 @@ import { VistaTorneosComponent } from './torneos/vista-torneos/vista-torneos.com
 // Foro
 import { VistaForoComponent } from './foro/vista-foro/vista-foro.component';
 
+// Perfil
+import { LoginComponent } from './perfil/login/login.component';
+
+
 const routes: Routes = [
   {
     path: 'vista-noticias',
@@ -45,6 +49,10 @@ const routes: Routes = [
   }, {
     path: 'vista-foro',
     component: VistaForoComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   }
 ];
 

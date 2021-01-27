@@ -1,37 +1,41 @@
 <div class="navbar" id="navbar">
 
   <div class="dropdown effect01">
-    <a href='/vista-noticias' class="dropbtn">NOTICIAS</a>
+    <a routerLink='/vista-noticias' class="dropbtn">NOTICIAS</a>
   </div>
 
   <div class="dropdown">
-    <a href='/vista-audiovisuales'>VIDEOS</a>
+    <a routerLink='/vista-audiovisuales'>VIDEOS</a>
     <div class="dropdown-content effect01">
-      <a href='/vista-streammings'>STREAMINGS</a>
+      <a routerLink='/vista-streammings'>STREAMINGS</a>
     </div>
   </div>
 
   <div class="dropdown">
-    <a href='/vista-juegos'>JUEGOS</a>
+    <a routerLink='/vista-juegos'>JUEGOS</a>
     <div class="dropdown-content effect01">
-      <a href='/vista-juegos'>RETRO</a>
+      <a routerLink='/vista-juegos'>RETRO</a>
     </div>
   </div>
 
   <div class="dropdown">
-    <a href='/vista-torneos'>TORNEOS</a>
+    <a routerLink='/vista-torneos'>TORNEOS</a>
     <div class="dropdown-content effect01">
       <a routerLink='../vista-torneos' (click)="openDialog()">REGLAMENTO</a>
     </div>
   </div>
 
   <div class="dropdown effect01">
-    <a href='/vista-foro'>FORO</a>
+    <a routerLink='/vista-foro'>FORO</a>
+  </div>
+
+  <div class="dropdown effect01">
+    <a routerLink='/login'>LOGIN</a>
   </div>
 
   <form class="buscador form-inline">
     <input class="form-control mr-sm-2" type="search" placeholder="Buscar en la página" aria-label="Search">
-    <button class="btn my-2 my-sm-0" type="submit">Buscar</button>
+    <button class="btn my-1 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
   </form>
 
   <a class="icon">&#9776;</a>

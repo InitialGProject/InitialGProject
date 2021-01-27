@@ -3,25 +3,24 @@
 }
 
 button {
-  background: linear-gradient(to bottom, black 0%, #534c4c 50%, black 100%);
+  background-color: black;
   color: white;
-  &:hover {
-    transition: all .5s ease-in-out;
-    background: linear-gradient(to bottom, black 0%, limegreen 50%, black 100%);
+  i{
+    //position: absolute;
+    right: 0;
+    color: white;
   }
 }
 
 input {
   background-color: black;
-  color: limegreen;
 }
 
 .navbar {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  // background-color: #bb0011;
-  background: linear-gradient(to bottom, #bb0011 0%, #be6464 30%, #bb0011 60%, #bb0011 70%, black 100%);
+  background-color: #bb0011;
   width: 100%;
   z-index: 1;
   padding: 0 1rem;
