@@ -1,16 +1,37 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { VistaVideosComponent } from './vista-videos/vista-videos.component';
-import { VistaStreammingsComponent } from './vista-streammings/vista-streammings.component';
+import { Routes, RouterModule } from '@angular/router';
+
+// Componentes de AudioVisuales
 import { VistaAudiovisualesComponent } from './vista-audiovisuales/vista-audiovisuales.component';
+import { VistaStreammingsComponent } from './vista-streammings/vista-streammings.component';
 import { DetalleAudiovisualesComponent } from './detalle-audiovisuales/detalle-audiovisuales.component';
 
+// Módulos Extra
 
+
+const audiovisuales: Routes = [
+  {
+    path: 'vista-audiovisules',
+    component: VistaAudiovisualesComponent
+  },
+  {
+    path: 'vista-streammings',
+    component: VistaStreammingsComponent
+  },
+  {
+    path: 'detalle-audiovisuales',
+    component: DetalleAudiovisualesComponent
+  }
+];
 
 @NgModule({
-  declarations: [VistaVideosComponent, VistaStreammingsComponent, VistaAudiovisualesComponent, DetalleAudiovisualesComponent],
+  declarations: [VistaStreammingsComponent, VistaAudiovisualesComponent, DetalleAudiovisualesComponent],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    RouterModule.forChild(audiovisuales)
+  ],
+  exports: [RouterModule]
 })
+
 export class AudiovisualesModule { }
