@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+// Componente de Perfil
 import { LoginComponent } from './login/login.component';
-
-
 
 @NgModule({
   declarations: [LoginComponent],
@@ -10,4 +10,5 @@ import { LoginComponent } from './login/login.component';
     CommonModule
   ]
 })
+
 export class PerfilModule { }

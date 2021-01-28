@@ -11,8 +11,11 @@ import { HeaderComponent } from './header/header.component';
 import { LateralbarComponent } from './lateralbar/lateralbar.component';
 
 // modulos de la pagina
-import { TorneosModule } from './torneos/torneos.module';
 import { NoticiasModule } from './noticias/noticias.module';
+import { AudiovisualesModule } from './audiovisuales/audiovisuales.module';
+import { JuegosModule } from './juegos/juegos.module';
+import { TorneosModule } from './torneos/torneos.module';
+import { ForoModule } from './foro/foro.module';
 
 // modulos extra
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -28,8 +31,11 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TorneosModule,
     NoticiasModule,
+    AudiovisualesModule,
+    JuegosModule,
+    TorneosModule,
+    ForoModule,
     BrowserAnimationsModule
   ],
   providers: [

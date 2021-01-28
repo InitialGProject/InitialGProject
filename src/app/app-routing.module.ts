@@ -6,7 +6,6 @@ import { VistaNoticiaComponent } from './noticias/vista-noticia/vista-noticia.co
 
 // AudioVisuales
 import { VistaAudiovisualesComponent } from './audiovisuales/vista-audiovisuales/vista-audiovisuales.component';
-import { VistaVideosComponent } from './audiovisuales/vista-videos/vista-videos.component';
 import { VistaStreammingsComponent } from './audiovisuales/vista-streammings/vista-streammings.component';
 
 // Juegos
@@ -30,10 +29,6 @@ const routes: Routes = [
   {
     path: 'vista-audiovisuales',
     component: VistaAudiovisualesComponent
-  },
-  {
-    path: 'vista-videos',
-    component: VistaVideosComponent
   },
   {
     path: 'vista-streammings',
