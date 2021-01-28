@@ -1,4 +1,2677 @@
 node_modules
+dist/proyecto038/3rdpartylicenses.txt
+dist/proyecto038/banner.5bc98fac341cbcccec1c.png
+dist/proyecto038/favicon.ico
+dist/proyecto038/index.html
+dist/proyecto038/main-es5.185037fc0a32ff29de8c.js
+dist/proyecto038/main-es2015.185037fc0a32ff29de8c.js
+dist/proyecto038/polyfills-es5.8139562032f54e8f194a.js
+dist/proyecto038/polyfills-es2015.24ea368e110f7f07889e.js
+dist/proyecto038/runtime-es5.a1ac991fc00ebf39524f.js
+dist/proyecto038/runtime-es2015.a1ac991fc00ebf39524f.js
+dist/proyecto038/styles.a4f397d3156987b03986.css
+dist/proyecto038/assets/img/banner.png
+dist/proyecto038/assets/img/iconoGrupo.png
+dist/proyecto038/assets/img/logo.png
+dist/proyecto038/assets/img/perfil.png
+dist/proyecto038/assets/img/perfil2.png
+dist/proyecto038/assets/img/juegos/back.png
+dist/proyecto038/assets/img/juegos/icono_alt.jpg
+dist/proyecto038/assets/img/juegos/icono_nm.jpg
+dist/proyecto038/assets/img/juegos/icono_retro.jpg
+dist/proyecto038/assets/img/juegos/zerion.jpg
+dist/proyecto038/assets/img/torneos/actual.png
+dist/proyecto038/assets/img/torneos/crear.png
+dist/proyecto038/assets/img/torneos/retro.png
+dist/proyecto038/assets/juegos/j1/index.html
+dist/proyecto038/assets/juegos/j1/package.json
+dist/proyecto038/assets/juegos/j1/Char-crt/chef.json
+dist/proyecto038/assets/juegos/j1/audio/bgm/03_A_Gentle_Breeze.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/bgm/03_A_Gentle_Breeze.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/bgm/03_Valley_Village.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/bgm/03_Valley_Village.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/bgm/Battle1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/bgm/Battle1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/bgm/Castle1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/bgm/Castle1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/bgm/Field1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/bgm/Field1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/bgm/Ship1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/bgm/Ship1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/bgm/Ship2.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/bgm/Ship2.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/bgm/Ship3.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/bgm/Ship3.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/bgm/Theme2.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/bgm/Theme2.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/bgs/Drips.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/bgs/Drips.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/bgs/River.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/bgs/River.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/me/Defeat1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/me/Defeat1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/me/Fanfare2.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/me/Fanfare2.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/me/Gameover1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/me/Gameover1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/me/Inn.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/me/Inn.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/me/Victory1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/me/Victory1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Attack3.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Attack3.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Battle1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Battle1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Blow3.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Blow3.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Buzzer1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Buzzer1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Cancel1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Cancel1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Collapse1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Collapse1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Collapse2.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Collapse2.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Collapse3.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Collapse3.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Collapse4.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Collapse4.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Crossbow.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Crossbow.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Cursor2.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Cursor2.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Damage4.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Damage4.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Damage5.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Damage5.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Decision1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Decision1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Door2.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Door2.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Equip2.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Equip2.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Evasion1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Evasion1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Evasion2.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Evasion2.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Fire3.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Fire3.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Heal3.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Heal3.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Ice1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Ice1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Ice5.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Ice5.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Item3.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Item3.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Load.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Load.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Magic1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Magic1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Miss.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Miss.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Move1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Move1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Move3.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Move3.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Move4.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Move4.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Open1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Open1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Open2.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Open2.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Open3.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Open3.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Paralyze1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Paralyze1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Recovery.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Recovery.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Reflection.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Reflection.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Run.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Run.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Saint2.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Saint2.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Save.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Save.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Shop1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Shop1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Skill1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Skill1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Slash1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Slash1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Starlight.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Starlight.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Sword5.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Sword5.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Thunder1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Thunder1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Thunder5.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Thunder5.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Thunder6.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Thunder6.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Up1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Up1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Water1.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Water1.rpgmvo
+dist/proyecto038/assets/juegos/j1/audio/se/Wind6.rpgmvm
+dist/proyecto038/assets/juegos/j1/audio/se/Wind6.rpgmvo
+dist/proyecto038/assets/juegos/j1/data/Actors.json
+dist/proyecto038/assets/juegos/j1/data/Animations.json
+dist/proyecto038/assets/juegos/j1/data/Armors.json
+dist/proyecto038/assets/juegos/j1/data/Classes.json
+dist/proyecto038/assets/juegos/j1/data/CommonEvents.json
+dist/proyecto038/assets/juegos/j1/data/Enemies.json
+dist/proyecto038/assets/juegos/j1/data/Items.json
+dist/proyecto038/assets/juegos/j1/data/Map001.json
+dist/proyecto038/assets/juegos/j1/data/Map002.json
+dist/proyecto038/assets/juegos/j1/data/Map003.json
+dist/proyecto038/assets/juegos/j1/data/Map004.json
+dist/proyecto038/assets/juegos/j1/data/Map005.json
+dist/proyecto038/assets/juegos/j1/data/Map006.json
+dist/proyecto038/assets/juegos/j1/data/Map007.json
+dist/proyecto038/assets/juegos/j1/data/Map008.json
+dist/proyecto038/assets/juegos/j1/data/Map009.json
+dist/proyecto038/assets/juegos/j1/data/Map010.json
+dist/proyecto038/assets/juegos/j1/data/Map011.json
+dist/proyecto038/assets/juegos/j1/data/Map012.json
+dist/proyecto038/assets/juegos/j1/data/Map013.json
+dist/proyecto038/assets/juegos/j1/data/Map014.json
+dist/proyecto038/assets/juegos/j1/data/Map015.json
+dist/proyecto038/assets/juegos/j1/data/Map016.json
+dist/proyecto038/assets/juegos/j1/data/Map017.json
+dist/proyecto038/assets/juegos/j1/data/Map018.json
+dist/proyecto038/assets/juegos/j1/data/Map019.json
+dist/proyecto038/assets/juegos/j1/data/Map020.json
+dist/proyecto038/assets/juegos/j1/data/MapInfos.json
+dist/proyecto038/assets/juegos/j1/data/Quests.txt
+dist/proyecto038/assets/juegos/j1/data/Skills.json
+dist/proyecto038/assets/juegos/j1/data/States.json
+dist/proyecto038/assets/juegos/j1/data/System.json
+dist/proyecto038/assets/juegos/j1/data/Tilesets.json
+dist/proyecto038/assets/juegos/j1/data/Troops.json
+dist/proyecto038/assets/juegos/j1/data/Weapons.json
+dist/proyecto038/assets/juegos/j1/fonts/gamefont.css
+dist/proyecto038/assets/juegos/j1/fonts/mplus-1m-regular.ttf
+dist/proyecto038/assets/juegos/j1/icon/icon.png
+dist/proyecto038/assets/juegos/j1/img/animations/ArrowSpecial.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/animations/Cure1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/animations/Fire1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/animations/Hit1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/animations/Recovery1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/animations/Revival1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/animations/Slash.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/animations/Stick.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/animations/Thunder1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks1/Clouds.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks1/Desert.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks1/DirtField.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks1/Grassland.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks1/Lava1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks1/Lava2.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks1/PoisonSwamp.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks1/Ship.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks1/Snowfield.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks1/Wasteland.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks2/Cliff.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks2/Clouds.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks2/Desert.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks2/Forest.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks2/Grassland.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks2/Lava.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks2/PoisonSwamp.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks2/Ship.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks2/Snowfield.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/battlebacks2/Wasteland.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/characters/!$Gate1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/characters/!Crystal.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/characters/!Door1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/characters/!Other2.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/characters/Actor1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/characters/Actor2.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/characters/Actor3.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/characters/Chef.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/characters/h1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/characters/Monster.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/characters/People1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/characters/People3.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/characters/People4.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/characters/Vehicle.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/faces/Actor1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/faces/Actor2.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/faces/Actor3.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/faces/h1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/parallaxes/Mountains4.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/parallaxes/StarlitSky.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/sv_actors/Actor1_8.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/sv_actors/Actor2_7.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/sv_actors/Actor3_8.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/sv_actors/h1-1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/sv_enemies/Bat.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/sv_enemies/Hornet.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/sv_enemies/Minotaur.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/sv_enemies/Orc.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/sv_enemies/Slime.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/system/Balloon.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/system/ButtonSet.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/system/Damage.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/system/GameOver.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/system/IconSet.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/system/Loading.png
+dist/proyecto038/assets/juegos/j1/img/system/newIcon.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/system/Shadow1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/system/Shadow2.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/system/States.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/system/Weapons1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/system/Weapons2.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/system/Weapons3.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/system/Window.png
+dist/proyecto038/assets/juegos/j1/img/system/WindowCursor.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Dungeon_A1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Dungeon_A1.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Dungeon_A2.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Dungeon_A2.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Dungeon_A4.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Dungeon_A4.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Dungeon_A5.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Dungeon_A5.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Dungeon_B.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Dungeon_B.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Dungeon_C.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Dungeon_C.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Inside_A1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Inside_A1.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Inside_A2.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Inside_A2.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Inside_A4.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Inside_A4.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Inside_A5.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Inside_A5.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Inside_B.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Inside_B.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Inside_C.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Inside_C.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Outside_A1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Outside_A1.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Outside_A2.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Outside_A2.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Outside_A3.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Outside_A3.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Outside_A4.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Outside_A4.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Outside_A5.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Outside_A5.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Outside_B.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Outside_B.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/Outside_C.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/Outside_C.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/SF_Inside_A4.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/SF_Inside_A4.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/SF_Inside_B.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/SF_Inside_B.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/SF_Inside_C.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/SF_Inside_C.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/SF_Outside_A3.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/SF_Outside_A3.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/SF_Outside_A4.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/SF_Outside_A4.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/SF_Outside_A5.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/SF_Outside_A5.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/SF_Outside_B.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/SF_Outside_B.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/SF_Outside_C.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/SF_Outside_C.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/World_A1.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/World_A1.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/World_A2.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/World_A2.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/World_B.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/World_B.txt
+dist/proyecto038/assets/juegos/j1/img/tilesets/World_C.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/tilesets/World_C.txt
+dist/proyecto038/assets/juegos/j1/img/titles1/WorldMap.rpgmvp
+dist/proyecto038/assets/juegos/j1/img/titles2/Floral.rpgmvp
+dist/proyecto038/assets/juegos/j1/js/main.js
+dist/proyecto038/assets/juegos/j1/js/plugins.js
+dist/proyecto038/assets/juegos/j1/js/rpg_core.js
+dist/proyecto038/assets/juegos/j1/js/rpg_managers.js
+dist/proyecto038/assets/juegos/j1/js/rpg_objects.js
+dist/proyecto038/assets/juegos/j1/js/rpg_scenes.js
+dist/proyecto038/assets/juegos/j1/js/rpg_sprites.js
+dist/proyecto038/assets/juegos/j1/js/rpg_windows.js
+dist/proyecto038/assets/juegos/j1/js/libs/fpsmeter.js
+dist/proyecto038/assets/juegos/j1/js/libs/iphone-inline-video.browser.js
+dist/proyecto038/assets/juegos/j1/js/libs/lz-string.js
+dist/proyecto038/assets/juegos/j1/js/libs/pixi-picture.js
+dist/proyecto038/assets/juegos/j1/js/libs/pixi-tilemap.js
+dist/proyecto038/assets/juegos/j1/js/libs/pixi.js
+dist/proyecto038/assets/juegos/j1/js/plugins/AltMenuScreen.js
+dist/proyecto038/assets/juegos/j1/js/plugins/AltSaveScreen.js
+dist/proyecto038/assets/juegos/j1/js/plugins/Community_Basic.js
+dist/proyecto038/assets/juegos/j1/js/plugins/EnemyBook.js
+dist/proyecto038/assets/juegos/j1/js/plugins/GALV_CursorImage.js
+dist/proyecto038/assets/juegos/j1/js/plugins/Galv_NewItemIndication.js
+dist/proyecto038/assets/juegos/j1/js/plugins/Galv_QuestLog.js
+dist/proyecto038/assets/juegos/j1/js/plugins/GALV_TimedMessagePopups.js
+dist/proyecto038/assets/juegos/j1/js/plugins/HIME_EndPhaseTriggers.js
+dist/proyecto038/assets/juegos/j1/js/plugins/ItemBook.js
+dist/proyecto038/assets/juegos/j1/js/plugins/MadeWithMv.js
+dist/proyecto038/assets/juegos/j1/js/plugins/SimpleMsgSideView.js
+dist/proyecto038/assets/juegos/j1/js/plugins/TitleCommandPosition.js
+dist/proyecto038/assets/juegos/j1/js/plugins/upp_minimapPro.js
+dist/proyecto038/assets/juegos/j1/js/plugins/WeaponSkill.js
+dist/proyecto038/assets/juegos/j1/js/plugins/YEP_ClassChangeCore.js
+dist/proyecto038/assets/juegos/j2/package.json
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_A_Gentle_Breeze.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_A_Hero's_Return.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Adventurers.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Altar_of_Darkness.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Ancient_Castle.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Battle_Against_the_Demon.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Battle_to_the_Max.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Battle's_Advent.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Blessed_Waltz.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Cathedral.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Chasing_Fortune.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Childhood_Memories.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Church.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Creeping_Darkness.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Cybercity.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Deserted_Mansion.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Dreamy_Daze.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Endless_Battle.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Fantasy_Forest.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Fountain_of_Solace.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Ice_Labyrinth.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Labyrinth.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Lonely_Departure.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_March_of_the_Tiny_Soldier.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Melee.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Otherworldly_Corridor.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Panic.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Party_at_the_Royal_Palace.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Passage_of_Eternal_Times.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Ruin_Rummage.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Savage_Settlement.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Snow_Town.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Sorrow.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Suspense.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_The_Calm.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_The_Colosseum.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_The_Final_Battle.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Transcending_Memory.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Valley_Village.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/03_Wings_to_the_sky.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Airship.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Battle1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Battle2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/bgm/Battle2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Battle3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Battle4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Battle5.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/bgm/Battle5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Battle6.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Battle7.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/bgm/Battle7.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Battle8.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Castle1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Castle2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Castle3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/chu.mp3
+dist/proyecto038/assets/juegos/j2/audio/bgm/chu.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Dungeon1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Dungeon2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Dungeon3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Dungeon4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Dungeon5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Dungeon6.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Dungeon7.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Dungeon9.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Field1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Field2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Field3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Field4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/fin.mp3
+dist/proyecto038/assets/juegos/j2/audio/bgm/fin.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Mith.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/pre.mp3
+dist/proyecto038/assets/juegos/j2/audio/bgm/Scene1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Scene2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Scene3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Scene4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Scene5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Scene6.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Scene7.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Scene8.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Ship1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Ship2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Ship3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Theme1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Theme2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Theme3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Theme4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Theme5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Theme6.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Town1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Town2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Town3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Town4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Town5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Town6.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Town7.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/Town8.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/VictoryLoop1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgm/VictoryLoop2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/chu.mp3
+dist/proyecto038/assets/juegos/j2/audio/bgs/City.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Clock.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Darkness.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Drips.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Fire.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Fire1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Fire2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Fire3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Night.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/People1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/People2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/pre.mp3
+dist/proyecto038/assets/juegos/j2/audio/bgs/Quake.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Quake2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Rain1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Rain2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Rain3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Rain4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/River.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Sea.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Storm1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Storm2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Waterfall1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Waterfall2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Wave1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Wave2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Wind.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Wind1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Wind2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Wind3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/bgs/Wind4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/chu.mp3
+dist/proyecto038/assets/juegos/j2/audio/me/Curse1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Curse1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Curse2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Curse2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Defeat1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Defeat1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Defeat2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Defeat2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Fanfare1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Fanfare1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Fanfare2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Fanfare2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Fire.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Gameover1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Gameover1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Gameover2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Gameover2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Inn.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Inn.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Item.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Musical1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Musical1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Musical2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Musical2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Musical3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Musical3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Mystery.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Mystery.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Organ.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Organ.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/pre.mp3
+dist/proyecto038/assets/juegos/j2/audio/me/Shock1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Shock1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Shock2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Shock2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Victory1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Victory1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/me/Victory2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/me/Victory2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Absorb1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Absorb1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Absorb2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Absorb2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Applause1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Applause1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Applause2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Applause2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Attack1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Attack1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Attack2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Attack2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Attack3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Attack3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Battle1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Battle1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Battle2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Battle2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Battle3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Battle3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Bell1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Bell1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Bell2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Bell2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Bell3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Bell3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Bite.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Blind.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Blind.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Blow1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Blow1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Blow2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Blow2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Blow3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Blow3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Book1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Book1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Book2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Book2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Break.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Break.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Buzzer1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Buzzer1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Buzzer2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Buzzer2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Cancel1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Cancel1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Cancel2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Cancel2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Cat.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Cat.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Chest.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Chest1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Chest1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Chest2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Chest2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/chu.mp3
+dist/proyecto038/assets/juegos/j2/audio/se/Close1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Close1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Close2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Close2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Close3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Close3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Coin.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Coin.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Collapse1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Collapse1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Collapse2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Collapse2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Collapse3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Collapse3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Collapse4.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Collapse4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Computer.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Computer.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Cow.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Cow.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Crash.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Crash.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Crossbow.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Crossbow.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Crow.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Crow.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Cursor1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Cursor1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Cursor2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Cursor2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Damage1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Damage1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Damage2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Damage2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Damage3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Damage3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Damage4.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Damage4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Damage5.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Damage5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Darkness1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Darkness1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Darkness2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Darkness2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Darkness3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Darkness3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Darkness4.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Darkness4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Darkness5.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Darkness5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Decision1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Decision1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Decision2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Decision2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Devil1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Devil1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Devil2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Devil2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Disappointment.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Disappointment.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Dive.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Dive.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Dog.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Dog.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Door1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Door1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Door2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Door2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Door3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Door3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Door4.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Door4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Down1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Down1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Down2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Down2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Earth1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Earth1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Earth2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Earth2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Earth3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Earth3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Earth4.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Earth4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Earth5.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Earth5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Electrocardiogram.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Electrocardiogram.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Equip1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Equip1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Equip2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Equip2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Equip3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Evasion1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Evasion1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Evasion2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Evasion2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Explosion1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Explosion1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Explosion2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Explosion3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Explosion5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Explosion6.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Explosion6.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Fall.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Fall.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Fire1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Fire1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Fire2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Fire2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Fire3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Fire3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Fire4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Fire6.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Flash1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Flash1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Flash2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Flash2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Flash3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Fog1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Frog.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Frog.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Growl.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Growl.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Gun1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Gun1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Gun2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Gun2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Hammer.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Hammer.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Heal1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Heal1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Heal2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Heal2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Heal3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Heal3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Horn.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Horn.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Horse.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Horse.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Ice1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Ice1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Ice2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Ice2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Ice3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Ice3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Ice4.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Ice4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Ice5.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Ice5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Ice8.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Item1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Item1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Item2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Item2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Item3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Item3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Jump1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Jump1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Jump2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Jump2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Key.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Key.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Knock.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Knock.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Laser1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Laser1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Laser2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Laser2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Laugh.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Laugh.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Launch.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Launch.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Leakage.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Leakage.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Liquid.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Liquid.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Load.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Load.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Machine.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Machine.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Magic.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Magic1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Magic1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Magic2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Magic2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Magic3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Magic3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Magic4.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Magic4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Miss.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Miss.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Monster1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Monster1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Monster2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Monster2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Monster3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Monster3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Monster4.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Monster4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Monster5.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Monster5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Move.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Move1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Move1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Move2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Move2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Move3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Move3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Move4.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Move4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Move5.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Move5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Neon.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Neon.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Noise.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Noise.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Open1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Open1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Open2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Open2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Open3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Open3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Open4.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Open4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Open5.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Open5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Paralyze1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Paralyze1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Paralyze2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Paralyze2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Paralyze3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Paralyze3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Parry.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Parry.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Phone.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Phone.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Poison.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Poison.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Pollen.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Pollen.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Powerup.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Powerup.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/pre.mp3
+dist/proyecto038/assets/juegos/j2/audio/se/Push.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Push.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Raise1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Raise1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Raise2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Raise2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Recovery.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Recovery.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Reflection.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Reflection.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Run.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Run.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Saint1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Saint1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Saint2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Saint2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Saint3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Saint3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Saint4.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Saint4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Saint5.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Saint5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Saint7.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Sand.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Sand.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Save.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Save.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Scream.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Scream.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Sheep.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Sheep.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Shop.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Shop1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Shop1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Shop2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Shop2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Shot1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Shot1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Shot2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Shot2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Shot3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Shot3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Silence.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Silence.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Siren.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Siren.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Skill1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Skill1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Skill2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Skill2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Skill3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Skill3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Slash1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Slash1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Slash2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Slash2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Slash3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Slash3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Slash4.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Slash4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Slash5.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Slash5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Slash7.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Sleep.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Sleep.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Sound1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Sound1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Sound2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Sound2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Sound3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Sound3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Splash.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Splash.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Stare.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Stare.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Starlight.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Starlight.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Switch1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Switch1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Switch2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Switch2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Switch3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Switch3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Sword1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Sword1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Sword2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Sword2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Sword3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Sword3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Sword4.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Sword4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Sword5.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Sword5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Teleport.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Teleport.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder4.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder5.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder6.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder6.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder7.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder7.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder8.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder8.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder9.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder9.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder10.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Thunder10.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Transceiver.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Transceiver.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Twine.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Twine.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Up.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Up1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Up1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Up2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Up2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Up3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Up3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Up4.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Up4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Water1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Water1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Water2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Water2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Water3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Water3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Water4.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Water4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Water5.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Water5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Wind1.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Wind1.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Wind2.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Wind2.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Wind3.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Wind3.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Wind4.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Wind4.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Wind5.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Wind5.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Wind6.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Wind6.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Wind7.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Wind7.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Wind8.rpgmvo
+dist/proyecto038/assets/juegos/j2/audio/se/Wolf.rpgmvm
+dist/proyecto038/assets/juegos/j2/audio/se/Wolf.rpgmvo
+dist/proyecto038/assets/juegos/j2/data/_comments.txt
+dist/proyecto038/assets/juegos/j2/data/_log.txt
+dist/proyecto038/assets/juegos/j2/data/_scripts.txt
+dist/proyecto038/assets/juegos/j2/data/Actors.json
+dist/proyecto038/assets/juegos/j2/data/Animations.json
+dist/proyecto038/assets/juegos/j2/data/Armors.json
+dist/proyecto038/assets/juegos/j2/data/Classes.json
+dist/proyecto038/assets/juegos/j2/data/CommonEvents.json
+dist/proyecto038/assets/juegos/j2/data/Enemies.json
+dist/proyecto038/assets/juegos/j2/data/Items.json
+dist/proyecto038/assets/juegos/j2/data/Map001.json
+dist/proyecto038/assets/juegos/j2/data/Map002.json
+dist/proyecto038/assets/juegos/j2/data/Map003.json
+dist/proyecto038/assets/juegos/j2/data/Map004.json
+dist/proyecto038/assets/juegos/j2/data/Map005.json
+dist/proyecto038/assets/juegos/j2/data/Map006.json
+dist/proyecto038/assets/juegos/j2/data/Map007.json
+dist/proyecto038/assets/juegos/j2/data/Map008.json
+dist/proyecto038/assets/juegos/j2/data/Map009.json
+dist/proyecto038/assets/juegos/j2/data/Map010.json
+dist/proyecto038/assets/juegos/j2/data/Map011.json
+dist/proyecto038/assets/juegos/j2/data/Map012.json
+dist/proyecto038/assets/juegos/j2/data/Map013.json
+dist/proyecto038/assets/juegos/j2/data/Map014.json
+dist/proyecto038/assets/juegos/j2/data/Map015.json
+dist/proyecto038/assets/juegos/j2/data/Map016.json
+dist/proyecto038/assets/juegos/j2/data/Map017.json
+dist/proyecto038/assets/juegos/j2/data/Map018.json
+dist/proyecto038/assets/juegos/j2/data/Map019.json
+dist/proyecto038/assets/juegos/j2/data/Map020.json
+dist/proyecto038/assets/juegos/j2/data/Map021.json
+dist/proyecto038/assets/juegos/j2/data/Map022.json
+dist/proyecto038/assets/juegos/j2/data/Map023.json
+dist/proyecto038/assets/juegos/j2/data/Map024.json
+dist/proyecto038/assets/juegos/j2/data/Map025.json
+dist/proyecto038/assets/juegos/j2/data/Map026.json
+dist/proyecto038/assets/juegos/j2/data/Map027.json
+dist/proyecto038/assets/juegos/j2/data/Map028.json
+dist/proyecto038/assets/juegos/j2/data/Map029.json
+dist/proyecto038/assets/juegos/j2/data/Map030.json
+dist/proyecto038/assets/juegos/j2/data/Map031.json
+dist/proyecto038/assets/juegos/j2/data/Map032.json
+dist/proyecto038/assets/juegos/j2/data/Map033.json
+dist/proyecto038/assets/juegos/j2/data/Map034.json
+dist/proyecto038/assets/juegos/j2/data/Map035.json
+dist/proyecto038/assets/juegos/j2/data/Map036.json
+dist/proyecto038/assets/juegos/j2/data/Map037.json
+dist/proyecto038/assets/juegos/j2/data/Map038.json
+dist/proyecto038/assets/juegos/j2/data/Map039.json
+dist/proyecto038/assets/juegos/j2/data/Map040.json
+dist/proyecto038/assets/juegos/j2/data/Map041.json
+dist/proyecto038/assets/juegos/j2/data/Map042.json
+dist/proyecto038/assets/juegos/j2/data/Map043.json
+dist/proyecto038/assets/juegos/j2/data/Map044.json
+dist/proyecto038/assets/juegos/j2/data/Map045.json
+dist/proyecto038/assets/juegos/j2/data/Map046.json
+dist/proyecto038/assets/juegos/j2/data/Map047.json
+dist/proyecto038/assets/juegos/j2/data/Map048.json
+dist/proyecto038/assets/juegos/j2/data/Map049.json
+dist/proyecto038/assets/juegos/j2/data/Map050.json
+dist/proyecto038/assets/juegos/j2/data/Map051.json
+dist/proyecto038/assets/juegos/j2/data/Map052.json
+dist/proyecto038/assets/juegos/j2/data/Map053.json
+dist/proyecto038/assets/juegos/j2/data/Map054.json
+dist/proyecto038/assets/juegos/j2/data/Map055.json
+dist/proyecto038/assets/juegos/j2/data/Map056.json
+dist/proyecto038/assets/juegos/j2/data/Map057.json
+dist/proyecto038/assets/juegos/j2/data/Map058.json
+dist/proyecto038/assets/juegos/j2/data/Map059.json
+dist/proyecto038/assets/juegos/j2/data/Map060.json
+dist/proyecto038/assets/juegos/j2/data/Map061.json
+dist/proyecto038/assets/juegos/j2/data/Map062.json
+dist/proyecto038/assets/juegos/j2/data/Map063.json
+dist/proyecto038/assets/juegos/j2/data/Map064.json
+dist/proyecto038/assets/juegos/j2/data/Map065.json
+dist/proyecto038/assets/juegos/j2/data/Map066.json
+dist/proyecto038/assets/juegos/j2/data/Map067.json
+dist/proyecto038/assets/juegos/j2/data/Map068.json
+dist/proyecto038/assets/juegos/j2/data/Map069.json
+dist/proyecto038/assets/juegos/j2/data/Map070.json
+dist/proyecto038/assets/juegos/j2/data/Map071.json
+dist/proyecto038/assets/juegos/j2/data/Map072.json
+dist/proyecto038/assets/juegos/j2/data/Map073.json
+dist/proyecto038/assets/juegos/j2/data/Map074.json
+dist/proyecto038/assets/juegos/j2/data/Map075.json
+dist/proyecto038/assets/juegos/j2/data/Map076.json
+dist/proyecto038/assets/juegos/j2/data/Map077.json
+dist/proyecto038/assets/juegos/j2/data/Map078.json
+dist/proyecto038/assets/juegos/j2/data/Map079.json
+dist/proyecto038/assets/juegos/j2/data/Map080.json
+dist/proyecto038/assets/juegos/j2/data/Map081.json
+dist/proyecto038/assets/juegos/j2/data/Map082.json
+dist/proyecto038/assets/juegos/j2/data/Map083.json
+dist/proyecto038/assets/juegos/j2/data/Map084.json
+dist/proyecto038/assets/juegos/j2/data/Map085.json
+dist/proyecto038/assets/juegos/j2/data/Map086.json
+dist/proyecto038/assets/juegos/j2/data/Map087.json
+dist/proyecto038/assets/juegos/j2/data/Map088.json
+dist/proyecto038/assets/juegos/j2/data/Map089.json
+dist/proyecto038/assets/juegos/j2/data/Map090.json
+dist/proyecto038/assets/juegos/j2/data/Map091.json
+dist/proyecto038/assets/juegos/j2/data/Map092.json
+dist/proyecto038/assets/juegos/j2/data/Map093.json
+dist/proyecto038/assets/juegos/j2/data/Map094.json
+dist/proyecto038/assets/juegos/j2/data/Map095.json
+dist/proyecto038/assets/juegos/j2/data/Map096.json
+dist/proyecto038/assets/juegos/j2/data/Map097.json
+dist/proyecto038/assets/juegos/j2/data/Map098.json
+dist/proyecto038/assets/juegos/j2/data/Map099.json
+dist/proyecto038/assets/juegos/j2/data/Map100.json
+dist/proyecto038/assets/juegos/j2/data/Map101.json
+dist/proyecto038/assets/juegos/j2/data/Map102.json
+dist/proyecto038/assets/juegos/j2/data/Map103.json
+dist/proyecto038/assets/juegos/j2/data/Map104.json
+dist/proyecto038/assets/juegos/j2/data/Map105.json
+dist/proyecto038/assets/juegos/j2/data/Map106.json
+dist/proyecto038/assets/juegos/j2/data/Map107.json
+dist/proyecto038/assets/juegos/j2/data/Map109.json
+dist/proyecto038/assets/juegos/j2/data/Map110.json
+dist/proyecto038/assets/juegos/j2/data/Map111.json
+dist/proyecto038/assets/juegos/j2/data/Map112.json
+dist/proyecto038/assets/juegos/j2/data/Map113.json
+dist/proyecto038/assets/juegos/j2/data/Map114.json
+dist/proyecto038/assets/juegos/j2/data/Map115.json
+dist/proyecto038/assets/juegos/j2/data/Map116.json
+dist/proyecto038/assets/juegos/j2/data/Map117.json
+dist/proyecto038/assets/juegos/j2/data/Map118.json
+dist/proyecto038/assets/juegos/j2/data/Map119.json
+dist/proyecto038/assets/juegos/j2/data/Map120.json
+dist/proyecto038/assets/juegos/j2/data/Map121.json
+dist/proyecto038/assets/juegos/j2/data/Map122.json
+dist/proyecto038/assets/juegos/j2/data/Map123.json
+dist/proyecto038/assets/juegos/j2/data/Map124.json
+dist/proyecto038/assets/juegos/j2/data/Map125.json
+dist/proyecto038/assets/juegos/j2/data/Map126.json
+dist/proyecto038/assets/juegos/j2/data/Map127.json
+dist/proyecto038/assets/juegos/j2/data/Map128.json
+dist/proyecto038/assets/juegos/j2/data/Map129.json
+dist/proyecto038/assets/juegos/j2/data/Map130.json
+dist/proyecto038/assets/juegos/j2/data/Map131.json
+dist/proyecto038/assets/juegos/j2/data/Map132.json
+dist/proyecto038/assets/juegos/j2/data/Map133.json
+dist/proyecto038/assets/juegos/j2/data/Map134.json
+dist/proyecto038/assets/juegos/j2/data/Map135.json
+dist/proyecto038/assets/juegos/j2/data/Map136.json
+dist/proyecto038/assets/juegos/j2/data/Map137.json
+dist/proyecto038/assets/juegos/j2/data/Map138.json
+dist/proyecto038/assets/juegos/j2/data/Map139.json
+dist/proyecto038/assets/juegos/j2/data/Map140.json
+dist/proyecto038/assets/juegos/j2/data/Map141.json
+dist/proyecto038/assets/juegos/j2/data/Map142.json
+dist/proyecto038/assets/juegos/j2/data/Map143.json
+dist/proyecto038/assets/juegos/j2/data/Map144.json
+dist/proyecto038/assets/juegos/j2/data/Map145.json
+dist/proyecto038/assets/juegos/j2/data/Map146.json
+dist/proyecto038/assets/juegos/j2/data/Map147.json
+dist/proyecto038/assets/juegos/j2/data/Map148.json
+dist/proyecto038/assets/juegos/j2/data/Map149.json
+dist/proyecto038/assets/juegos/j2/data/Map150.json
+dist/proyecto038/assets/juegos/j2/data/Map151.json
+dist/proyecto038/assets/juegos/j2/data/Map152.json
+dist/proyecto038/assets/juegos/j2/data/Map153.json
+dist/proyecto038/assets/juegos/j2/data/Map154.json
+dist/proyecto038/assets/juegos/j2/data/Map155.json
+dist/proyecto038/assets/juegos/j2/data/Map156.json
+dist/proyecto038/assets/juegos/j2/data/Map157.json
+dist/proyecto038/assets/juegos/j2/data/Map158.json
+dist/proyecto038/assets/juegos/j2/data/Map159.json
+dist/proyecto038/assets/juegos/j2/data/Map160.json
+dist/proyecto038/assets/juegos/j2/data/Map161.json
+dist/proyecto038/assets/juegos/j2/data/Map162.json
+dist/proyecto038/assets/juegos/j2/data/Map163.json
+dist/proyecto038/assets/juegos/j2/data/Map164.json
+dist/proyecto038/assets/juegos/j2/data/Map165.json
+dist/proyecto038/assets/juegos/j2/data/Map166.json
+dist/proyecto038/assets/juegos/j2/data/Map167.json
+dist/proyecto038/assets/juegos/j2/data/Map168.json
+dist/proyecto038/assets/juegos/j2/data/Map169.json
+dist/proyecto038/assets/juegos/j2/data/Map170.json
+dist/proyecto038/assets/juegos/j2/data/Map171.json
+dist/proyecto038/assets/juegos/j2/data/MapInfos.json
+dist/proyecto038/assets/juegos/j2/data/Skills.json
+dist/proyecto038/assets/juegos/j2/data/States.json
+dist/proyecto038/assets/juegos/j2/data/System.json
+dist/proyecto038/assets/juegos/j2/data/Tilesets.json
+dist/proyecto038/assets/juegos/j2/data/Troops.json
+dist/proyecto038/assets/juegos/j2/data/Weapons.json
+dist/proyecto038/assets/juegos/j2/fonts/gamefont.css
+dist/proyecto038/assets/juegos/j2/fonts/mplus-1m-regular.ttf
+dist/proyecto038/assets/juegos/j2/icon/icon.png
+dist/proyecto038/assets/juegos/j2/img/animations/Absorb.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Anima (1).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Anima (2).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Anima (3).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Anima (4).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Anima (5).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Anima (6).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Anima.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/ArrowSpecial.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Attack1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Attack2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Attack3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Blow.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Breath.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Claw.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/ClawPhoton.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/ClawSpecial1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/ClawSpecial2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Cure1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Cure2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Cure3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Cure4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Curse.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Darkness1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Darkness2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Darkness3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Darkness4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Darkness5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Earth1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Earth2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Earth3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Earth4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Earth5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Explosion1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Explosion2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Fire1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Fire2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Fire3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Flash.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Gun1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Gun2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Gun3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Heal1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Heal2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Heal4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Hit1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Hit2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/HitFire.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/HitIce.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/HitPhoton.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/HitSpecial1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/HitSpecial2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/HitThunder.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Holy1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Holy2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Holy3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Holy4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Holy5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Howl.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Ice1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Ice2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Ice3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Ice4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Ice5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Laser1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Laser2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Light1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Light2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Light3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Light4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Magic1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Magic2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Meteor.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Mist.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Pollen.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/PreSpecial1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/PreSpecial2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/PreSpecial3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Recovery1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Recovery2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Recovery3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Recovery4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Recovery5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Revival1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Revival2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Robô 1 (1).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Robô 1 (2).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Robô 1 (3).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Robô 1 (4).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Robô 1 (5).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Robô 1 (6).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Robô 1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Slash.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/SlashFire.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/SlashIce.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/SlashPhoton.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/SlashSpecial1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/SlashSpecial2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/SlashSpecial3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/SlashThunder.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Song.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Sonic.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Special1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Special2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Special3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Special4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Special6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Special7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Special8.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/State6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/StateChaos.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/StateDark.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/StateDeath.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/StateDown1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/StateDown2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/StateDown3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/StateParalys.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/StatePoison.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/StateSilent.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/StateSleep.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/StateUp1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/StateUp2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Stick.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/StickPhoton.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/StickSpecial1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/StickSpecial2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/StickSpecial3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Sword1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Thunder1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Thunder2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Thunder3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Thunder4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Thunder5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Water1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Water2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Water3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Water4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Water5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Wind1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Wind2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Wind3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Wind4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/animations/Wind5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Castle1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Castle2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Clouds.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Cobblestones1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Cobblestones2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Cobblestones3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Cobblestones4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Cobblestones5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/CobblestonesPool.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Crystal.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/DarkSpace.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/DecorativeTile.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/DemonCastle1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/DemonCastle2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/DemonicWorld.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Desert.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Dirt1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Dirt2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/DirtField.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/FaceTile.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Factory.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Grassland.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/GrassMaze.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/GrassMazePool.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/IceCave.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/InBody.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Lava1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Lava2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/LavaCave.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Meadow.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/PoisonSwamp.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Road1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Road2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Road3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/RockCave.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Ruins1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Ruins2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Ruins3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Ruins4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Ruins5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Sand.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Ship.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Sky.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Snowfield.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Tent.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Translucent.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Wasteland.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/WireMesh.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Wood1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks1/Wood2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Brick.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Bridge.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Castle1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Castle2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Castle3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Cliff.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Clouds.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Crystal.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/DarkSpace.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/DemonCastle1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/DemonCastle2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/DemonCastle3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/DemonicWorld.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Desert.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/DirtCave.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Forest.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Fort1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Fort2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Grassland.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/GrassMaze.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/IceCave.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/IceMaze.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/InBody.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Lava.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/LavaCave.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Metal.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Mine.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/PoisonSwamp.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Port.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/RockCave.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Room1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Room2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Room3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Ruins1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Ruins2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Ship.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Sky.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Snowfield.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Stone1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Stone2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Stone3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Temple.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Tent.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Tower.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Town1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Town2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Town3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Town4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Town5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/battlebacks2/Wasteland.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!$chara-bedpos.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!$chara-taore.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!$Gate1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!$Gate2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!$SF_Gate1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!$SF_Gate2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!$SF_Gate3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!Chest.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!Crystal.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!Crystal2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!Door1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!Door2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!Door3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!Door22.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!Flame.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!Hexagram.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!Other1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!Other2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!Other3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!SF_Chest.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!SF_Door1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!SF_Door2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!SF_Switch1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!Switch1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/!Switch2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/[VX-2K]-air.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/[VX-2K]-ffch.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/[VX-2K]-vehicle2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (1).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (3).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (9).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (37).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (42).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (44).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (45).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (50).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (60).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (62).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (63).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (64).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (67).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (69).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (70).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (120).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (121).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (123).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (125).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (126).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (127).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (128).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (137).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (165).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (192).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (204).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (215).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (229).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (235).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (242).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (254).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (263).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (295).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (309).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (327).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (331).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (332).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (351).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (352).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (677).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (686).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (689).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (776).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (777).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (848).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (850).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (862).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (908).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (939).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (940).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (943).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (944).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (977).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (978).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (980).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (981).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1068).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1069).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1070).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1071).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1072).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$Animal (51).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$BigMonster1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$BigMonster2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Actor1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Actor2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Actor3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Animal.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/blog200806.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/blog200812.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Chef.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Damage1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Damage2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Damage3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/dh1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/dot_02_06.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Especiais (1).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Especiais (2).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Especiais.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Evil.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Evil2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/h1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/may_blog.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Monster.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Monster1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/monster3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Nature.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Objetos (1).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Objetos (2).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Objetos (3).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Objetos.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/otros1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/People1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/People2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/People3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/People4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/People5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Personagens (1).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Personagens (2).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Personagens (3).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Personagens (4).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Personagens (5).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Personagens (6).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Personagens (7).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Personagens (8).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Personagens (9).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Personagens (10).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Personagens (11).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Personagens (12).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Personagens (13).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Personagens (14).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Personagens (15).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Personagens.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/SF_Actor1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/SF_Actor2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/SF_Actor3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/SF_Damage1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/SF_Damage2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/SF_Monster.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/SF_People1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/SF_People2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/SF_People3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/SF_Vehicle.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Vehicle.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Xorg1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/Xorg2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/01.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/8.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/9.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/9S_457-_by-Oracle_Angedelamort.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/9S_586-_by-FilsduLoup_Angenoir.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/9S_594-_by-Oracle_Nymphe.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/9S_839-_by-Oracle_Battlers09128-2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/10.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/11.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/12.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/13.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/14.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/15.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/16.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/17.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/18.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/19.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/20.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/21.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/22.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/23.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/24.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/25.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/26.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/27.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/28.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/0029.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/29.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/0030.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/30.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/31.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/0032.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/0036.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/44.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/0052.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/a_728.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/a1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/a2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/a3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/a4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Actor1_3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Actor1_4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Actor1_5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Actor1_6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Actor1_7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Actor2_1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Actor2_2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Actor2_3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Actor2_4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Actor2_5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Actor2_6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Actor3_1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Actor3_2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Actor3_5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Actor3_6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/angel 4 body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Angel.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Assassin.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba001.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba002.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba003.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba004.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba005.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba006.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba012.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba014.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba015.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba016.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba017.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba018.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba019.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba019(2).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba020.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba021.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba024.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba025.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba026.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba027.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba028.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba029.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba030.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba031.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba033.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba035.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba036.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba037.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba038.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba039.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba040.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba041.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba042.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba043.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba044.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba047.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba048.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba049.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba050.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba051.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba052.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba053.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba054.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba055.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba056.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba059.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba060.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba061.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba062.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba063.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba064.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba065.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba066.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba067.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba068.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba070.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba072.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba073.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba074.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba075.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba076.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba077.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba078.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba079.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba080.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba081.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba082.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba083.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba084.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba085.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba086.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba087.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba088.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba089.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba090.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba091.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba092.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba093.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba094.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba095.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba096.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba097.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba098.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba099.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba100.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba101.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba102.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba103.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba104.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba105.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba106.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba107.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba108.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba109.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba110.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba111.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba112.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba113.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba114.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba115.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba116.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba117.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba118.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba119.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba121.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba122.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba123.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba124.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba127.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba128.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba129.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba130.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba131.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba132.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba140.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba141.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba144.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba145.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba146.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba147.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba148.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba149.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba150.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba151.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba152.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba153.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba154.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba155.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba156.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba157.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba158.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba159.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba160.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba161.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba162.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba163.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba164.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba165.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba166.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba167.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba168.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba169.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba170.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba171.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba174.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba175.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba176.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba177.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba178.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba179.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/ba180.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/barekutoa.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Bat.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Battler1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Battler3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Battler4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Battler5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Battler6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Battler8.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Battler9.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Battler9~0.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Battlers09130.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Battlers09131.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Behemoth.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg1a[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg7[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg10[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg11a[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg12.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg12[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg13[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg15b[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg17.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg31[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg32[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg33a[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg34a[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/briku2[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp009.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp010.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp013.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp053[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp072[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp075[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp079[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp081[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp084[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp084a[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp085[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp086[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp131[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/btoukou.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/bx1.JPG
+dist/proyecto038/assets/juegos/j2/img/enemies/bx1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/bx2.JPG
+dist/proyecto038/assets/juegos/j2/img/enemies/bx3.JPG
+dist/proyecto038/assets/juegos/j2/img/enemies/bx4.JPG
+dist/proyecto038/assets/juegos/j2/img/enemies/Captain.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/catgirl.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Cerberus.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Chimera.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/cientifico.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/civilian 18 body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Cleric  Body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/cleric 1 body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Cleric 2 Body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/cleric 3 body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Cleric 4 Body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/cleric 5 body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Cleric 6 Body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Cleric 7 Body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Cleric A Body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/cloudmons.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Cockatrice.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Copy of Monstre3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/darkangelornecron.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Darklord-final.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Darklord.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Death_battler.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Death.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Demon.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Dragon.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/dragon2.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/e01.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/e02.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/e03.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/e04.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/e05.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/e06.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/e07.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/e08.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/e09.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Earth Elemental Body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Earthspirit.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Efrite.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/espadachin.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/espadachin2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/espadachin3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Evilgod.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/f01.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/f02.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/f03.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/f04.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/f05.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/f06.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/f07.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/f08.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Fairy.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Fanatic.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Fanatic2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Fighter A Body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Fighter B Body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Fighter C Body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Fighter D Body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/fille-chat-lune.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Firespirit.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/fortune.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Fortuneteller 1 Body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/g01.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/GaiaRampage-neo.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Gargoyle.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Garuda.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Gayzer.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Gazer.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/General_f.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/General_m.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Ghost.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/God.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Goddess.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/gr02.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/GS-Alex.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/gun1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/h01.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/h02.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/h03.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Hornet.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Imp.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/indien.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Irongiant.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Jellyfish.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/jinete.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/kh-air-pirate.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh-air-soldier.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh-angel-star.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh-aquatank.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh-bandit.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh-barrel-spider.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh-cloud-model.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh-cloud.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh-donald.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh-goofy.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh-riku.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh-riku2.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh-sephiroth.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh-sora-model.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh-squall.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh-tidus.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh2-auron.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh2-gummi-hunter.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh2-heartless-hammer-body.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh2-heartless-lance-soldier.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh2-heartless-lunar-bandit.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh2-nobody-dragon.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh2-nobody-dusk.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh2-rikku.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh2-riku.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh2-roxas.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh2-seifer.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh2-vivi.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/kh2-yuna.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/l01.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/l02.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/l03.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/l04.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Lamia.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/LightBattler.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/lizarddemon.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/m1.JPG
+dist/proyecto038/assets/juegos/j2/img/enemies/m2.JPG
+dist/proyecto038/assets/juegos/j2/img/enemies/m3.JPG
+dist/proyecto038/assets/juegos/j2/img/enemies/m08.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/m11.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Mage.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/mageanimal.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Mimic.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Minotaur.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/mo08.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/mons pep.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/monscloud.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/mstre_juin2_002.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/mstre_juin2_003.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/mstre_juin2_004.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/mstre_juin2_008.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/mstre_juin2_017.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/mstre_juin2_098.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/mstre_juin2_110.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/mstre_juin2_120.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/mstre_juin2_121.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/mstre_juin2_223.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/mstre_juin2_224.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/mstre_juin2_225.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/mstre_juin2_226.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Nature_Battler.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/nob08.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Ogre.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Orc.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/pécheur.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin202.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin209.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin210.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin215.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin217.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin217(2).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin220.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin229.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin230.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin231.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin232.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin234.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin235.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin238.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin246.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin247.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin249.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin252.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin253.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin261.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin262.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin263.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin270.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin271.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin275.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin276.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/PJ3D_juin277.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Plant.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Puppet.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/queen.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Rat.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/rebransu[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/rebrtp083[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/rebrtp084[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/rebrtp085[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/rebrtp086[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Rogue.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/s-sephiroth.jpg
+dist/proyecto038/assets/juegos/j2/img/enemies/Sahuagin.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/satan.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Scorpion.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/sephform1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Skeleton.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Slime.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Snake.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/soldado.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Soldier.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Sora.JPG
+dist/proyecto038/assets/juegos/j2/img/enemies/Spider.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Succubus.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Swordsman.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/t01.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/t02.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/t03.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/t04.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/u04.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Vampire.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/w01.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/w02.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/w03.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Water Elemental Body.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Waterspirit.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Werewolf.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Willowisp.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Windspirit.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/Zombie.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor8.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor9.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor10.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor11.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor12.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor13.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor14.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor15.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor16.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor17.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor18.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor19.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor20.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor21.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor22.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor25.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Actor26.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Evil.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Faces (1).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Faces (2).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Faces.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Monster.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Monster1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/Nature.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/People1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/People2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/People3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/People4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/faces/People5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/BlueSky.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/Cave.jpg
+dist/proyecto038/assets/juegos/j2/img/parallaxes/Chubby (8).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/CloudySky1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/CloudySky2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/DarkSpace1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/DarkSpace2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/mar2.jpg
+dist/proyecto038/assets/juegos/j2/img/parallaxes/mar2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/maros2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/maros21.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/maros22.bmp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/maros22.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/Mountains1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/Mountains2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/Mountains3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/Mountains4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/Mountains5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/Neblina.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/negro.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/Ocean1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/Ocean2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/Panorama (1).jpg
+dist/proyecto038/assets/juegos/j2/img/parallaxes/Panorama (2).jpg
+dist/proyecto038/assets/juegos/j2/img/parallaxes/Panorama.jpg
+dist/proyecto038/assets/juegos/j2/img/parallaxes/SeaofClouds.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/StarlitSky.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/Sunset.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/parallaxes/vxtitle36.jpg
+dist/proyecto038/assets/juegos/j2/img/parallaxes/vxtitle37.jpg
+dist/proyecto038/assets/juegos/j2/img/parallaxes/vxtitle38-2.jpg
+dist/proyecto038/assets/juegos/j2/img/parallaxes/vxtitle38.jpg
+dist/proyecto038/assets/juegos/j2/img/parallaxes/vxtitle40.jpg
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor1-1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor1-2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor1-3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor1-4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor1-5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor1-6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor1-7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor1-8.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor2-1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor2-2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor2-3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor2-4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor2-5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor2-6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor2-7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor2-8.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor3-1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor3-2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor3-3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor3-4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor3-5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor3-6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor3-7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Actor3-8.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Back.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/blank.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/bush.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/counter.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/dark.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/desu.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Evil-1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Evil-2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Evil-3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Evil-4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Evil-5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Evil-6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Evil-7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Evil-8.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/fogvision.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Frame.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/icon0.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/icon1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/icon2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/level_up_arrow.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/MessageBack.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Monster-1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Monster-2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Monster-3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Monster-4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Monster-5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Monster-6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Monster-7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Monster-8.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Neblina.jpg
+dist/proyecto038/assets/juegos/j2/img/pictures/People1-1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People1-2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People1-3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People1-4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People1-5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People1-6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People1-7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People1-8.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People2-1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People2-2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People2-3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People2-4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People2-5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People2-6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People2-7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People2-8.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People3-1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People3-2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People3-3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People3-4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People3-5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People3-6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People3-7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People3-8.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People4-1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People4-2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People4-3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People4-4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People4-5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People4-6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People4-7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/People4-8.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Player.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Spiritual-1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Spiritual-2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Spiritual-3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Spiritual-4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Spiritual-5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Spiritual-6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Spiritual-7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Spiritual-8.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Title.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/pictures/Window1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor1_1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor1_2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor1_3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor1_4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor1_5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor1_6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor1_7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor1_8.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor2_1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor2_2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor2_3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor2_4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor2_5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor2_6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor2_7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor2_8.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor3_5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor3_6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor3_7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_actors/Actor3_8.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Actor1_3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Actor1_4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Actor1_5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Actor1_6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Actor1_7.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Actor2_1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Actor2_2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Actor2_3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Actor2_4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Actor2_5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Actor2_6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Actor3_1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Actor3_2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Actor3_5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Actor3_6.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Angel.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Assassin.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Bat.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Behemoth.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Captain.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Cerberus.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Chimera.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Cockatrice.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Darklord-final.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Darklord.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Death.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Demon.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Dragon.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Earthspirit.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Evilgod.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Fairy.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Fanatic.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Firespirit.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Gargoyle.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Garuda.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Gazer.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/General_f.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/General_m.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Ghost.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/God.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Goddess.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Hornet.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Imp.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Irongiant.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Jellyfish.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Lamia.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Mage.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Mimic.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Minotaur.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Ogre.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Orc.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Plant.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Puppet.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Rat.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Rogue.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Sahuagin.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Scorpion.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Skeleton.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Slime.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Snake.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Soldier.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Spider.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Succubus.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Swordsman.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Vampire.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Waterspirit.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Werewolf.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Willowisp.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Windspirit.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/sv_enemies/Zombie.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Background.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Balloon.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Battle_Enemy_HP_Layout.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Battle_Enemy_HP_Meter.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Battlestart.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/ButtonSet.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Damage_Number.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Damage.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/desu.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/EXPMeter.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/GameOver (1)1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/GameOver (2).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/GameOver.jpg
+dist/proyecto038/assets/juegos/j2/img/system/GameOver.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/HPMeter.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/IconSet.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/IconSet2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/IconSet3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/IconSetZ.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/IconSetZZ.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/inversion.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Loading.png
+dist/proyecto038/assets/juegos/j2/img/system/MadeWithMv.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/MAPNAME.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Menu_Status_Layout.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Menu_Status_OBJ.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/MeterBack.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/MPMeter.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/MPNAME.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Parameter_Bar_Back.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Parameter_Bar.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Save_Background.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Save_Character_Floor.PNG
+dist/proyecto038/assets/juegos/j2/img/system/Save_Layout01.PNG
+dist/proyecto038/assets/juegos/j2/img/system/Save_Layout02.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Save_Number_01.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Save_Window01.PNG
+dist/proyecto038/assets/juegos/j2/img/system/Save_Window02.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Save_Window03.PNG
+dist/proyecto038/assets/juegos/j2/img/system/Shadow1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Shadow2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/States.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/TileA233.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/TileA412121212.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/TileF.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Transition.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Weapons1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Weapons2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Weapons3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Window 2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Window 3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/system/Window.jpg
+dist/proyecto038/assets/juegos/j2/img/system/Window.png
+dist/proyecto038/assets/juegos/j2/img/system/Window1.jpg
+dist/proyecto038/assets/juegos/j2/img/tilesets/Dungeon_A1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Dungeon_A1.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Dungeon_A2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Dungeon_A2.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Dungeon_A4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Dungeon_A4.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Dungeon_A5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Dungeon_A5.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Dungeon_B.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Dungeon_B.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Dungeon_C.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Dungeon_C.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Inside_A1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Inside_A1.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Inside_A2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Inside_A2.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Inside_A4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Inside_A4.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Inside_A5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Inside_A5.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Inside_A22.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Inside_B.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Inside_B.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Inside_C.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Inside_C.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Outside_A1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Outside_A1.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Outside_A2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Outside_A2.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Outside_A3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Outside_A3.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Outside_A4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Outside_A4.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Outside_A5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Outside_A5.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Outside_B.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Outside_B.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/Outside_C.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/Outside_C.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/SF_Inside_A4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/SF_Inside_A4.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/SF_Inside_B.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/SF_Inside_B.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/SF_Inside_C.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/SF_Inside_C.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/SF_Outside_A3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/SF_Outside_A3.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/SF_Outside_A4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/SF_Outside_A4.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/SF_Outside_A5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/SF_Outside_A5.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/SF_Outside_B.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/SF_Outside_B.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/SF_Outside_C.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/SF_Outside_C.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/VX_TileA1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/VX_TileA2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/VX_TileA3.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/VX_TileA4.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/VX_TileA5.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/VX_TileB.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/VX_TileC.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/VX_TileD.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/VX_TileE.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/World_A1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/World_A1.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/World_A2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/World_A2.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/World_B.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/World_B.txt
+dist/proyecto038/assets/juegos/j2/img/tilesets/World_C.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/tilesets/World_C.txt
+dist/proyecto038/assets/juegos/j2/img/titles1/Book.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/Castle.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/CrossedSwords.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/Crystal.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/DemonCastle.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/Devil.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/Dragon.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/Fountain.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/Gates.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/Hexagram.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/Island.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/Night.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/Plain.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/Sword.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/Title.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/Tower1.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/Tower2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/Universe.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/Volcano.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/World.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles1/WorldMap.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles2/Floral.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/titles2/Medieval.rpgmvp
+dist/proyecto038/assets/juegos/j2/js/main.js
+dist/proyecto038/assets/juegos/j2/js/plugins.js
+dist/proyecto038/assets/juegos/j2/js/rpg_core.js
+dist/proyecto038/assets/juegos/j2/js/rpg_managers.js
+dist/proyecto038/assets/juegos/j2/js/rpg_objects.js
+dist/proyecto038/assets/juegos/j2/js/rpg_scenes.js
+dist/proyecto038/assets/juegos/j2/js/rpg_sprites.js
+dist/proyecto038/assets/juegos/j2/js/rpg_windows.js
+dist/proyecto038/assets/juegos/j2/js/libs/fpsmeter.js
+dist/proyecto038/assets/juegos/j2/js/libs/iphone-inline-video.browser.js
+dist/proyecto038/assets/juegos/j2/js/libs/lz-string.js
+dist/proyecto038/assets/juegos/j2/js/libs/pixi-picture.js
+dist/proyecto038/assets/juegos/j2/js/libs/pixi-tilemap.js
+dist/proyecto038/assets/juegos/j2/js/libs/pixi.js
+dist/proyecto038/assets/juegos/j2/js/plugins/AltMenuScreen.js
+dist/proyecto038/assets/juegos/j2/js/plugins/AltSaveScreen.js
+dist/proyecto038/assets/juegos/j2/js/plugins/Community_Basic.js
+dist/proyecto038/assets/juegos/j2/js/plugins/EnemyBook.js
+dist/proyecto038/assets/juegos/j2/js/plugins/GALV_CursorImage.js
+dist/proyecto038/assets/juegos/j2/js/plugins/Galv_NewItemIndication.js
+dist/proyecto038/assets/juegos/j2/js/plugins/Galv_QuestLog.js
+dist/proyecto038/assets/juegos/j2/js/plugins/GALV_TimedMessagePopups.js
+dist/proyecto038/assets/juegos/j2/js/plugins/HIME_EndPhaseTriggers.js
+dist/proyecto038/assets/juegos/j2/js/plugins/ItemBook.js
+dist/proyecto038/assets/juegos/j2/js/plugins/MadeWithMv.js
+dist/proyecto038/assets/juegos/j2/js/plugins/SimpleMsgSideView.js
+dist/proyecto038/assets/juegos/j2/js/plugins/TitleCommandPosition.js
+dist/proyecto038/assets/juegos/j2/js/plugins/upp_minimapPro.js
+dist/proyecto038/assets/juegos/j2/js/plugins/WeaponSkill.js
+dist/proyecto038/assets/juegos/j2/js/plugins/YEP_ClassChangeCore.js
+dist/proyecto038/assets/juegos/j2/img/characters/[VX-2K]-air.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/[VX-2K]-ffch.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/[VX-2K]-vehicle2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (1).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (3).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (9).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (37).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (42).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (44).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (45).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (50).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (60).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (62).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (63).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (64).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (67).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (69).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (70).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (120).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (121).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (123).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (125).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (126).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (127).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (128).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (137).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (165).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (192).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (204).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (215).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (229).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (235).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (242).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (254).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (263).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (295).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (309).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (327).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (331).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (332).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (351).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (352).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (677).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (686).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (689).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (776).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (777).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (848).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (850).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (862).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (908).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (939).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (940).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (943).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (944).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (977).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (978).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (980).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (981).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1068).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1069).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1070).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1071).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1072).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg1a[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg7[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg10[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg11a[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg12[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg13[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg15b[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg31[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg32[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg33a[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg34a[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/briku2[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp053[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp072[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp075[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp079[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp081[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp084[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp084a[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp085[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp086[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp131[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/rebransu[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/rebrtp083[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/rebrtp084[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/rebrtp085[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/rebrtp086[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/[VX-2K]-air.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/[VX-2K]-ffch.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/[VX-2K]-vehicle2.rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (1).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (3).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (9).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (37).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (42).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (44).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (45).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (50).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (60).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (62).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (63).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (64).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (67).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (69).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (70).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (120).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (121).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (123).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (125).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (126).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (127).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (128).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (137).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (165).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (192).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (204).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (215).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (229).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (235).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (242).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (254).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (263).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (295).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (309).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (327).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (331).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (332).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (351).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (352).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (677).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (686).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (689).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (776).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (777).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (848).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (850).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (862).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (908).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (939).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (940).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (943).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (944).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (977).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (978).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (980).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (981).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1068).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1069).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1070).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1071).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1072).rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg1a[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg7[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg10[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg11a[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg12[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg13[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg15b[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg31[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg32[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg33a[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/borg34a[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/briku2[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp053[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp072[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp075[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp079[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp081[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp084[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp084a[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp085[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp086[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/brtp131[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/rebransu[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/rebrtp083[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/rebrtp084[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/rebrtp085[1].rpgmvp
+dist/proyecto038/assets/juegos/j2/img/enemies/rebrtp086[1].rpgmvp
 src/assets/juegos/j2/index.html
 src/assets/juegos/j2/package.json
 src/assets/juegos/j2/audio/bgm/03_A_Gentle_Breeze.rpgmvo
@@ -2129,185 +4802,4 @@ src/assets/juegos/j2/js/plugins/TitleCommandPosition.js
 src/assets/juegos/j2/js/plugins/upp_minimapPro.js
 src/assets/juegos/j2/js/plugins/WeaponSkill.js
 src/assets/juegos/j2/js/plugins/YEP_ClassChangeCore.js
-src/assets/juegos/j2/img/characters/[VX-2K]-air.rpgmvp
-src/assets/juegos/j2/img/characters/[VX-2K]-ffch.rpgmvp
-src/assets/juegos/j2/img/characters/[VX-2K]-vehicle2.rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (1).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (3).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (9).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (37).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (42).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (44).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (45).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (50).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (60).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (62).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (63).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (64).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (67).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (69).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (70).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (120).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (121).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (123).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (125).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (126).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (127).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (128).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (137).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (165).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (192).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (204).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (215).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (229).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (235).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (242).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (254).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (263).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (295).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (309).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (327).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (331).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (332).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (351).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (352).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (677).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (686).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (689).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (776).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (777).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (848).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (850).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (862).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (908).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (939).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (940).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (943).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (944).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (977).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (978).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (980).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (981).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1068).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1069).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1070).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1071).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1072).rpgmvp
-src/assets/juegos/j2/img/enemies/borg1a[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg7[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg10[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg11a[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg12[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg13[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg15b[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg31[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg32[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg33a[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg34a[1].rpgmvp
-src/assets/juegos/j2/img/enemies/briku2[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp053[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp072[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp075[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp079[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp081[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp084[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp084a[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp085[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp086[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp131[1].rpgmvp
-src/assets/juegos/j2/img/enemies/rebransu[1].rpgmvp
-src/assets/juegos/j2/img/enemies/rebrtp083[1].rpgmvp
-src/assets/juegos/j2/img/enemies/rebrtp084[1].rpgmvp
-src/assets/juegos/j2/img/enemies/rebrtp085[1].rpgmvp
-src/assets/juegos/j2/img/enemies/rebrtp086[1].rpgmvp
-src/assets/juegos/j2/img/characters/[VX-2K]-air.rpgmvp
-src/assets/juegos/j2/img/characters/[VX-2K]-ffch.rpgmvp
-src/assets/juegos/j2/img/characters/[VX-2K]-vehicle2.rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (1).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (3).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (9).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (37).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (42).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (44).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (45).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (50).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (60).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (62).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (63).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (64).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (67).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (69).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (70).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (120).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (121).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (123).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (125).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (126).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (127).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (128).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (137).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (165).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (192).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (204).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (215).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (229).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (235).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (242).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (254).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotao Varios - Sorcer Loko (263).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (295).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (309).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (327).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (331).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (332).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (351).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (352).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (677).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (686).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (689).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (776).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (777).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (848).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (850).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (862).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (908).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (939).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (940).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (943).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (944).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (977).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (978).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (980).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (981).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1068).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1069).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1070).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1071).rpgmvp
-src/assets/juegos/j2/img/characters/$[VX-XP]-Pacotasso Variádos (1072).rpgmvp
-src/assets/juegos/j2/img/enemies/borg1a[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg7[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg10[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg11a[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg12[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg13[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg15b[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg31[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg32[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg33a[1].rpgmvp
-src/assets/juegos/j2/img/enemies/borg34a[1].rpgmvp
-src/assets/juegos/j2/img/enemies/briku2[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp053[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp072[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp075[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp079[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp081[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp084[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp084a[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp085[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp086[1].rpgmvp
-src/assets/juegos/j2/img/enemies/brtp131[1].rpgmvp
-src/assets/juegos/j2/img/enemies/rebransu[1].rpgmvp
-src/assets/juegos/j2/img/enemies/rebrtp083[1].rpgmvp
-src/assets/juegos/j2/img/enemies/rebrtp084[1].rpgmvp
-src/assets/juegos/j2/img/enemies/rebrtp085[1].rpgmvp
-src/assets/juegos/j2/img/enemies/rebrtp086[1].rpgmvp
+
