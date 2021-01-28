@@ -16,6 +16,7 @@ import { AudiovisualesModule } from './audiovisuales/audiovisuales.module';
 import { JuegosModule } from './juegos/juegos.module';
 import { TorneosModule } from './torneos/torneos.module';
 import { ForoModule } from './foro/foro.module';
+import { PerfilModule } from './perfil/perfil.module';
 
 // modulos extra
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -36,6 +37,7 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
     JuegosModule,
     TorneosModule,
     ForoModule,
+    PerfilModule,
     BrowserAnimationsModule
   ],
   providers: [
