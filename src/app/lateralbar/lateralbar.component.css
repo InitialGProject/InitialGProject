@@ -2,7 +2,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 3rem;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   right: 0;
 }
 
@@ -12,11 +12,12 @@
   color: white;
   font-weight: bold;
   padding-top: 2rem;
+  line-height: 2rem;
 }
 
 .barra-lateral a:hover {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   text-shadow: 3px 0px 3px #bb0011;
 }
 
@@ -25,7 +26,7 @@
 }
 
 .barra-lateral .contenido {
-  border: white solid .5px;
+  border: white solid 0.5px;
   background-color: black;
   width: 100%;
   height: 10rem;
