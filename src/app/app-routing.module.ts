@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { InicioComponent } from './inicio/inicio.component';
+
 // Noticias
 import { VistaNoticiaComponent } from './noticias/vista-noticia/vista-noticia.component';
 
@@ -48,6 +50,14 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: '',
+    component: InicioComponent
+  },
+  {
+    path: '**',
+    redirectTo: ''
   }
 ];
 
