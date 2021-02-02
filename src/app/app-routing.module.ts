@@ -56,7 +56,7 @@ const routes: Routes = [
     component: InicioComponent
   },
   {
-    path: '**',
+    path: '#',
     redirectTo: ''
   }
 ];
