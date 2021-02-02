@@ -7,11 +7,24 @@ import { NoticiasService } from '../services/noticias.service';
   styleUrls: ['./vista-noticia.component.scss']
 })
 export class VistaNoticiaComponent implements OnInit {
-  noticias: NoticiasService[];
-  
-  constructor() { }
+  noticia: any;
+
+  constructor(private noticias: NoticiasService) { }
 
   ngOnInit(): void {
+    this.retrieveTutorials();
+  }
+
+  retrieveTutorials(): void {
+    this.noticias.getAll()
+      .subscribe(
+        data => {
+          this.noticia = data;
+          console.log(data);
+        },
+        error => {
+          console.log(error);
+        });
   }
 
 }

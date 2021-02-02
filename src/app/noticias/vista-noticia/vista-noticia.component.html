@@ -11,13 +11,17 @@
 
 <h2 class="my-4">NOTICIAS DEL MUNDO GAMER</h2>
 
-<div *ngFor="let noticia of noticias" class="card h-35">
+<div class="card h-35">
     <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-12">
             <!-- <img class="mat-card-image" src="../../../assets/img/iconoGrupo.png"> -->
         </div>
         <div class="col-lg-9 col-md-9 col-sm-12">
-            <h4 class="card-header">{{noticia.titulo}}</h4>
+            <h4 class="card-header">
+                <ul>
+                    <li *ngFor="let noticias of noticia">{{noticias.titulo}}</li>
+                </ul>
+            </h4>
             <div class="card-body">
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
                     necessitatibus neque.</p>

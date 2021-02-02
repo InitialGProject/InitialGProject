@@ -13,21 +13,20 @@ export class NoticiasService {
 
   constructor() { }
 
-  getAll(): Observable<Noticia[]> {
+  getAll(): Observable<Noticia> {
     return this.get(baseUrl);
   }
 
-  get(id): Observable<Noticia[]> {
+  get(id): Observable<Noticia> {
     return this.get(`${baseUrl}/${id}`);
   }
-
 }
-  
+
 /*
   create(data): Observable<Noticia> {
     return this.post(baseUrl, data);
   }
-  
+
   update(id, data): Observable<Noticia> {
     return this.put(`${baseUrl}/${id}`, data);
   }
@@ -43,4 +42,4 @@ export class NoticiasService {
   findByTitle(titulo): Observable<Noticia> {
     return this.get(`${baseUrl}?title=${titulo}`);
   }
-  */
+*/
