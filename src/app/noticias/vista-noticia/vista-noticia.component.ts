@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+
+import { Noticia } from '../models/noticia';
 import { NoticiasService } from '../services/noticias.service';
 
 @Component({
@@ -7,24 +9,24 @@ import { NoticiasService } from '../services/noticias.service';
   styleUrls: ['./vista-noticia.component.scss']
 })
 export class VistaNoticiaComponent implements OnInit {
-  noticia: any;
 
-  constructor(private noticias: NoticiasService) { }
+  noticias: Noticia;
+
+  constructor(private servicioNoticias: NoticiasService) { }
 
   ngOnInit(): void {
-    this.retrieveTutorials();
+    this.dameNoticias();
   }
 
-  retrieveTutorials(): void {
-    this.noticias.getAll()
+  dameNoticias(): void {
+    this.servicioNoticias.getAll()
       .subscribe(
         data => {
-          this.noticia = data;
+          this.noticias = data;
           console.log(data);
         },
         error => {
           console.log(error);
         });
   }
-
 }

@@ -8,6 +8,7 @@ import { DetalleNoticiaComponent } from './detalle-noticia/detalle-noticia.compo
 
 // modulo de paginacion
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { HttpClientModule } from '@angular/common/http';
 
 const noticias: Routes = [
   {
@@ -25,6 +26,7 @@ const noticias: Routes = [
   imports: [
     CommonModule,
     MatPaginatorModule,
+    HttpClientModule,
     RouterModule.forChild(noticias)
   ],
   exports: [RouterModule]
