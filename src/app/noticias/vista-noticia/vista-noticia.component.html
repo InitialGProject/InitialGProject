@@ -13,18 +13,16 @@
 
 <div class="card h-35">
     <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="col-lg-3 col-md-3 col-sm-12" *ngFor="let noticia of noticias">
+            <img [src]="noticia.imagen">
             <!-- <img class="mat-card-image" src="../../../assets/img/iconoGrupo.png"> -->
         </div>
         <div class="col-lg-9 col-md-9 col-sm-12">
-            <h4 class="card-header">
-                <ul>
-                    <li *ngFor="let noticias of noticia">{{noticias.titulo}}</li>
-                </ul>
+            <h4 class="card-header" *ngFor="let noticia of noticias">
+                {{noticia.titulo}}
             </h4>
-            <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
-                    necessitatibus neque.</p>
+            <div class="card-body" *ngFor="let noticia of noticias">
+                <p class="card-text">{{noticia.descripcion}}</p>
             </div>
             <div class="card-footer">
                 <a href="#" class="btn btn-primary">Learn More</a>

@@ -40,6 +40,6 @@ export class NoticiasService {
   }
 
   findByTitle(titulo): Observable<Noticia> {
-    return this.get(`${baseUrl}?title=${titulo}`);
+    return this.get(`${baseUrl}?titulo=${titulo}`);
   }
 */
