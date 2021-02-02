@@ -7,6 +7,7 @@ import { VistaAudiovisualesComponent } from './vista-audiovisuales/vista-audiovi
 import { VistaStreammingsComponent } from './vista-streammings/vista-streammings.component';
 import { DetalleAudiovisualesComponent } from './detalle-audiovisuales/detalle-audiovisuales.component';
 
+
 // Módulos Extra
 
 
@@ -26,7 +27,7 @@ const audiovisuales: Routes = [
 ];
 
 @NgModule({
-  declarations: [VistaStreammingsComponent, VistaAudiovisualesComponent, DetalleAudiovisualesComponent],
+  declarations: [VistaStreammingsComponent, VistaAudiovisualesComponent, DetalleAudiovisualesComponent ],
   imports: [
     CommonModule,
     RouterModule.forChild(audiovisuales)

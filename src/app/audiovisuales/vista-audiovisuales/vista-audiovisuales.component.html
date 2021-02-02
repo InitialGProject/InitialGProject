@@ -1,57 +1,57 @@
 <input class="video-filter" type="search" placeholder="Buscar en videos" aria-label="Search" (change)="searchFunction($event.target.value)">
 <article class="video">
     <figure>      
-        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[0]}}">
+        <a class="fancybox fancybox.iframe" (click)="openDialog($event.target.src)" >
         <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[0] +'/hqdefault.jpg'}}"></a>          
     </figure>
     <figure>      
-        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[1]}">
+        <a class="fancybox fancybox.iframe"  (click)="openDialog($event.target.src)">
         <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[1] +'/hqdefault.jpg'}}"></a>          
     </figure>
     <figure>      
-        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[2]}}">
+        <a class="fancybox fancybox.iframe" (click)="openDialog($event.target.src)">
         <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[2] +'/hqdefault.jpg'}}"></a>          
     </figure>       
 </article>
 <article class="video">
     <figure>      
-        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[3]}}">
+        <a class="fancybox fancybox.iframe" (click)="openDialog($event.target.src)">
         <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[3] +'/hqdefault.jpg'}}"></a>          
     </figure>
     <figure>      
-        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[4]}">
+        <a class="fancybox fancybox.iframe" (click)="openDialog($event.target.src)">
         <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[4] +'/hqdefault.jpg'}}"></a>          
     </figure>
     <figure>      
-        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[5]}}">
+        <a class="fancybox fancybox.iframe" (click)="openDialog($event.target.src)">
         <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[5] +'/hqdefault.jpg'}}"></a>          
     </figure>       
 </article>
 <article class="video">
     <figure>      
-        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[6]}}">
+        <a class="fancybox fancybox.iframe"(click)="openDialog($event.target.src)">
         <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[6] +'/hqdefault.jpg'}}"></a>          
     </figure>
     <figure>      
-        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[7]}">
+        <a class="fancybox fancybox.iframe" (click)="openDialog($event.target.src)">
         <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[7] +'/hqdefault.jpg'}}"></a>          
     </figure>
     <figure>      
-        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[8]}}">
+        <a class="fancybox fancybox.iframe" (click)="openDialog($event.target.src)">
         <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[8] +'/hqdefault.jpg'}}"></a>          
     </figure>       
 </article>
 <article class="video">
     <figure>      
-        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[9]}}">
+        <a class="fancybox fancybox.iframe" (click)="openDialog($event.target.src)">
         <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[9] +'/hqdefault.jpg'}}"></a>          
     </figure>
     <figure>      
-        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[10]}">
+        <a class="fancybox fancybox.iframe" (click)="openDialog($event.target.src)">
         <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[10] +'/hqdefault.jpg'}}"></a>          
     </figure>
     <figure>      
-        <a class="fancybox fancybox.iframe" href="{{'//www.youtube.com/watch?v=' + response[11]}}">
+        <a class="fancybox fancybox.iframe" (click)="openDialog($event.target.src)">
         <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[11] +'/hqdefault.jpg'}}"></a>          
     </figure>       
 </article>

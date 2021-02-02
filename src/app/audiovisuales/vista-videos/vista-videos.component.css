@@ -1,0 +1,17 @@
+.dialogo, h1 {
+  font-family: "RockWell";
+}
+
+button {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(50%, #534c4c), to(black));
+  background: linear-gradient(to bottom, black 0%, #534c4c 50%, black 100%);
+  color: white;
+}
+
+button:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(50%, limegreen), to(black));
+  background: linear-gradient(to bottom, black 0%, limegreen 50%, black 100%);
+}
+/*# sourceMappingURL=vista-reglamento.component.css.map */

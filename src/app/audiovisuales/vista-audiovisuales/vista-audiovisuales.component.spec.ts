@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { VistaAudiovisualesComponent } from './vista-audiovisuales.component';
 
+
 describe('VistaAudiovisualesComponent', () => {
   let component: VistaAudiovisualesComponent;
   let fixture: ComponentFixture<VistaAudiovisualesComponent>;
@@ -12,6 +13,8 @@ describe('VistaAudiovisualesComponent', () => {
     })
     .compileComponents();
   });
+
+  
 
   beforeEach(() => {
     fixture = TestBed.createComponent(VistaAudiovisualesComponent);
