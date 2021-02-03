@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { Noticia } from '../models/noticia';
@@ -11,14 +12,10 @@ const baseUrl = 'http://localhost:8080/noticias';
 
 export class NoticiasService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   getAll(): Observable<Noticia> {
-    return this.get(baseUrl);
-  }
-
-  get(id): Observable<Noticia> {
-    return this.get(`${baseUrl}/${id}`);
+    return this.http.get<Noticia>(baseUrl);
   }
 }
 

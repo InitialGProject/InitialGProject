@@ -21,6 +21,7 @@
     "@angular/platform-browser": "~11.0.6",
     "@angular/platform-browser-dynamic": "~11.0.6",
     "@angular/router": "~11.0.6",
+    "@angular/youtube-player": "^11.1.1",
     "@types/gapi": "0.0.39",
     "angular-google-gapi": "^1.0.1",
     "jquery": "^3.5.1",

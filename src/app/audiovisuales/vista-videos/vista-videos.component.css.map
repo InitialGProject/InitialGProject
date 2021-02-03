@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,QAAQ,EAAE,EAAE,CAAC;EACT,WAAW,EAAE,UAAU;CAC1B;;AAED,AAAA,MAAM,CAAC;EACH,UAAU,EAAE,6DAA6D;EACzE,KAAK,EAAE,KAAK;CAKf;;AAPD,AAGI,MAHE,AAGD,MAAM,CAAC;EACJ,UAAU,EAAE,oBAAoB;EAChC,UAAU,EAAE,+DAA+D;CAC9E",
-    "sources": [
-        "vista-videos.component.scss"
-    ],
-    "names": [],
-    "file": "vista-videos.component.css"
-}
