@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { HeaderComponent } from './header/header.component';
 import { LateralbarComponent } from './lateralbar/lateralbar.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 // modulos de la pagina
 import { NoticiasModule } from './noticias/noticias.module';
@@ -28,6 +29,7 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
     NavComponent,
     HeaderComponent,
     LateralbarComponent,
+    InicioComponent,
   ],
   imports: [
     BrowserModule,
