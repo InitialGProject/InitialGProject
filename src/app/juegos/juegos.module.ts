@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
+import { LayoutComponent } from './layout/layout.component';
+import { JuegosRoutingModule } from './juegos-routing.module';
 
 // Componentes de Juegos
 import { VistaJuegosComponent } from './vista-juegos/vista-juegos.component';
@@ -8,24 +9,16 @@ import { DetalleJuegosComponent } from './detalle-juegos/detalle-juegos.componen
 
 // Módulos Extra
 
-const juegos: Routes = [
-  {
-    path: 'vista-juegos',
-    component: VistaJuegosComponent
-  },
-  {
-    path: 'detalle-juegos',
-    component: DetalleJuegosComponent
-  }
-];
-
 @NgModule({
-  declarations: [VistaJuegosComponent, DetalleJuegosComponent],
+  declarations: [
+    VistaJuegosComponent, 
+    DetalleJuegosComponent, 
+    LayoutComponent
+  ],
   imports: [
     CommonModule,
-    RouterModule.forChild(juegos)
+    JuegosRoutingModule
   ],
-  exports: [RouterModule]
 })
 
 export class JuegosModule { }

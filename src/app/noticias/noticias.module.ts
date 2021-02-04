@@ -1,35 +1,29 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
+import { LayoutComponent } from './layout/layout.component';
+import { NoticiasRoutingModule } from './noticias-routing.module';
 
-// componentes de noticias
+// Componentes de noticias
 import { VistaNoticiaComponent } from './vista-noticia/vista-noticia.component';
 import { DetalleNoticiaComponent } from './detalle-noticia/detalle-noticia.component';
 
-// modulo de paginacion
+// Modulos extra
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { HttpClientModule } from '@angular/common/http';
 
-const noticias: Routes = [
-  {
-    path: 'vista-noticia',
-    component: VistaNoticiaComponent
-  },
-  {
-    path: 'detalle-noticia',
-    component: DetalleNoticiaComponent
-  }
-];
 
 @NgModule({
-  declarations: [VistaNoticiaComponent, DetalleNoticiaComponent],
+  declarations: [
+    VistaNoticiaComponent, 
+    DetalleNoticiaComponent, 
+    LayoutComponent
+  ],
   imports: [
     CommonModule,
     MatPaginatorModule,
     HttpClientModule,
-    RouterModule.forChild(noticias)
-  ],
-  exports: [RouterModule]
+    NoticiasRoutingModule
+  ]
 })
 
 export class NoticiasModule { }

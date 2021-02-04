@@ -1,24 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
+import { LayoutComponent } from './layout/layout.component';
+import { PerfilRoutingModule } from './perfil-routing.module';
 
 // Componente de Perfil
 import { LoginComponent } from './login/login.component';
 
-const perfil: Routes = [
-  {
-    path: 'login',
-    component: LoginComponent
-  },
-];
-
 @NgModule({
-  declarations: [LoginComponent],
+  declarations: [
+    LoginComponent, 
+    LayoutComponent
+  ],
   imports: [
     CommonModule,
-    RouterModule.forChild(perfil)
+    PerfilRoutingModule
   ],
-  exports: [RouterModule]
 })
 
 export class PerfilModule { }

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
+import { LayoutComponent } from './layout/layout.component';
+import { AudiovisualesRoutingModule } from './audiovisuales-routing.module';
 
 // Componentes de AudioVisuales
 import { VistaAudiovisualesComponent } from './vista-audiovisuales/vista-audiovisuales.component';
@@ -9,25 +10,18 @@ import { VistaStreammingsComponent } from './vista-streammings/vista-streammings
 // Módulos Extra
 import { YouTubePlayerModule } from "@angular/youtube-player";
 
-const audiovisuales: Routes = [
-  {
-    path: 'vista-audiovisules',
-    component: VistaAudiovisualesComponent
-  },
-  {
-    path: 'vista-streammings',
-    component: VistaStreammingsComponent
-  }
-];
-
 @NgModule({
-  declarations: [VistaStreammingsComponent, VistaAudiovisualesComponent ],
+  declarations: [
+    VistaStreammingsComponent, 
+    VistaAudiovisualesComponent, 
+    LayoutComponent 
+  ],
   imports: [
     CommonModule,
     YouTubePlayerModule,
-    RouterModule.forChild(audiovisuales)
+    AudiovisualesRoutingModule
+
   ],
-  exports: [RouterModule]
 })
 
 export class AudiovisualesModule { }
