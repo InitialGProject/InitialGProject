@@ -24,6 +24,10 @@ export class AppComponent {
         });
   }
 
+  onEdit(){
+    window.scrollTo(0,0);
+  }
+
   // opciones = [
   //   "NOTICIAS", "VIDEOS", "JUEGOS", "TORNEOS", "FORO"
   // ];

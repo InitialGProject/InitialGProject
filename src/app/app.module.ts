@@ -22,6 +22,7 @@ import { PerfilModule } from './perfil/perfil.module';
 // modulos extra
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
     HeaderComponent,
     LateralbarComponent,
     InicioComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
