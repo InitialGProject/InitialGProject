@@ -10,7 +10,17 @@ export class VistaJuegosComponent implements OnInit {
 
   constructor() { }
 
+  idj:number;
+  
   ngOnInit() {
+    let iddeljuego;
+
+    $('<a routerLink="juego" >').click(function () {    
+      iddeljuego=$(this).child().id();
+      console.log(iddeljuego);
+    });
+      
+    this.idj=iddeljuego;
     /**
     $('a').each(function () {
       if ($(this).attr('href') == "") {

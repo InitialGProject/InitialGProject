@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input  } from '@angular/core';
 
 @Component({
   selector: 'app-juego',
@@ -9,7 +9,10 @@ export class JuegoComponent implements OnInit {
 
   constructor() { }
 
+  @Input() idj: number;
+  
   ngOnInit(): void {
+  
   }
 
 }
