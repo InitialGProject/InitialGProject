@@ -66,4 +66,32 @@ img {
     background-position: 20vw;
   }
 }
+
+.rainbow-buttonR {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f80ed9), color-stop(49%, #072bfa), color-stop(80%, #c900fc), to(#0849fc));
+  background-image: linear-gradient(90deg, #f80ed9 0%, #072bfa 49%, #c900fc 80%, #0849fc 100%);
+  border-radius: 20px;
+  height: 124px;
+  width: 217px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rainbow-buttonR:after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rainbow-buttonR:hover {
+  -webkit-animation: slidebg 2s linear infinite;
+          animation: slidebg 2s linear infinite;
+}
 /*# sourceMappingURL=vista-juegos.component.css.map */

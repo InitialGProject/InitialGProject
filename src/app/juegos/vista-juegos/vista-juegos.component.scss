@@ -44,3 +44,21 @@ img {
         background-position: 20vw;
     }
 }
+
+.rainbow-buttonR {
+    background-image: linear-gradient(90deg, #f80ed9 0%, #072bfa 49%, #c900fc 80%, #0849fc 100%);
+    border-radius: 20px;
+    height: 124px;
+    width: 217px;
+    display: flex;
+}
+
+.rainbow-buttonR:after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rainbow-buttonR:hover {
+    animation: slidebg 2s linear infinite;
+}

@@ -6,6 +6,7 @@ import { JuegosRoutingModule } from './juegos-routing.module';
 // Componentes de Juegos
 import { VistaJuegosComponent } from './vista-juegos/vista-juegos.component';
 import { DetalleJuegosComponent } from './detalle-juegos/detalle-juegos.component';
+import { JuegoComponent } from './juego/juego.component';
 
 // Módulos Extra
 
@@ -13,7 +14,7 @@ import { DetalleJuegosComponent } from './detalle-juegos/detalle-juegos.componen
   declarations: [
     VistaJuegosComponent, 
     DetalleJuegosComponent, 
-    LayoutComponent
+    LayoutComponent, JuegoComponent
   ],
   imports: [
     CommonModule,
