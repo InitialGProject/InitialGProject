@@ -1,27 +1,94 @@
 h2 {
-  color: #006fbb;
-  margin-left: 3%;
+  color: #b1b1b1;
+  margin: 2% 4%;
+  text-shadow: 2px 1px #bb0011;
 }
 
-.card {
-  margin-bottom: 1%;
-  border: solid 3px #006fbb;
+.span {
+  min-height: 2rem;
+  margin: 1% 4%;
 }
 
-.card .mat-card-image {
-  max-width: 100%;
-  border-right: solid 1px gray;
+.span .caja {
+  background: #f8f8f8;
+  border: 0;
+  margin-bottom: 2%;
+  overflow: hidden;
+  width: 100%;
+  min-width: 15rem;
+  max-width: 100rem;
+  height: auto;
+  border-radius: 3px;
 }
 
-.card .card-header {
-  height: 20%;
+.span .caja a {
+  text-decoration: none;
 }
 
-.card .card-body {
-  height: 60%;
+.span .caja a .titulo {
+  float: right;
+  width: 72.6%;
+  margin-left: 3.2%;
+  margin-top: 0.2%;
+  line-height: 20px;
+  margin-bottom: .3em;
+  font-size: 1.3em;
+  color: black;
+  text-decoration: underline;
 }
 
-.card .card-footer {
-  height: 20%;
+.span .caja a .imagenCaja {
+  float: left;
+  position: relative;
+  width: 100%;
+  max-width: 24.2%;
+}
+
+.span .caja a .imagenCaja img {
+  width: 100%;
+  max-width: 200px;
+  max-height: 150px;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
+
+.span .caja .descaja {
+  float: left;
+  width: 70.6%;
+  margin-left: 3.2%;
+}
+
+.span .caja .descaja .detalle {
+  color: #999;
+  font-size: 0.9em;
+}
+
+.span .caja .descaja .info {
+  font-family: Arial;
+  color: #000;
+  margin-top: .3em;
+  font-size: .95em;
+  line-height: 1.2em;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 992px) {
+  h2 {
+    color: #b1b1b1;
+    margin: 2% 0%;
+    text-shadow: 1px .5px #bb0011;
+  }
+  .span {
+    min-height: 2rem;
+    margin: 0.2% 0%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h2 {
+    font-size: larger;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=vista-noticia.component.css.map */
