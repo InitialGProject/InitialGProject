@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import { Juegos } from '../models/juegos';
+import { JuegosService } from '../services/juegos.service';
 
 @Component({
   selector: 'app-juegos-vista-juegos',
@@ -8,27 +9,23 @@ import * as $ from 'jquery';
 })
 export class VistaJuegosComponent implements OnInit {
 
-  constructor() { }
+  juego: Juegos;
 
-  idj:number;
-  
-  ngOnInit() {
-    let iddeljuego;
+  constructor(private servicioJuegos: JuegosService) { }
 
-    $('<a routerLink="juego" >').click(function () {    
-      iddeljuego=$(this).child().id();
-      console.log(iddeljuego);
-    });
-      
-    this.idj=iddeljuego;
-    /**
-    $('a').each(function () {
-      if ($(this).attr('href') == "") {
-        $(this).hide();
-      }
-    });
-  **/
+  ngOnInit(): void {
+    this.dameJuegos();
   }
 
-
+  dameJuegos(): void {
+    this.servicioJuegos.getAll()
+      .subscribe(
+        data => {
+          this.juego = data;
+          console.log(data);
+        },
+        error => {
+          console.log(error);
+        });
+  }
 }

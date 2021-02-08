@@ -9,16 +9,19 @@ import { DetalleJuegosComponent } from './detalle-juegos/detalle-juegos.componen
 import { JuegoComponent } from './juego/juego.component';
 
 // Módulos Extra
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     VistaJuegosComponent, 
     DetalleJuegosComponent, 
-    LayoutComponent, JuegoComponent
+    LayoutComponent, 
+    JuegoComponent
   ],
   imports: [
     CommonModule,
-    JuegosRoutingModule
+    JuegosRoutingModule,
+    HttpClientModule
   ],
 })
 
