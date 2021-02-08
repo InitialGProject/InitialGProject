@@ -27,8 +27,8 @@ h2 {
 
             .titulo{
                 float: right;
-                width: 72.6%;
-                margin-left: 3.2%;
+                width: 69.8%;
+                margin: 0% 3%;
                 margin-top: 0.2%;
                 line-height: 20px;
                 margin-bottom: .3em;
@@ -45,7 +45,7 @@ h2 {
 
                 img{
                     width: 100%;
-                    max-width: 200px;
+                    max-width: 250px;
                     max-height: 150px;
 
                     height: auto;
@@ -56,9 +56,10 @@ h2 {
         }
 
         .descaja{
-            float: left;
-            width: 70.6%;
-            margin-left: 3.2%;
+            float: right;
+            width: 69.4%;
+            margin: 0% 3.2%;
+            padding-bottom: 1%;
 
             .detalle{
                 color: #999;
@@ -66,14 +67,15 @@ h2 {
             }
 
             .info{
-                font-family: Arial;
+                // font-family: Arial;
+                text-align: justify;
                 color: #000;
                 margin-top: .3em;
                 font-size: .95em;
                 line-height: 1.2em;
                 // text-overflow: ellipsis;
                 // overflow: hidden;
-                word-wrap: break-word
+                // word-wrap: break-word
             }
         }
     }

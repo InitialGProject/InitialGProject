@@ -27,8 +27,8 @@ h2 {
 
 .span .caja a .titulo {
   float: right;
-  width: 72.6%;
-  margin-left: 3.2%;
+  width: 69.8%;
+  margin: 0% 3%;
   margin-top: 0.2%;
   line-height: 20px;
   margin-bottom: .3em;
@@ -46,7 +46,7 @@ h2 {
 
 .span .caja a .imagenCaja img {
   width: 100%;
-  max-width: 200px;
+  max-width: 250px;
   max-height: 150px;
   height: auto;
   vertical-align: middle;
@@ -54,9 +54,10 @@ h2 {
 }
 
 .span .caja .descaja {
-  float: left;
-  width: 70.6%;
-  margin-left: 3.2%;
+  float: right;
+  width: 69.4%;
+  margin: 0% 3.2%;
+  padding-bottom: 1%;
 }
 
 .span .caja .descaja .detalle {
@@ -65,12 +66,11 @@ h2 {
 }
 
 .span .caja .descaja .info {
-  font-family: Arial;
+  text-align: justify;
   color: #000;
   margin-top: .3em;
   font-size: .95em;
   line-height: 1.2em;
-  word-wrap: break-word;
 }
 
 @media screen and (max-width: 992px) {
