@@ -4,5 +4,6 @@ export interface Noticia {
     entradas_id: number;
     titulo: string;
     descripcion: string;
+    texto: string;
     imagen: string;
 }

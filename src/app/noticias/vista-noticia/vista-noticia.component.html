@@ -1,81 +1,24 @@
-<h2>NOTICIAS DEL MUNDOoOo GAMER</h2>
-
-<!-- 
-<div class="card h-35" *ngFor="let noticia of noticias">
-    <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-12">
-            <img [src]="noticia.imagen">
-            <img class="mat-card-image" src="../../../assets/img/iconoGrupo.png">
-        </div>
-        <div class="col-lg-9 col-md-9 col-sm-12">
-            <h4 class="card-header">
-                {{noticia.titulo}}
-            </h4>
-            <div class="card-body">
-                <p class="card-text">{{noticia.descripcion}}</p>
-            </div>
-            <div class="card-footer">
-                <a routerLink="detalle-noticia" class="btn btn-primary">Learn More</a>
-            </div>
-        </div>
-    </div>
-</div>
--->
+<h2>NOTICIAS DEL MUNDO GAMER</h2>
 
 <div class="span" *ngFor="let noticia of noticias">
     <div class="caja">
         <a routerLink="detalle-noticia">
             <h3 class="titulo">{{noticia.titulo}}</h3>
             <div class="imagenCaja">
-                <img class="" src="./../../../assets/img/noticias/noticia1.jpg" alt="{{noticia.titulo}}">
+                <img class="" src="{{noticia.imagen}}" alt="Imagen Noticia">
             </div>
         </a>
         <div class="descaja">
-            <div class="detalle">Diario JUEGOS - 22/01/2021
+            <div class="detalle">{{noticia.autor_id}} - {{noticia.fecha}}
             </div>
             <div class="info">{{noticia.descripcion}}
             </div>
         </div>
     </div>
 </div>
-
-<div class="span" *ngFor="let noticia of noticias">
-    <div class="caja">
-        <a routerLink="detalle-noticia">
-            <h3 class="titulo">{{noticia.titulo}}</h3>
-            <div class="imagenCaja">
-                <img class="" src="./../../../assets/img/noticias/noticia1.jpg" alt="{{noticia.titulo}}">
-            </div>
-        </a>
-        <div class="descaja">
-            <div class="detalle">
-            </div>
-            <div class="info">{{noticia.descripcion}}
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="span" *ngFor="let noticia of noticias">
-    <div class="caja">
-        <a routerLink="detalle-noticia">
-            <h3 class="titulo">{{noticia.titulo}}</h3>
-            <div class="imagenCaja">
-                <img class="" src="./../../../assets/img/noticias/noticia1.jpg" alt="{{noticia.titulo}}">
-            </div>
-        </a>
-        <div class="descaja">
-            <div class="detalle">
-            </div>
-            <div class="info">{{noticia.descripcion}}
-            </div>
-        </div>
-    </div>
-</div>
-
 
 <!-- <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 15, 20]"></mat-paginator> -->
-<nav aria-label="Page navigation example">
+<!-- <nav aria-label="Page navigation example">
     <ul class="pagination">
         <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
         <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -83,4 +26,4 @@
         <li class="page-item"><a class="page-link" href="#">3</a></li>
         <li class="page-item"><a class="page-link" href="#">Next</a></li>
     </ul>
-</nav>
+</nav> -->
