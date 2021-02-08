@@ -1,1 +1,24 @@
-<p>torneo-retro works!</p>
+<h2>TORNEOS DE VIDEOJUEGOS RETRO - INITIALG</h2>
+
+<div class="card" *ngFor="let torneo of torneos">
+    <div class="row">
+        <div class="imagenCaja col-lg-3 col-md-3 col-sm-12">
+            <img [src]="torneo.imagen">
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-12">
+            <h4 class="card-header">
+                {{torneo.titulo}}
+            </h4>
+            <div class="card-body">
+                <p class="card-text">{{torneo.fechaInicio}} - {{torneo.fechaFin}}</p>
+                <p class="card-text">{{torneo.descripcion}}</p>
+            </div>
+            <div class="card-footer">
+                <a routerLink="detalle-actual" class="btn btn-primary">Saber Más</a>
+                <a routerLink="/vista-torneos" class="btn btnVuelta">Volver</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 15, 20]"></mat-paginator>

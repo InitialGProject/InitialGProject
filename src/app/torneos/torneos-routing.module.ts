@@ -6,6 +6,7 @@ import { VistaReglamentoComponent } from './vista-reglamento/vista-reglamento.co
 import { CrearTorneosComponent } from './crear-torneos/crear-torneos.component';
 import { TorneoActualComponent } from './torneo-actual/torneo-actual.component';
 import { TorneoRetroComponent } from './torneo-retro/torneo-retro.component';
+import { DetalleRetroComponent } from './torneo-retro/detalle-retro/detalle-retro.component';
 import { RutasComponent } from './rutas/rutas.component';
 
 const torneos: Routes = [
@@ -14,8 +15,9 @@ const torneos: Routes = [
         children: [
             { path: 'torneos', component: VistaTorneosComponent },
             { path: 'crearTorneo', component: CrearTorneosComponent },
-            { path: 'torneoActual', component: TorneoActualComponent },
+            { path: 'torneoActual', component: TorneoActualComponent, },
             { path: 'torneoRetro', component: TorneoRetroComponent },
+            { path: 'detalle-retro', component: DetalleRetroComponent },
             { path: 'vista-reglamento', component: VistaReglamentoComponent }
         ]
     }

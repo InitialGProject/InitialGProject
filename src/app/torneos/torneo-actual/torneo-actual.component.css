@@ -1,1 +1,46 @@
-/* No CSS *//*# sourceMappingURL=torneo-actual.component.css.map */
+h2 {
+  color: #b1b1b1;
+  margin: 2% 4%;
+  text-shadow: 2px 1px #bb0011;
+}
+
+.mat-paginator {
+  display: inline-block;
+  margin: 1%;
+  margin-right: auto;
+  margin-left: auto;
+  background: #818181;
+  border-radius: 5px;
+}
+
+.card {
+  margin: 2%;
+  min-height: 33%;
+}
+
+.btnVuelta {
+  color: black;
+  background-color: gold;
+  font-weight: bolder;
+  font-size: large;
+  font-family: "RockWell";
+  margin-right: 0%;
+  margin-left: 9.25%;
+  margin-bottom: 0%;
+}
+
+.imagenCaja {
+  float: left;
+  position: relative;
+  width: 100%;
+  max-width: 24.2%;
+}
+
+.imagenCaja img {
+  width: 112%;
+  max-height: 222px;
+  height: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+/*# sourceMappingURL=torneo-actual.component.css.map */

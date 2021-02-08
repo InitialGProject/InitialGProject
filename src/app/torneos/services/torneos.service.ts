@@ -1,9 +1,52 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+import { Torneos } from '../models/torneos';
+import { ParticipantesTorneo } from '../models/participantes-torneo';
+
+const torneos = 'http://localhost:8080/torneos';
+const participantes = 'http://localhost:8080/participantestorneos';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class TorneosService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  getTorneos(): Observable<Torneos> {
+    return this.http.get<Torneos>(torneos);
+  }
+
+  getParticipantes(): Observable<ParticipantesTorneo> {
+    return this.http.get<ParticipantesTorneo>(participantes);
+  }
+
+  filtroCategorias(categoria: string): Observable<Torneos> {
+    return this.http.get<Torneos>(`${torneos}?CategoriaDesc=${categoria}`);
+  }
 }
+
+/*
+  create(data): Observable<Noticia> {
+    return this.post(baseUrl, data);
+  }
+
+  update(id, data): Observable<Noticia> {
+    return this.put(`${baseUrl}/${id}`, data);
+  }
+
+  delete(id): Observable<Noticia> {
+    return this.delete(`${baseUrl}/${id}`);
+  }
+
+  deleteAll(): Observable<Noticia> {
+    return this.delete(baseUrl);
+  }
+
+  findByTitle(titulo): Observable<Noticia> {
+    return this.get(`${baseUrl}?titulo=${titulo}`);
+  }
+*/
