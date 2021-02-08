@@ -1,83 +1,107 @@
-<label>Buscar vídeos: </label>
-<input class="video-filter" type="search" placeholder="Introduzca nombre de Juego:"
-(change)="searchFunction($event.target.value)">
-
-<div class="container">
-    <div class="row">
-        <youtube-player class="col-md-12 col-lg-6 col-sm-12 col-xs-12"
-        videoId="{{response[0]}}" 
-        suggestedQuality="highres"
-        [height]="250" 
-        [width]="500"></youtube-player>
-        <youtube-player class="col-md-12 col-lg-6 col-sm-12 col-xs-12"
-        videoId="{{response[1]}}"
-        suggestedQuality="highres"
-        [height]="250" 
-        [width]="500"></youtube-player>
-    </div>
-
-    <div class="row">
-        <youtube-player class="col-md-12 col-lg-6 col-sm-12 col-xs-12"
-        videoId="{{response[2]}}" 
-        suggestedQuality="highres"
-        [height]="250" 
-        [width]="500"></youtube-player>
-        <youtube-player class="col-md-12 col-lg-6 col-sm-12 col-xs-12"
-        videoId="{{response[3]}}"
-        suggestedQuality="highres"
-        [height]="250" 
-        [width]="500"></youtube-player>
-    </div>
-
-    <div class="row">
-        <youtube-player class="col-md-12 col-lg-6 col-sm-12 col-xs-12"
-        videoId="{{response[4]}}" 
-        suggestedQuality="highres"
-        [height]="250" 
-        [width]="500"></youtube-player>
-        <youtube-player class="col-md-12 col-lg-6 col-sm-12 col-xs-12"
-        videoId="{{response[5]}}"
-        suggestedQuality="highres"
-        [height]="250" 
-        [width]="500"></youtube-player>
-    </div>
-
-    <div class="row">
-        <youtube-player class="col-md-12 col-lg-6 col-sm-12 col-xs-12"
-        videoId="{{response[6]}}" 
-        suggestedQuality="highres"
-        [height]="250" 
-        [width]="500"></youtube-player>
-        <youtube-player class="col-md-12 col-lg-6 col-sm-12 col-xs-12"
-        videoId="{{response[7]}}"
-        suggestedQuality="highres"
-        [height]="250" 
-        [width]="500"></youtube-player>
-    </div>
-
-    <div class="row">
-        <youtube-player class="col-md-12 col-lg-6 col-sm-12 col-xs-12"
-        videoId="{{response[8]}}" 
-        suggestedQuality="highres"
-        [height]="250" 
-        [width]="500"></youtube-player>
-        <youtube-player class="col-md-12 col-lg-6 col-sm-12 col-xs-12"
-        videoId="{{response[9]}}"
-        suggestedQuality="highres"
-        [height]="250" 
-        [width]="500"></youtube-player>
-    </div>
-
-    <div class="row">
-        <youtube-player class="col-md-12 col-lg-6 col-sm-12 col-xs-12"
-        videoId="{{response[10]}}" 
-        suggestedQuality="highres"
-        [height]="250" 
-        [width]="500"></youtube-player>
-        <youtube-player class="col-md-12 col-lg-6 col-sm-12 col-xs-12"
-        videoId="{{response[11]}}"
-        suggestedQuality="highres"
-        [height]="250" 
-        [width]="500"></youtube-player>
-    </div>    
+<input class="video-filter" type="search" placeholder="Buscar en videos" aria-label="Search" (change)="searchFunction($event.target.value)">
+<div *ngIf=mostrarVideos>
+    <article class="video" >
+        <figure>      
+            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)" >
+                <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[0] +'/hqdefault.jpg'}}">
+            </a>                
+        </figure>
+        <h2 class="videoTitle">{{videdoTitles[0]}}</h2>
+        <figure>      
+            <a class="fancybox fancybox.iframe"  (click)="openVideo($event.target.src)">
+            <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[1] +'/hqdefault.jpg'}}"></a>          
+        </figure>
+        <h2 class="videoTitle">{{videdoTitles[1]}}</h2>
+        <figure>      
+            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[2] +'/hqdefault.jpg'}}"></a>          
+        </figure>
+        <h2 class="videoTitle">{{videdoTitles[2]}}</h2>       
+    </article>
+    <article class="video">
+        <figure>      
+            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[3] +'/hqdefault.jpg'}}"></a>          
+        </figure>
+        <h2 class="videoTitle">{{videdoTitles[3]}}</h2>
+        <figure>      
+            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[4] +'/hqdefault.jpg'}}"></a>          
+        </figure>
+        <h2 class="videoTitle">{{videdoTitles[4]}}</h2>
+        <figure>      
+            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[5] +'/hqdefault.jpg'}}"></a>          
+        </figure>       
+        <h2 class="videoTitle">{{videdoTitles[5]}}</h2>
+    </article>
+    <article class="video">
+        <figure>      
+            <a class="fancybox fancybox.iframe"(click)="openVideo($event.target.src)">
+            <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[6] +'/hqdefault.jpg'}}"></a>          
+        </figure>
+        <h2 class="videoTitle">{{videdoTitles[6]}}</h2>
+        <figure>      
+            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[7] +'/hqdefault.jpg'}}"></a>          
+        </figure>
+        <h2 class="videoTitle">{{videdoTitles[7]}}</h2>
+        <figure>      
+            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[8] +'/hqdefault.jpg'}}"></a>          
+        </figure>       
+        <h2 class="videoTitle">{{videdoTitles[8]}}</h2>
+    </article>
+    <article class="video">
+        <figure>      
+            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[9] +'/hqdefault.jpg'}}"></a>          
+        </figure>
+        <h2 class="videoTitle">{{videdoTitles[9]}}</h2>
+        <figure>      
+            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[10] +'/hqdefault.jpg'}}"></a>          
+        </figure>
+        <h2 class="videoTitle">{{videdoTitles[10]}}</h2>
+        <figure>      
+            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[11] +'/hqdefault.jpg'}}"></a>          
+        </figure>       
+        <h2 class="videoTitle">{{videdoTitles[11]}}</h2>
+    </article>
 </div>
+<div *ngIf=videoSeleccionado class="video-displayer">
+    <iframe  
+        width="1280" 
+        height="720" 
+        [src]=videoUrl 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+    >
+    </iframe>
+</div>
+
+
+<script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+  <script src="js/jquery.fancybox.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('.fancybox').fancybox({
+        padding   : 0,
+        maxWidth  : '100%',
+        maxHeight : '100%',
+        width   : 560,
+        height    : 315,
+        autoSize  : true,
+        closeClick  : true,
+        openEffect  : 'elastic',
+        closeEffect : 'elastic'
+      });
+    });
+  </script>
