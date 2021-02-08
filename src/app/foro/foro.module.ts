@@ -8,15 +8,19 @@ import { VistaForoComponent } from './vista-foro/vista-foro.component';
 import { DetalleForoComponent } from './detalle-foro/detalle-foro.component';
 
 // Módulos Extra
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    VistaForoComponent, 
-    DetalleForoComponent, 
+    VistaForoComponent,
+    DetalleForoComponent,
     LayoutComponent
   ],
   imports: [
     CommonModule,
+    MatPaginatorModule,
+    HttpClientModule,
     ForoRoutingModule
   ],
 })

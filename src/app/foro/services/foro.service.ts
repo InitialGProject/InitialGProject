@@ -1,9 +1,48 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+import { Entradas } from '../models/entradas';
+import { Comentarios } from '../models/comentarios';
+
+const entradas = 'http://localhost:8080/entradas';
+const comentarios = 'http://localhost:8080/comentarios';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class ForoService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  getEntradas(): Observable<Entradas> {
+    return this.http.get<Entradas>(entradas);
+  }
+
+  getComentarios(): Observable<Comentarios> {
+    return this.http.get<Comentarios>(comentarios);
+  }
 }
+
+/*
+  create(data): Observable<Noticia> {
+    return this.post(baseUrl, data);
+  }
+
+  update(id, data): Observable<Noticia> {
+    return this.put(`${baseUrl}/${id}`, data);
+  }
+
+  delete(id): Observable<Noticia> {
+    return this.delete(`${baseUrl}/${id}`);
+  }
+
+  deleteAll(): Observable<Noticia> {
+    return this.delete(baseUrl);
+  }
+
+  findByTitle(titulo): Observable<Noticia> {
+    return this.get(`${baseUrl}?titulo=${titulo}`);
+  }
+*/

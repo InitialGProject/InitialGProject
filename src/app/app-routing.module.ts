@@ -44,7 +44,8 @@ const routes: Routes = [
   {
     path: 'vista-torneos',
     component: VistaTorneosComponent
-  }, {
+  }, 
+  {
     path: 'vista-foro',
     component: VistaForoComponent
   },

@@ -1,5 +1,22 @@
+// TITULO PRINCIPAL
+h2 {
+    color: #b1b1b1;
+    margin: 2% 4%;
+    text-shadow: 2px 1px #bb0011;
+}
 
+// Paginador
+.mat-paginator {
+    display: inline-block;
+    margin: 1%;
+    margin-right: auto;
+    margin-left: auto;
+    background: #818181;
+    border-radius: 5px;
+}
 
-p, h5 {
-    color: #818181;
+// Caja de todas las entradas del foro
+.card {
+    margin: 2%;
+    min-height: 33%;
 }

@@ -1,4 +1,20 @@
-p, h5 {
-  color: #818181;
+h2 {
+  color: #b1b1b1;
+  margin: 2% 4%;
+  text-shadow: 2px 1px #bb0011;
+}
+
+.mat-paginator {
+  display: inline-block;
+  margin: 1%;
+  margin-right: auto;
+  margin-left: auto;
+  background: #818181;
+  border-radius: 5px;
+}
+
+.card {
+  margin: 2%;
+  min-height: 33%;
 }
 /*# sourceMappingURL=vista-foro.component.css.map */
