@@ -1,17 +1,41 @@
-img {
-  max-width: 50%;
-  height: auto;
+h2 {
+  color: #b1b1b1;
+  margin: 2% 4%;
+  text-shadow: 2px 1px #bb0011;
+}
+
+.videoTitle {
+  color: white;
 }
 
 .video-filter {
-  width: 100%;
-  margin-top: 1%;
+  width: 96%;
+  margin: 3% 2%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.video-displayer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 2vh;
 }
 
 .video {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-  width: 15%;
+  width: 23%;
   margin: 1%;
   float: left;
 }
@@ -20,6 +44,7 @@ img {
   height: 0;
   padding-bottom: 56.25%;
   overflow: hidden;
+  margin-top: 8%;
 }
 
 .video figure .video figure a {
@@ -60,10 +85,34 @@ img {
   opacity: 0.75;
 }
 
+.videoTitle {
+  font-size: 16px;
+  height: 20px;
+}
+
 .title {
   font-size: 30px;
   color: aqua;
   width: 100%;
   text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+  h2 {
+    font-size: larger;
+    text-align: center;
+  }
+  .video-filter {
+    width: 96%;
+    margin: 0% 2%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h2 {
+    color: #b1b1b1;
+    margin: 2% 0%;
+    text-shadow: 1px .5px #bb0011;
+  }
 }
 /*# sourceMappingURL=vista-audiovisuales.component.css.map */

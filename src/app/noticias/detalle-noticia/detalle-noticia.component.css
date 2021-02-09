@@ -81,5 +81,11 @@ h2 {
     font-size: larger;
     text-align: center;
   }
+  .titulo {
+    font-size: larger;
+  }
+  .info {
+    font-size: large;
+  }
 }
 /*# sourceMappingURL=detalle-noticia.component.css.map */

@@ -1,3 +1,7 @@
+.row {
+  margin: 1% 2%;
+}
+
 .row .cuadro {
   margin: 2% 0;
   height: 100%;
@@ -6,5 +10,26 @@
 .row .responsive-iframe {
   width: 100%;
   height: 19rem;
+}
+
+h2 {
+  color: #b1b1b1;
+  margin: 2% 4%;
+  text-shadow: 2px 1px #bb0011;
+}
+
+@media screen and (max-width: 420px) {
+  h2 {
+    font-size: larger;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h2 {
+    color: #b1b1b1;
+    margin: 2% 0%;
+    text-shadow: 1px .5px #bb0011;
+  }
 }
 /*# sourceMappingURL=vista-streammings.component.css.map */
