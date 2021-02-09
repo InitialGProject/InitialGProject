@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class InicioComponent implements OnInit {
-  noticias = [{ titulo: 'titulo', a: 'AAAAAAAAAAAA' }];
+  noticias = [{ titulo: 'Proyecto InitialG', a: 'Version: beta' }];
 
   constructor() { }
 
