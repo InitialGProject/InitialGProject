@@ -5,8 +5,8 @@ import { Observable } from 'rxjs';
 import { Torneos } from '../models/torneos';
 import { ParticipantesTorneo } from '../models/participantes-torneo';
 
-const torneos = 'http://localhost:8080/torneos';
-const participantes = 'http://localhost:8080/participantestorneos';
+const torneos = 'http://alum3.iesfsl.org/api/torneos';
+const participantes = 'http://alum3.iesfsl.org/api/participantestorneos';
 
 @Injectable({
   providedIn: 'root'
