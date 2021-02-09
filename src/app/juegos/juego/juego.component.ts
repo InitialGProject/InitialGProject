@@ -1,4 +1,9 @@
-import { Component, OnInit, Input  } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Juegos } from '../models/juegos';
+import { JuegosService } from '../services/juegos.service';
+
+//recibir parametros
+import { ActivatedRoute, Params } from '@angular/router';
 
 @Component({
   selector: 'app-juego',
@@ -6,13 +11,27 @@ import { Component, OnInit, Input  } from '@angular/core';
   styleUrls: ['./juego.component.scss']
 })
 export class JuegoComponent implements OnInit {
+  ID: {id: number};
+  juego: Juegos;
 
-  constructor() { }
+  constructor(private servicioJuegos: JuegosService, private rutaActiva: ActivatedRoute) { }
 
-  @Input() idj: number;
-  
   ngOnInit(): void {
-  
+    this.dameJuegos();
   }
 
+  dameJuegos(): void {
+    this.ID = {
+      id: this.rutaActiva.snapshot.params.id
+    };
+    this.servicioJuegos.getAll()
+      .subscribe(
+        data => {
+          this.juego = data;
+          console.log(data);
+        },
+        error => {
+          console.log(error);
+        });
+  }
 }

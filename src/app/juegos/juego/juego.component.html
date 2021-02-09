@@ -1,11 +1,22 @@
 <div>
-    <a routerLink="/vista-juegos">
+    <a routerLink="/vista-juegos/RE">
         <img src="./../../../assets/img/juegos/back.png"/>
         Volver a Juegos
     </a>
-    <div id='eljuego'>{{idj}}</div>
+</div>
+<div *ngFor="let juegos of juego">
+    <div *ngIf="ID.id==juegos.id">
+        <p>{{juegos.titulo}}</p>
+        <p>RUTA: {{juegos.ruta}}</p>
+        <div>
+            <iframe src='https://y8.com/embed/{{juegos.ruta}}' 
+                style="width: 960px; height: 640px; border: 0; text-align: center; padding: 0;"> </iframe>
+        </div>
+    </div>
+    
 </div>
 
+<!-- 
 <div>
     <iframe src="https://y8.com/embed/real_cop_simulator" scrolling="no"
         style="width: 960px; height: 640px; border: 0; text-align: center; padding: 0;"> </iframe>
@@ -20,3 +31,4 @@
     <iframe src="../../assets/juegos/j2/index.html" scrolling="no"
         style="width: 960px; height: 640px; border: 0; text-align: center; padding: 0;"> </iframe>
 </div>
+ -->

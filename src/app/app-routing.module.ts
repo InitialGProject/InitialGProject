@@ -40,6 +40,10 @@ const routes: Routes = [
   {
     path: 'vista-juegos',
     component: VistaJuegosComponent
+  }, 
+  {
+    path: 'vista-juegos/:clase',
+    component: VistaJuegosComponent
   },
   {
     path: 'vista-torneos',
