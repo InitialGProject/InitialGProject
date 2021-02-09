@@ -1,1 +1,17 @@
-<p>detalle-foro works!</p>
+<h2>Comentarios</h2>
+
+<div class="caja" *ngFor="let comentario of comentarios">
+
+    <h1 class="titulo">{{comentario.Titulo}}</h1>
+
+    <div class="descaja">
+
+        <p class="texto">{{comentario.contenido}}</p>
+
+        <div class="detalle">Creado en: {{comentario.creado}}</div>
+
+        <p class="texto">Categoría: <strong>{{comentario.CategoriaDesc}}</strong></p>
+    </div>
+</div>
+
+<a routerLink="/vista-foro" class="btn btn-primary">Ver Entradas</a>
