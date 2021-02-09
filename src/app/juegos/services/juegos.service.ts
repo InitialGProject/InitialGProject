@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 import { Juegos } from '../models/juegos';
 
-const baseUrl = 'http://localhost:8080/juegos';
+const baseUrl = 'http://alum3.iesfsl.org/api/juegos';
 
 @Injectable({
   providedIn: 'root'

@@ -1,25 +1,15 @@
-<section>
     <h2>LISTADO DE JUEGOS ONLINE</h2>
 
-    <div class="vis_jue">
-    <div class="container">
-    <div class="row">
-
-    <div *ngFor="let juegos of juego">                  
-        <div *ngIf="juegos.tipo=='AC'">
-            <div class="v col-lg-4 col-md-6 col-sm-6 col-6">
+    <div class="vis_jue row">
+        <div *ngFor="let juegos of juego">
+            <div *ngIf="juegos.tipo=='AC'" class="v col-lg-4 col-md-6 col-sm-6 col-6">
                 <a href="{{juegos.ruta}}">
-                <div class="rainbow-button">
-                    <img src="{{juegos.imagen}}">
-                    <p>{{juegos.titulo}}</p>
-                </div>
+                    <div class="rainbow-button">
+                        <img src="{{juegos.imagen}}">
+                        <p>{{juegos.titulo}}</p>
+                    </div>
                 </a>
             </div>
         </div>
     </div>
 
-    </div>
-    </div>
-    </div>
-
-</section>
