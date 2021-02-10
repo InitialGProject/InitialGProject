@@ -2,7 +2,7 @@
 
 <div class="span" *ngFor="let noticia of noticias">
     <div class="caja">
-        <a routerLink="detalle-noticia">
+        <a routerLink="detalle-noticia/{{noticia.id}}">
             <h3 class="titulo">{{noticia.titulo}}</h3>
             <div class="imagenCaja">
                 <img class="" src="{{noticia.imagen}}" alt="Imagen Noticia">

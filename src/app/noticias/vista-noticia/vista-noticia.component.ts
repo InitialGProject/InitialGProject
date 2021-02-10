@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Noticia } from '../models/noticia';
 import { NoticiasService } from '../services/noticias.service';
 
