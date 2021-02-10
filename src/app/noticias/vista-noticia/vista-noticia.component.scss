@@ -7,7 +7,6 @@ h2 {
 
 // BLOQUE DE LA NOTICIA
 .span{
-    // float: left;
     min-height: 2rem;
     margin: 1% 4%;
 
@@ -47,7 +46,6 @@ h2 {
                     width: 100%;
                     max-width: 250px;
                     max-height: 150px;
-
                     height: auto;
                     vertical-align: middle;
                     border: 0;
@@ -64,18 +62,16 @@ h2 {
             .detalle{
                 color: #999;
                 font-size: 0.9em;
+                float: inline-end;
+                padding-top: 2%;
             }
 
             .info{
-                // font-family: Arial;
                 text-align: justify;
                 color: #000;
                 margin-top: .3em;
                 font-size: .95em;
                 line-height: 1.2em;
-                // text-overflow: ellipsis;
-                // overflow: hidden;
-                // word-wrap: break-word
             }
         }
     }
@@ -94,10 +90,25 @@ h2 {
     }
 }
 
+// PANTALLA MOVIL
 @media screen and (max-width: 420px) {
 
     h2 {
         font-size: larger;
         text-align: center;
+    }
+
+    .span{
+        .caja{
+            .descaja{
+                text-align: right;
+                width: 93.6%;
+                padding-bottom: 1%;
+                
+                .detalle{
+                    padding-top: 0.5%;
+                }
+            }
+        }
     }
 }

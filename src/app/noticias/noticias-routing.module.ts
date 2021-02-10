@@ -10,7 +10,7 @@ const noticias: Routes = [
         path: 'vista-noticias', component: LayoutComponent,
         children: [
             { path: 'noticias', component: VistaNoticiaComponent },
-            { path: 'detalle-noticia/:id', component: DetalleNoticiaComponent }
+            { path: 'detalle-noticia/:titulo', component: DetalleNoticiaComponent }
         ]
     }
 ];

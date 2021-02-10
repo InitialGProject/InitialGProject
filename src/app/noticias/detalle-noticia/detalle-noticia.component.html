@@ -2,13 +2,14 @@
 
 <div *ngFor="let noticia of noticias">
 
-    <div class="caja" *ngIf="ID.id==noticia.id">
+    <div class="caja" *ngIf="TITULO.titulo==noticia.titulo">
 
-        <h1 class="titulo">
-            <a routerLink="/vista-noticias" style="float: left;">
-                <img src="./../../../assets/img/juegos/back.png" />
-            </a>{{noticia.titulo}}
-        </h1>
+        <div class="detalle row">
+            <a class="col-lg-6 col-md-6 col-sm-12 col-12" routerLink="/vista-noticias">Volver a NOTICIAS</a>
+            <p class="col-lg-6 col-md-6 col-sm-12 col-12">{{noticia.nombre}} - {{noticia.fecha}}</p>
+        </div>
+
+        <h1 class="titulo">{{noticia.titulo}}</h1>
 
         <h3 class="info">{{noticia.descripcion}}</h3>
 
@@ -21,11 +22,9 @@
             <p class="texto">{{noticia.texto}}</p>
 
             <a routerLink="/vista-noticias" style="float: left;">
-                <img src="./../../../assets/img/juegos/back.png" />
+                Volver a NOTICIAS
             </a>
-            <div class="detalle">{{noticia.autor_id}} - {{noticia.fecha}}</div>
 
         </div>
-
     </div>
 </div>

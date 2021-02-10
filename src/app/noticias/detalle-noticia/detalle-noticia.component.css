@@ -7,12 +7,21 @@ h2 {
 .caja {
   background: #f8f8f8;
   border: 2px gray solid;
-  margin: 2% 4%;
+  margin: 2% auto;
   overflow: hidden;
   width: 92%;
   max-width: 90rem;
   border-radius: 5px;
   padding: 2% 5%;
+}
+
+.caja .detalle {
+  color: #999;
+  font-size: 1em;
+}
+
+.caja .detalle p {
+  text-align: right;
 }
 
 .caja .titulo {
@@ -49,18 +58,22 @@ h2 {
   text-align: justify;
 }
 
-.caja .descaja .detalle {
-  color: #999;
-  font-size: 1em;
-  float: right;
-}
-
 .caja .descaja .texto {
   margin-top: 2%;
   color: #000;
   line-height: 1.5em;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #bb0011;
+}
+
+a:hover {
+  color: #333;
 }
 
 @media screen and (max-width: 992px) {
@@ -88,6 +101,9 @@ h2 {
   }
   .info {
     font-size: large;
+  }
+  .caja .detalle p {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=detalle-noticia.component.css.map */

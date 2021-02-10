@@ -7,12 +7,21 @@ h2 {
 .caja{
     background: #f8f8f8;
     border: 2px gray solid;
-    margin: 2% 4%;
+    margin: 2% auto;
     overflow: hidden;
     width: 92%;
     max-width: 90rem;
     border-radius: 5px;
     padding: 2% 5%;
+
+    .detalle{
+        color: #999;
+        font-size: 1em;
+        
+        p{
+            text-align: right;
+        }
+    }
 
     .titulo{
         // float: right;
@@ -29,7 +38,6 @@ h2 {
     }
 
     .imagenCaja{
-        // float: left;
         text-align: center;
         position: relative;
         width: 100%;
@@ -39,7 +47,6 @@ h2 {
             max-width: 500px;
             max-height: 450px;
             border-radius: 3px;
-
             height: auto;
             vertical-align: middle;
             border: 0;
@@ -50,12 +57,6 @@ h2 {
         width: 100%;
         text-align: justify;
 
-        .detalle{
-            color: #999;
-            font-size: 1em;
-            float: right;
-        }
-
         .texto{
             margin-top: 2%;
             color: #000;
@@ -64,6 +65,15 @@ h2 {
             overflow: hidden;
             // word-wrap: break-word
         }
+    }
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #bb0011;
+    &:hover{
+        color: #333;
     }
 }
 
@@ -99,4 +109,11 @@ h2 {
         font-size: large;
     }
 
+    .caja{
+        .detalle{ 
+            p{
+                text-align: left;
+            }
+        }
+    }
 }

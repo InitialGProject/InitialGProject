@@ -12,7 +12,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DetalleNoticiaComponent implements OnInit {
 
-  ID: {id:number};
+  TITULO: {titulo:string};
   noticias: Noticia;
 
   constructor(
@@ -25,8 +25,8 @@ export class DetalleNoticiaComponent implements OnInit {
   }
 
   dameNoticias(): void {
-    this.ID = {
-      id:this.rutaActiva.snapshot.params.id
+    this.TITULO = {
+      titulo:this.rutaActiva.snapshot.params.titulo
     }
     this.servicioNoticias.getAll()
       .subscribe(

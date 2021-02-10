@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { Noticia } from '../models/noticia';
 
 const baseUrl = 'http://alum3.iesfsl.org/api/noticias';
+// const baseUrl = 'http://localhost:8080/noticias';
 
 @Injectable({
   providedIn: 'root'

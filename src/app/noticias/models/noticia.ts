@@ -6,4 +6,5 @@ export interface Noticia {
     descripcion: string;
     texto: string;
     imagen: string;
+    nombre: string;
 }
