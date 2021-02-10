@@ -5,4 +5,5 @@ export interface Comentarios {
     creado: Date;
     contenido: string;
     estado: string;
+    nombre: string;
 }

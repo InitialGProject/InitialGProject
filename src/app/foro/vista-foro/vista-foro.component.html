@@ -1,20 +1,11 @@
-<!-- Page Content -->
-<div class="container">
 
   <!-- Page Heading/Breadcrumbs -->
   <h2>Bienvenidos al Foro</h2>
 
   <div class="row">
-
-    <!-- Post Content Column -->
     <div class="card col-lg-7" *ngFor="let entrada of entradas">
 
-      <!-- Date/Time -->
       <p>Publicado en: {{entrada.creado}}</p>
-
-      <hr>
-
-      <!-- Post Content -->
 
       <blockquote class="blockquote">
         <p class="mb-0">{{entrada.contenido}}</p>
@@ -22,14 +13,18 @@
           <cite title="Titulo">{{entrada.titulo}}</cite>
         </footer>
       </blockquote>
-
-      <hr>
+      <div class="comentarios" *ngFor="let comentario of comentarios">
+        <p class="titulo">{{comentario.Titulo}}</p>
+      </div>
 
       <!-- Comments Form -->
       <div class="col-md-4">
-        <a routerLink="detalle-foro" class="btn btn-primary">Comentarios Relacionados</a>
+        <a routerLink="detalle-foro/{{entrada.id}}" class="btn btn-primary">Comentarios Relacionados</a>
       </div>
+
     </div>
+
+
 
     <!-- Sidebar Widgets Column -->
     <div class="col-md-4">
@@ -64,8 +59,8 @@
           </ul>
         </div>
       </div>
+
     </div>
   </div>
-</div>
 
 <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 15, 20]"></mat-paginator>

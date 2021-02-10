@@ -5,8 +5,11 @@ import { Observable } from 'rxjs';
 import { Entradas } from '../models/entradas';
 import { Comentarios } from '../models/comentarios';
 
-const entradas = 'http://alum3.iesfsl.org/api/entradas';
-const comentarios = 'http://alum3.iesfsl.org/api/comentarios';
+// const entradas = 'http://alum3.iesfsl.org/api/entradas';
+// const comentarios = 'http://alum3.iesfsl.org/api/comentarios';
+const entradas = 'http://localhost:8080/entradas';
+const comentarios = 'http://localhost:8080/comentarios';
+
 
 @Injectable({
   providedIn: 'root'

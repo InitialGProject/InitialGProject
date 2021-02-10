@@ -27,9 +27,14 @@ h2 {
         text-align: justify;
 
         .detalle {
-            color: #999;
+            color: #333;
             font-size: 1em;
             float: right;
+        }
+
+        .lineaComentario{
+            background-color: #999;
+            margin: 1%;
         }
 
         .texto {

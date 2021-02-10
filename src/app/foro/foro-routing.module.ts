@@ -10,7 +10,7 @@ const foro: Routes = [
         path: 'vista-foro', component: LayoutComponent,
         children: [
             { path: 'foro', component: VistaForoComponent },
-            { path: 'detalle-foro', component: DetalleForoComponent }
+            { path: 'detalle-foro/:id', component: DetalleForoComponent }
         ]
     }
 ];

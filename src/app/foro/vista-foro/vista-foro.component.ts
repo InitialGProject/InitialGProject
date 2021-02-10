@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Comentarios } from '../models/comentarios';
 
 // Modelo de Entradas
 import { Entradas } from '../models/entradas';
@@ -15,11 +16,14 @@ import { ForoService } from '../services/foro.service';
 export class VistaForoComponent implements OnInit {
 
   entradas: Entradas;
+  comentarios: Comentarios;
 
   constructor(private servicioForo: ForoService) { }
 
   ngOnInit(): void {
     this.dameEntradas();
+    this.dameComentarios();
+
   }
 
   dameEntradas(): void {
@@ -28,6 +32,18 @@ export class VistaForoComponent implements OnInit {
         infoEntrada => {
           this.entradas = infoEntrada;
           console.log(infoEntrada);
+        },
+        error => {
+          console.log(error);
+        });
+  }
+
+  dameComentarios(): void {
+    this.servicioForo.getComentarios()
+      .subscribe(
+        infoComentario => {
+          this.comentarios = infoComentario;
+          console.log(infoComentario);
         },
         error => {
           console.log(error);
