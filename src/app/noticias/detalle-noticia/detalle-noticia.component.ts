@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Noticia } from '../models/noticia';
 import { NoticiasService } from '../services/noticias.service';
 
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 
 
 @Component({
@@ -10,9 +10,10 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './detalle-noticia.component.html',
   styleUrls: ['./detalle-noticia.component.scss']
 })
+
 export class DetalleNoticiaComponent implements OnInit {
 
-  TITULO: {titulo:string};
+  TITULO: { titulo: string };
   noticias: Noticia;
 
   constructor(
@@ -25,9 +26,16 @@ export class DetalleNoticiaComponent implements OnInit {
   }
 
   dameNoticias(): void {
+    
     this.TITULO = {
-      titulo:this.rutaActiva.snapshot.params.titulo
-    }
+      titulo: this.rutaActiva.snapshot.params.titulo
+    };
+
+    this.rutaActiva.params.subscribe(
+      (params: Params) => {
+        this.TITULO.titulo = params.titulo;
+      });
+
     this.servicioNoticias.getAll()
       .subscribe(
         data => {

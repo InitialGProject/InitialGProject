@@ -10,20 +10,31 @@ import { ActivatedRoute, Params } from '@angular/router';
   templateUrl: './juego.component.html',
   styleUrls: ['./juego.component.scss']
 })
+
 export class JuegoComponent implements OnInit {
-  ID: {id: number};
+  ID: { id: number };
   juego: Juegos;
 
-  constructor(private servicioJuegos: JuegosService, private rutaActiva: ActivatedRoute) { }
+  constructor(
+    private servicioJuegos: JuegosService,
+    private rutaActiva: ActivatedRoute
+  ) { }
 
   ngOnInit(): void {
     this.dameJuegos();
   }
 
   dameJuegos(): void {
+
     this.ID = {
       id: this.rutaActiva.snapshot.params.id
     };
+
+    this.rutaActiva.params.subscribe(
+      (params: Params) => {
+        this.ID.id = params.id;
+      });
+
     this.servicioJuegos.getAll()
       .subscribe(
         data => {

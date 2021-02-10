@@ -22,8 +22,6 @@ export class VistaForoComponent implements OnInit {
 
   ngOnInit(): void {
     this.dameEntradas();
-    this.dameComentarios();
-
   }
 
   dameEntradas(): void {
@@ -32,18 +30,6 @@ export class VistaForoComponent implements OnInit {
         infoEntrada => {
           this.entradas = infoEntrada;
           console.log(infoEntrada);
-        },
-        error => {
-          console.log(error);
-        });
-  }
-
-  dameComentarios(): void {
-    this.servicioForo.getComentarios()
-      .subscribe(
-        infoComentario => {
-          this.comentarios = infoComentario;
-          console.log(infoComentario);
         },
         error => {
           console.log(error);

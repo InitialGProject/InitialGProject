@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 
 // Modelo de Comentarios
 import { Comentarios } from '../models/comentarios';
@@ -31,6 +31,7 @@ export class DetalleForoComponent implements OnInit {
   }
 
   dameEntradas(): void {
+
     this.servicioForo.getEntradas()
       .subscribe(
         infoEntrada => {
@@ -43,9 +44,16 @@ export class DetalleForoComponent implements OnInit {
   }
 
   dameComentarios(): void {
+
     this.ID = {
       id: this.rutaActiva.snapshot.params.id
     }
+
+    this.rutaActiva.params.subscribe(
+      (params: Params) => {
+        this.ID.id = params.id;
+      });
+
     this.servicioForo.getComentarios()
       .subscribe(
         infoComentario => {
