@@ -23,6 +23,9 @@ import { PerfilModule } from './perfil/perfil.module';
 // modulos extra
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
+import { JwtInterceptor } from './_helpers/jwt.interceptor';
+import { ErrorInterceptor } from './_helpers/error.interceptor';
+import { AlertComponent } from './_components/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +35,7 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
     LateralbarComponent,
     InicioComponent,
     FooterComponent,
+    AlertComponent,
   ],
   imports: [
     BrowserModule,

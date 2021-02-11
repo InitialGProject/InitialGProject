@@ -2,3 +2,11 @@
     {{noticia.titulo}} <br>
     {{noticia.a}}
 </div>
+
+<h1>Hola {{user.firstName}}!</h1>
+<p>You're logged in.</p>
+<p><a routerLink="/users">Ir a perfil de Usuario</a></p>
+
+<h1>Hola {{user.username}}!</h1>
+<p>You're logged in.</p>
+<p><a routerLink="./../account/login?returnUrl=%2F" (click)="logout()">Ir a perfil de Usuario</a></p>

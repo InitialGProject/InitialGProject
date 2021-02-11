@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { InicioComponent } from './inicio/inicio.component';
+import { AuthGuard } from './_helpers/auth.guard';
 
 // Noticias
 import { VistaNoticiaComponent } from './noticias/vista-noticia/vista-noticia.component';
@@ -23,6 +24,8 @@ import { VistaForoComponent } from './foro/vista-foro/vista-foro.component';
 // Perfil
 import { LoginComponent } from './perfil/login/login.component';
 
+const accountModule = () => import('./account/account.module').then(x => x.AccountModule);
+const usersModule = () => import('./users/users.module').then(x => x.UsersModule);
 
 const routes: Routes = [
   {
@@ -40,7 +43,7 @@ const routes: Routes = [
   {
     path: 'vista-juegos',
     component: VistaJuegosComponent
-  }, 
+  },
   {
     path: 'vista-juegos/:clase',
     component: VistaJuegosComponent
@@ -48,18 +51,24 @@ const routes: Routes = [
   {
     path: 'vista-torneos',
     component: VistaTorneosComponent
-  }, 
+  },
   {
     path: 'vista-foro',
     component: VistaForoComponent
   },
   {
-    path: 'login',
-    component: LoginComponent
+    path: 'users',
+    loadChildren: usersModule,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'account',
+    loadChildren: accountModule
   },
   {
     path: '',
-    component: InicioComponent
+    component: InicioComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: '#',
@@ -70,7 +79,9 @@ const routes: Routes = [
 @NgModule({
   imports: [
     HttpClientModule,
-    RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'enabled'
+    })
   ],
   exports: [RouterModule]
 })
