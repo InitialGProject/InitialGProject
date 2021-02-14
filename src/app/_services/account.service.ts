@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
 import { User } from './../_models/user';
 
 const baseUrl = 'http://alum3.iesfsl.org/api/usuarios';
-// const baseUrl = 'http://localhost:8080/usuarios';
+ //const baseUrl = 'http://localhost:8080/usuarios';
 
 
 @Injectable({ providedIn: 'root' })
@@ -27,7 +27,7 @@ export class AccountService {
   }
 
   login(username, password) {
-    return this.http.get<User>(`${baseUrl}`, { username, password })
+    return this.http.post<User>(`${baseUrl}`, { username, password })
       .pipe(map(user => {
         // store user details and jwt token in local storage to keep user logged in between page refreshes
         localStorage.setItem('user', JSON.stringify(user));
