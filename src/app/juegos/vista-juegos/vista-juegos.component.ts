@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Juegos } from '../models/juegos';
 import { JuegosService } from '../services/juegos.service';
 
+
 //recibir parametros
 import { ActivatedRoute, Params } from '@angular/router';
 

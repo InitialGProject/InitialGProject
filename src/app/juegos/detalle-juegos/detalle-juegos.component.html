@@ -1,14 +1,48 @@
-<div>
-    <a routerLink="/vista-juegos">
-        <img src="./../../../assets/img/juegos/back.png"/>
-        Volver a Juegos
-    </a>
-</div>
-<div>
-    <iframe src="https://y8.com/embed/real_cop_simulator" scrolling="no"
-        style="width: 960px; height: 640px; border: 0; text-align: center; padding: 0;"> </iframe>
-</div>
-<div>
-    <iframe src="https://y8.com/embed/monopoly" scrolling="no"
-        style="width: 960px; height: 640px; border: 0; text-align: center; padding: 0;"> </iframe>
+<h2>DETALLES DEL JUEGO</h2>
+<div *ngFor="let juegos of juego">
+    <div *ngIf="ID.id==juegos.id">
+
+        <div *ngIf="juegos.tipo=='RE'; else AC">
+            <div>
+                <a routerLink="/vista-juegos/RE">
+                    <img src="./../../../assets/img/juegos/back.png"/>
+                    Volver a Juegos Retro
+                </a>
+            </div>
+
+            <a routerLink="/juego/{{juegos.id}}">
+                <img src="./../../../assets/img/juegos/go.png"/>
+                JUGAR A - {{juegos.titulo}}
+            </a>
+                <p>RUTA: {{juegos.ruta}}</p>
+        </div>
+
+        <ng-template #AC>            
+            <div>
+                <a routerLink="/vista-juegos">
+                    <img src="./../../../assets/img/juegos/back.png"/>
+                    Volver a Juegos
+                </a>
+            </div>
+
+            <a href="{{juegos.ruta}}">
+                <div class="rainbow-button">
+                    <img src="./../../../assets/img/juegos/go.png"/>
+                    JUGAR A - {{juegos.titulo}}
+                </div>
+            </a>
+            
+        </ng-template>
+        <div class="datos">
+            <p>NOMBRE: {{juegos.titulo}}</p>
+            <p>DESCIPCION: {{juegos.descipcion}}</p>
+        
+            <div *ngFor="let categorias of categoria">
+                <p>CATEGORIA: {{juegos.categoria_id}} </p>
+                <p>{{categoria.id}}</p>
+            </div>
+            <p>CREADOR: {{juegos.creador}}</p>
+        </div>
+    </div>
+
 </div>

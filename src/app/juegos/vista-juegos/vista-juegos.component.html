@@ -1,32 +1,30 @@
-    <h2>LISTADO DE JUEGOS ONLINE</h2>
-    <div *ngIf="tipo.clase=='RE'; else AC">
-        <div class="vis_jue row">
-            <div *ngFor="let juegos of juego">
-                <div *ngIf="juegos.tipo=='RE'" class="v col-lg-4 col-md-6 col-sm-6 col-6">
-                    <a routerLink="juego/{{juegos.id}}">
-                        <div class="rainbow-button">
-                            <img src="{{juegos.imagen}}">
-                            <p>{{juegos.titulo}}</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <ng-template #AC>
-        <div class="vis_jue row">
-            <div *ngFor="let juegos of juego">
-                <div *ngIf="juegos.tipo=='AC'" class="v col-lg-4 col-md-6 col-sm-6 col-6">
-                    <a href="{{juegos.ruta}}">
-                        <div class="rainbow-button">
-                            <img src="{{juegos.imagen}}">
-                            <p>{{juegos.titulo}}</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-</ng-template>
+<h2>LISTADO DE JUEGOS ONLINE</h2>
+<div class="vis_jue row">
+    <div *ngFor="let juegos of juego">
+        <div *ngIf="tipo.clase=='RE'; else AC">
 
+            <div *ngIf="juegos.tipo=='RE'" class="v col-lg-4 col-md-6 col-sm-6 col-6">
+                <a routerLink="detalle-juegos/{{juegos.id}}">
+                    <div class="rainbow-buttonR">
+                        <img src="{{juegos.imagen}}">
+                        <p>{{juegos.titulo}}</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <ng-template #AC>
+            <div *ngIf="juegos.tipo=='AC'" class="v col-lg-4 col-md-6 col-sm-6 col-6">
+                <a routerLink="detalle-juegos/{{juegos.id}}">
+                    <div class="rainbow-button">
+                        <img src="{{juegos.imagen}}">
+                        <p>{{juegos.titulo}}</p>
+                    </div>
+                </a>
+            </div>
+        </ng-template>
+
+    </div>
+</div>
     
 

@@ -10,11 +10,13 @@ const juegos: Routes = [
     {
         path: 'vista-juegos', component: LayoutComponent,
         children: [
-            { path: 'vista-juegos', component: VistaJuegosComponent },
-            { path: 'juego/:id', component: JuegoComponent },
-            { path: 'RE/juego/:id', component: JuegoComponent },
-            { path: 'detalle-juegos', component: DetalleJuegosComponent }
+            { path: 'detalle-juegos/:id', component: DetalleJuegosComponent },
+            { path: 'RE/detalle-juegos/:id', component: DetalleJuegosComponent }
+
         ]
+    },
+    {
+        path: 'juego/:id', component: JuegoComponent,
     }
 ];
 

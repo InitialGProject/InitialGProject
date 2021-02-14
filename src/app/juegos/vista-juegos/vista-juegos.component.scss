@@ -11,8 +11,6 @@ a {
     color: #fff;
 }
 
-
-
 .rainbow-button {
     background-image: linear-gradient(90deg, #00c0ff 5%, #ffcf00 30%, #fc4f4f 55%, #00c0ff 80%);
     border-radius: 20px;
@@ -48,20 +46,27 @@ a {
 .rainbow-buttonR {
     background-image: linear-gradient(90deg, #f80ed9 0%, #072bfa 49%, #c900fc 70%, #0849fc 90%);
     border-radius: 20px;
+    // height: 12.2rem;
+    // width: 18rem;
+    // display: flex;
     width: 16.2rem;
     height: 10.5rem;
-    margin: 0 auto ;
-    // display: flex;
-}
+    // margin: 0% 2% ;
 
-.rainbow-buttonR:after {
-    // display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    &:hover{
+        animation: slidebg 2s linear infinite;
+    }
 
-.rainbow-buttonR:hover {
-    animation: slidebg 2s linear infinite;
+    img {
+        margin: 2px;
+        // margin-left: 2px;
+        border-radius: 20px;
+        height: 97.5%;
+        width: 98.5%;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+    }
 }
 
 //titulo
