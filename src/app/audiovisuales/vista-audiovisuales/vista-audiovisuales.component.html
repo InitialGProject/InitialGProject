@@ -12,79 +12,73 @@
 <div *ngIf=mostrarVideos>
     <article class="video">
         <figure>
-            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
-                <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[0] +'/hqdefault.jpg'}}">
+            <a class="fancybox fancybox.iframe" routerLink="vistaVideo/{{response[0]}}">
+                <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[0] +'/hqdefault.jpg'}}">                
             </a>
         </figure>
         <h3 class="videoTitle">{{videdoTitles[0]}}</h3>
         <figure>
-            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <a class="fancybox fancybox.iframe" routerLink="vistaVideo/{{response[1]}}">
                 <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[1] +'/hqdefault.jpg'}}"></a>
         </figure>
         <h3 class="videoTitle">{{videdoTitles[1]}}</h3>
         <figure>
-            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
-                <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[3] +'/hqdefault.jpg'}}"></a>
+            <a class="fancybox fancybox.iframe" routerLink="vistaVideo/{{response[2]}}">
+                <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[2] +'/hqdefault.jpg'}}"></a>
         </figure>
         <h3 class="videoTitle">{{videdoTitles[3]}}</h3>
     </article>
     <article class="video">
         <figure>
-            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <a class="fancybox fancybox.iframe" routerLink="vistaVideo/{{response[3]}}">
                 <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[3] +'/hqdefault.jpg'}}"></a>
         </figure>
         <h3 class="videoTitle">{{videdoTitles[3]}}</h3>
         <figure>
-            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <a class="fancybox fancybox.iframe" routerLink="vistaVideo/{{response[4]}}">
                 <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[4] +'/hqdefault.jpg'}}"></a>
         </figure>
         <h3 class="videoTitle">{{videdoTitles[4]}}</h3>
         <figure>
-            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <a class="fancybox fancybox.iframe" routerLink="vistaVideo/{{response[5]}}">
                 <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[5] +'/hqdefault.jpg'}}"></a>
         </figure>
         <h3 class="videoTitle">{{videdoTitles[5]}}</h3>
     </article>
     <article class="video">
         <figure>
-            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <a class="fancybox fancybox.iframe" routerLink="vistaVideo/{{response[6]}}">
                 <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[6] +'/hqdefault.jpg'}}"></a>
         </figure>
         <h3 class="videoTitle">{{videdoTitles[6]}}</h3>
         <figure>
-            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <a class="fancybox fancybox.iframe" routerLink="vistaVideo/{{response[7]}}">
                 <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[7] +'/hqdefault.jpg'}}"></a>
         </figure>
         <h3 class="videoTitle">{{videdoTitles[7]}}</h3>
         <figure>
-            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <a class="fancybox fancybox.iframe" routerLink="vistaVideo/{{response[8]}}">
                 <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[8] +'/hqdefault.jpg'}}"></a>
         </figure>
         <h3 class="videoTitle">{{videdoTitles[8]}}</h3>
     </article>
     <article class="video">
         <figure>
-            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <a class="fancybox fancybox.iframe" routerLink="vistaVideo/{{response[9]}}">
                 <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[9] +'/hqdefault.jpg'}}"></a>
         </figure>
         <h3 class="videoTitle">{{videdoTitles[9]}}</h3>
         <figure>
-            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <a class="fancybox fancybox.iframe" routerLink="vistaVideo/{{response[10]}}">
                 <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[10] +'/hqdefault.jpg'}}"></a>
         </figure>
         <h3 class="videoTitle">{{videdoTitles[10]}}</h3>
         <figure>
-            <a class="fancybox fancybox.iframe" (click)="openVideo($event.target.src)">
+            <a class="fancybox fancybox.iframe" routerLink="vistaVideo/{{response[11]}}">
                 <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[11] +'/hqdefault.jpg'}}"></a>
         </figure>
         <h3 class="videoTitle">{{videdoTitles[11]}}</h3>
     </article>
-</div>
-<div *ngIf=videoSeleccionado class="video-displayer">
-    <iframe width="1380" height="730" [src]=videoUrl frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-    </iframe>
 </div>
 
 
