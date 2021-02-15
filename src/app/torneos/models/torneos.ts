@@ -8,4 +8,6 @@ export interface Torneos {
     descripcion: string;
     fechaInicio: Date;
     fechaFin: Date;
+    CategoriaDesc: string;
+    contenido: string;
 }

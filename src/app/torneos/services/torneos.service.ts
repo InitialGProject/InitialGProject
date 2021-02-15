@@ -24,9 +24,9 @@ export class TorneosService {
     return this.http.get<ParticipantesTorneo>(participantes);
   }
 
-  filtroCategorias(categoria: string): Observable<Torneos> {
+  /* filtroCategorias(categoria: string): Observable<Torneos> {
     return this.http.get<Torneos>(`${torneos}?CategoriaDesc=${categoria}`);
-  }
+  } */
 }
 
 /*

@@ -15,7 +15,7 @@ h2 {
 
 .card {
   margin: 2%;
-  min-height: 33%;
+  min-height: 5%;
 }
 
 .btnVuelta {
@@ -43,4 +43,4 @@ h2 {
   vertical-align: middle;
   border: 0;
 }
-/*# sourceMappingURL=torneo-retro.component.css.map */
+/*# sourceMappingURL=torneo.component.css.map */

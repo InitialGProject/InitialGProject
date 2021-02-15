@@ -1,0 +1,30 @@
+<h2>TORNEOS DE VIDEOJUEGOS - INITIALG</h2>
+
+<div class="span" *ngFor="let torneo of torneos">
+
+    <div class="caja" *ngIf="Categorias.categoria==torneo.CategoriaDesc">
+
+        <div class="detalle row">            
+            <p class="col-lg-6 col-md-6 col-sm-12 col-12">{{torneo.fechaInicio}} - {{torneo.fechaFin}}</p>            
+        </div>
+
+        <h1 class="titulo">{{torneo.titulo}}</h1>
+
+        <div class="imagenCaja">
+            <img [src]="torneo.imagen" alt="Imagen Torneo">
+        </div>
+        
+        <div class="descaja">
+                        
+            <h3 class="info">{{torneo.descripcion}}</h3>
+            <p class="info">{{torneo.contenido}}</p>
+
+            <btn class="btn btn-danger" routerLink="/vista-torneos" style="float: left;">
+                Volver
+            </btn>
+
+        </div>
+    </div>
+</div>
+
+<!-- <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 15, 20]"></mat-paginator> -->
