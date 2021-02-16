@@ -6,29 +6,12 @@
 </div>
 <div *ngFor="let juegos of juego">
     <div *ngIf="ID.id==juegos.id">
-        <p>{{juegos.titulo}}</p>
-        <p>RUTA: {{juegos.ruta}}</p>
+        <h2>DIVIERTETE CON: {{juegos.titulo}}</h2>
+
         <div>
             <iframe [src]='juegos.ruta | safe2'
-                style="width: 960px; height: 640px; border: 0; text-align: center; padding: 0;"> </iframe>
+                style="width: 820px; height: 610px; border: 0; text-align: center; padding: 0;"> </iframe>
         </div>
     </div>
 
 </div>
-
-<!-- 
-<div>
-    <iframe src="https://y8.com/embed/real_cop_simulator" scrolling="no"
-        style="width: 960px; height: 640px; border: 0; text-align: center; padding: 0;"> </iframe>
-</div>
-
-<div>
-    <iframe src="https://y8.com/embed/monopoly" scrolling="no"
-        style="width: 960px; height: 640px; border: 0; text-align: center; padding: 0;"> </iframe>
-</div>
-
-<div>
-    <iframe src="../../assets/juegos/j2/index.html" scrolling="no"
-        style="width: 960px; height: 640px; border: 0; text-align: center; padding: 0;"> </iframe>
-</div>
- -->
