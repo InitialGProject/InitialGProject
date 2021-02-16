@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatDialog } from '@angular/material/dialog';
 
+import { Videos } from '../models/videos';
+import { AudiovisualesService } from '../services/audiovisuales.service';
+import { ActivatedRoute, Params } from '@angular/router';
+
 
 
 let apiKey = "AIzaSyAeoW2rf-X11QTEKKOCgRZ6VZX3vA7xfiU&"
@@ -14,9 +18,17 @@ let word = "&q="
 })
 export class VistaAudiovisualesComponent implements OnInit {
 
-  constructor(public dialog: MatDialog, private sanitizer:DomSanitizer) { }
+  videos: Videos;
+
+  constructor(
+    public dialog: MatDialog, 
+    private sanitizer: DomSanitizer,
+    private servicioVideos: AudiovisualesService,
+    private rutaActiva: ActivatedRoute
+    ) { }
 
   ngOnInit(): void {
+    this.dameVideos();
   }
   videoUrl
   mostrarVideos = true
@@ -36,5 +48,16 @@ export class VistaAudiovisualesComponent implements OnInit {
          this.videdoTitles = titleAux
       })
     })
+  }
+  dameVideos(): void {
+    this.servicioVideos.getVideos()
+      .subscribe(
+        infoTorneo => {
+          this.videos = infoTorneo;
+          console.log(infoTorneo);
+        },
+        error => {
+          console.log(error);
+        });
   }
 }
