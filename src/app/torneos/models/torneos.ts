@@ -10,4 +10,5 @@ export interface Torneos {
     fechaFin: Date;
     CategoriaDesc: string;
     contenido: string;
+    numparticipantes: number;
 }
