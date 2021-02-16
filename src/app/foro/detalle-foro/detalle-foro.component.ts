@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 
-// Modelo de Comentarios
+// Modelos de Entradas y Comentarios del Foro
+import { Entradas } from '../models/entradas';
 import { Comentarios } from '../models/comentarios';
 
-// Servicio de Entradas y sus Comentarios
+// Servicio de Entradas y sus Comentarios del Foro
 import { ForoService } from '../services/foro.service';
-import { Entradas } from '../models/entradas';
 
 @Component({
   selector: 'app-detalle-foro',

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
+// Modelos de Entradas y Comentarios del Foro
 import { Entradas } from '../models/entradas';
 import { Comentarios } from '../models/comentarios';
 
@@ -9,7 +10,6 @@ import { Comentarios } from '../models/comentarios';
  const comentarios = 'http://alum3.iesfsl.org/api/comentarios';
 //const entradas = 'http://localhost:8080/entradas';
 //const comentarios = 'http://localhost:8080/comentarios';
-
 
 @Injectable({
   providedIn: 'root'

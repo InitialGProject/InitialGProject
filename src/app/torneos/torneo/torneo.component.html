@@ -10,16 +10,15 @@
         </div>
 
         <div class="descaja">
-                        
+
             <div class="info">{{torneo.descripcion}}</div>
-            <!-- <p class="info">{{torneo.contenido}}</p> -->
 
             <div class="row">
                 <div class="fecha col-lg-6 col-md-6 col-sm-12 col-12">
                     <strong>FECHA INICIO:</strong> {{torneo.fechaInicio}}
                     <br><strong>FECHA FIN:</strong> {{torneo.fechaFin}}
                 </div>
-                
+
                 <div class="participantes col-lg-6 col-md-6 col-sm-12 col-12">
                     PARTICIPANTES: 23{{torneo.numparticipantes}}
                     <p class="confirmados">CONFIRMADOS: 0</p>
@@ -33,7 +32,11 @@
 
             </div>
         </div>
-
+        
+        Entrada Relacionada: <p class="info">{{torneo.contenido}}</p>
+        <div class="botones">
+            <btn routerLink="../../../vista-foro" class="btn">Ver Entrada</btn>
+        </div>
     </div>
 </div>
 

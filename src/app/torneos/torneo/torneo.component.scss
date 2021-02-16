@@ -42,6 +42,27 @@
         }
     }
 
+    .botones{
+        text-align: left;
+        margin: 2% 0.5%;
+
+        .btn{
+            margin: 0% 5%;
+            background-color: $rojo;
+            color: $blanco;
+            
+            &.checkin{  
+                display: none;
+                background-color: $verde;
+            }
+
+            &:hover{
+                background-color: $negro;
+                color: $blanco;
+            }
+        }
+    }
+
     .descaja{
         float: right;
         width: 62.4%;
