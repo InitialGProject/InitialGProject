@@ -22,10 +22,10 @@ export class JuegoComponent implements OnInit {
 
   ngOnInit(): void {
     this.dameJuegos();
+    this.dameID();
   }
 
-  dameJuegos(): void {
-
+  dameID() {
     this.ID = {
       id: this.rutaActiva.snapshot.params.id
     };
@@ -33,8 +33,9 @@ export class JuegoComponent implements OnInit {
     this.rutaActiva.params.subscribe(
       (params: Params) => {
         this.ID.id = params.id;
-      });
+      });  }
 
+  dameJuegos(): void {
     this.servicioJuegos.getAll()
       .subscribe(
         data => {

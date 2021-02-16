@@ -9,7 +9,7 @@
         <p>{{juegos.titulo}}</p>
         <p>RUTA: {{juegos.ruta}}</p>
         <div>
-            <iframe src='https://y8.com/embed/{{juegos.ruta}}' 
+            <iframe src='{{juegos.ruta|safe2}}' 
                 style="width: 960px; height: 640px; border: 0; text-align: center; padding: 0;"> </iframe>
         </div>
     </div>
