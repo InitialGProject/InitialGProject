@@ -11,6 +11,7 @@ import { NavComponent } from './nav/nav.component';
 import { HeaderComponent } from './header/header.component';
 import { LateralbarComponent } from './lateralbar/lateralbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { AlertComponent } from './_components/alert/alert.component';
 
 // modulos de la pagina
 import { NoticiasModule } from './noticias/noticias.module';
@@ -25,7 +26,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { JwtInterceptor } from './_helpers/jwt.interceptor';
 import { ErrorInterceptor } from './_helpers/error.interceptor';
-import { AlertComponent } from './_components/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { AlertComponent } from './_components/alert/alert.component';
     LateralbarComponent,
     InicioComponent,
     FooterComponent,
-    AlertComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,

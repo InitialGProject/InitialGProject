@@ -1,6 +1,6 @@
 <div>
     <a routerLink="/vista-juegos/RE">
-        <img src="./../../../assets/img/juegos/back.png"/>
+        <img src="./../../../assets/img/juegos/back.png" />
         Volver a Juegos Retro
     </a>
 </div>
@@ -9,11 +9,11 @@
         <p>{{juegos.titulo}}</p>
         <p>RUTA: {{juegos.ruta}}</p>
         <div>
-            <iframe src='{{juegos.ruta|safe2}}' 
+            <iframe [src]='juegos.ruta | safe2'
                 style="width: 960px; height: 640px; border: 0; text-align: center; padding: 0;"> </iframe>
         </div>
     </div>
-    
+
 </div>
 
 <!-- 

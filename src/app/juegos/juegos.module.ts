@@ -9,26 +9,23 @@ import { DetalleJuegosComponent } from './detalle-juegos/detalle-juegos.componen
 import { JuegoComponent } from './juego/juego.component';
 
 // Módulos Extra
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 //Pipe para sanear URL
 import { Safe2Pipe } from './safe2.pipe';
 
-
 @NgModule({
   declarations: [
-    VistaJuegosComponent, 
-    DetalleJuegosComponent, 
-    LayoutComponent, 
+    VistaJuegosComponent,
+    DetalleJuegosComponent,
+    LayoutComponent,
     JuegoComponent,
-    Safe2Pipe,
-
+    Safe2Pipe
   ],
   imports: [
     CommonModule,
     JuegosRoutingModule,
-    HttpClientModule,
-
+    HttpClientModule
   ],
 })
 
