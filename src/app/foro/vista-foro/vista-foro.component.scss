@@ -1,9 +1,5 @@
-// TITULO PRINCIPAL
-h2 {
-    color: #b1b1b1;
-    margin: 2% 4%;
-    text-shadow: 2px 1px #bb0011;
-}
+@import "./../../../mixins";
+@import "./../../../variables"; 
 
 // Paginador
 .mat-paginator {
@@ -11,7 +7,7 @@ h2 {
     margin: 1%;
     margin-right: auto;
     margin-left: auto;
-    background: #818181;
+    background: $gris;
     border-radius: 5px;
 }
 
@@ -19,4 +15,14 @@ h2 {
 .card {
     margin: 2%;
     min-height: 33%;
+}
+
+.btn{
+    background-color: #999;
+    font-weight: bold;
+
+    &:hover{
+        background-color: $negro;
+        color: $blanco;
+    }
 }

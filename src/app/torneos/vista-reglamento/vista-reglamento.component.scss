@@ -1,13 +1,21 @@
-// TITULO PRINCIPAL
-h2 {
-    color: #b1b1b1;
-    margin: 2% 4%;
-    text-shadow: 2px 1px #bb0011;
+@import "./../../../mixins";
+@import "./../../../variables";
+
+.caja{
+    text-align: justify;
+    background: $blanco;
+    border: 2px $gris solid;
+    margin: 2% auto;
+    overflow: hidden;
+    width: 92%;
+    max-width: 90rem;
+    border-radius: 5px;
+    padding: 2% 5%;
 }
 
 .btn {
-    color: black;
-    background-color: gold;
+    color: $negro;
+    background-color: $amarillo;
     font-weight: bolder;
     font-size: large;
     font-family: "RockWell";
@@ -15,4 +23,14 @@ h2 {
     margin-top: 5%;
     margin-left: 0%;
     margin-bottom: 0%;
+}
+
+@media screen and (max-width: 992px) {
+
+    .caja{
+        margin: 0.2% 0%;
+        overflow: hidden;
+        width: 100%;
+        padding: 0.5% 2%;
+    }
 }

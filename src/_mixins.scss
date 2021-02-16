@@ -1,0 +1,23 @@
+@import "./variables";
+
+// TITULO PRINCIPAL
+h2 {
+    color: $blanco;
+    margin: 1% 0% 2%;
+    text-shadow: 2px 1px $rojo;
+}
+
+@media screen and (max-width: 992px) {
+  h2 {
+    color: $blanco;
+    margin: 2% 0%;
+    text-shadow: 1px .5px $rojo;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h2 {
+    font-size: larger;
+    text-align: center;
+  }
+}

@@ -1,4 +1,4 @@
-<h2>Comentarios</h2>
+<h2>COMENTARIOS</h2>
 
 <div class="caja">
     <div *ngFor="let entrada of entradas">
@@ -19,9 +19,11 @@
 
         <p class="texto" *ngIf="ID.id==entrada.id">Categoría: <strong>{{entrada.CategoriaDesc}}</strong></p>
     </div>
+
+    <a routerLink="/vista-foro" class="btn">Ver Entradas</a>
+
 </div>
 
-<a routerLink="/vista-foro" class="btn btn-primary">Ver Entradas</a>
 <!-- 
 
 <div class="span" *ngFor="let noticia of noticias">

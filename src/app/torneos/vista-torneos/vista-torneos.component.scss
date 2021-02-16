@@ -1,13 +1,14 @@
-.container {
-    text-align: center;
-    // margin-right: auto;
-    // margin-left: auto;
-    padding: 1.5% 2%;
+@import "./../../../mixins";
+@import "./../../../variables";
+
+.tarjeta {
+    margin-bottom: 2%;
 }
 
 .mat-card {
-    background-color: #818181;
+    background-color: $blanco;
     min-height: 100%;
+    padding: 1%;
 }
 
 .tarjeta {
@@ -15,31 +16,42 @@
 }
 
 .crearTorneo {
-    background-color: goldenrod;
+    background-color: $amarillo;
 }
 
 .crearTorneoBoton {
-    background-color: goldenrod;
+    background-color: $amarillo;
 }
 
-.actual, .crear, .retro {
+img {
     display: block;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 50%;
+    margin: 1% 0% 3%;
+    height: 100%;
 }
 
-.btn {
-    color: gold;
-    background-color: black;
-    font-weight: bolder;
-    font-size: large;
-    font-family: "RockWell";
-    margin-right: 9.25%;
-    margin-top: 5%;
-    margin-left: 0%;
-    margin-bottom: 0%;
+.botones{
+    text-align: center;
+
+    .btn {
+        margin-bottom: 1%;
+        color: $amarillo;
+        background-color: $negro;
+        font-weight: bolder;
+        font-size: large;
+        font-family: "RockWell";
+        margin: 3%;
+        
+        &:hover{
+            background-color: $amarillo;
+            color: $negro;
+        }
+
+        &.crear:hover{
+            background-color: $blanco;
+            color: $negro;
+        }
+    }
 }
 
 h3 {
@@ -48,15 +60,7 @@ h3 {
     text-align: center;
     font-family: "RockWell";
     font-weight: bolder;
-    color: #bb0011;
-}
-
-h4 {
-    margin: auto;
-    text-align: center;
-    font-family: "RockWell";
-    font-weight: bolder;
-    color: black;
+    color: $rojo;
 }
 
 .juegosCopia {
@@ -74,41 +78,9 @@ h4 {
     margin-left: 43.5%;
     height: 99.65%;
     padding: 5%;
-    background-color: #818181;
+    background-color: $gris;
     border: "5px solid";
     border-left: "none";
     border-radius: 0.25rem;
     top: 3.5%;
-}
-
-
-// TITULO PRINCIPAL
-h2 {
-    color: #b1b1b1;
-    margin: 2% 4% 0%;
-    text-shadow: 2px 1px #bb0011;
-}
-
-@media screen and (max-width: 992px) {
-
-    h2 {
-        color: #b1b1b1;
-        margin: 2% 0%;
-        text-shadow: 1px .5px #bb0011;
-    }
-
-    .container {
-        text-align: center;
-        // margin-right: auto;
-        // margin-left: auto;
-        padding: 1% 1%;
-    }
-}
-
-@media screen and (max-width: 420px) {
-
-    h2 {
-        font-size: larger;
-        text-align: center;
-    }
 }
