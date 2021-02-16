@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 import { Videos } from '../models/videos';
 
-const videos = 'http://alum3.iesfsl.org/api/videos';
+const videos = 'http://localhost:8080/videos'; //http://alum3.iesfsl.org/api/videos
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ const videos = 'http://alum3.iesfsl.org/api/videos';
 export class AudiovisualesService {
   constructor(private http: HttpClient) { }
 
-  getVideos(): Observable<Videos> {
+  getVideos(): Array<Observable<Videos>> {
     return this.http.get<Videos>(videos);
   }
 }
