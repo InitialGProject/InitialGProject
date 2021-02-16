@@ -1,9 +1,30 @@
-section {
-  padding: 5%;
+h2 {
+  color: #fff;
+  margin: 1% 0% 2%;
+  text-shadow: 2px 1px #bb0011;
 }
 
-.row {
-  padding-top: 5%;
+@media screen and (max-width: 992px) {
+  h2 {
+    color: #fff;
+    margin: 2% 0%;
+    text-shadow: 1px 0.5px #bb0011;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h2 {
+    font-size: larger;
+    text-align: center;
+  }
+}
+
+.v {
+  text-align: center;
+}
+
+.vis_jue {
+  margin: 1% 4%;
 }
 
 a {
@@ -11,48 +32,24 @@ a {
   color: #fff;
 }
 
-img {
-  margin-top: 2px;
-  margin-left: 2px;
-  border-radius: 25px;
-  height: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .rainbow-button {
-  background-image: -webkit-gradient(linear, left top, right top, from(#00c0ff), color-stop(49%, #ffcf00), color-stop(80%, #fc4f4f), to(#00c0ff));
-  background-image: linear-gradient(90deg, #00c0ff 0%, #ffcf00 49%, #fc4f4f 80%, #00c0ff 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(5%, #00c0ff), color-stop(30%, #ffcf00), color-stop(55%, #fc4f4f), color-stop(80%, #00c0ff));
+  background-image: linear-gradient(90deg, #00c0ff 5%, #ffcf00 30%, #fc4f4f 55%, #00c0ff 80%);
   border-radius: 20px;
-  height: 124px;
-  width: 217px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.rainbow-button:after {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 16.2rem;
+  height: 10.5rem;
 }
 
 .rainbow-button:hover {
   -webkit-animation: slidebg 2s linear infinite;
           animation: slidebg 2s linear infinite;
+}
+
+.rainbow-button img {
+  margin: 2px;
+  border-radius: 20px;
+  height: 97.5%;
+  width: 98.5%;
 }
 
 @-webkit-keyframes slidebg {
@@ -68,30 +65,22 @@ img {
 }
 
 .rainbow-buttonR {
-  background-image: -webkit-gradient(linear, left top, right top, from(#f80ed9), color-stop(49%, #072bfa), color-stop(80%, #c900fc), to(#0849fc));
-  background-image: linear-gradient(90deg, #f80ed9 0%, #072bfa 49%, #c900fc 80%, #0849fc 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#f80ed9), color-stop(49%, #072bfa), color-stop(70%, #c900fc), color-stop(90%, #0849fc));
+  background-image: linear-gradient(90deg, #f80ed9 0%, #072bfa 49%, #c900fc 70%, #0849fc 90%);
   border-radius: 20px;
-  height: 124px;
-  width: 217px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.rainbow-buttonR:after {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 16.2rem;
+  height: 10.5rem;
 }
 
 .rainbow-buttonR:hover {
   -webkit-animation: slidebg 2s linear infinite;
           animation: slidebg 2s linear infinite;
+}
+
+.rainbow-buttonR img {
+  margin: 2px;
+  border-radius: 20px;
+  height: 97.5%;
+  width: 98.5%;
 }
 /*# sourceMappingURL=vista-juegos.component.css.map */

@@ -1,46 +1,129 @@
 h2 {
-  color: #b1b1b1;
-  margin: 2% 4%;
+  color: #fff;
+  margin: 1% 0% 2%;
   text-shadow: 2px 1px #bb0011;
 }
 
-.mat-paginator {
-  display: inline-block;
-  margin: 1%;
-  margin-right: auto;
-  margin-left: auto;
-  background: #818181;
-  border-radius: 5px;
+@media screen and (max-width: 992px) {
+  h2 {
+    color: #fff;
+    margin: 2% 0%;
+    text-shadow: 1px 0.5px #bb0011;
+  }
 }
 
-.card {
-  margin: 2%;
-  min-height: 5%;
+@media screen and (max-width: 420px) {
+  h2 {
+    font-size: larger;
+    text-align: center;
+  }
 }
 
-.btnVuelta {
-  color: black;
-  background-color: gold;
-  font-weight: bolder;
-  font-size: large;
-  font-family: "RockWell";
-  margin-right: 0%;
-  margin-left: 9.25%;
-  margin-bottom: 0%;
+.caja {
+  min-height: 2rem;
+  background: #fff;
+  border: 0;
+  margin-bottom: 2%;
+  overflow: hidden;
+  width: 100%;
+  min-width: 15rem;
+  max-width: 100rem;
+  height: auto;
+  border-radius: 3px;
 }
 
-.imagenCaja {
+.caja .titulo {
+  float: right;
+  width: 62.8%;
+  margin: .5% 3% 0%;
+  line-height: 20px;
+  margin-bottom: .3em;
+  font-size: 1.4em;
+  color: #000;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.caja .imagenCaja {
   float: left;
   position: relative;
   width: 100%;
-  max-width: 24.2%;
+  max-width: 31.2%;
 }
 
-.imagenCaja img {
-  width: 112%;
-  max-height: 222px;
-  height: 100%;
+.caja .imagenCaja img {
+  width: 100%;
+  max-width: 380px;
+  max-height: 240px;
+  height: auto;
   vertical-align: middle;
   border: 0;
+}
+
+.caja .descaja {
+  float: right;
+  width: 62.4%;
+  margin: 0% 3.2%;
+  padding-bottom: 1%;
+}
+
+.caja .descaja .participantes {
+  color: #bb0011;
+  font-weight: bold;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.caja .descaja .participantes .confirmados {
+  color: green;
+  margin: 0;
+}
+
+.caja .descaja .info {
+  text-align: justify;
+  color: #000;
+  margin-top: .3em;
+  padding-bottom: 2%;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+.caja .descaja .botones {
+  text-align: center;
+  margin: 2% 0.5%;
+}
+
+.caja .descaja .botones .btn {
+  margin: 0% 5%;
+  background-color: #bb0011;
+  color: #fff;
+}
+
+.caja .descaja .botones .btn.checkin {
+  display: none;
+  background-color: green;
+}
+
+.caja .descaja .botones .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+@media screen and (max-width: 420px) {
+  .caja .titulo {
+    line-height: 25px;
+  }
+  .caja .descaja {
+    text-align: right;
+    width: 93.6%;
+    padding-bottom: 1%;
+  }
+  .caja .descaja .detalle {
+    padding-top: 0.5%;
+  }
+  .caja .descaja .fecha {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=torneo.component.css.map */

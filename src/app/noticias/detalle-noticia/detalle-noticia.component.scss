@@ -1,12 +1,9 @@
-h2 {
-    color: #b1b1b1;
-    margin: 2% 4%;
-    text-shadow: 2px 1px #bb0011;
-}
+@import "./../../../mixins";
+@import "./../../../variables";
 
 .caja{
-    background: #f8f8f8;
-    border: 2px gray solid;
+    background: $blanco;
+    border: 2px $gris solid;
     margin: 2% auto;
     overflow: hidden;
     width: 92%;
@@ -15,7 +12,7 @@ h2 {
     padding: 2% 5%;
 
     .detalle{
-        color: #999;
+        color: $gris;
         font-size: 1em;
         
         p{
@@ -32,7 +29,7 @@ h2 {
     }   
 
     .info{
-        color: #999;
+        color: $gris;
         font-size: 1.2em;
         text-align: center;
     }
@@ -59,7 +56,7 @@ h2 {
 
         .texto{
             margin-top: 2%;
-            color: #000;
+            color: $negro;
             line-height: 1.5em;
             text-overflow: ellipsis;
             overflow: hidden;
@@ -71,19 +68,13 @@ h2 {
 a{
     text-decoration: none;
     font-weight: bold;
-    color: #bb0011;
+    color: $rojo;
     &:hover{
-        color: #333;
+        color: $negro;
     }
 }
 
 @media screen and (max-width: 992px) {
-
-    h2 {
-        color: #b1b1b1;
-        margin: 2% 0%;
-        text-shadow: 1px .5px #bb0011;
-    }
 
     .caja{
         margin: 0.2% 0%;
@@ -96,11 +87,6 @@ a{
 
 @media screen and (max-width: 420px) {
 
-    h2 {
-        font-size: larger;
-        text-align: center;
-    }
-        
     .titulo{
         font-size: larger;
     }

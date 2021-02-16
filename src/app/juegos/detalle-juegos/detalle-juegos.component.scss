@@ -1,27 +1,18 @@
-//titulo
-h2 {
-    color: #b1b1b1;
-    margin: 2% 4%;
-    text-shadow: 2px 1px #bb0011;
-
-    &:hover{
-        color: rgb(255, 255, 255);
-    }
-}
-
-@media screen and (max-width: 420px) {
-
-    h2 {
-        font-size: larger;
-        text-align: center;
-    }
-}
+@import "./../../../mixins";
+@import "./../../../variables"; 
 
 p{
     color:black;
 }
 
 .datos{
-    background-color: rgba(255, 255, 255, 0.719);
+    background-color: $blanco;
     border-radius: 5px;
+    margin: 5%;
+    font-weight: bold;
+    padding: 1%;
+}
+
+a{
+    color: $blanco;
 }

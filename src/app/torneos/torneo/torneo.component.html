@@ -1,29 +1,39 @@
-<h2>TORNEOS DE VIDEOJUEGOS - INITIALG</h2>
+<h2>TORNEOS DE VIDEOJUEGOS</h2>
 
-<div class="span" *ngFor="let torneo of torneos">
+<div *ngFor="let torneo of torneos">
 
     <div class="caja" *ngIf="Categorias.categoria==torneo.CategoriaDesc">
 
-        <div class="detalle row">            
-            <p class="col-lg-6 col-md-6 col-sm-12 col-12">{{torneo.fechaInicio}} - {{torneo.fechaFin}}</p>            
-        </div>
-
-        <h1 class="titulo">{{torneo.titulo}}</h1>
-
+        <h3 class="titulo">{{torneo.titulo}}</h3>
         <div class="imagenCaja">
-            <img [src]="torneo.imagen" alt="Imagen Torneo">
+            <img [src]="torneo.imagen" alt="Imagen Torneo {{torneo.id}}">
         </div>
-        
+
         <div class="descaja">
                         
-            <h3 class="info">{{torneo.descripcion}}</h3>
-            <p class="info">{{torneo.contenido}}</p>
+            <div class="info">{{torneo.descripcion}}</div>
+            <!-- <p class="info">{{torneo.contenido}}</p> -->
 
-            <btn class="btn btn-danger" routerLink="/vista-torneos" style="float: left;">
-                Volver
-            </btn>
+            <div class="row">
+                <div class="fecha col-lg-6 col-md-6 col-sm-12 col-12">
+                    <strong>FECHA INICIO:</strong> {{torneo.fechaInicio}}
+                    <br><strong>FECHA FIN:</strong> {{torneo.fechaFin}}
+                </div>
+                
+                <div class="participantes col-lg-6 col-md-6 col-sm-12 col-12">
+                    PARTICIPANTES: 23{{torneo.numparticipantes}}
+                    <p class="confirmados">CONFIRMADOS: 0</p>
+                </div>
+            </div>
 
+            <div class="botones">
+                <btn class="btn" routerLink="/vista-torneos">Volver</btn>
+                <btn class="btn">Apuntarse</btn>
+                <btn class="checkin btn">CHECK-IN</btn>
+
+            </div>
         </div>
+
     </div>
 </div>
 

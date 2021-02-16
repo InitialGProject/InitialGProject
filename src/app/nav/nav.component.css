@@ -10,6 +10,9 @@ input {
   width: 100%;
   z-index: 1;
   padding: 0 1rem;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .navbar a {

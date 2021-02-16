@@ -1,12 +1,8 @@
-
-h2 {
-    color: #b1b1b1;
-    margin: 2% 4%;
-    text-shadow: 2px 1px #bb0011;
-}   
+@import "./../../../mixins";
+@import "./../../../variables"; 
 
 .videoTitle{
-    color: white;
+    color: $blanco;
 }
 
 .video-filter{
@@ -27,7 +23,7 @@ img {
 }
 
 .video {
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 1px $negro(0, 0, 0, 0.15);
     width: 23%; 
     margin: 1%;
     float: left;
@@ -93,25 +89,10 @@ img {
 
 }
 
-
-
 @media screen and (max-width: 420px) {
 
-    h2 {
-        font-size: larger;
-        text-align: center;
-    }
     .video-filter{
         width: 96%;
         margin: 0% 2%;
-    }
-}
-
-@media screen and (max-width: 992px) {
-
-    h2 {
-        color: #b1b1b1;
-        margin: 2% 0%;
-        text-shadow: 1px .5px #bb0011;
     }
 }
