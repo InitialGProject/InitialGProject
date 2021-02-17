@@ -19,27 +19,41 @@ h2 {
   }
 }
 
-.mat-paginator {
-  display: inline-block;
-  margin: 1%;
-  margin-right: auto;
-  margin-left: auto;
-  background: #717171;
-  border-radius: 5px;
-}
-
 .card {
   margin: 2%;
-  min-height: 33%;
+  min-height: 10%;
+}
+
+.input-group {
+  float: right;
+  min-width: 10rem;
+  max-width: 30rem;
+}
+
+.list {
+  float: right;
+  list-style: none;
+  min-width: 12rem;
+  margin: auto;
+}
+
+.list li {
+  margin-right: .5rem;
+  color: #bb0011;
+}
+
+.list li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .btn {
-  background-color: #999;
+  background-color: #bb0011;
+  color: #fff;
   font-weight: bold;
 }
 
 .btn:hover {
   background-color: #000;
-  color: #fff;
 }
 /*# sourceMappingURL=vista-foro.component.css.map */

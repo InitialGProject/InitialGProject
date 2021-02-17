@@ -4,9 +4,9 @@
 .caja {
     background: #f8f8f8;
     border: 2px $gris solid;
-    margin: 2% 4%;
+    margin: 2% 0%;
     overflow: hidden;
-    width: 92%;
+    width: 100%;
     max-width: 90rem;
     border-radius: 5px;
     padding: 2% 5%;
@@ -37,12 +37,12 @@
     }
 
     .btn{
-        background-color: #999;
+        background-color: $rojo;
+        color: $blanco;
         font-weight: bold;
 
         &:hover{
             background-color: $negro;
-            color: $blanco;
         }
     }
 }

@@ -1,6 +1,11 @@
 .content {
     padding: 1% 4%;
-}
+    background-image: url('./../assets/img/wall.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
 
 .barra-lateral{
     border: solid 5px #bb0011;

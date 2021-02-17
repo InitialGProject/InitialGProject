@@ -32,70 +32,91 @@ h2 {
   border-radius: 3px;
 }
 
-.caja .titulo {
+.caja .result .titulo {
   float: right;
-  width: 62.8%;
-  margin: .5% 3% 0%;
+  width: 68%;
+  min-height: 2rem;
+  max-height: 5rem;
+  padding: 1%;
+  margin: 0;
   line-height: 20px;
-  margin-bottom: .3em;
   font-size: 1.4em;
   color: #000;
   text-decoration: underline;
   text-align: center;
+  background-color: #999;
 }
 
-.caja .imagenCaja {
+.caja .result .imagenCaja {
   float: left;
-  position: relative;
-  width: 100%;
-  max-width: 31.2%;
+  max-width: 32%;
 }
 
-.caja .imagenCaja img {
+.caja .result .imagenCaja img {
   width: 100%;
-  max-width: 380px;
-  max-height: 240px;
-  height: auto;
-  vertical-align: middle;
+  height: 100%;
+  max-width: 400px;
+  max-height: 280px;
   border: 0;
+}
+
+.caja .botones {
+  text-align: left;
+  margin: 2% 0.7%;
+}
+
+.caja .botones .btn {
+  margin: 0% 5%;
+  background-color: #bb0011;
+  color: #fff;
+}
+
+.caja .botones .btn.checkin {
+  display: none;
+  background-color: green;
+}
+
+.caja .botones .btn:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .caja .descaja {
   float: right;
-  width: 62.4%;
-  margin: 0% 3.2%;
-  padding-bottom: 1%;
+  width: 68%;
+  padding-left: 2%;
 }
 
 .caja .descaja .participantes {
-  color: #bb0011;
+  width: 100%;
+  background-color: #999;
+  color: #000;
   font-weight: bold;
-  border: 1px solid black;
   text-align: center;
   border-radius: 3px;
+  margin: .5% 0%;
 }
 
 .caja .descaja .participantes .confirmados {
-  color: green;
+  color: #000;
   margin: 0;
 }
 
 .caja .descaja .info {
   text-align: justify;
   color: #000;
-  margin-top: .3em;
-  padding-bottom: 2%;
+  padding: 1% 2% 1% 0%;
   font-size: 1em;
   line-height: 1.2em;
 }
 
 .caja .descaja .botones {
   text-align: center;
-  margin: 2% 0.5%;
+  margin: 0% 2%;
 }
 
 .caja .descaja .botones .btn {
-  margin: 0% 5%;
+  margin: 1% auto;
   background-color: #bb0011;
   color: #fff;
 }
@@ -111,12 +132,20 @@ h2 {
 }
 
 @media screen and (max-width: 420px) {
-  .caja .titulo {
-    line-height: 25px;
+  .caja .result {
+    background-color: #999;
+    min-height: 3.2rem;
+    max-height: 5rem;
+    height: auto;
+  }
+  .caja .result .titulo {
+    line-height: 20px;
+  }
+  .caja .result .imagenCaja {
+    height: 100%;
   }
   .caja .descaja {
-    text-align: right;
-    width: 93.6%;
+    width: 100%;
     padding-bottom: 1%;
   }
   .caja .descaja .detalle {

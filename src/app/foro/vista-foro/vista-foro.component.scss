@@ -1,28 +1,52 @@
 @import "./../../../mixins";
 @import "./../../../variables"; 
 
-// Paginador
-.mat-paginator {
-    display: inline-block;
-    margin: 1%;
-    margin-right: auto;
-    margin-left: auto;
-    background: $gris;
-    border-radius: 5px;
-}
-
 // Caja de todas las entradas del foro
 .card {
     margin: 2%;
-    min-height: 33%;
+    min-height: 10%;
+}
+
+.input-group{
+    float: right;
+    min-width: 10rem;
+    max-width: 30rem;
+}
+
+.list{
+    float: right;
+    list-style: none;
+    min-width: 12rem;
+    margin: auto;
+
+    li{
+        margin-right: .5rem;
+        color: $rojo;
+
+        a{
+            text-decoration: none;
+            color: $blanco;
+
+        }
+    }
 }
 
 .btn{
-    background-color: #999;
+    background-color: $rojo;
+    color: $blanco;
     font-weight: bold;
 
     &:hover{
         background-color: $negro;
-        color: $blanco;
     }
 }
+
+// Paginador
+// .mat-paginator {
+//     display: inline-block;
+//     margin: 1%;
+//     margin-right: auto;
+//     margin-left: auto;
+//     background: $gris;
+//     border-radius: 5px;
+// }
