@@ -12,7 +12,7 @@ const videos = 'http://localhost:8080/videos'; //http://alum3.iesfsl.org/api/vid
 export class AudiovisualesService {
   constructor(private http: HttpClient) { }
 
-  getVideos(): Array<Observable<Videos>> {
+  getVideos(): Observable<Videos> {
     return this.http.get<Videos>(videos);
   }
 }
