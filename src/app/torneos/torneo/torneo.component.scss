@@ -28,7 +28,7 @@
             color: $negro;
             text-decoration: underline;
             text-align: center;
-            background-color: #999;
+            background-color: $grisclaro;
         }   
 
         .imagenCaja{
@@ -73,7 +73,7 @@
 
         .participantes{
             width: 100%;
-            background-color: #999;
+            background-color: $grisclaro;
             color: $negro;
             font-weight: bold;
             text-align: center;
@@ -122,7 +122,7 @@
 
     .caja{
         .result{
-            background-color: #999;
+            background-color: $grisclaro;
             min-height: 3.2rem;
             max-height: 5rem;
             height: auto;
