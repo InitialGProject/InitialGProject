@@ -1,60 +1,53 @@
 
-  <!-- Page Heading/Breadcrumbs -->
-  <h2>FORO INITIALG</h2>
+<!-- Page Heading/Breadcrumbs -->
+<div class="row">
 
-  <div class="row">
-    <div class="card col-lg-7" *ngFor="let entrada of entradas">
+  <h2 class="col-lg-6 col-md-6 col-sm-6 col-12">FORO INITIALG</h2>
+  
+  <div class="col-lg-6 col-md-6 col-sm-6 col-12">
 
-      <p>Publicado en: {{entrada.creado}}</p>
-
-      <blockquote class="blockquote">
-        <p class="mb-0">{{entrada.contenido}}</p>
-        <footer class="blockquote-footer">
-          <cite title="Titulo">{{entrada.titulo}}</cite>
-        </footer>
-      </blockquote>
-
-      <!-- Comments Form -->
-      <div class="col-md-4">
-        <a routerLink="detalle-foro/{{entrada.id}}" class="btn">Comentarios Relacionados</a>
-      </div>
-
+    <div class="input-group row">
+      <input type="text" class="form-control" placeholder="Buscar en el Foro">
+      <span class="inpug-group-append">
+        <button class="btn btn-secondary" type="button">Buscar</button>
+      </span>
     </div>
 
-
-<!-- 
-    <div class="col-md-4">    
-      <div class="card mb-4">
-        <h5 class="card-header">Busqueda</h5>
-        <div class="card-body">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Buscar en el Foro">
-            <span class="inpug-group-append">
-              <button class="btn btn-secondary" type="button">Buscar</button>
-            </span>
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="card my-4">
-        <h5 class="card-header">Categorias</h5>
-        <div class="card-body">
-          <ul class="list-unstyled mb-0">
-            <li>
-              <a routerLink="../vista-juegos">Juegos Actuales</a>
-            </li>
-            <li>
-              <a routerLink="../vista-juegos">Juegos Retro</a>
-            </li>
-            <li>
-              <a routerLink="../vista-torneos">Torneos</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
+    <div class="list row">
+      <li>Categorias:</li>
+      <li><a routerLink="../vista-juegos">Juegos Actuales</a></li>
+      <li><a routerLink="../vista-juegos/RE">Juegos Retro</a></li>
+      <li><a routerLink="../vista-torneos">Torneos</a></li>
+      <li><a routerLink="../vista-noticias">Noticias</a></li>
     </div>
+
+  </div>
+</div>
+
+<div class="card col-lg-7" *ngFor="let entrada of entradas">
+
+    <p>Publicado en: {{entrada.creado}}</p>
+
+    <blockquote class="blockquote">
+      <p class="mb-0">{{entrada.contenido}}</p>
+      <footer class="blockquote-footer">
+        <cite title="Titulo">{{entrada.titulo}}</cite>
+      </footer>
+    </blockquote>
+
+    <!-- Comments Form -->
+    <div class="col-md-4">
+      <a routerLink="detalle-foro/{{entrada.id}}" class="btn">Comentarios Relacionados</a>
+    </div>
+
   </div>
 
-<mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 15, 20]"></mat-paginator> -->
+  <!-- <div class="col-md-4">    -->
+
+    
+
+    
+    
+  <!-- </div> -->
+
+<!-- <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 15, 20]"></mat-paginator> -->

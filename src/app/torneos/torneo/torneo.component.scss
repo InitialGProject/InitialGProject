@@ -14,37 +14,40 @@
     height: auto;
     border-radius: 3px;
 
-    .titulo{
-        float: right;
-        width: 62.8%;
-        margin: .5% 3% 0%;
-        line-height: 20px;
-        margin-bottom: .3em;
-        font-size: 1.4em;
-        color: $negro;
-        text-decoration: underline;
-        text-align: center;
-    }   
+    .result {
 
-    .imagenCaja{
-        float: left;
-        position: relative;
-        width: 100%;
-        max-width: 31.2%;
+        .titulo{
+            float: right;
+            width: 68%;
+            min-height: 2rem;
+            max-height: 5rem;
+            padding: 1%;
+            margin: 0;
+            line-height: 20px;
+            font-size: 1.4em;
+            color: $negro;
+            text-decoration: underline;
+            text-align: center;
+            background-color: #999;
+        }   
 
-        img{
-            width: 100%;
-            max-width: 380px;
-            max-height: 240px;
-            height: auto;
-            vertical-align: middle;
-            border: 0;
+        .imagenCaja{
+            float: left;
+            max-width: 32%;
+
+            img{
+                width: 100%;
+                height: 100%;
+                max-width: 400px;
+                max-height: 280px;
+                border: 0;
+            }  
         }
     }
-
+    
     .botones{
         text-align: left;
-        margin: 2% 0.5%;
+        margin: 2% 0.7%;
 
         .btn{
             margin: 0% 5%;
@@ -65,19 +68,20 @@
 
     .descaja{
         float: right;
-        width: 62.4%;
-        margin: 0% 3.2%;
-        padding-bottom: 1%;
+        width: 68%;
+        padding-left: 2%;
 
         .participantes{
-            color: $rojo;
+            width: 100%;
+            background-color: #999;
+            color: $negro;
             font-weight: bold;
-            border: 1px solid black;
             text-align: center;
             border-radius: 3px;
+            margin: .5% 0%;
 
             .confirmados{
-                color: $verde;
+                color: $negro;
                 margin: 0;
             }
         }
@@ -85,18 +89,17 @@
         .info{
             text-align: justify;
             color: $negro;
-            margin-top: .3em;
-            padding-bottom: 2%;
+            padding: 1% 2% 1% 0%;
             font-size: 1em;
             line-height: 1.2em;
         }
 
         .botones{
             text-align: center;
-            margin: 2% 0.5%;
+            margin: 0% 2%;
 
             .btn{
-                margin: 0% 5%;
+                margin: 1% auto;
                 background-color: $rojo;
                 color: $blanco;
                 
@@ -118,13 +121,25 @@
 @media screen and (max-width: 420px) {
 
     .caja{
-        .titulo{
-            line-height: 25px;
+        .result{
+            background-color: #999;
+            min-height: 3.2rem;
+            max-height: 5rem;
+            height: auto;
+
+            .titulo{
+                line-height: 20px;
+            }
+
+            .imagenCaja{
+                height: 100%;
+                // float: none;
+            }
         }
 
         .descaja{
-            text-align: right;
-            width: 93.6%;
+            // text-align: right;
+            width: 100%;
             padding-bottom: 1%;
             
             .detalle{
