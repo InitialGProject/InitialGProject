@@ -9,9 +9,12 @@ import { User } from './../_models/user';
 const baseUrl = 'http://localhost:8080/user';
 
 @Injectable({ providedIn: 'root' })
+
 export class AccountService {
   private userSubject: BehaviorSubject<User>;
   public user: Observable<User>;
+  usuario: any;
+  password: any;
 
   constructor(
     private router: Router,
@@ -25,9 +28,9 @@ export class AccountService {
     return this.userSubject.value;
   }
 
-  login(usuario: any): Observable<any> {
-    console.log(usuario);
-    return this.http.post<User>(`${baseUrl}`, + '/authenticate', usuario);
+  login(usuario, password): Observable<User> {
+    const user = { usuario: this.usuario, password: this.password };
+    return this.http.post<User>(`${baseUrl}` + `/authenticate`, usuario + password);
     //     .pipe(map(user => {
     //       // store user details and jwt token in local storage to keep user logged in between page refreshes
     //       localStorage.setItem('user', JSON.stringify(user));

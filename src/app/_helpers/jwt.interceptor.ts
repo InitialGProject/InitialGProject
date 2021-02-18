@@ -3,7 +3,7 @@ import { HttpRequest, HttpHandler, HttpEvent, HttpInterceptor } from '@angular/c
 import { Observable } from 'rxjs';
 import { AccountService } from './../_services/account.service';
 
-const baseUrl = 'http://alum3.iesfsl.org/api/noticias';
+const baseUrl = 'http://alum3.iesfsl.org/api/user';
 
 @Injectable()
 export class JwtInterceptor implements HttpInterceptor {
