@@ -5,9 +5,8 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { User } from './../_models/user';
 
-const baseUrl = 'http://alum3.iesfsl.org/api/usuarios';
- //const baseUrl = 'http://localhost:8080/usuarios';
-
+// const baseUrl = 'http://alum3.iesfsl.org/api/usuarios';
+const baseUrl = 'http://localhost:8080/usuarios';
 
 @Injectable({ providedIn: 'root' })
 export class AccountService {
@@ -26,15 +25,15 @@ export class AccountService {
     return this.userSubject.value;
   }
 
-  login(username, password) {
-    return this.http.post<User>(`${baseUrl}`, { username, password })
-      .pipe(map(user => {
-        // store user details and jwt token in local storage to keep user logged in between page refreshes
-        localStorage.setItem('user', JSON.stringify(user));
-        this.userSubject.next(user);
-        return user;
-      }));
-  }
+  login(usuario: any): Observable<any> {
+    console.log(usuario);
+    return this.http.post<User>(`${baseUrl}`, + '/authenticate', usuario);
+    //     .pipe(map(user => {
+    //       // store user details and jwt token in local storage to keep user logged in between page refreshes
+    //       localStorage.setItem('user', JSON.stringify(user));
+    //       this.userSubject.next(user);
+    //       return user;
+  };
 
   logout() {
     // remove user from local storage and set current user to null
