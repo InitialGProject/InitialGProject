@@ -6,19 +6,19 @@ import { AudiovisualesRoutingModule } from './audiovisuales-routing.module';
 // Componentes de AudioVisuales
 import { VistaAudiovisualesComponent } from './vista-audiovisuales/vista-audiovisuales.component';
 import { VistaStreammingsComponent } from './vista-streammings/vista-streammings.component';
+import { VistaVideoComponent } from './vista-video/vista-video.component';
 
-// Módulos Extra
-import { YouTubePlayerModule } from "@angular/youtube-player";
+
 
 @NgModule({
   declarations: [
     VistaStreammingsComponent, 
     VistaAudiovisualesComponent, 
+    VistaVideoComponent,
     LayoutComponent 
   ],
   imports: [
     CommonModule,
-    YouTubePlayerModule,
     AudiovisualesRoutingModule
 
   ],

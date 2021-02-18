@@ -13,7 +13,8 @@ const audiovisuales: Routes = [
         children: [
             { path: 'audiovisuales', component: VistaAudiovisualesComponent },
             { path: 'vista-streammings', component: VistaStreammingsComponent },
-            { path: 'vistaVideo/:videoId', component: VistaVideoComponent }
+            { path: 'vistaVideo/:videoId', component: VistaVideoComponent },
+            
 
         ]
     }
