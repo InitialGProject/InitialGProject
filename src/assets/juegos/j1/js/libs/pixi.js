@@ -37278,7 +37278,6 @@ var Plane = function (_Mesh) {
             indices.push(value2, value4, value3);
         }
 
-        // console.log(indices)
         this.vertices = new Float32Array(verts);
         this.uvs = new Float32Array(uvs);
         this.colors = new Float32Array(colors);

@@ -51,9 +51,8 @@ export class LoginComponent implements OnInit {
     if (this.form.invalid) {
       return;
     }
-
     this.loading = true;
-    this.accountService.login(this.f.username, this.f.password).subscribe(data => {
+    this.accountService.login(this.f.username.value, this.f.password.value).subscribe(data => {
       this.user = data;
       console.log(this.user);
       // next: () => {

@@ -16,7 +16,6 @@ export class AppComponent {
       .subscribe(
         data => {
           this.login = data;
-          console.log('login', this.login);
 
         },
         error => {
