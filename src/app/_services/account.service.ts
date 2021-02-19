@@ -5,8 +5,8 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { User } from './../_models/user';
 
-// const baseUrl = 'http://alum3.iesfsl.org/api/usuarios';
-const baseUrl = 'http://localhost:8080/user';
+const baseUrl = 'http://alum3.iesfsl.org/api/user';
+// const baseUrl = 'http://localhost:8080/user';
 
 @Injectable({ providedIn: 'root' })
 
