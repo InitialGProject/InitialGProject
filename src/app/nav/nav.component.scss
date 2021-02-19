@@ -1,3 +1,4 @@
+@import "./../../variables"; 
 
 // input {
 //   background-color: black;
@@ -23,9 +24,11 @@
   //   }
   // }
 // }
+
 .test{
-  background-color: red;
+  background-color: $rojo;
 }
+
 .nav-item {
   // float: left;
   padding: 0.5em 1em;
@@ -35,6 +38,10 @@
     -webkit-transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
+}
+
+img{
+  width: 2.2rem;
 }
 
 // .dropdown-content {
