@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import * as $ from 'jquery';
+// import * as $ from 'jquery';
 
 @Component({
   selector: 'app-nav',
@@ -8,18 +8,18 @@ import * as $ from 'jquery';
 })
 
 export class NavComponent implements OnInit {
-  @Input() opciones: string[];
-  @Input() colorfondo: string;
-  @Output() presionopcion = new EventEmitter();
+  // @Input() opciones: string[];
+  // @Input() colorfondo: string;
+  // @Output() presionopcion = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
 
-    $(".icon").on("click", function () {
-      $("#navbar").hasClass("navbar")
-      $("#navbar").toggleClass("responsive");
-    });
+    // $(".icon").on("click", function () {
+    //   $("#navbar").hasClass("navbar")
+    //   $("#navbar").toggleClass("responsive");
+    // });
   }
 
   /*presion(i: number): void {

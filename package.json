@@ -23,8 +23,10 @@
     "@angular/router": "~11.0.6",
     "@angular/youtube-player": "^11.1.2",
     "@types/gapi": "0.0.39",
+    "angular-bootstrap-md": "^10.1.1",
     "angular-google-gapi": "^1.0.1",
     "jquery": "^3.5.1",
+    "mdbootstrap": "^4.19.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
