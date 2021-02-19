@@ -1,6 +1,7 @@
 <!--Navbar-->
-<mdb-navbar SideClass="navbar sticky-top navbar-expand-lg navbar-dark bg-danger lighten-1" [containerInside]="false">
+<div class="test">
 
+<mdb-navbar class="test" SideClass="navbar sticky-top navbar-expand-lg navbar-dark lighten-1" [containerInside]="false">
   <!-- Navbar brand -->
   <mdb-navbar-brand><a class="navbar-brand" href="#">InitialG</a></mdb-navbar-brand>
 
@@ -17,8 +18,8 @@
         <a dropdownToggle type="button" class="nav-link dropdown-toggle waves-light">
           VIDEOS<span class="caret"></span></a>
         <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-          <a routerLink='vista-audiovisuales' class="dropdown-item waves-light" mdbWavesEffect>SUBIDOS</a>
-          <a routerLink='vista-streammings' class="dropdown-item waves-light" mdbWavesEffect>STREAMINGS</a>
+          <a routerLink='vista-audiovisuales' class="dropdown-item waves-light" mdbWavesEffect>GAMEPLAYS</a>
+          <a routerLink='vista-streammings' class="dropdown-item waves-light" mdbWavesEffect>STREAMS</a>
         </div>
       </li>
       <li class="nav-item dropdown" dropdown>
@@ -30,9 +31,10 @@
         </div>
       </li>
       <li class="nav-item dropdown" dropdown>
-        <a routerLink='vista-torneos' dropdownToggle type="button" class="nav-link dropdown-toggle waves-light">
+        <a dropdownToggle type="button" class="nav-link dropdown-toggle waves-light">
           TORNEOS<span class="caret"></span></a>
         <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+          <a routerLink='vista-torneos/vista-torneos' class="dropdown-item waves-light" mdbWavesEffect>COMPETICIONES</a>
           <a routerLink='vista-torneos/vista-reglamento' class="dropdown-item waves-light" mdbWavesEffect>REGLAMENTO</a>
         </div>
       </li>
@@ -65,8 +67,9 @@
 
   </links>
   <!-- Collapsible content -->
-
 </mdb-navbar>
+</div>
+
 <!--/.Navbar-->
 
 

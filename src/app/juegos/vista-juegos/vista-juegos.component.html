@@ -1,6 +1,6 @@
 <h2>LISTADO DE JUEGOS ONLINE</h2>
 <div class="vis_jue row">
-    <div *ngFor="let juegos of juego">
+    <div class="testeo" *ngFor="let juegos of juego">
         <div *ngIf="tipo.clase=='RE'; else AC">
 
             <div *ngIf="juegos.tipo=='RE'" class="v col-lg-4 col-md-6 col-sm-6 col-6">
