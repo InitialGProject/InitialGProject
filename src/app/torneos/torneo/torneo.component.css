@@ -12,7 +12,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 520px) {
   h2 {
     font-size: larger;
     text-align: center;
@@ -20,74 +20,41 @@ h2 {
 }
 
 .caja {
-  min-height: 2rem;
   background: #fff;
-  border: 0;
-  margin-bottom: 2%;
-  overflow: hidden;
-  width: 100%;
-  min-width: 15rem;
-  max-width: 100rem;
-  height: auto;
-  border-radius: 3px;
+  padding: 0.2%;
+  margin: 0;
+  margin-bottom: 1rem;
+  border-radius: 7px;
 }
 
-.caja .result .titulo {
-  float: right;
-  width: 68%;
-  min-height: 2rem;
-  max-height: 5rem;
-  padding: 1%;
-  margin: 0;
-  line-height: 20px;
-  font-size: 1.4em;
-  color: #000;
+.caja .contenido {
+  width: 100%;
+}
+
+.caja .contenido .imagen {
+  width: 42%;
+}
+
+.caja .contenido .imagen img {
+  border-radius: 7px;
+}
+
+.caja .contenido .descaja {
+  padding: 0% 2%;
+  width: 58%;
+}
+
+.caja .contenido .descaja h3 {
   text-decoration: underline;
   text-align: center;
-  background-color: #999;
 }
 
-.caja .result .imagenCaja {
-  float: left;
-  max-width: 32%;
-}
-
-.caja .result .imagenCaja img {
+.caja .contenido .descaja .detalle {
   width: 100%;
-  height: 100%;
-  max-width: 400px;
-  max-height: 280px;
-  border: 0;
+  margin: auto;
 }
 
-.caja .botones {
-  text-align: left;
-  margin: 2% 0.7%;
-}
-
-.caja .botones .btn {
-  margin: 0% 5%;
-  background-color: #bb0011;
-  color: #fff;
-}
-
-.caja .botones .btn.checkin {
-  display: none;
-  background-color: green;
-}
-
-.caja .botones .btn:hover {
-  background-color: #000;
-  color: #fff;
-}
-
-.caja .descaja {
-  float: right;
-  width: 68%;
-  padding-left: 2%;
-}
-
-.caja .descaja .participantes {
+.caja .contenido .descaja .detalle .participantes {
   width: 100%;
   background-color: #999;
   color: #000;
@@ -95,63 +62,65 @@ h2 {
   text-align: center;
   border-radius: 3px;
   margin: .5% 0%;
+  padding-top: 1%;
 }
 
-.caja .descaja .participantes .confirmados {
+.caja .contenido .descaja .detalle .participantes .confirmados {
   color: #000;
   margin: 0;
 }
 
-.caja .descaja .info {
-  text-align: justify;
-  color: #000;
-  padding: 1% 2% 1% 0%;
-  font-size: 1em;
-  line-height: 1.2em;
-}
-
-.caja .descaja .botones {
+.caja .contenido .descaja .botones {
   text-align: center;
   margin: 0% 2%;
 }
 
-.caja .descaja .botones .btn {
+.caja .contenido .descaja .botones .btn {
   margin: 1% auto;
   background-color: #bb0011;
   color: #fff;
 }
 
-.caja .descaja .botones .btn.checkin {
+.caja .contenido .descaja .botones .btn.checkin {
   display: none;
   background-color: green;
 }
 
-.caja .descaja .botones .btn:hover {
+.caja .contenido .descaja .botones .btn:hover {
   background-color: #000;
   color: #fff;
 }
 
-@media screen and (max-width: 420px) {
-  .caja .result {
-    background-color: #999;
-    min-height: 3.2rem;
-    max-height: 5rem;
-    height: auto;
-  }
-  .caja .result .titulo {
-    line-height: 20px;
-  }
-  .caja .result .imagenCaja {
-    height: 100%;
-  }
-  .caja .descaja {
+.der .imagen {
+  float: right;
+}
+
+.der .descaja {
+  margin-right: auto;
+}
+
+.izq .imagen {
+  float: left;
+}
+
+.izq .descaja {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 520px) {
+  .caja .contenido {
     width: 100%;
-    padding-bottom: 1%;
   }
-  .caja .descaja .detalle {
-    padding-top: 0.5%;
+  .caja .contenido .imagen {
+    width: 100%;
   }
-  .caja .descaja .fecha {
+  .caja .contenido .descaja {
+    width: 100%;
+  }
+  .caja .contenido .descaja h3 {
+    font-size: 1.4rem;
+  }
+  .caja .contenido .descaja .fecha {
     text-align: center;
   }
 }

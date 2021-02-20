@@ -1,42 +1,41 @@
 <h2>TORNEOS DE VIDEOJUEGOS</h2>
 
-<div *ngFor="let torneo of torneos">
+<div *ngFor="let torneo of torneos; let impar = odd; let par = even;" [ngClass]="{izq:par, der:impar}">
 
-    <div class="caja" *ngIf="Categorias.categoria==torneo.CategoriaDesc">
+    <div class="caja row" *ngIf="Categorias.categoria==torneo.CategoriaDesc">
+        <div class="contenido">
 
-        <div class="result">
-            <div class="imagenCaja">
-                <img [src]="torneo.imagen" alt="Imagen Torneo {{torneo.id}}">
-            </div>
-            <h3 class="titulo">{{torneo.titulo}}</h3>
-        </div>
-
-        <div class="descaja">
-
-            <div class="info">{{torneo.descripcion}}</div>
-
-            <div class="row">
-                <div class="fecha col-lg-6 col-md-6 col-sm-12 col-12">
-                    <strong>FECHA INICIO:</strong> {{torneo.fechaInicio}}
-                    <br><strong>FECHA FIN:</strong> {{torneo.fechaFin}}
-                </div>
-
-                <div class="participantes col-lg-6 col-md-6 col-sm-12 col-12">
-                    PARTICIPANTES: {{torneo.numparticipantes}}
-                    <p class="confirmados">CONFIRMADOS: 0</p>
+            <div class="imagen">
+                <div class="view overlay rounded z-depth-2 mb-lg-0 mb-4 waves-light" mdbWavesEffect>
+                    <img class="img-fluid" [src]="torneo.imagen" alt="Imagen Torneo {{torneo.id}}">
                 </div>
             </div>
 
-            <div class="botones row">
-                <btn class="btn" routerLink="/vista-torneos" title="Volver a torneos">Volver</btn>
-                <btn routerLink="../../../vista-foro/detalle-foro/{{torneo.entrada_id}}" class="btn" title="Entrada relacionada en el foro">Entrada foro</btn>
-                <btn class="btn" title="Participa en el torneo">Apuntarse</btn>
-                <!-- <btn class="checkin btn">CHECK-IN</btn> -->
+            <div class="descaja">
+
+                <h3 class="font-weight-bold mb-3"><strong>{{torneo.titulo}}</strong></h3>
+                <p>{{torneo.descripcion}}</p>
+
+                <div class="detalle row">
+                    <div class="fecha col-lg-6 col-md-6 col-sm-12 col-12">
+                        <strong>FECHA INICIO:</strong> {{torneo.fechaInicio}}
+                        <br><strong>FECHA FIN:</strong> {{torneo.fechaFin}}
+                    </div>
+
+                    <div class="participantes col-lg-6 col-md-6 col-sm-12 col-12">
+                        PARTICIPANTES: {{torneo.numparticipantes}}
+                        <p class="confirmados">CONFIRMADOS: 0</p>
+                    </div>
+                </div>
+
+                <div class="botones row">
+                    <a class="btn" routerLink="/vista-torneos" title="Volver a torneos">Volver</a>
+                    <a routerLink="../../../vista-foro/detalle-foro/{{torneo.entrada_id}}" class="btn"
+                        title="Entrada relacionada en el foro">Entrada foro</a>
+                    <btn class="btn" title="Participa en el torneo">Apuntarse</btn>
+                </div>
+
             </div>
-
         </div>
-
     </div>
 </div>
-
-<!-- <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 15, 20]"></mat-paginator> -->

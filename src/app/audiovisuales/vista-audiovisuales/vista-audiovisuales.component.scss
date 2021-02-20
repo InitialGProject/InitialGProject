@@ -1,9 +1,6 @@
 @import "./../../../mixins";
 @import "./../../../variables"; 
 
-.videoTitle{
-    color: $blanco;
-}
 
 .video-filter{
     width: 96%;
@@ -15,18 +12,21 @@ img {
     height: auto;
 }
 
-.video-displayer{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 2vh;
-}
+// .video-displayer{
+//     display: flex;
+//     align-items: center;
+//     flex-direction: column;
+//     padding-top: 2vh;
+// }
 
 .video {
     box-shadow: 0 1px 1px $negro(0, 0, 0, 0.15);
     width: 23%; 
     margin: 1%;
+    padding-bottom: 1%;
     float: left;
+    background-color: black;
+    border-radius: 7px;
 }
 
 
@@ -68,10 +68,10 @@ img {
 }
 
 
-.video img {
-    width: 100%;
-    opacity: 1;
-}
+// .video img {
+//     width: 100%;
+//     opacity: 1;
+// }
 
 .video img:hover, .video img:active, .video img:focus {
     opacity: 0.75;
@@ -79,15 +79,16 @@ img {
 .videoTitle{
     font-size: 16px;
     height: 20px;
+    color: $blanco;
 }
 
-.title{
-    font-size: 30px;
-    color: aqua;
-    width: 100%;
-    text-align: center;
+// .title{
+//     font-size: 30px;
+//     color: aqua;
+//     width: 100%;
+//     text-align: center;
 
-}
+// }
 
 @media screen and (max-width: 420px) {
 

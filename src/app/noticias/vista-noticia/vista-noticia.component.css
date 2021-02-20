@@ -12,98 +12,81 @@ h2 {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 520px) {
   h2 {
     font-size: larger;
     text-align: center;
   }
 }
 
-.span {
-  min-height: 2rem;
-}
-
-.span .caja {
+.caja {
   background: #fff;
-  border: 0;
-  margin-bottom: 2%;
-  overflow: hidden;
+  padding: 0.2%;
+  margin: 0;
+  margin-bottom: 1rem;
+  border-radius: 7px;
+}
+
+.caja .contenido {
   width: 100%;
-  min-width: 15rem;
-  max-width: 100rem;
-  height: auto;
-  border-radius: 3px;
 }
 
-.span .caja a {
-  text-decoration: none;
-}
-
-.span .caja a .titulo {
-  float: right;
-  width: 69.8%;
-  margin: 0% 3%;
-  margin-top: 0.2%;
-  line-height: 20px;
-  margin-bottom: .3em;
-  font-size: 1.3em;
+.caja .contenido a {
   color: #000;
-  text-decoration: underline;
 }
 
-.span .caja a .imagenCaja {
-  float: left;
-  position: relative;
-  width: 100%;
-  max-width: 24.2%;
+.caja .contenido .imagen {
+  width: 42%;
 }
 
-.span .caja a .imagenCaja img {
-  width: 100%;
-  max-width: 250px;
-  max-height: 150px;
-  height: auto;
-  vertical-align: middle;
-  border: 0;
+.caja .contenido .imagen img {
+  border-radius: 7px;
 }
 
-.span .caja .descaja {
-  float: right;
-  width: 69.4%;
-  margin: 0% 3.2%;
-  padding-bottom: 1%;
+.caja .contenido .descaja {
+  padding: 0% 2%;
+  width: 58%;
 }
 
-.span .caja .descaja .detalle {
-  color: #717171;
-  font-size: 0.9em;
-  float: inline-end;
-  padding-top: 2%;
-}
-
-.span .caja .descaja .info {
+.caja .contenido .descaja p {
   text-align: justify;
-  color: #000;
-  margin-top: .3em;
-  font-size: .95em;
-  line-height: 1.2em;
 }
 
-@media screen and (max-width: 992px) {
-  .span {
-    min-height: 2rem;
-    margin: 0.2% 0%;
-  }
+.caja .contenido .descaja .detalle {
+  text-align: right;
 }
 
-@media screen and (max-width: 420px) {
-  .span .caja .descaja {
-    text-align: right;
-    width: 93.6%;
-    padding-bottom: 1%;
+.der .imagen {
+  float: right;
+}
+
+.der .descaja {
+  margin-right: auto;
+}
+
+.izq .imagen {
+  float: left;
+}
+
+.izq .descaja {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 520px) {
+  .caja .contenido {
+    width: 100%;
   }
-  .span .caja .descaja .detalle {
-    padding-top: 0.5%;
+  .caja .contenido .imagen {
+    width: 100%;
+  }
+  .caja .contenido .descaja {
+    width: 100%;
+  }
+  .caja .contenido .descaja h3 {
+    font-size: 1.4rem;
+  }
+  .caja .contenido .descaja .detalle {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=vista-noticia.component.css.map */

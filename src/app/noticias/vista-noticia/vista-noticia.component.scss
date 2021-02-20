@@ -2,96 +2,81 @@
 @import "./../../../variables";
 
 // BLOQUE DE LA NOTICIA
-.span{
-    min-height: 2rem;
+.caja{
+    background: $blanco;
+    padding: 0.2%;
+    margin: 0;
+    margin-bottom: 1rem;
+    border-radius: 7px;
 
-    .caja{
-        background: $blanco;
-        border: 0;
-        margin-bottom: 2%;
-        overflow: hidden;
+    .contenido{
         width: 100%;
-        min-width: 15rem;
-        max-width: 100rem;
-        height: auto;
-        border-radius: 3px;
 
         a{
-            text-decoration: none;
+            color: $negro;
+        }
 
-            .titulo{
-                float: right;
-                width: 69.8%;
-                margin: 0% 3%;
-                margin-top: 0.2%;
-                line-height: 20px;
-                margin-bottom: .3em;
-                font-size: 1.3em;
-                color: $negro;
-                text-decoration: underline;
-            }   
-
-            .imagenCaja{
-                float: left;
-                position: relative;
-                width: 100%;
-                max-width: 24.2%;
-
-                img{
-                    width: 100%;
-                    max-width: 250px;
-                    max-height: 150px;
-                    height: auto;
-                    vertical-align: middle;
-                    border: 0;
-                }
+        .imagen{
+            width: 42%;
+            img{
+                border-radius: 7px;
             }
         }
 
         .descaja{
-            float: right;
-            width: 69.4%;
-            margin: 0% 3.2%;
-            padding-bottom: 1%;
+            padding: 0% 2%;
+            width: 58%;
 
-            .detalle{
-                color: $gris;
-                font-size: 0.9em;
-                float: inline-end;
-                padding-top: 2%;
-            }
-
-            .info{
+            p{
                 text-align: justify;
-                color: $negro;
-                margin-top: .3em;
-                font-size: .95em;
-                line-height: 1.2em;
+            }
+            
+            .detalle{
+                text-align: right;
             }
         }
     }
 }
 
-@media screen and (max-width: 992px) {
+// DISEÑO PAR E IMPAR
+.der{
+    .imagen{
+        float: right;
+    }
+    .descaja{
+        margin-right: auto;
+    }
+}
 
-    .span{
-        min-height: 2rem;
-        margin: 0.2% 0%;
+.izq{
+    .imagen{
+        float: left;
+    }
+    .descaja{
+        margin-left: auto;
     }
 }
 
 // PANTALLA MOVIL
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 520px) {
 
-    .span{
-        .caja{
+    .caja{
+        .contenido{
+            width: 100%;
+    
+            .imagen{
+                width: 100%;
+            }
+
             .descaja{
-                text-align: right;
-                width: 93.6%;
-                padding-bottom: 1%;
-                
+                width: 100%;
+
+                h3{
+                    font-size: 1.4rem;
+                }
+
                 .detalle{
-                    padding-top: 0.5%;
+                    text-align: center;
                 }
             }
         }

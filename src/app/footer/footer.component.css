@@ -1,1 +1,19 @@
-/* No CSS *//*# sourceMappingURL=footer.component.css.map */
+footer {
+  background-color: #bb0011;
+  opacity: 0.5;
+}
+
+div {
+  text-align: center;
+}
+
+div a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.copy {
+  color: white;
+}
+/*# sourceMappingURL=footer.component.css.map */

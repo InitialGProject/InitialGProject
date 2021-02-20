@@ -7,11 +7,12 @@
             (change)="searchFunction($event.target.value)">
     </div>
 </div>
+
 <div *ngIf=mostrarVideos>
     <article class="video">
         <figure>
             <a class="fancybox fancybox.iframe" routerLink="vistaVideo/{{response[0]}}">
-                <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[0] +'/hqdefault.jpg'}}">                
+                <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[0] +'/hqdefault.jpg'}}" alt="Video">                
             </a>
         </figure>
         <h3 class="videoTitle">{{videoTitles[0]}}</h3>

@@ -1,18 +1,25 @@
 <h2>NOTICIAS DEL MUNDO GAMER</h2>
 
-<div class="span" *ngFor="let noticia of noticias">
-    <div class="caja">
-        <a routerLink="detalle-noticia/{{noticia.titulo}}">
-            <h3 class="titulo">{{noticia.titulo}}</h3>
-            <div class="imagenCaja">
-                <img class="" src="{{noticia.imagen}}" alt="Imagen Noticia">
-            </div>
-        </a>
-        <div class="descaja">
-            <div class="info">{{noticia.descripcion}}</div>
+<div class="caja row" *ngFor="let noticia of noticias; let impar = odd; let par = even;"
+    [ngClass]="{izq:par, der:impar}">
+    <div class="contenido">
 
-            <div class="detalle">{{noticia.nombre}} - {{noticia.fecha}}</div>
+        <div class="imagen">
+            <a routerLink="detalle-noticia/{{noticia.titulo}}"
+                class="view overlay rounded z-depth-2 mb-lg-0 mb-4 waves-light" mdbWavesEffect>
+                <img class="img-fluid" src="{{noticia.imagen}}" alt="Imagen Noticia">
+            </a>
         </div>
+
+        <div class="descaja">
+            <a routerLink routerLink="detalle-noticia/{{noticia.titulo}}">
+                <h3 class="font-weight-bold mb-3"><strong>{{noticia.titulo}}</strong></h3>
+            </a>
+            <p>{{noticia.descripcion}} <a routerLink="detalle-noticia/{{noticia.titulo}}" mdbBtn color="success"
+                    mdbWavesEffect><strong>Ver mas</strong></a></p>
+            <p class="detalle">Por <strong>{{noticia.nombre}}</strong>, {{noticia.fecha}}</p>
+        </div>
+
     </div>
 </div>
 

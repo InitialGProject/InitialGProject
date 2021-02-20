@@ -10,6 +10,11 @@
 .barra-lateral{
     border: solid 5px #bb0011;
     border-top: none;
-    border-bottom: none;
     padding-bottom: 1%;
+}
+
+@media screen and (max-width: 520px) {
+    .content{
+        padding: 1% 2%;
+    }
 }
