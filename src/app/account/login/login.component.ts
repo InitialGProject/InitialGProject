@@ -6,8 +6,10 @@ import { first } from 'rxjs/operators';
 import { AccountService } from './../../_services/account.service';
 import { AlertService } from './../../_services/alert.service';
 import { User } from 'src/app/_models/user';
+import { GlobalVars } from '../../globalVars';
 
-@Component({ templateUrl: 'login.component.html' })
+
+@Component({ templateUrl: 'login.component.html'})
 
 export class LoginComponent implements OnInit {
   form: FormGroup;
@@ -19,23 +21,17 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private route: ActivatedRoute,
-    private router: Router,
     private accountService: AccountService,
-    private alertService: AlertService
-  ) { }
+    private alertService: AlertService,
+    private globalVars: GlobalVars
+  ) {}
 
   ngOnInit() {
     this.form = this.formBuilder.group({
       username: ['', Validators.required],
       password: ['', Validators.required]
     });
-
-    // const user = { usuario: this.usuario, password: this.password };
-    // this.accountService.login(this.usuario, this.password).subscribe(data => {
-    //   console.log(data);
-    // });
-
+    this.nombre = this.globalVars.getGlobalUser()
   }
 
   // convenience getter for easy access to form fields
@@ -53,13 +49,12 @@ export class LoginComponent implements OnInit {
     }
     this.loading = true;
     this.accountService.login(this.f.username.value, this.f.password.value).subscribe(data => {
-      this.user = data;
-      console.log(this.user);
-      // next: () => {
-      //   //get return url from query parameters or default to home page
-      //   const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
-      //   this.router.navigateByUrl(returnUrl);
-      // },
+      if(data.token){
+        this.user = data;
+        this.nombre = this.user.nombre
+        this.globalVars.setGlobalToken(this.user.token)
+        this.globalVars.setGlobalUser(this.user.nombre)
+      }
     },
       error => {
         this.alertService.error(error);
