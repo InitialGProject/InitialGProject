@@ -28,6 +28,10 @@ import { JwtInterceptor } from './_helpers/jwt.interceptor';
 import { ErrorInterceptor } from './_helpers/error.interceptor';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
+//variables globales
+import { GlobalVars } from './globalVars';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +56,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
+    GlobalVars
   ],
   bootstrap: [AppComponent]
 })
