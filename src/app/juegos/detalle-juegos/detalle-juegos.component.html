@@ -5,26 +5,25 @@
         <div *ngIf="juegos.tipo=='RE'; else AC">
             <div>
                 <a routerLink="/vista-juegos/RE">
-                    <img src="./../../../assets/img/juegos/back.png" alt="volver"/>
+                    <img src="./../../../assets/img/juegos/back.png" alt="volver" />
                     Volver a Juegos Retro
                 </a>
                 <a routerLink="/juego/{{juegos.id}}">
-                    <img src="./../../../assets/img/juegos/go.png" alt="jugar a {{juegos.titulo}}"/>
+                    <img src="./../../../assets/img/juegos/go.png" alt="jugar a {{juegos.titulo}}" />
                     JUGAR A - {{juegos.titulo}}
                 </a>
             </div>
-            <p>RUTA: {{juegos.ruta}}</p>
         </div>
 
-        <ng-template #AC>            
+        <ng-template #AC>
             <div>
                 <a routerLink="/vista-juegos">
-                    <img src="./../../../assets/img/juegos/back.png" alt="volver"/>
+                    <img src="./../../../assets/img/juegos/back.png" alt="volver" />
                     Volver a Juegos
                 </a>
                 <a routerLink="/juego/{{juegos.id}}">
-                    <img src="./../../../assets/img/juegos/go.png" alt="jugar a {{juegos.titulo}}"/>
-                        JUGAR A - {{juegos.titulo}}
+                    <img src="./../../../assets/img/juegos/go.png" alt="jugar a {{juegos.titulo}}" />
+                    JUGAR A - {{juegos.titulo}}
                 </a>
             </div>
         </ng-template>

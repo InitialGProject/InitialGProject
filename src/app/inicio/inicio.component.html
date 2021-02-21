@@ -1,3 +1,83 @@
-<div *ngFor="let noticia of noticias;">
-    <h3 class="font-weight-bold mb-3"><strong>{{noticia.titulo}}</strong></h3>
+<div class="row">
+
+    <!-- SLIDER ULTIMAS NOTICIAS -->
+    <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+        <h4>LAS NOTICIAS MÁS RECIENTES</h4>
+
+        <mdb-carousel class="carousel slide carousel-fade w-100" [animation]="'fade'">
+            <mdb-carousel-item class="cuadro" *ngFor="let noticia of noticias | slice:'start:end'">
+
+                <a routerLink="./../vista-noticias/detalle-noticia/{{noticia.titulo}}">
+
+                    <div class="view w-100">
+                        <img class="Aimg d-block w-100" src="{{noticia.imagen}}" alt="Slider de Noticias">
+                        <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+                    </div>
+
+                    <div class="carousel-caption">
+                        <h3 class="h3-responsive">{{noticia.titulo}}</h3>
+                    </div>
+
+                </a>
+            </mdb-carousel-item>
+        </mdb-carousel>
+
+    </div>
+
+    <hr>
+
+    <!-- TABLON FORO -->
+    <div class="col-lg-3 col-md-3 col-sm-12 col-12">
+        <h4>FORO</h4>
+
+        <mdb-card class="tablon">
+            <a routerLink="./vista-foro">
+
+                <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+                    <img class="Bimg" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+                        alt="Card image cap">
+                </div>
+
+                <mdb-card-body class="infotablon">
+                    <mdb-card-title>
+                        <h5>FORO INITIALG</h5>
+                    </mdb-card-title>
+
+                    <mdb-card-text class="text-tablon">
+                        Los mejores comentarios y las mejores entradas. Obten acceso a nuestro foro y conoce a los
+                        jugadores mas experimentados en el mundo de los videojuegos.
+                    </mdb-card-text>
+                </mdb-card-body>
+            </a>
+        </mdb-card>
+
+    </div>
+</div>
+
+<hr>
+
+<div class="row">
+
+    <!-- JUEGOS -->
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <h4>PRUEBA YA NUESTROS JUEGOS MAS POPULARES</h4>
+
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6" *ngFor="let juegos of juego | slice:0:4">
+
+                <div>
+                    <a class="juego" routerLink="/vista-juegos/detalle-juegos/{{juegos.id}}">
+                        <img class="Cimg" src="{{juegos.imagen}}">
+                        <p>{{juegos.titulo}}</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- VIDEOS -->
+<div class="col-lg-12 col-md-12 col-sm-12 col-12">
 </div>
