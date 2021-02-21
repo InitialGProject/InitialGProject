@@ -7,6 +7,7 @@ import { NoticiasService } from '../services/noticias.service';
   templateUrl: './vista-noticia.component.html',
   styleUrls: ['./vista-noticia.component.scss']
 })
+
 export class VistaNoticiaComponent implements OnInit {
 
   noticias: Noticia;

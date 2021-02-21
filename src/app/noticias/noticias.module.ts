@@ -11,7 +11,6 @@ import { DetalleNoticiaComponent } from './detalle-noticia/detalle-noticia.compo
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { HttpClientModule } from '@angular/common/http';
 
-
 @NgModule({
   declarations: [
     VistaNoticiaComponent, 

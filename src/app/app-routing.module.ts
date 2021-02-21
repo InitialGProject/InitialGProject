@@ -22,7 +22,7 @@ import { VistaTorneosComponent } from './torneos/vista-torneos/vista-torneos.com
 import { VistaForoComponent } from './foro/vista-foro/vista-foro.component';
 
 // Perfil
-  // import { LoginComponent } from './perfil/login/login.component';
+// import { LoginComponent } from './perfil/login/login.component';
 import { SobreNosotrosComponent } from './contact/sobre-nosotros/sobre-nosotros.component';
 
 const accountModule = () => import('./account/account.module').then(x => x.AccountModule);
@@ -72,13 +72,13 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
-    path: 'sobre-nosotros',
-    component: SobreNosotrosComponent
-  },
-  {
     path: '#',
     redirectTo: ''
-  }
+  },
+  {
+    path: '',
+    component: InicioComponent
+  },
 ];
 
 @NgModule({

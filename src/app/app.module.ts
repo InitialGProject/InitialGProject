@@ -1,5 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 // routing
 import { AppRoutingModule } from './app-routing.module';
@@ -25,9 +26,9 @@ import { ContactModule } from './contact/contact.module';
 // modulos extra
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { JwtInterceptor } from './_helpers/jwt.interceptor';
 import { ErrorInterceptor } from './_helpers/error.interceptor';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 //variables globales
 import { GlobalVars } from './globalVars';
@@ -52,6 +53,7 @@ import { GlobalVars } from './globalVars';
     ForoModule,
     PerfilModule,
     ContactModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot()
   ],

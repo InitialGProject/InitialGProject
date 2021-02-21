@@ -1,12 +1,3 @@
-<div style="color: rgb(236, 252, 9);" *ngFor="let noticia of noticias">
-    {{noticia.titulo}} <br>
-    {{noticia.a}}
+<div *ngFor="let noticia of noticias;">
+    <h3 class="font-weight-bold mb-3"><strong>{{noticia.titulo}}</strong></h3>
 </div>
-
-<!-- <h1>Hola {{user.firstName}}!</h1>
-<p>You're logged in.</p>
-<p><a routerLink="/users">Ir a perfil de Usuario</a></p>
-
-<h1>Hola {{user.username}}!</h1>
-<p>You're logged in.</p>
-<p><a routerLink="./../account/login?returnUrl=%2F" (click)="logout()">Ir a perfil de Usuario</a></p> -->

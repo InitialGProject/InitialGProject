@@ -8,8 +8,7 @@ import { AlertService } from './../../_services/alert.service';
 import { User } from 'src/app/_models/user';
 import { GlobalVars } from '../../globalVars';
 
-
-@Component({ templateUrl: 'login.component.html'})
+@Component({ templateUrl: 'login.component.html' })
 
 export class LoginComponent implements OnInit {
   form: FormGroup;
@@ -23,8 +22,10 @@ export class LoginComponent implements OnInit {
     private formBuilder: FormBuilder,
     private accountService: AccountService,
     private alertService: AlertService,
+    private route: ActivatedRoute,
+    private router: Router,
     private globalVars: GlobalVars
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.form = this.formBuilder.group({
@@ -48,14 +49,18 @@ export class LoginComponent implements OnInit {
       return;
     }
     this.loading = true;
-    this.accountService.login(this.f.username.value, this.f.password.value).subscribe(data => {
-      if(data.token){
-        this.user = data;
-        this.nombre = this.user.nombre
-        this.globalVars.setGlobalToken(this.user.token)
-        this.globalVars.setGlobalUser(this.user.nombre)
-      }
-    },
+    this.accountService.login(this.f.username.value, this.f.password.value).subscribe(
+      data => {
+        if (data.token) {
+          this.user = data;
+          this.nombre = this.user.nombre
+          this.globalVars.setGlobalToken(this.user.token)
+          this.globalVars.setGlobalUser(this.user.nombre)
+          console.log(this.user);
+          this.alertService.success('Login Correcto', { keepAfterRouteChange: true });
+          this.router.navigate(['/'], { relativeTo: this.route });
+        }
+      },
       error => {
         this.alertService.error(error);
         this.loading = false;
