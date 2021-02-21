@@ -12,7 +12,7 @@ h2 {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 520px) {
   h2 {
     font-size: larger;
     text-align: center;
@@ -31,5 +31,15 @@ h2 {
 .row .responsive-iframe {
   width: 100%;
   height: 19rem;
+}
+
+.row a {
+  text-decoration: none;
+  font-weight: bold;
+  color: crimson;
+}
+
+.row a:hover {
+  color: firebrick;
 }
 /*# sourceMappingURL=vista-streammings.component.css.map */

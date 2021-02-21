@@ -3,8 +3,22 @@
 
 
 .video-filter{
-    width: 96%;
-    margin: 3% 2%;
+    width: 100%;
+}
+
+.input-group{
+    float: right;
+    min-width: 10rem;
+}
+
+.btn{
+    background-color: $rojo;
+    color: $blanco;
+    font-weight: bold;
+
+    &:hover{
+        background-color: $negro;
+    }
 }
 
 img {
@@ -23,7 +37,7 @@ img {
     box-shadow: 0 1px 1px $negro(0, 0, 0, 0.15);
     width: 23%; 
     margin: 1%;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
     float: left;
     background-color: black;
     border-radius: 7px;

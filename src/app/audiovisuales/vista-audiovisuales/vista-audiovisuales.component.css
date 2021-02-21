@@ -20,8 +20,22 @@ h2 {
 }
 
 .video-filter {
-  width: 96%;
-  margin: 3% 2%;
+  width: 100%;
+}
+
+.input-group {
+  float: right;
+  min-width: 10rem;
+}
+
+.btn {
+  background-color: #bb0011;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #000;
 }
 
 img {
@@ -34,7 +48,7 @@ img {
           box-shadow: 0 1px 1px #000 0, 0, 0, 0.15;
   width: 23%;
   margin: 1%;
-  padding-bottom: 1%;
+  padding-bottom: 2%;
   float: left;
   background-color: black;
   border-radius: 7px;

@@ -3,14 +3,16 @@
 
 .v{
     text-align: center;
+    font-size: large;
 }
 
-.vis_jue{
-    margin: 1% 4%;
-}
+// .vis_jue{
+//     margin: 1% 4%;
+// }
 .testeo{
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
+
 a {
     text-decoration: none;
     color: $blanco;
@@ -49,7 +51,8 @@ a {
 .rainbow-buttonR {
     background-image: linear-gradient(90deg, #f80ed9 0%, #072bfa 49%, #c900fc 70%, #0849fc 90%);
     border-radius: 20px;
-    width: 16.2rem;
+    width: 15.2rem;
+    // width: 11.9rem;
     height: 10.5rem;
 
     &:hover{

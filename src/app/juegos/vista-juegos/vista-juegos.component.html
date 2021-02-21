@@ -3,7 +3,7 @@
     <div class="testeo" *ngFor="let juegos of juego">
         <div *ngIf="tipo.clase=='RE'; else AC">
 
-            <div *ngIf="juegos.tipo=='RE'" class="v col-lg-4 col-md-6 col-sm-6 col-6">
+            <div *ngIf="juegos.tipo=='RE'" class="v col-lg-4 col-md-6 col-sm-6 col-12">
                 <a routerLink="detalle-juegos/{{juegos.id}}">
                     <div class="rainbow-buttonR">
                         <img src="{{juegos.imagen}}">
@@ -14,7 +14,7 @@
         </div>
 
         <ng-template #AC>
-            <div *ngIf="juegos.tipo=='AC'" class="v col-lg-4 col-md-6 col-sm-6 col-6">
+            <div *ngIf="juegos.tipo=='AC'" class="v col-lg-4 col-md-6 col-sm-6 col-12">
                 <a routerLink="detalle-juegos/{{juegos.id}}">
                     <div class="rainbow-button">
                         <img src="{{juegos.imagen}}">

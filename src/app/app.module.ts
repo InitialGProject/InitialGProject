@@ -20,6 +20,7 @@ import { JuegosModule } from './juegos/juegos.module';
 import { TorneosModule } from './torneos/torneos.module';
 import { ForoModule } from './foro/foro.module';
 import { PerfilModule } from './perfil/perfil.module';
+import { ContactModule } from './contact/contact.module';
 
 // modulos extra
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -30,7 +31,6 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 //variables globales
 import { GlobalVars } from './globalVars';
-
 
 @NgModule({
   declarations: [
@@ -51,6 +51,7 @@ import { GlobalVars } from './globalVars';
     TorneosModule,
     ForoModule,
     PerfilModule,
+    ContactModule,
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot()
   ],

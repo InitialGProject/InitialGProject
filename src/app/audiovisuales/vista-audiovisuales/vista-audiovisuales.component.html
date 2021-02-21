@@ -1,10 +1,13 @@
 <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+    <div class="col-lg-6 col-md-5 col-sm-5 col-12">
         <h2>VIDEOS</h2>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-12">
-        <input class="video-filter" type="search" placeholder="Buscar en videos" aria-label="Search"
+    <div class="input-group col-lg-6 col-md-7 col-sm-7 col-12">
+        <input class="video-filter form-control" type="text" placeholder="Buscar en videos" aria-label="Search"
             (change)="searchFunction($event.target.value)">
+        <span class="inpug-group-append">
+            <button class="btn btn-secondary" type="button">Buscar</button>
+        </span>
     </div>
 </div>
 
@@ -12,7 +15,7 @@
     <article class="video">
         <figure>
             <a class="fancybox fancybox.iframe" routerLink="vistaVideo/{{response[0]}}">
-                <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[0] +'/hqdefault.jpg'}}" alt="Video">                
+                <img class="videoThumb" src="{{'//img.youtube.com/vi/'+response[0] +'/hqdefault.jpg'}}" alt="Video">
             </a>
         </figure>
         <h3 class="videoTitle">{{videoTitles[0]}}</h3>
@@ -95,7 +98,3 @@
         <h3 class="videoTitle">{{videoTitles[11]}}</h3>
     </article>
 </div>
-
-
-
-
