@@ -1,21 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+// Componentes de Contacto
 import { SobreNosotrosComponent } from './sobre-nosotros/sobre-nosotros.component';
 import { SugerenciasComponent } from './sugerencias/sugerencias.component';
+
+// Rutas Fijas
 import { LayoutComponent } from './layout/layout.component';
+import { ContactRoutingModule } from './contact-routing.module';
+
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    SobreNosotrosComponent, 
-    SugerenciasComponent, 
+    SobreNosotrosComponent,
+    SugerenciasComponent,
     LayoutComponent
   ],
   imports: [
     CommonModule,
-    HttpClientModule,
+    ContactRoutingModule,
     MDBBootstrapModule.forRoot()
   ]
 })
+
 export class ContactModule { }
