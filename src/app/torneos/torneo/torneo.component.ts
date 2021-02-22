@@ -7,10 +7,14 @@ import { Torneos } from '../models/torneos';
 // Servicio de Torneos y sus Participantes
 import { TorneosService } from '../services/torneos.service';
 
+import { GlobalVars } from '../../globalVars';
+
+
 @Component({
   selector: 'app-torneo',
   templateUrl: './torneo.component.html',
-  styleUrls: ['./torneo.component.scss']
+  styleUrls: ['./torneo.component.scss'],
+  
 })
 
 export class TorneoComponent implements OnInit {
@@ -20,7 +24,8 @@ export class TorneoComponent implements OnInit {
 
   constructor(
     private servicioTorneos: TorneosService,
-    private rutaActiva: ActivatedRoute
+    private rutaActiva: ActivatedRoute,
+    private globalVars: GlobalVars
   ) { }
 
   ngOnInit(): void {
@@ -37,7 +42,7 @@ export class TorneoComponent implements OnInit {
         this.Categorias.categoria = params.CategoriaDesc;
       });
 
-    this.servicioTorneos.getTorneos()
+    this.servicioTorneos.getTorneos(this.globalVars.getGlobalToken())
       .subscribe(
         infoTorneo => {
           this.torneos = infoTorneo;
