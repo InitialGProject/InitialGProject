@@ -14,7 +14,6 @@ export class VistaVideoComponent implements OnInit {
   constructor( private router: Router, private sanitizer:DomSanitizer ) { }
 
   ngOnInit(): void {
-    console.log(this.router.url, "ROUTER")
     this.setVideoUrl(this.router.url.split("/")[3])  
   } 
   videoUrl

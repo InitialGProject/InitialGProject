@@ -45,6 +45,7 @@ h4 {
     text-shadow: 2px 1px #bb0011;
 }
 
+
 @media screen and (max-width: 976px) {
 
     .text-tablon{
@@ -70,3 +71,108 @@ h4 {
         font-size: larger;
       }
 }
+
+
+
+
+h2 {
+    color: #fff;
+    margin: 1% 0% 2%;
+    text-shadow: 2px 1px #bb0011;
+  }
+  
+  @media screen and (max-width: 992px) {
+    h2 {
+      color: #fff;
+      margin: 2% 0%;
+      text-shadow: 1px 0.5px #bb0011;
+    }
+  }
+  
+  @media screen and (max-width: 520px) {
+    h2 {
+      font-size: larger;
+      text-align: center;
+    }
+  }
+  
+  .video-filter {
+    width: 100%;
+  }
+  
+  .input-group {
+    float: right;
+    min-width: 10rem;
+  }
+  
+  .btn {
+    background-color: #bb0011;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: #000;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .video {
+
+    width: 23%;
+    margin: 1%;
+    padding-bottom: 2%;
+    float: left;
+    border-radius: 7px;
+  }
+  
+  .video figure {
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    margin-top: 8%;
+  }
+  
+  .video figure .video figure a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: 0;
+  }
+  
+  @media (max-width: 1024px) {
+    .video {
+      width: 31.333%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .video {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .video {
+      display: block;
+      width: 96%;
+      margin: 2%;
+      float: none;
+    }
+  }
+  
+  .video img:hover, .video img:active, .video img:focus {
+    opacity: 0.75;
+  }
+  
+  .videoTitle {
+    font-size: 16px;
+    height: 20px;
+    color: #fff;
+  }
+  
+  /*# sourceMappingURL=vista-audiovisuales.component.css.map */

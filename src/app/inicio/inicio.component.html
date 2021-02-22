@@ -44,8 +44,8 @@
                     </mdb-card-title>
 
                     <mdb-card-text class="text-tablon">
-                        Los mejores comentarios y las mejores entradas. Obten acceso a nuestro foro y conoce a los
-                        jugadores mas experimentados en el mundo de los videojuegos.
+                        Los mejores comentarios y las mejores entradas. Obtén acceso a nuestro foro y conoce a los
+                        jugadores más experimentados en el mundo de los videojuegos.
                     </mdb-card-text>
                 </mdb-card-body>
             </a>
@@ -60,7 +60,7 @@
 
     <!-- JUEGOS -->
     <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-        <h4>PRUEBA YA NUESTROS JUEGOS MAS POPULARES</h4>
+        <h4>PRUEBA YA NUESTROS JUEGOS MÁS POPULARES</h4>
 
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-6 col-6" *ngFor="let juegos of juego | slice:0:4">
@@ -80,4 +80,15 @@
 
 <!-- VIDEOS -->
 <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+    <h4>DISFRUTA YA DE NUESTROS VÍDEOS MÁS POPULARES</h4>
+    <div class="row">
+        <div class="video" *ngFor="let video of response | slice:0:4">
+            <figure>
+                <a class="video-display" routerLink="/vista-audiovisuales/vistaVideo/{{video}}">
+                    <img class="videoThumb" src="{{'//img.youtube.com/vi/'+video +'/hqdefault.jpg'}}" alt="Video">
+                </a>
+            </figure>
+        </div>
+    </div>
+
 </div>
