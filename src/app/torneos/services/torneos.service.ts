@@ -1,24 +1,29 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders  } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { Torneos } from '../models/torneos';
 import { ParticipantesTorneo } from '../models/participantes-torneo';
 
-const torneos = 'http://alum3.iesfsl.org/api/torneos';
+//const torneos = 'http://alum3.iesfsl.org/api/torneos';
+const torneos = 'http://localhost:8080/torneos';
 const participantes = 'http://alum3.iesfsl.org/api/participantestorneos';
 // const torneos = 'http://localhost:8080/torneos';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 
 export class TorneosService {
 
   constructor(private http: HttpClient) { }
 
-  getTorneos(): Observable<Torneos> {
-    return this.http.get<Torneos>(torneos);
+  getTorneos(auth): Observable<Torneos> {
+    return this.http.get<Torneos>(torneos,  {
+      headers: {
+        Authorization: 'Bearer ' + auth,
+      }
+    });
   }
 
   getParticipantes(): Observable<ParticipantesTorneo> {
