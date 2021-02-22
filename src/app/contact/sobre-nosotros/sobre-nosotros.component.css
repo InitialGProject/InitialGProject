@@ -1,1 +1,20 @@
-/* No CSS *//*# sourceMappingURL=sobre-nosotros.component.css.map */
+img {
+  width: 60%;
+}
+
+.titulo {
+  border-radius: 30px;
+  background-color: white;
+  text-align: center;
+}
+
+.persona {
+  border-radius: 50% 50% 25% 25%;
+  background-color: white;
+  padding: 0.5%;
+}
+
+.res {
+  color: #bb0011;
+}
+/*# sourceMappingURL=sobre-nosotros.component.css.map */
