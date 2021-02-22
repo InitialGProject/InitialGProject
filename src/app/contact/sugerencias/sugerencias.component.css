@@ -1,1 +1,15 @@
-/* No CSS *//*# sourceMappingURL=sugerencias.component.css.map */
+section {
+  background-color: black;
+  color: white;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+section a {
+  background-color: #bb0011;
+}
+
+section a:hover {
+  opacity: 0.8;
+}
+/*# sourceMappingURL=sugerencias.component.css.map */

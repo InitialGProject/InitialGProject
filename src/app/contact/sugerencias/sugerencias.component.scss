@@ -1,0 +1,14 @@
+section{
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+    border-radius: 10px;
+
+    a{
+        background-color: #bb0011;
+
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
