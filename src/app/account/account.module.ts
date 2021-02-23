@@ -6,13 +6,15 @@ import { RegisterComponent } from './register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AccountRoutingModule } from './account-routing.module';
 import { ProfileComponent } from './profile/profile.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
 @NgModule({
   imports: [
       CommonModule,
       ReactiveFormsModule,
-      AccountRoutingModule
+      AccountRoutingModule,
+      MDBBootstrapModule.forRoot()
   ],
   declarations: [
       LayoutComponent,

@@ -1,0 +1,16 @@
+.btn {
+  margin: 1% auto;
+  background-color: #bb0011;
+  color: #fff;
+}
+
+.btn.checkin {
+  display: none;
+  background-color: green;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+/*# sourceMappingURL=profile.component.css.map */

@@ -19,7 +19,7 @@
 
         <div class="descaja">
 
-            <p class="texto">{{noticia.texto}}</p>
+            <p class="texto" [innerHtml]="noticia.texto"></p>
 
             <a routerLink="/vista-noticias" style="float: left;">
                 Volver a NOTICIAS

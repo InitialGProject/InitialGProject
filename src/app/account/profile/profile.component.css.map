@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CAAA;EACA,MAAM,EAAE,OAAO;EACf,gBAAgB,ECAb,OAAO;EDCV,KAAK,ECHA,IAAI;CDcZ;;AAdD,AAKI,IALA,AAKC,QAAQ,CAAA;EACL,OAAO,EAAE,IAAI;EACb,gBAAgB,ECFhB,KAAK;CDGR;;AARL,AAUI,IAVA,AAUC,MAAM,CAAA;EACH,gBAAgB,ECVhB,IAAI;EDWJ,KAAK,ECZJ,IAAI;CDaR",
+    "sources": [
+        "profile.component.scss",
+        "../../../_variables.scss"
+    ],
+    "names": [],
+    "file": "profile.component.css"
+}
