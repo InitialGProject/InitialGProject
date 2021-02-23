@@ -56,6 +56,7 @@ export class LoginComponent implements OnInit {
           this.nombre = this.user.nombre
           this.globalVars.setGlobalToken(this.user.token)
           this.globalVars.setGlobalUser(this.user.nombre)
+          this.globalVars.setglobalUserToken(this.user)
           console.log(this.user);
           this.alertService.success('Login Correcto', { keepAfterRouteChange: true });
           this.router.navigate(['/'], { relativeTo: this.route });
