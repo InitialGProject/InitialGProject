@@ -5,19 +5,18 @@ import { UserInterface } from 'src/app/_models/user-interface';
 import { GlobalVars } from '../../globalVars';
 
 
-@Component({ templateUrl: 'profile.component.html' })
+@Component({
+  selector: 'app-profile',
+  templateUrl: './profile.component.html', })
 
 export class ProfileComponent implements OnInit {
-  
-  Tokens: { tokito: string };
 
   constructor(
     private authService: AuthService,
     private globalVars: GlobalVars
     ) { }
   // user: UserInterface;
-  TUser: Object;
-
+    TUser: any;
 
   ngOnInit() {
     // this.user = this.authService.getCurrentUser();
