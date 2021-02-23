@@ -2,6 +2,14 @@
   background-color: #bb0011;
 }
 
+.navbar-brand {
+  font-weight: bold;
+}
+
+.navbar-nav {
+  font-weight: bold;
+}
+
 .perfil {
   padding: 0.3rem;
 }

@@ -5,16 +5,23 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 41rem;
 }
 
 .barra-lateral {
-  border: solid 5px #92000c;
+  border: solid 5px #80000b;
   border-top: none;
   border-bottom: none;
   padding-bottom: 1%;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 767px) {
+  .barra-lateral {
+    border-top: solid 5px #80000b;
+  }
+}
+
+@media screen and (max-width: 576px) {
   .content {
     padding: 1% 2%;
   }
