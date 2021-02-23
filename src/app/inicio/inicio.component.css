@@ -9,7 +9,10 @@
 }
 
 .tablon {
-  min-height: 75%;
+  min-height: 93%;
+  background-color: white;
+  padding: 1%;
+  border-radius: 7px;
 }
 
 .tablon .infotablon {
@@ -43,8 +46,17 @@ h4 {
   text-shadow: 2px 1px #bb0011;
 }
 
+@media screen and (max-width: 1276px) {
+  .tablon {
+    min-height: 90%;
+  }
+}
+
 @media screen and (max-width: 976px) {
-  .text-tablon {
+  .tablon {
+    min-height: 87%;
+  }
+  .tablon .text-tablon {
     display: none;
   }
   h4 {

@@ -1,7 +1,7 @@
 .barra-lateral {
   position: -webkit-sticky;
   position: sticky;
-  top: 3rem;
+  top: 4rem;
   padding-top: 0.5rem;
   right: 0;
 }
@@ -15,6 +15,10 @@
   line-height: 2rem;
 }
 
+.barra-lateral a .icono {
+  padding: 0.1rem 0;
+}
+
 .barra-lateral a:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -26,7 +30,6 @@
 }
 
 .barra-lateral .contenido {
-  background-color: black;
   width: 100%;
 }
 
@@ -38,18 +41,7 @@
   border: 0;
 }
 
-.buscador {
-  margin: auto;
-  width: auto;
-}
-
-button {
-  background-color: black;
-  color: white;
-}
-
-button i {
-  right: 0;
-  color: white;
+.barra-lateral .contenido:hover {
+  opacity: 0.7;
 }
 /*# sourceMappingURL=lateralbar.component.css.map */

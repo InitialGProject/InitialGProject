@@ -2,7 +2,11 @@
   background-color: #bb0011;
 }
 
-img {
+.perfil {
+  padding: 0.3rem;
+}
+
+.perfil img {
   width: 2rem;
 }
 /*# sourceMappingURL=nav.component.css.map */

@@ -1,10 +1,9 @@
 // Barra lateral
 
 .barra-lateral {
-  // estos 4 no se tocan
   position: -webkit-sticky;
   position: sticky;
-  top: 3rem;
+  top: 4rem;
   padding-top: 0.5rem;
   right: 0;
 
@@ -15,6 +14,10 @@
     font-weight: bold;
     padding: 1rem 0;
     line-height: 2rem;
+
+    .icono{
+      padding: 0.1rem 0;
+    }
 
     &:hover {
       transition: all 0.5s ease-in-out;
@@ -27,10 +30,7 @@
   }
 
   .contenido {
-    // border: white solid 0.5px;
-    background-color: black;
     width: 100%;
-    // height: 8rem;
 
     img{
       width: 100%;
@@ -39,73 +39,9 @@
       height: auto;
       border: 0;
     }
+
+    &:hover{
+      opacity: 0.7;    
+    }
   }
 }
-
-.buscador {
-  // max-width: 11rem;
-  margin: auto;
-  width: auto;
-}
-
-button {
-  background-color: black;
-  color: white;
-  i {
-    //position: absolute;
-    right: 0;
-    color: white;
-  }
-}
-
-//   // top: 0;
-//   right: 0;
-//   background-color: gray;
-//   height: 100%; /* Full-height: remove this if you want "auto" height */
-//   width: 20%; /* Set the width of the sidebar */
-//   //box-sizing: border-box;
-//   // position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-//   // z-index: 1; /* Stay on top */
-//   // margin-top: 7%;
-//   right: 0;
-//   //border: 1px solid red;
-//   background-color: #111; /* Black */
-//   overflow-x: hidden; /* Disable horizontal scroll */
-
-// /* The sidebar menu */
-// .barra-lateral {
-//   // margin-top: 9%;
-//   height: 100%; /* Full-height: remove this if you want "auto" height */
-//   width: max-content; /* Set the width of the sidebar */
-//   //box-sizing: border-box;
-//   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-//   // z-index: 1; /* Stay on top */
-//   // margin-top: 7%;
-//   right: 0;
-//   //border: 1px solid red;
-//   background-color: #111; /* Black */
-//   overflow-x: hidden; /* Disable horizontal scroll */
-// }
-
-// /* The navigation menu links */
-// .sidebar a {
-//   padding: 6px 8px 6px 16px;
-//   text-decoration: none;
-//   color: #818181;
-//   display: block;
-// }
-
-// /* When you mouse over the navigation links, change their color */
-// .sidebar a:hover {
-//   color: #f1f1f1;
-// }
-
-// /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-// @media screen and (max-height: 450px) {
-//   .sidebar {
-//     padding-top: 15px;
-//   }
-//   .sidebar a {
-//     font-size: 18px;
-//   }
-// }
