@@ -1,0 +1,364 @@
+
+  
+/* Base css */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i,700,700i');
+
+a:hover,
+a:link,
+a:visited{
+	text-decoration:none;
+}
+a:visited{
+	outline-style:none;
+} 
+a:focus,
+input:focus,
+textarea:focus,
+button:focus{
+	outline-style:none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin:0px;
+	font-weight:700;
+}
+img {
+	max-width:100%;
+	height:auto;
+}
+body {
+	font-family:'Ubuntu', sans-serif;
+}
+.clearfix {
+	display:block;
+	clear:both;
+}
+/*============ service section css =============== */
+.sction-padding {
+	padding:80px 0;
+}
+.mad-festivak-bill {
+	background:#EFEFEF;
+	position:relative;
+	z-index:1;
+	box-shadow: 0px 0px 2px #999;
+}
+.mad-festivak-bill::after {
+	position: absolute;
+	content: "";
+	top: 20px;
+    right: -9px;
+	background: #EA9E2B;
+	width: 60px;
+	height: 25px;
+	z-index: -1;
+	-webkit-transform: rotate(50deg);
+	transform: rotate(50deg);
+}
+.close-bill {
+	position: absolute;
+	left: 94%;
+	color:#4C4E50;
+	font-weight:900;
+	cursor:pointer;
+	top: 18%;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #DBDEE0;
+	text-align: center;
+	line-height: 27px;
+}
+.form-controls {
+	width: 350px;
+	margin: 25px auto 0;
+	padding-bottom:25px;
+}
+.form-controls label {
+	color: #ddd;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+}
+/* paymrnt Box */
+.payment-box {
+	background:#FDF9F0;
+	padding:20px; 
+	position:relative;
+} 
+/* Top color border */
+.color-border {
+	position:absolute;
+	height:4px;
+	width:10%;
+	background:#D94F62;
+	top:0;
+	left:0;
+}
+.color-border:nth-child(2) {
+	background: #FDCB5C;
+	width: 30%;
+	left: 75px;
+}
+.color-border:nth-child(3) {
+	background: #E36A73;
+	width: 10%;
+	left: 300px;
+}
+.color-border:nth-child(4) {
+	background: #389BA2;
+	width: 20%;
+	left: 375px;
+}
+.color-border:nth-child(5) {
+	background: #E36A73;
+	width: 10%;
+	left: 525px;
+}
+.color-border:nth-child(6) {
+	background: #E9C77E;
+	width: 20%;
+	left: 600px;
+}
+/* Button social*/
+.payment-box button {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	margin-left: 20px;
+	color: #1397CC;
+	background:#FAFAF9;
+}
+.payment-box button i { 
+	margin-right:-2px;
+}
+button.facebook-clr {
+   background:#EDEFF2;
+   color:#14579A;
+} 
+/*  paymrnt Box */  
+.payment-title-bar {
+	background: #fff;
+	padding: 20px;  
+	margin-top: 20px;
+	box-shadow: 0px 2px 1px #ddd;
+	height: 65px; 
+} 
+.payment-title {
+	float:left;
+	width: 62%;
+}
+.payment-title h3 {
+	display: inline-block; 
+	color: #4C4E50;
+	font-size: 20px;
+}
+.payment-title span {
+	background: #E13D55;
+	color: #ddd;
+	padding: 1px 5px;
+	margin:0 10px;
+	border-radius: 3px;
+	text-transform: uppercase; 
+}
+.payment-title a {
+	color: #ddd; 
+}
+/* arrow */
+.left-dolar-arrow {
+	float: right; 
+}
+.left-dolar-arrow span {
+	color: #65430F; 
+	position: relative; 
+	background: #FFCF6B;
+	padding: 5px 20px;
+	z-index: 1; 
+	font-size: 17px;
+	left:29px;
+}
+.left-dolar-arrow span::after {
+	position: absolute;
+	content: "";
+	top: 0px;
+	left: -30px;
+	border-style: solid;
+	border-width: 15px;
+	z-index: -1;
+	border-color: transparent #FFCF6B transparent transparent;
+} 
+/* Email input Box*/
+.input-email {
+	background: #FAFAFA;
+	padding: 10px;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 1px #8B8B8B; 
+	position: relative;  
+}
+.input-email::before {
+	position: absolute;
+	content: "";
+	top: -4px;
+	left: 0px;
+	border-top: 4px solid #F46057;
+	width: 100%; 
+}
+.angle-border {
+	position: absolute;
+	top: -4px;
+	left: 12px;
+	background: #7795A6;
+	width: 20px;
+	height: 4px;
+	-webkit-transform: skew(-30deg);
+	transform: skew(-30deg);
+	border-left: 2px solid #fff;
+	border-right: 2px solid #fff;
+}
+.angle-border:nth-child(2){ 
+	left: 50px;  
+}
+.angle-border:nth-child(3) {  
+	left: 88px; 
+}
+.angle-border:nth-child(4) {  
+	left: 125px; 
+}
+.angle-border:nth-child(5) {  
+	left: 163px; 
+}
+.angle-border:nth-child(6) {  
+	left:202px; 
+}
+.angle-border:nth-child(7) {  
+	left: 241px; 
+}
+.angle-border:nth-child(8) {  
+	left: 281px; 
+}
+.angle-border:nth-child(9) {  
+	left: 318px; 
+} 
+.input-email input[type="email"],.additional-info input[type="text"]{
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+	color: #A6A6A6;
+	font-weight: 700;
+	width: 100%;
+	box-shadow: 0px 0px 1px #C6C6C6;
+}
+/* Payment additional info box */
+.additional-info-box {
+	background:#FAFAFA;
+	box-shadow: 0px 0px 1px #8B8B8B;
+	border: 1px solid #E4E4E4;
+}
+.additional-info-head {
+	padding: 10px;
+	background: #E4E4E4;
+	overflow: hidden;
+	border-top: 8px solid #FAFAFA; 
+}
+.additional-info-head h3 { 
+	color: #554345;
+	font-size: 18px; 
+	float: left;
+	width: 50%;
+}
+.additional-info-head i { 
+	text-align: right; 
+	width: 50%; 
+	font-size: 18px;
+	color: #D0D5DA;
+}
+.additional-info{  
+	padding: 10px;
+}
+.cv-code {
+	float: left;
+	width: 66%;
+}
+.cv-code label {
+	display:block;
+}
+.cv-code input[type="text"] {
+	width: 25%;
+	box-shadow: 0px 0px 1px #C6C6C6;
+}
+.expire-info {
+	margin-top: 20px;
+} 
+.ex-date {
+	float: right;
+	width: 32%;
+}
+.ex-date input[type="text"] {
+	width: 48%;
+	box-shadow: 0px 0px 1px #C6C6C6;
+}
+/* Bottom part */ 
+.form-bottom {
+	margin-top:20px;
+}
+.form-bottom h4 {
+	float:left;
+	width:40%;
+	font-size: 16px;
+	text-align: right; 
+} 
+.form-bottom h4 > span {
+	display: block;
+	color: #C6C6C6; 
+	font-size: 13px;
+} 
+.pay-price {
+	float: right;
+	width: 60%;
+	text-align: right;
+	position: relative; 
+}
+.form-bottom input[type="text"] {
+	width: 30%;
+	border: 1px solid #C6C6C6;
+	padding: 5px 0 5px 20px;
+	color: #C6C6C6;
+	font-weight: 600; 
+	text-align: center;
+	margin-right: 10px;
+	box-shadow: 0px 0px 1px #C6C6C6;
+}
+.pay-price::before {
+	position: absolute;
+	top:1px;
+	left: 69px;
+	font-family: FontAwesome;
+	background: #E5E5E5;
+	content: "\f155"; 
+	width: 25px;
+	height: 30px; 
+	text-align: center;
+	line-height: 30px; 
+} 
+.form-bottom input[type="submit"]{
+	background:linear-gradient(#009FA2, #01C2C3);
+	border-style:none;
+	padding:5px 20px;
+	color:#fff;
+	font-size:16px;
+	border-radius:3px;  
+}
+.form-bottom input[type="submit"]:hover{
+	background:linear-gradient(#DE3D54, #DD5044);  
+}
+.caja { 
+	font-family: sans-serif; 
+	font-size: 18px; 
+	font-weight: 400; 
+	color: #ffffff;
+}
+
+ 
+

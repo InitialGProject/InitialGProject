@@ -5,6 +5,10 @@ import { LayoutComponent } from './layout/layout.component';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
+import { SuscripcionesComponent } from './suscripciones/suscripciones.component';
+import { DetalleSuscripcionesComponent } from './detalle-suscripciones/detalle-suscripciones.component';
+
+
 
 const routes: Routes = [
     {
@@ -12,7 +16,9 @@ const routes: Routes = [
         children: [
             { path: 'login', component: LoginComponent },
             { path: 'register', component: RegisterComponent },
-            { path: 'profile', component: ProfileComponent }
+            { path: 'profile', component: ProfileComponent },
+            { path: 'suscripciones', component: SuscripcionesComponent },
+            { path: 'detalle-suscripciones', component: DetalleSuscripcionesComponent }
 
         ]
     }

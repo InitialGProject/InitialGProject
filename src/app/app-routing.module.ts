@@ -21,9 +21,15 @@ import { VistaTorneosComponent } from './torneos/vista-torneos/vista-torneos.com
 // Foro
 import { VistaForoComponent } from './foro/vista-foro/vista-foro.component';
 
+import { SuscripcionesComponent } from './account/suscripciones/suscripciones.component';
+import { DetalleSuscripcionesComponent } from './account/detalle-suscripciones/detalle-suscripciones.component';
+
+
+
+
 // Perfil
 // import { LoginComponent } from './perfil/login/login.component';
-import { SobreNosotrosComponent } from './contact/sobre-nosotros/sobre-nosotros.component';
+//import { SobreNosotrosComponent } from './contact/sobre-nosotros/sobre-nosotros.component';
 
 const accountModule = () => import('./account/account.module').then(x => x.AccountModule);
 const usersModule = () => import('./users/users.module').then(x => x.UsersModule);
@@ -70,6 +76,14 @@ const routes: Routes = [
     path: 'account',
     component: InicioComponent,
     canActivate: [AuthGuard]
+  },
+  {
+    path: 'suscripciones',
+    component: SuscripcionesComponent
+  },
+  {
+    path: 'detalle-suscripciones',
+    component: DetalleSuscripcionesComponent
   },
   {
     path: '#',
