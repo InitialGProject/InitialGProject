@@ -7,6 +7,7 @@ import { Comentarios } from '../models/comentarios';
 
 // Servicio de Entradas y sus Comentarios del Foro
 import { ForoService } from '../services/foro.service';
+import { GlobalVars } from 'src/app/globalVars';
 
 @Component({
   selector: 'app-detalle-foro',
@@ -22,7 +23,8 @@ export class DetalleForoComponent implements OnInit {
 
   constructor(
     private servicioForo: ForoService,
-    private rutaActiva: ActivatedRoute
+    private rutaActiva: ActivatedRoute,
+    private globalVars: GlobalVars
   ) { }
 
   ngOnInit(): void {
@@ -32,7 +34,7 @@ export class DetalleForoComponent implements OnInit {
 
   dameEntradas(): void {
 
-    this.servicioForo.getEntradas()
+    this.servicioForo.getEntradas(this.globalVars.getGlobalToken())
       .subscribe(
         infoEntrada => {
           this.entradas = infoEntrada;
@@ -54,7 +56,7 @@ export class DetalleForoComponent implements OnInit {
         this.ID.id = params.id;
       });
 
-    this.servicioForo.getComentarios()
+    this.servicioForo.getComentarios(this.globalVars.getGlobalToken())
       .subscribe(
         infoComentario => {
           this.comentarios = infoComentario;
