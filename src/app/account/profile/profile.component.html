@@ -23,40 +23,40 @@
     <div class="row">
       <div class="col-md-7 mb-md-0 mb-5">
           <div class="row">
+            <div class="col-md-6">
+              <img src="../../../assets/img/perfiles/{{TUser.avatar}}" class="rounded-circle img-thumbnail" alt="profile">
+            </div>
             <div class="col-md-12">
-                <h3>{{TUser.nombre}}</h3>
+                <h3>Nombre: {{TUser.nombre}}</h3>
             </div>
 
-            <div class="col-md-12">
-                <h3>{{TUser.token}}</h3>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              
+            <div class="col-md-3 text-center">
+                <h3>Token: {{TUser.token}}</h3>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-md-12">
-              
+            <div class="col-md-3 text-center">
+              <h3>Suscripcion: {{TUser.suscripcion}}</h3>
+            </div>
+          </div>
+
+
+          <div  class="row">
+            <div class="col-md-3 text-center">
+
             </div>
           </div>
           
-        <div class="text-center text-md-left">
-          <a class="btn" mdbBtn mdbWavesEffect title="Modificar datos">Modificar</a>
+        <div *ngIf="TUser.suscripcion=='Admin'" class="text-center text-md-left">
+          <a class="btn" mdbBtn mdbWavesEffect title="Back" href='http://alum3.iesfsl.org/bck/index.php'>Acceder al Back</a>
         </div>
-        <div class="text-center text-md-left">
+        <!-- <div class="text-center text-md-left">
           <a class="btn" mdbBtn mdbWavesEffect title="Borrar cuenta">Borrar cuenta</a>
-        </div>
+        </div> -->
         <div class="text-center text-md-left">
           <a class="btn" mdbBtn mdbWavesEffect title="Desconectarse" (click)="logout()">LogOut</a>
         </div>
-      </div>
-
-      <div class="col-md-3 text-center">
-        <img src="../../../assets/img/perfil.png" class="rounded-circle img-thumbnail" alt="profile">
       </div>
     </div>
   </section>
