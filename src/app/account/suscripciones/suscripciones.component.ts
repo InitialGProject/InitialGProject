@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ActivatedRoute, Params } from '@angular/router';
 
 
 @Component({
@@ -11,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class SuscripcionesComponent implements OnInit {
 
   constructor(
+    private rutaActiva: ActivatedRoute
   ) { }
 
   ngOnInit() {

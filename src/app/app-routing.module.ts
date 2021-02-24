@@ -88,10 +88,6 @@ const routes: Routes = [
     component: DetalleSuscripcionBasicaComponent
   },
   {
-    path: 'detalle-suscripcion-gamer',
-    component: DetalleSuscripcionGamerComponent
-  },
-  {
     path: '#',
     redirectTo: ''
   },

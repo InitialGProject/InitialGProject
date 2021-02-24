@@ -18,7 +18,7 @@ const routes: Routes = [
             { path: 'login', component: LoginComponent },
             { path: 'register', component: RegisterComponent },
             { path: 'profile', component: ProfileComponent },
-            { path: 'suscripciones', component: SuscripcionesComponent },
+            { path: 'suscripciones', component: SuscripcionesComponent},
             { path: 'detalle-suscripcion-basica', component: DetalleSuscripcionBasicaComponent },
             { path: 'detalle-suscripcion-gamer', component: DetalleSuscripcionGamerComponent }
 
