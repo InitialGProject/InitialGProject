@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 // Modelos de Entradas y Comentarios del Foro
@@ -19,12 +19,20 @@ export class ForoService {
 
   constructor(private http: HttpClient) { }
 
-  getEntradas(): Observable<Entradas> {
-    return this.http.get<Entradas>(entradas);
+  getEntradas(auth): Observable<Entradas> {
+    return this.http.get<Entradas>(entradas, {
+      headers: {
+        Authorization: 'Bearer ' + auth,
+      }
+    });
   }
 
-  getComentarios(): Observable<Comentarios> {
-    return this.http.get<Comentarios>(comentarios);
+  getComentarios(auth): Observable<Comentarios> {
+    return this.http.get<Comentarios>(comentarios, {
+      headers: {
+        Authorization: 'Bearer ' + auth,
+      }
+    });
   }
 }
 

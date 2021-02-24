@@ -16,7 +16,8 @@ export class ProfileComponent implements OnInit {
     private globalVars: GlobalVars
     ) { }
   // user: UserInterface;
-    TUser: any;
+  //Objeto Token que filtrara usuarios y nos da lo que necesitemos
+   public TUser: any;
 
   ngOnInit() {
     // this.user = this.authService.getCurrentUser();
@@ -24,4 +25,8 @@ export class ProfileComponent implements OnInit {
     console.log(this.TUser);
   }
 
+  logout(){
+    this.TUser===undefined;
+    window.location.reload();
+  }
 }

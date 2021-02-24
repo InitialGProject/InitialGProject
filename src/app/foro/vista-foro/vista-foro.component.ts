@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalVars } from 'src/app/globalVars';
 import { Comentarios } from '../models/comentarios';
 
 // Modelo de Entradas
@@ -18,14 +19,16 @@ export class VistaForoComponent implements OnInit {
   entradas: Entradas;
   comentarios: Comentarios;
 
-  constructor(private servicioForo: ForoService) { }
+  constructor(
+    private servicioForo: ForoService,
+    private globalVars: GlobalVars) { }
 
   ngOnInit(): void {
     this.dameEntradas();
   }
 
   dameEntradas(): void {
-    this.servicioForo.getEntradas()
+    this.servicioForo.getEntradas(this.globalVars.getGlobalToken())
       .subscribe(
         infoEntrada => {
           this.entradas = infoEntrada;
