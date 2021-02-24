@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from 'src/app/_services/auth.service';
 import { UserInterface } from 'src/app/_models/user-interface';
 
 import { GlobalVars } from '../../globalVars';
@@ -12,7 +11,6 @@ import { GlobalVars } from '../../globalVars';
 export class ProfileComponent implements OnInit {
 
   constructor(
-    private authService: AuthService,
     private globalVars: GlobalVars
     ) { }
   // user: UserInterface;

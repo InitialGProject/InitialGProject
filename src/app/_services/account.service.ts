@@ -7,6 +7,7 @@ import { User } from './../_models/user';
 
 // const baseUrl = 'http://alum3.iesfsl.org/api/user';
 const baseUrl = 'http://localhost:8080/user';
+const registroUrl = 'http://alum3.iesfsl.org/api';
 
 @Injectable({ providedIn: 'root' })
 
@@ -30,7 +31,7 @@ export class AccountService {
 
   login(usuario, password): Observable<User> {
     const user = { usuario: this.usuario, password: this.password };
-    let body = {"nombre": usuario,  "password":password}
+    let body = { "nombre": usuario, "password": password }
     return this.http.post<User>(`${baseUrl}` + `/authenticate`, body)
     //     .pipe(map(user => {
     //       // store user details and jwt token in local storage to keep user logged in between page refreshes
@@ -47,7 +48,7 @@ export class AccountService {
   }
 
   register(user: User) {
-    return this.http.post(`${baseUrl}`, user);
+    return this.http.post(`${registroUrl}` + `/usuarios`, user);
   }
 
   getAll() {

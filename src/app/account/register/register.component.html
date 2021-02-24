@@ -3,27 +3,18 @@
     <div class="card-body">
         <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <div class="form-group">
-                <label for="firstName">Nombre</label>
-                <input type="text" formControlName="firstName" class="form-control"
-                    [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
-                <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
-                    <div *ngIf="f.firstName.errors.required">Debes proporcionar un nombre</div>
+                <label for="nombre">Usuario</label>
+                <input type="text" formControlName="nombre" class="form-control"
+                    [ngClass]="{ 'is-invalid': submitted && f.nombre.errors }" />
+                <div *ngIf="submitted && f.nombre.errors" class="invalid-feedback">
+                    <div *ngIf="f.nombre.errors.required">Debes proporcionar un nombbre de usuario</div>
                 </div>
             </div>
             <div class="form-group">
-                <label for="lastName">Apellido</label>
-                <input type="text" formControlName="lastName" class="form-control"
-                    [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
-                <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
-                    <div *ngIf="f.lastName.errors.required">Debes proporcionar un apellido</div>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="username">Usuario</label>
-                <input type="text" formControlName="username" class="form-control"
-                    [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
-                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
-                    <div *ngIf="f.username.errors.required">Debes proporcionar un nombbre de usuario</div>
+                <label for="correo">Correo</label>
+                <input type="email" formControlName="correo" class="form-control"/>
+                <div *ngIf="submitted && f.correo.errors" class="invalid-feedback">
+                    <div *ngIf="f.correo.errors.required">Debes proporcionar una direccion de correo electronico</div>
                 </div>
             </div>
             <div class="form-group">
