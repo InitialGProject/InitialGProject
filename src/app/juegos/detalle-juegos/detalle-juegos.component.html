@@ -8,7 +8,7 @@
                     <img src="./../../../assets/img/juegos/back.png" alt="volver" />
                     Volver a Juegos Retro
                 </a>
-                <a routerLink="/juego/{{juegos.id}}">
+                <a *ngIf="TUser!==undefined&&(TUser.suscripcion=='Gamer'||TUser.suscripcion=='Admin')" routerLink="/juego/{{juegos.id}}">
                     <img src="./../../../assets/img/juegos/go.png" alt="jugar a {{juegos.titulo}}" />
                     JUGAR A - {{juegos.titulo}}
                 </a>
@@ -21,7 +21,7 @@
                     <img src="./../../../assets/img/juegos/back.png" alt="volver" />
                     Volver a Juegos
                 </a>
-                <a routerLink="/juego/{{juegos.id}}">
+                <a *ngIf="TUser!==undefined&&(TUser.suscripcion=='Gamer'||TUser.suscripcion=='Admin')" routerLink="/juego/{{juegos.id}}">
                     <img src="./../../../assets/img/juegos/go.png" alt="jugar a {{juegos.titulo}}" />
                     JUGAR A - {{juegos.titulo}}
                 </a>

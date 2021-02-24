@@ -6,6 +6,10 @@ import { Categorias } from '../models/categorias';
 
 //recibir parametros
 import { ActivatedRoute, Params } from '@angular/router'
+
+//Filtro usuarios
+import { GlobalVars } from '../../globalVars';
+
 @Component({
   selector: 'app-detalle-juegos',
   templateUrl: './detalle-juegos.component.html',
@@ -19,12 +23,19 @@ export class DetalleJuegosComponent implements OnInit {
 
   constructor(
     private servicioJuegos: JuegosService,
-    private rutaActiva: ActivatedRoute
+    private rutaActiva: ActivatedRoute,
+    private globalVars: GlobalVars
+
   ) { }
+  public TUser: any;
+
 
   ngOnInit(): void {
     this.dameJuegos();    
     this.dameCategorias();
+    this.TUser=this.globalVars.getglobalUserToken();
+    console.log(this.TUser)
+
 
   }
 
