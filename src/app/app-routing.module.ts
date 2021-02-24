@@ -84,6 +84,10 @@ const routes: Routes = [
     component: SuscripcionesComponent
   },
   {
+    path: 'detalle-suscripcion-gamer',
+    component: DetalleSuscripcionGamerComponent
+  },
+  {
     path: 'detalle-suscripcion-basica',
     component: DetalleSuscripcionBasicaComponent
   },
