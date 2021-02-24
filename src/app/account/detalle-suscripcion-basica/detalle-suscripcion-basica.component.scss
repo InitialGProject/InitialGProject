@@ -39,7 +39,7 @@ body {
 }
 /*============ service section css =============== */
 .sction-padding {
-	padding:80px 0;
+	padding: 15px 0;
 }
 .mad-festivak-bill {
 	background:#EFEFEF;
@@ -279,7 +279,6 @@ button.facebook-clr {
 }
 .cv-code {
 	float: left;
-	width: 66%;
 }
 .cv-code label {
 	display:block;
@@ -358,6 +357,20 @@ button.facebook-clr {
 	font-size: 18px; 
 	font-weight: 400; 
 	color: #ffffff;
+	background-color: #e23a3a;
+	width: 70%;
+	border-radius: 10px;
+	margin-top: 30px;
+	text-align: center;
+	padding: 5px 10px;
+}
+.main-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.col-md-8{
+	max-width: 100% !important;
 }
 
  

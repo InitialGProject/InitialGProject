@@ -6,7 +6,8 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
 import { SuscripcionesComponent } from './suscripciones/suscripciones.component';
-import { DetalleSuscripcionesComponent } from './detalle-suscripciones/detalle-suscripciones.component';
+import { DetalleSuscripcionBasicaComponent } from './detalle-suscripcion-basica/detalle-suscripcion-basica.component';
+import { DetalleSuscripcionGamerComponent } from './detalle-suscripcion-gamer/detalle-suscripcion-gamer.component';
 
 
 
@@ -18,7 +19,8 @@ const routes: Routes = [
             { path: 'register', component: RegisterComponent },
             { path: 'profile', component: ProfileComponent },
             { path: 'suscripciones', component: SuscripcionesComponent },
-            { path: 'detalle-suscripciones', component: DetalleSuscripcionesComponent }
+            { path: 'detalle-suscripcion-basica', component: DetalleSuscripcionBasicaComponent },
+            { path: 'detalle-suscripcion-gamer', component: DetalleSuscripcionGamerComponent }
 
         ]
     }

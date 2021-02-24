@@ -22,7 +22,9 @@ import { VistaTorneosComponent } from './torneos/vista-torneos/vista-torneos.com
 import { VistaForoComponent } from './foro/vista-foro/vista-foro.component';
 
 import { SuscripcionesComponent } from './account/suscripciones/suscripciones.component';
-import { DetalleSuscripcionesComponent } from './account/detalle-suscripciones/detalle-suscripciones.component';
+import { DetalleSuscripcionBasicaComponent } from './account/detalle-suscripcion-basica/detalle-suscripcion-basica.component';
+import { DetalleSuscripcionGamerComponent } from './account/detalle-suscripcion-gamer/detalle-suscripcion-gamer.component';
+
 
 
 
@@ -82,8 +84,12 @@ const routes: Routes = [
     component: SuscripcionesComponent
   },
   {
-    path: 'detalle-suscripciones',
-    component: DetalleSuscripcionesComponent
+    path: 'detalle-suscripcion-basica',
+    component: DetalleSuscripcionBasicaComponent
+  },
+  {
+    path: 'detalle-suscripcion-gamer',
+    component: DetalleSuscripcionGamerComponent
   },
   {
     path: '#',
