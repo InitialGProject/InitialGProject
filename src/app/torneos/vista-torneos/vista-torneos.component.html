@@ -14,46 +14,46 @@
       <img mat-card-image src="../../../assets/img/torneos/actual.png" alt="Imagen del Torneo">
 
       <div class="botones">
-        <a (click)="copiaJuegos()" id="detalleTorneoJuegos" href="#" class="btn mat-button">Información</a>
+        <a routerLink="vista-reglamento" class="btn mat-button">Información</a>
         <a routerLink="torneo/Actual" class="btn mat-button">Ver más</a>
       </div>
     </mat-card>
   </div>
-
+  
   <div class='juegosCopia' id='juegosCopia' style="display: none;">
-
+    
     <mat-card class='copiaJuegos'>
-
+      
       <mat-card-content>Texto de Ejemplo</mat-card-content>
-
+      
     </mat-card>
   </div>
-
+  
   <!-- Crear Torneos + Mejorar Suscripcion -->
 
   <div id="crearTorneo" class="tarjeta col-md-6 col-lg-4 col-sm-6 col-xs-12">
     <mat-card class="crearTorneo">
         <h3>Crea un Torneo Competitivo</h3>
-      <img mat-card-image src="../../../assets/img/torneos/crear.png" alt="Crear Torneo">
+        <img mat-card-image src="../../../assets/img/torneos/crear.png" alt="Crear Torneo">
 
       <div class="botones">
-        <!-- <a href="./suscripciones" class="btn btn-primary">Mejora tu Servicio</a> -->
+        <a routerLink="../account/suscripciones" class="btn crear">Mejora tu Servicio</a>
           <a routerLink="crearTorneo" class="btn crear">Crear Torneo</a>
-      </div>
+        </div>
       
-    </mat-card>
+      </mat-card>
   </div>
 
   <!-- Ver Torneos Retro-->
 
   <div id="juegosRetro" class="tarjeta col-md-6 col-lg-4 col-sm-6 col-xs-12">
     <mat-card>
-        <h3>Torneo de Juegos RetroG</h3>
+      <h3>Torneo de Juegos RetroG</h3>
 
       <img mat-card-image src="../../../assets/img/torneos/retro.png" alt="Imagen del Torneo">
 
       <div class="botones">
-        <a id="detalleTorneoRetro" href="#" class="btn mat-button">Información</a>
+        <a routerLink="vista-reglamento" class="btn mat-button">Información</a>
         <a routerLink="torneo/Retro" class="btn mat-button">Ver más</a>
       </div>
     </mat-card>

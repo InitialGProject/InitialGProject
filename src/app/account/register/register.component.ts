@@ -6,9 +6,8 @@ import { first } from 'rxjs/operators';
 import { AccountService } from './../../_services/account.service';
 import { AlertService } from './../../_services/alert.service';
 
-
-
 @Component({ templateUrl: 'register.component.html' })
+
 export class RegisterComponent implements OnInit {
   form: FormGroup;
   loading = false;
@@ -24,10 +23,9 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit() {
     this.form = this.formBuilder.group({
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
-      username: ['', Validators.required],
-      password: ['', [Validators.required, Validators.minLength(6)]]
+      nombre: [null, Validators.required],
+      password: [null, [Validators.required, Validators.minLength(6)]],
+      correo: [null, Validators.required, Validators.email],
     });
   }
 
@@ -47,16 +45,16 @@ export class RegisterComponent implements OnInit {
 
     this.loading = true;
     this.accountService.register(this.form.value)
-      .pipe(first())
-      .subscribe({
-        next: () => {
-          this.alertService.success('Registration successful', { keepAfterRouteChange: true });
+      // .pipe(first())
+      .subscribe(
+        data => {
+          console.log(data);
+          this.alertService.success('Registrado con Éxito', { keepAfterRouteChange: true });
           this.router.navigate(['../login'], { relativeTo: this.route });
         },
-        error: error => {
+        error => {
           this.alertService.error(error);
           this.loading = false;
-        }
-      });
+        });
   }
 }
