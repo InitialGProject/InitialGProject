@@ -1,77 +1,58 @@
-<section id="profile" class="container">
-  <div *ngIf="TUser!==undefined; else LOGIN" class="row mt-5">
-    <!-- <div class="offset-lg-4 col-lg-4 col-sm-6 col-12 main-section text-center card">
+<!-- Por algun motivo que desconozco los estilos no los coge de la hoja de estilos, 
+  eso implica que hayamos puesto los estilos aqui en el codigo html-->
+
+<section>
+  <div *ngIf="TUser!==undefined; else LOGIN" class="row">
+
+    <!-- Perfil logueado -->
+    <div *ngIf="TUser!==undefined" style="background-color: black; opacity: 0.9; 
+    color: white; width: 80%; margin: auto; border-radius: 10px; padding: 2%; padding-left: 5%">
+
+      <h2 class="h1-responsive font-weight-bold text-center my-1">PERFIL</h2>
       <div class="row">
-        <div class="col-lg-12 col-sm-12 col-12 profile-header"></div>
-      </div>
-      <div class="row user-details">
-        <div class="col-12">
-          <img src="../../../assets/img/perfil.png" class="rounded-circle img-thumbnail" alt="profile">
-          <p>Nombre: </p>
-          <h5>{{TUser.nombre}}</h5>
-          <p>Token: </p>
-          <h5>{{TUser.token}}</h5>
-          <a href='http://alum3.iesfsl.org/bck/index.php'><span>Acceder al Back.</span></a>
+
+        <div class="col-md-12" style="margin-bottom: 5%; text-align: center;">
+          <img src="../../../assets/img/perfiles/{{TUser.avatar}}" class="rounded-circle img-thumbnail" style="max-width: 10rem;" alt="profile">
+        </div>
+
+        <div class="col-md-12">
+          <p>Nombre: {{TUser.nombre}}</p>
+          <p>Token: {{TUser.token}}</p>
+          <p>Tipo de suscripción: {{TUser.suscripcion}}</p>
         </div>
       </div>
-    </div> -->
 
-
-  <!-- Section: Contact v.2 -->
-  <section *ngIf="TUser!==undefined" class="my-5" style="background-color: black; opacity: 0.9; color: white;">
-    <h2 class="h1-responsive font-weight-bold text-center my-5">PERFIL</h2>
-    <div class="row">
-      <div class="col-md-7 mb-md-0 mb-5">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="../../../assets/img/perfiles/{{TUser.avatar}}" class="rounded-circle img-thumbnail" alt="profile">
-            </div>
-            <div class="col-md-12">
-                <h3>Nombre: {{TUser.nombre}}</h3>
-            </div>
-
-            <div class="col-md-3 text-center">
-                <h3>Token: {{TUser.token}}</h3>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-3 text-center">
-              <h3>Suscripcion: {{TUser.suscripcion}}</h3>
-            </div>
-          </div>
-
-
-          <div  class="row">
-            <div class="col-md-3 text-center">
-
-            </div>
-          </div>
-          
+      <div class="row">
         <div *ngIf="TUser.suscripcion=='Admin'" class="text-center text-md-left">
-          <a class="btn" mdbBtn mdbWavesEffect title="Back" href='http://alum3.iesfsl.org/bck/index.php'>Acceder al Back</a>
+          <a class="btn" mdbBtn mdbWavesEffect title="Back" style="color: #bb0011;" href='http://alum3.iesfsl.org/bck/index.php'>Acceder al
+            Back</a>
         </div>
-        <!-- <div class="text-center text-md-left">
-          <a class="btn" mdbBtn mdbWavesEffect title="Borrar cuenta">Borrar cuenta</a>
-        </div> -->
+
         <div class="text-center text-md-left">
-          <a class="btn" mdbBtn mdbWavesEffect title="Desconectarse" (click)="logout()">LogOut</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect title="Desconectarse" (click)="logout()" 
+          style="color: #bb0011; border-radius: 10px; font-weight: bold; cursor: pointer;">LogOut</a>
         </div>
       </div>
+
     </div>
-  </section>
   </div>
 
-
+  <!-- Perfil no logueado -->
   <ng-template #LOGIN>
-    <section style="background-color: black; opacity: 0.9; color: white;">
-      <div class="center">Inicia sesion para ver tu perfil</div>      
-        <a routerLink='/account/login' class="dropdown-item waves-light" mdbWavesEffect>LOGIN</a>
+    <section style="background-color: black; opacity: 0.9; color: white; width: 80%; 
+      margin: auto; border-radius: 10px; padding: 2%; text-align: center;">
+      <div class="center">
+        <p>Inicia sesion para ver tu perfil</p>
+        <a routerLink='/account/login' class="dropdown-item waves-light" 
+        style="color: #bb0011; border-radius: 10px; width: 80%; margin: auto; font-weight: bold;" mdbWavesEffect>LOGIN</a>
+      </div>
+      <div class="center">
+        <p>Registrate si no dispones de una cuenta</p>
+        <a routerLink='/account/register' class="dropdown-item waves-light" 
+        style="color: #bb0011; border-radius: 10px; width: 80%; margin: auto; font-weight: bold;" mdbWavesEffect>REGISTRATE</a>
+      </div>
+
     </section>
   </ng-template>
+
 </section>
-
-
-
-
-

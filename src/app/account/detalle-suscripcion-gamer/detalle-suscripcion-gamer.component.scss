@@ -1,7 +1,7 @@
 
   
 /* Base css */
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i,700,700i');
+// @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i,700,700i');
 
 a:hover,
 a:link,
@@ -31,7 +31,7 @@ img {
 	height:auto;
 }
 body {
-	font-family:'Ubuntu', sans-serif;
+	color: black;
 }
 .clearfix {
 	display:block;
@@ -52,7 +52,6 @@ body {
 	content: "";
 	top: 20px;
     right: -9px;
-	background: #EA9E2B;
 	width: 60px;
 	height: 25px;
 	z-index: -1;
@@ -62,7 +61,6 @@ body {
 .close-bill {
 	position: absolute;
 	left: 94%;
-	color:#4C4E50;
 	font-weight:900;
 	cursor:pointer;
 	top: 18%;
@@ -79,14 +77,14 @@ body {
 	padding-bottom:25px;
 }
 .form-controls label {
-	color: #ddd;
+	color: white;
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: 700;
 }
 /* paymrnt Box */
 .payment-box {
-	background:#FFF;
+	background:white;
 	padding:20px; 
 	position:relative;
 	border-radius: 10px;
@@ -96,35 +94,11 @@ body {
 	position:absolute;
 	height:4px;
 	width:10%;
-	background:#D94F62;
+	background:#bb0011;
 	top:0;
 	left:0;
 }
-.color-border:nth-child(2) {
-	background: #FDCB5C;
-	width: 30%;
-	left: 75px;
-}
-.color-border:nth-child(3) {
-	background: #E36A73;
-	width: 10%;
-	left: 300px;
-}
-.color-border:nth-child(4) {
-	background: #389BA2;
-	width: 20%;
-	left: 375px;
-}
-.color-border:nth-child(5) {
-	background: #E36A73;
-	width: 10%;
-	left: 525px;
-}
-.color-border:nth-child(6) {
-	background: #E9C77E;
-	width: 20%;
-	left: 600px;
-}
+
 /* Button social*/
 .payment-box button {
 	border: 1px solid #ddd;
@@ -159,14 +133,14 @@ button.facebook-clr {
 }
 .payment-title span {
 	background: #E13D55;
-	color: #ddd;
+	color: white;
 	padding: 1px 5px;
 	margin:0 10px;
 	border-radius: 3px;
 	text-transform: uppercase; 
 }
 .payment-title a {
-	color: #ddd; 
+	color: white; 
 }
 /* arrow */
 .left-dolar-arrow {
@@ -193,7 +167,7 @@ button.facebook-clr {
 } 
 /* Email input Box*/
 .input-email {
-	background: #FAFAFA;
+	background: white;
 	padding: 10px;
 	margin-bottom: 20px;
 	box-shadow: 0px 0px 1px #8B8B8B; 
@@ -216,8 +190,8 @@ button.facebook-clr {
 	height: 4px;
 	-webkit-transform: skew(-30deg);
 	transform: skew(-30deg);
-	border-left: 2px solid #fff;
-	border-right: 2px solid #fff;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
 }
 .angle-border:nth-child(2){ 
 	left: 50px;  
@@ -244,7 +218,7 @@ button.facebook-clr {
 	left: 318px; 
 } 
 .input-email input[type="email"],.additional-info input[type="text"]{
-	border: 1px solid #ddd;
+	border: 1px solid white;
 	padding: 5px 10px;
 	color: #A6A6A6;
 	font-weight: 700;
@@ -253,15 +227,15 @@ button.facebook-clr {
 }
 /* Payment additional info box */
 .additional-info-box {
-	background:#FAFAFA;
+	background:white;
 	box-shadow: 0px 0px 1px #8B8B8B;
-	border: 1px solid #E4E4E4;
+	border: 1px solid white;
 }
 .additional-info-head {
 	padding: 10px;
 	background: #E4E4E4;
 	overflow: hidden;
-	border-top: 8px solid #FAFAFA; 
+	border-top: 8px solid white; 
 }
 .additional-info-head h3 { 
 	color: black;
@@ -335,7 +309,7 @@ button.facebook-clr {
 	top:1px;
 	left: 69px;
 	font-family: FontAwesome;
-	background: #E5E5E5;
+	background: white;
 	content: "\f155"; 
 	width: 25px;
 	height: 30px; 
@@ -346,7 +320,7 @@ button.facebook-clr {
 	background:linear-gradient(#009FA2, #01C2C3);
 	border-style:none;
 	padding:5px 20px;
-	color:#fff;
+	color:white;
 	font-size:16px;
 	border-radius:3px;  
 }
@@ -357,7 +331,7 @@ button.facebook-clr {
 	font-family: sans-serif; 
 	font-size: 18px; 
 	font-weight: 400; 
-	color: #ffffff;
+	color: white;
 	background-color: #e23a3a;
 	width: 70%;
 	border-radius: 10px;

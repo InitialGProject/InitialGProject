@@ -1,29 +1,70 @@
+h2 {
+  color: #fff;
+  margin: 1% 0% 2%;
+  text-shadow: 2px 1px #bb0011;
+}
 
-.content {
-    padding: 1% 4%;
-    background-image: url("./../assets/img/wall.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 41rem;
+@media screen and (max-width: 992px) {
+  h2 {
+    color: #fff;
+    margin: 2% 0%;
+    text-shadow: 1px 0.5px #bb0011;
   }
-  
-  .barra-lateral {
-    border: solid 5px #80000b;
-    border-top: none;
-    border-bottom: none;
-    padding-bottom: 1%;
+}
+
+@media screen and (max-width: 520px) {
+  h2 {
+    font-size: larger;
+    text-align: center;
   }
-  
-  @media screen and (max-width: 767px) {
-    .barra-lateral {
-      border-top: solid 5px #80000b;
-    }
-  }
-  
-  @media screen and (max-width: 576px) {
-    .content {
-      padding: 1% 2%;
-    }
-  }
+}
+
+mat-card {
+  background-color: #fff;
+  padding: 1%;
+}
+
+.seccion {
+  margin: auto;
+  background-color: black;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+img {
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+
+.botones {
+  text-align: center;
+}
+
+.botones .btn {
+  margin-bottom: 1%;
+  color: goldenrod;
+  background-color: #000;
+  font-weight: bolder;
+  font-size: large;
+  margin: 3%;
+}
+
+.botones .btn:hover {
+  background-color: goldenrod;
+  color: #000;
+}
+
+.tarjeta {
+  margin-bottom: 2%;
+  padding: 1rem;
+}
+
+h3 {
+  margin: auto;
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+  color: #bb0011;
+}
+/*# sourceMappingURL=suscripciones.component.css.map */

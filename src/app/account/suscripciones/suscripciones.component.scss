@@ -1,158 +1,51 @@
 @import "./../../../mixins";
 @import "./../../../variables";
 
-.tarjeta {
-    margin-bottom: 2%;
-   
+mat-card {
+  background-color: $blanco;
+  padding: 1%;
 }
 
-.mat-card {
-    background-color: $blanco;
-    min-height: 100%;
-    padding: 1%;
-}
-
-.tarjeta {
-    padding: 1rem;
-}
-
-.crearTorneo {
-    background-color: $amarillo;
-}
-
-.crearTorneoBoton {
-    background-color: $amarillo;
+.seccion{
+  margin: auto;
+  background-color: black; 
+  opacity: 0.9; 
+  border-radius: 10px;
 }
 
 img {
-    display: block;
-    width: 100%;
-    margin: 1% 0% 3%;
-    height: 100%;
+  display: block;
+  width: 70%;
+  margin: auto;
 }
 
 .botones{
-    text-align: center;
+  text-align: center;
 
-    .btn {
-        margin-bottom: 1%;
-        color: $amarillo;
-        background-color: $negro;
-        font-weight: bolder;
-        font-size: large;
-        font-family: "RockWell";
-        margin: 3%;
-        
-        &:hover{
-            background-color: $amarillo;
-            color: $negro;
-        }
-
-        &.crear:hover{
-            background-color: $blanco;
-            color: $negro;
-        }
-    }
-}
-
-
-.mostrar {
-    display: block;
-}
-
-h2 {
-    color: #fff;
-    margin: 1% 0% 2%;
-    text-shadow: 2px 1px #bb0011;
-  }
-  
-  @media screen and (max-width: 992px) {
-    h2 {
-      color: #fff;
-      margin: 2% 0%;
-      text-shadow: 1px 0.5px #bb0011;
-    }
-  }
-  
-  @media screen and (max-width: 520px) {
-    h2 {
-      font-size: medium;
-      text-align: center;
-    }
-  }
-  
-  .tarjeta {
-    margin-bottom: 2%;
-  }
-  
-  .mat-card {
-    background: antiquewhite;
-    min-height: 100%;
-    padding: 1%;
-  }
-
-  
-  img {
-
-  }
-  
-  .botones {
-    text-align: center;
-  }
-  
-  .botones .btn {
+  .btn {
     margin-bottom: 1%;
-    color: goldenrod;
-    background-color: #000;
+    color: $amarillo;
+    background-color: $negro;
     font-weight: bolder;
     font-size: large;
-    font-family: "RockWell";
     margin: 3%;
+    
+    &:hover{
+        background-color: $amarillo;
+        color: $negro;
+    }
   }
+}
   
-  .botones .btn:hover {
-    background-color: goldenrod;
-    color: #000;
-  }
-  
-  .botones .btn.crear:hover {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  h3 {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-family: "RockWell";
-    font-weight: bolder;
-    font-size: medium;
-    color: #bb0011;
-  }
-  
-  .juegosCopia {
-    margin: 7%;
-    margin-top: -16%;
-  }
-  
-  .mostrar {
-    display: block;
-  }
-  
-  .copiaJuegos {
-    position: absolute;
-    width: 100%;
-    margin-left: 43.5%;
-    height: 99.65%;
-    padding: 5%;
-    background-color: #717171;
-    border: "5px solid";
-    border-left: "none";
-    border-radius: 0.25rem;
-    top: 3.5%;
-  }
-  .row {
-    width: 50vw;
-    position: relative;
+.tarjeta {
+  margin-bottom: 2%;
+  padding: 1rem;
+}
 
-  }
+h3 {
+  margin: auto;
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+  color: $rojo;
+}
