@@ -20,23 +20,14 @@
         <p class="texto" *ngIf="ID.id==entrada.id">Categoría: <strong>{{entrada.CategoriaDesc}}</strong></p>
     </div>
 
-    <a routerLink="/vista-foro" class="btn">Ver Entradas</a>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+            <a routerLink="/vista-foro" class="btn">Ver Entradas</a>
+        </div>
+
+        <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+            <input type="text">
+        </div> -->
+    </div>
 
 </div>
-
-<!-- 
-
-<div class="span" *ngFor="let noticia of noticias">
-    <div class="caja">
-        <a routerLink="detalle-noticia/{{noticia.titulo}}">
-            <h3 class="titulo">{{noticia.titulo}}</h3>
-            <div class="imagenCaja">
-                <img class="" src="{{noticia.imagen}}" alt="Imagen Noticia">
-            </div>
-        </a>
-        <div class="descaja">
-            <div class="info">{{noticia.descripcion}}</div>
-            <div class="detalle">{{noticia.nombre}} - {{noticia.fecha}}</div>
-        </div>
-    </div>
-</div> -->

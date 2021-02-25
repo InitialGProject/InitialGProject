@@ -45,6 +45,15 @@
             background-color: $negro;
         }
     }
+
+    .coment{
+       
+    
+        input{
+            max-width: 100%;
+            margin: 2% auto;
+        }
+    }
 }
 
 @media screen and (max-width: 992px) {
