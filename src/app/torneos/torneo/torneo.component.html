@@ -24,7 +24,7 @@
 
                     <div class="participantes col-lg-6 col-md-6 col-sm-12 col-12">
                         PARTICIPANTES: {{torneo.numparticipantes}}
-                        <p class="confirmados">CONFIRMADOS: 0</p>
+                        <p class="confirmados">CONFIRMADOS: {{confirmados}} </p>
                     </div>
                 </div>
 
@@ -32,7 +32,8 @@
                     <a class="btn" routerLink="/vista-torneos" title="Volver a torneos">Volver</a>
                     <a routerLink="../../../vista-foro/detalle-foro/{{torneo.entrada_id}}" class="btn"
                         title="Entrada relacionada en el foro">Entrada foro</a>
-                    <btn class="btn" title="Participa en el torneo">Apuntarse</btn>
+                    <btn class="btn" (click)="participar()" title="Participa en el torneo">Apuntarse
+                    </btn>
                 </div>
 
             </div>

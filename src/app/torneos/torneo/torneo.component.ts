@@ -14,7 +14,7 @@ import { GlobalVars } from '../../globalVars';
   selector: 'app-torneo',
   templateUrl: './torneo.component.html',
   styleUrls: ['./torneo.component.scss'],
-  
+
 })
 
 export class TorneoComponent implements OnInit {
@@ -51,5 +51,13 @@ export class TorneoComponent implements OnInit {
         error => {
           console.log(error);
         });
+  }
+
+  participar() {
+    this.torneos.numparticipantes = 80;
+    console.log(this.torneos.numparticipantes);
+    this.torneos.numparticipantes--;
+    console.log(this.torneos.numparticipantes);
+    return this.torneos.numparticipantes;
   }
 }
