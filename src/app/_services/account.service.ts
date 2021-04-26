@@ -5,9 +5,10 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { User } from './../_models/user';
 
-// const baseUrl = 'http://alum3.iesfsl.org/api/user';
-const baseUrl = 'http://localhost:8080/user';
+const baseUrl = 'http://alum3.iesfsl.org/api/user';
 const registroUrl = 'http://alum3.iesfsl.org/api';
+//const baseUrl = 'http://localhost:8080/user';
+//const registroUrl = 'http://localhost:8080';
 
 @Injectable({ providedIn: 'root' })
 

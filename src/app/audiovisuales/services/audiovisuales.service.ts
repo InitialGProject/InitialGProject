@@ -4,8 +4,8 @@ import { Observable } from 'rxjs';
 
 import { Videos } from '../models/videos';
 
-// const videos = 'http://localhost:8080/videos'; 
-const videos = 'http://alum3.iesfsl.org/api/videos';
+//const videos = 'http://localhost:8080/videos'; 
+ const videos = 'http://alum3.iesfsl.org/api/videos';
 
 @Injectable({
   providedIn: 'root'

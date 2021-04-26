@@ -19,6 +19,7 @@ import { NoticiasModule } from './noticias/noticias.module';
 import { AudiovisualesModule } from './audiovisuales/audiovisuales.module';
 import { JuegosModule } from './juegos/juegos.module';
 import { TorneosModule } from './torneos/torneos.module';
+import { TiendaModule } from './tienda/tienda.module';
 import { ForoModule } from './foro/foro.module';
 import { PerfilModule } from './perfil/perfil.module';
 import { ContactModule } from './contact/contact.module';
@@ -32,6 +33,8 @@ import { ErrorInterceptor } from './_helpers/error.interceptor';
 
 //variables globales
 import { GlobalVars } from './globalVars';
+
+import {  CardsModule } from 'angular-bootstrap-md'
 
 @NgModule({
   declarations: [
@@ -50,12 +53,14 @@ import { GlobalVars } from './globalVars';
     AudiovisualesModule,
     JuegosModule,
     TorneosModule,
+    TiendaModule,
     ForoModule,
     PerfilModule,
     ContactModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    CardsModule,
   ],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },

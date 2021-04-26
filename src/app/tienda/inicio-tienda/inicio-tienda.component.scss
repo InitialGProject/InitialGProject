@@ -1,0 +1,23 @@
+@import "./../../../mixins";
+@import "./../../../variables"; 
+
+.datos{
+    background-color: $grisLum;
+    border-radius: 5px;
+    margin: 2%;
+    font-weight: bold;
+    padding: 1%;
+}
+
+.testo{
+    height: 25em;
+    width: 10em;
+    margin-left: 4em;
+    margin-top: 1em;
+    border-radius: 5px;
+    
+}
+
+.oferta{
+    background-color: rgb(33, 197, 33);
+}

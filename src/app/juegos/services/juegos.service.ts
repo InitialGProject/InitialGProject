@@ -8,6 +8,9 @@ import { Categorias } from '../models/categorias';
 const juego = 'http://alum3.iesfsl.org/api/juegos';
 const categorias = 'http://alum3.iesfsl.org/api/categorias';
 
+// const juego = 'http://localhost:8080/juegos';
+// const categorias = 'http://localhost:8080/categorias';
+
 @Injectable({
   providedIn: 'root'
 })
