@@ -34,7 +34,11 @@ import { ErrorInterceptor } from './_helpers/error.interceptor';
 //variables globales
 import { GlobalVars } from './globalVars';
 
+//Cards
 import {  CardsModule } from 'angular-bootstrap-md'
+
+//Test bs
+import { DataSharingService } from './data-sharing.service';
 
 @NgModule({
   declarations: [
@@ -63,8 +67,10 @@ import {  CardsModule } from 'angular-bootstrap-md'
     CardsModule,
   ],
   providers: [
-    { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
-    GlobalVars
+    { 
+      provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
+      GlobalVars,
+      DataSharingService,
   ],
   bootstrap: [AppComponent]
 })
