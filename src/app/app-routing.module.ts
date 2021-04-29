@@ -69,7 +69,10 @@ const routes: Routes = [
     path: 'tienda',
     component: InicioTiendaComponent
   },
-  
+  {
+    path: 'vista-foro',
+    component: VistaForoComponent
+  },
   {
     path: 'users',
     loadChildren: usersModule,

@@ -83,6 +83,8 @@ export class LoginComponent implements OnInit {
     this.dataSharingService.isUserLoggedIn.next(true);
     //Guarda el token sobrecargado para actualizar la pagina
     this.dataSharingService.token.next(data);
-    
+    //Este es para testear
+    this.dataSharingService.testeo.next("AHORA_SI");
+    console.log(this.dataSharingService.testeo);
   }
 }

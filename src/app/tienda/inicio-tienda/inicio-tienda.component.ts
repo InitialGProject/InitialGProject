@@ -10,6 +10,9 @@ import { ActivatedRoute, NavigationEnd, Params, Router } from '@angular/router';
 //Importar datos
 import { TiendaService } from '../services/tienda.service';
 
+//BS
+import { DataSharingService } from '../../data-sharing.service';
+
 @Component({
   selector: 'app-inicio-tienda',
   templateUrl: './inicio-tienda.component.html',
@@ -20,9 +23,18 @@ export class InicioTiendaComponent implements OnInit {
   catalogo: Catalogo;
   categoria: Categorias;
   filtro: {clase: string};
+
+  testeo:string;
   
   constructor(private servicioTienda: TiendaService, private rutaActiva: ActivatedRoute, 
-    private router:Router,){  }
+    private router:Router, private dataSharingService: DataSharingService
+    ){
+      
+      //Para probetear cosas
+      this.dataSharingService.testeo.subscribe( value => {
+      this.testeo = value;
+      });  
+    }
 
   ngOnInit(): void {
     this.cargarTodo(); 
@@ -63,9 +75,4 @@ export class InicioTiendaComponent implements OnInit {
     this.router.navigateByUrl('/', {skipLocationChange: true}).then(()=>
     this.router.navigate(['/tienda/'+uri]));
   }
-
-  //En caso de necesitar recargar
-  // refresh() {
-  //   this.ngOnInit();
-  // }
 }
