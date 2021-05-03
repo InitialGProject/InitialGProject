@@ -16,14 +16,16 @@ export class NavComponent implements OnInit {
 
 
   constructor(private dataSharingService: DataSharingService) { 
-        // Suscribir para que se actualice auto 
-        // "isUserLoggedIn" o el que sea cuando cambie el valor.
-        this.dataSharingService.isUserLoggedIn.subscribe( value => {
-          this.isUserLoggedIn = value;
-      });
-      this.dataSharingService.token.subscribe( value => {
-        this.token = value;
-        console.log("test"+this.token);
+    // Suscribir para que se actualice auto 
+    // "isUserLoggedIn" o el que sea cuando cambie el valor.
+    this.dataSharingService.isUserLoggedIn.subscribe( value => {
+      this.isUserLoggedIn = value;
+    });
+
+    //Datos del token sobrecargado
+    this.dataSharingService.token.subscribe( value => {
+      this.token = value;
+      console.log("test"+this.token);
     });
   }
 
