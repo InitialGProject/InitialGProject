@@ -7,7 +7,8 @@ import { Catalogo } from '../models/catalogo';
 import { TiendaService } from '../services/tienda.service';
 
 //recibir parametros ruta
-import { ActivatedRoute, NavigationEnd, Params, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { DataSharingService } from 'src/app/data-sharing.service';
 
 @Component({
   selector: 'app-vista-producto',
@@ -18,11 +19,18 @@ export class VistaProductoComponent implements OnInit {
   
   catalogo: Catalogo;
   articulo: {id: string};
+  cantidad_articulos:number;
 
-  constructor(private servicioTienda: TiendaService, private rutaActiva: ActivatedRoute, ) { }
+  constructor(
+    private servicioTienda: TiendaService, 
+    private rutaActiva: ActivatedRoute, 
+    private router: Router,
+    private dataSharingService: DataSharingService,
+  ) { }
 
   ngOnInit(): void {
     this.cargarTodo(); 
+    this.cantidad_articulos=1;
   }
 
   cargarTodo(): void {
@@ -31,7 +39,6 @@ export class VistaProductoComponent implements OnInit {
       .subscribe(
         data => {
           this.catalogo = data;
-          console.log(data);
         },
         error => {
           console.log(error);
@@ -42,5 +49,17 @@ export class VistaProductoComponent implements OnInit {
       id: this.rutaActiva.snapshot.params.id
     };
   }
+
+  addToCart(producto){
+    this.servicioTienda.addToCart(producto,this.cantidad_articulos);
+    window.alert("Producto añadido al carrito");
+    this.servicioTienda.setTo0();
+    this.dataSharingService.precio_total.next(this.servicioTienda.getPrecioTot());
+    return false;
+  }
+
+  goBack() {
+    this.router.navigate(['/tienda']);
+    }
 
 }

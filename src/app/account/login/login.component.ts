@@ -81,10 +81,12 @@ export class LoginComponent implements OnInit {
   cuandoUserLogea(data) {
     //Si esta logueado es true
     this.dataSharingService.isUserLoggedIn.next(true);
+    
     //Guarda el token sobrecargado para actualizar la pagina
     this.dataSharingService.token.next(data);
+    
     //Este es para testear
     this.dataSharingService.testeo.next("AHORA_SI");
-    console.log(this.dataSharingService.testeo);
+    //console.log(this.dataSharingService.testeo);
   }
 }

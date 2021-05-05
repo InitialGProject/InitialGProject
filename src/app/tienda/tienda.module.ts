@@ -5,14 +5,17 @@ import { VistaProductoComponent } from './vista-producto/vista-producto.componen
 import { TiendaRoutingModule } from './tienda.routing';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { CarritoComponent } from './carrito/carrito.component';
 
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
-  declarations: [InicioTiendaComponent, VistaProductoComponent],
+  declarations: [InicioTiendaComponent, VistaProductoComponent, CarritoComponent],
   imports: [
     CommonModule,
     MDBBootstrapModule.forRoot(),
     TiendaRoutingModule,
+    FormsModule,
 
   ]
 })

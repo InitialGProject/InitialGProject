@@ -12,7 +12,7 @@
             <!--Imagen Col Izquierda-->
             <div class="col-md-6 mb-4 align-items-center" >
 
-              <img src="http://alum3.iesfsl.org/assets/img/tienda/{{producto.imagen}}" class="img-fluid center-block" alt="">
+              <img src="http://alum3.iesfsl.org/assets/img/tienda/{{producto.imagen}}" class="img-fluid z-depth-0" style="height: 600px; width: 600px;"alt="">
 
             </div>
             <!--Imagen Col Izquierda-->
@@ -62,11 +62,14 @@
                 </ng-template>
                 
                 <!-- Agregar cantidad -->
-                <form class="d-flex justify-content-left" *ngIf="producto.stock!='0'">
-                  <input type="number" value="1" max="{{producto.stock}}" aria-label="Search" class="form-control" style="width: 100px">
-                  <button class="btn btn-primary btn-md my-0 p" type="submit">Add to cart
+                <form class="d-flex justify-content-left">
+                  <input *ngIf="producto.stock!='0'" type="number" value="1" [(ngModel)]="cantidad_articulos" name="cantidad" placeholder="Nº"  min="1" max="{{producto.stock}}" aria-label="Search" style="width: 50px">
+
+                  <button *ngIf="producto.stock!='0'" class="btn btn-primary btn-md my-0 p" (click)="addToCart(producto)">Añadir
                     <i class="fas fa-shopping-cart ml-1"></i>
-                  </button>
+                  </button>&nbsp;
+                  <button class="btn btn-primary btn-md my-0 p" (click)="goBack()">Volver</button>&nbsp;
+                  <a routerLink='/carrito' class="nav-link waves-light" mdbWavesEffect><i class="fas fa-shopping-cart ml-1"></i><span class="sr-only">(current)</span></a>
                 </form>
 
               </div>

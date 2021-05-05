@@ -1,0 +1,59 @@
+<div class="datos">
+  <!--Titulo-->
+  
+  <h2 class="h1 py-5">TU CARRITO</h2>
+  <!--Main Layout-->
+  <main>
+
+    <!-- Main Container -->
+    <div class="container">
+
+      <section class="section my-5 pb-5">
+
+        <!-- Tabla del carro -->
+        <div class="table-responsive">
+
+            <table class="table product-table">
+
+                <!-- Rows de cada articulo -->
+                <div *ngFor="let item of items">
+                  <tr>
+                    <th scope="row" class="imagen">
+                        <img src="http://alum3.iesfsl.org/assets/img/tienda/{{item.it.imagen}}" alt="" class="img-fluid z-depth-0"> 
+                    </th>
+                    <td><a routerLink="/vista-producto/{{item.it.id}}" class="dark-grey-text">{{item.it.nombre}}</a></td>
+                    <td>{{item.it.precio}}€</td>
+                    <td class="text-center text-md-left">
+                      <span class="qty">{{item.can}} </span>
+                    </td>
+                    <td class="font-weight-bold">
+                      <strong>{{item.total}} €</strong>
+                    </td>
+                    <td>
+                    <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="removeUpload(item)">X
+                    </button>
+                    </td>
+                  </tr>
+                </div>
+                <!-- Rows de cada articulo -->
+                
+                <hr>
+                <!-- {{precio_total}} -->
+                <!-- Linea inferior, total -->
+                <div *ngIf="precio_total!=0"> PRECIO TOTAL {{precio_total}}</div>
+                <div *ngIf="precio_total==0" style="text-align: center;"> AÑADE ALGUN PRODUCTO AL CARRITO</div>
+                <!-- Linea inferior, total -->
+
+          </table>
+
+        </div>
+        <!-- Tabla del carro -->
+
+      </section>
+
+    </div>
+    <!-- /Main Container -->
+
+  </main>
+  <!--Main Layout-->
+</div>

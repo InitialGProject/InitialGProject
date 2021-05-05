@@ -5,6 +5,9 @@ import { Observable } from 'rxjs';
 import { Catalogo } from '../models/catalogo';
 import { Categorias } from '../models/categorias';
 
+//BS
+import { DataSharingService } from '../../data-sharing.service';
+
 const productos = 'http://alum3.iesfsl.org/api/productos';
 const categorias = 'http://alum3.iesfsl.org/api/productoscategoria';
 
@@ -15,13 +18,84 @@ const categorias = 'http://alum3.iesfsl.org/api/productoscategoria';
   providedIn: 'root'
 })
 export class TiendaService {
+  /**Servicios para el carrito*/
+  //Declaramos los articulos del carrito
+  items = [
+    {it:{
+      "id": 1,
+      "cat_id": 1,
+      "nombre": "Licencia LME",
+      "precio": "20.00",
+      "IVA": 12,
+      "imagen": "LME.jpg",
+      "descripcion": "Apoya a tu creador de videojuegos comprando una licencia para tu uso en local y fomentar la continuación del trabajo del autor.",
+      "stock": 99,
+      "disponible": 1,
+      "estado": 0
+    }, can:2, total:40},
+    {it:{
+      "id": 9,
+      "cat_id": 2,
+      "nombre": "Eres dios terrenal",
+      "precio": "20000.00",
+      "IVA": 12,
+      "imagen": "diosterrenal.jpg",
+      "descripcion": "Eres dios, la página es tuya, di que quieres y se tratará de hacer, haz lo que quieras con todo nuestro contenido. Solo 1 unidad disponible para nuestro dios.",
+      "stock": 1,
+      "disponible": 1,
+      "estado": 1
+    }, can:1, total:20000},
+  ];
 
-  constructor(private http: HttpClient) { }
+  precio_total: number;
 
+  constructor(
+    private http: HttpClient,
+    private dataSharingService: DataSharingService,
+  ) { 
+    //Para probetear cosas
+    this.dataSharingService.precio_total.subscribe( value => {
+      this.precio_total = value;
+      }); 
+  }
+
+  //Añadir al carrito el producto {it:objetos, can:valor}
+  addToCart(it, can){
+    this.items.push({it, can, total:can*it.precio});
+    console.log(this.items);
+  }
+
+  //Recibir datos del carrito
+  getItems(){
+    return this.items;
+  }
+
+  //Vaciara carrito
+  clearCart(){
+    this.items=[];
+    return this.items;
+  }
+
+  //Vaciar contador
+  setTo0(){
+    this.precio_total=0;
+  }
+
+  //Sumar total del carro
+  getPrecioTot(){
+    this.items.forEach(element => {
+      this.precio_total+=element.total;
+    });
+    return this.precio_total;
+  }
+
+  /**Servicios para cargar datos*/
+  //Cargar ddbb de productos
   getProd(): Observable<Catalogo> {
      return this.http.get<Catalogo>(productos);
   }
 
+  //Cargar ddbb de categorias
   getCategorias(): Observable<Categorias> {
     return this.http.get<Categorias>(categorias);
   }

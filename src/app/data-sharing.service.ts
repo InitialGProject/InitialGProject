@@ -12,4 +12,9 @@ export class DataSharingService {
     //testeo
     public testeo: BehaviorSubject<string> = new BehaviorSubject<string>("NO");
 
+    //Carrito
+    public carro: BehaviorSubject<any> =new BehaviorSubject<any>([]);
+
+    //Total
+    public precio_total: BehaviorSubject<number> = new BehaviorSubject<number>(0);
 }

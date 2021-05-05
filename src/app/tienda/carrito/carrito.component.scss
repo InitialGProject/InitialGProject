@@ -1,0 +1,18 @@
+@import "./../../../mixins";
+@import "./../../../variables"; 
+
+h2{
+    text-align: center;
+}
+.imagen{
+    margin: 1em;
+    padding: 1em;
+    background-color: white;
+    border-radius: 20px;
+    height: 60px;
+    width: 60px;
+}
+
+td{
+    width: 210px;
+}
