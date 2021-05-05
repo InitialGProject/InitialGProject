@@ -33,7 +33,7 @@ export class TiendaService {
       "stock": 99,
       "disponible": 1,
       "estado": 0
-    }, can:2, total:40},
+    }, can:2, total:44.8},
     {it:{
       "id": 9,
       "cat_id": 2,
@@ -45,7 +45,7 @@ export class TiendaService {
       "stock": 1,
       "disponible": 1,
       "estado": 1
-    }, can:1, total:20000},
+    }, can:1, total:22400},
   ];
 
   precio_total: number;
@@ -62,7 +62,7 @@ export class TiendaService {
 
   //Añadir al carrito el producto {it:objetos, can:valor}
   addToCart(it, can){
-    this.items.push({it, can, total:can*it.precio});
+    this.items.push({it, can, total:can*(it.precio- -(it.precio*it.IVA)/100)});
     console.log(this.items);
   }
 

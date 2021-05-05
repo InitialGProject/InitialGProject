@@ -81,7 +81,7 @@
         
                 <!-- Precio Producto -->
                 <h4 class="font-weight-bold blue-text">
-                  <strong>{{producto.precio}}€</strong>
+                  <strong> {{producto.precio--((producto.precio *producto.IVA)/100) | number: '0.0-2'}} €</strong>
                 </h4>
                 
                 <!-- Stock Disponible -->
@@ -156,7 +156,7 @@
         
                 <!-- Precio Producto -->
                 <h4 class="font-weight-bold blue-text">
-                  <strong>{{producto.precio}}€</strong>
+                  <strong> {{producto.precio--((producto.precio *producto.IVA)/100) | number: '0.0-2'}} €</strong>
                 </h4>
                 
                 <!-- Stock Disponible -->
@@ -182,6 +182,6 @@
       <!-- row -->
     </ng-template>
     <!-- Todo -->
-
+    
   </div> 
 </section>

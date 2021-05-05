@@ -44,7 +44,10 @@
                   <!-- <span class="mr-1">
                     <del>$200</del>
                   </span> -->
-                  <span>{{producto.precio}}€</span>
+                  <span>Sin IVA: {{producto.precio}}€</span>
+                  <br>
+                  <span>Con IVA: {{producto.precio--((producto.precio *producto.IVA)/100) | number: '1.0-2'}}€</span>
+
                 </p>
 
                 <p class="lead font-weight-bold">Descripción</p>
