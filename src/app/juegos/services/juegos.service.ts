@@ -5,11 +5,12 @@ import { Observable } from 'rxjs';
 import { Juegos } from '../models/juegos';
 import { Categorias } from '../models/categorias';
 
-const juego = 'http://alum3.iesfsl.org/api/juegos';
-const categorias = 'http://alum3.iesfsl.org/api/categorias';
+//variable
+import {GlobalVars} from '../../globalVars';
 
-// const juego = 'http://localhost:8080/juegos';
-// const categorias = 'http://localhost:8080/categorias';
+//Ruta de la api
+const juego = GlobalVars.ruta+'juegos';
+const categorias = GlobalVars.ruta+'categorias';
 
 @Injectable({
   providedIn: 'root'

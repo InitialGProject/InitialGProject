@@ -4,8 +4,10 @@ import { Observable } from 'rxjs';
 
 import { Videos } from '../models/videos';
 
-//const videos = 'http://localhost:8080/videos'; 
- const videos = 'http://alum3.iesfsl.org/api/videos';
+import {GlobalVars} from '../../globalVars';
+
+//Ruta de la api
+const videos = GlobalVars.ruta+'videos';
 
 @Injectable({
   providedIn: 'root'

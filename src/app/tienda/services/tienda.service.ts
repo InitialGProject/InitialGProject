@@ -8,11 +8,12 @@ import { Categorias } from '../models/categorias';
 //BS
 import { DataSharingService } from '../../data-sharing.service';
 
-const productos = 'http://alum3.iesfsl.org/api/productos';
-const categorias = 'http://alum3.iesfsl.org/api/productoscategoria';
+//variable
+import {GlobalVars} from '../../globalVars';
 
-// const catalogo = 'http://localhost:8080/catalogo';
-// const categorias = 'http://localhost:8080/productoscategoria';
+//Ruta de la api
+const productos = GlobalVars.ruta+'productos';
+const categorias = GlobalVars.ruta+'productoscategoria';
 
 @Injectable({
   providedIn: 'root'
