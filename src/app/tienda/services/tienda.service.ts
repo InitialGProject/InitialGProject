@@ -62,8 +62,16 @@ export class TiendaService {
 
   //Añadir al carrito el producto {it:objetos, can:valor}
   addToCart(it, can){
-    this.items.push({it, can, total:can*(it.precio- -(it.precio*it.IVA)/100)});
-    console.log(this.items);
+    //Si no está se añadirá, si está se modificará el producto
+    if(!this.items.find(item=>item.it.id==it.id)){
+      console.log("Añadiendo al carrito");
+      this.items.push({it, can, total:can*(it.precio- -(it.precio*it.IVA)/100)});
+    }else{
+      console.log("Modificando el carrito");
+      this.items.find(item=>item.it.id==it.id).can=can;
+      this.items.find(item=>item.it.id==it.id).total=can*(it.precio- -(it.precio*it.IVA)/100);
+    }
+      console.log(this.items);
   }
 
   //Recibir datos del carrito
@@ -84,6 +92,7 @@ export class TiendaService {
 
   //Sumar total del carro
   getPrecioTot(){
+    this.precio_total=0;
     this.items.forEach(element => {
       this.precio_total+=element.total;
     });

@@ -13,23 +13,26 @@ import { DataSharingService } from '../../data-sharing.service';
 export class CarritoComponent implements OnInit {
   items = this.carritoService.getItems();
   precio_total: number;
-  // precio_total = this.carritoService.getPrecioTot();
   catalogo: Catalogo;
 
 
   constructor(
     private carritoService: TiendaService,
     private dataSharingService: DataSharingService,
-  
   ) {
-    //Para probetear cosas
+    //Cargar valor del PT en su BS
     this.dataSharingService.precio_total.subscribe( value => {
       this.precio_total = value;
       });  
    }
 
   ngOnInit(): void {
+    //Cargar componentes
     this.cargarTodo(); 
+    
+    //Cargar precio carrito
+    this.carritoService.setTo0();
+    this.dataSharingService.precio_total.next(this.carritoService.getPrecioTot());
   }
 
   cargarTodo(): void {
@@ -52,11 +55,28 @@ export class CarritoComponent implements OnInit {
     if (index !== -1) {
       this.items.splice( index, 1 );
       console.log("Borrado"+console.log(uploadItem));
-      //Reiniciar el precio total
       
+      //Reiniciar el precio total
       this.carritoService.setTo0();
       this.dataSharingService.precio_total.next(this.carritoService.getPrecioTot());
 
     }
-}
+  }
+
+  updateUpload(uploadItem) {
+    // Sacar la posicion que vamos a borrar
+    const index: number = this.items.indexOf(uploadItem);
+
+    // Si negativo no está, sino actualizará el carro
+    if (index !== -1) {
+      this.items.splice( index, 1 );
+      console.log("Borrado"+console.log(uploadItem));
+
+      //Reiniciar el precio total
+      this.carritoService.setTo0();
+      this.dataSharingService.precio_total.next(this.carritoService.getPrecioTot());
+
+    }
+  }
+
 }
