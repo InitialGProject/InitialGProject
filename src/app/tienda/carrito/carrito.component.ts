@@ -47,14 +47,16 @@ export class CarritoComponent implements OnInit {
     });
   }
 
-  removeUpload(uploadItem) {
+  //Eliminar articulos del carrito
+  removeUpload(uploadItem:any) {
     // Sacar la posicion que vamos a borrar
     const index: number = this.items.indexOf(uploadItem);
 
     // Si negativo no está, sino borra
     if (index !== -1) {
       this.items.splice( index, 1 );
-      console.log("Borrado"+console.log(uploadItem));
+      console.log("Borrado "+index);
+      console.log(uploadItem);
       
       //Reiniciar el precio total
       this.carritoService.setTo0();
@@ -62,21 +64,5 @@ export class CarritoComponent implements OnInit {
 
     }
   }
-
-  updateUpload(uploadItem) {
-    // Sacar la posicion que vamos a borrar
-    const index: number = this.items.indexOf(uploadItem);
-
-    // Si negativo no está, sino actualizará el carro
-    if (index !== -1) {
-      this.items.splice( index, 1 );
-      console.log("Borrado"+console.log(uploadItem));
-
-      //Reiniciar el precio total
-      this.carritoService.setTo0();
-      this.dataSharingService.precio_total.next(this.carritoService.getPrecioTot());
-
-    }
-  }
-
+  
 }

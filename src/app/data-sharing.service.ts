@@ -15,6 +15,6 @@ export class DataSharingService {
     //Carrito
     public carro: BehaviorSubject<any> =new BehaviorSubject<any>([]);
 
-    //Total
+    //precio total del carro
     public precio_total: BehaviorSubject<number> = new BehaviorSubject<number>(0);
 }

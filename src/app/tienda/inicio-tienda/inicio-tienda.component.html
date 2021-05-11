@@ -47,15 +47,15 @@
       
             <!--Card-->
             <mdb-card class="align-items-center testo">
-    
-              <!--Card image-->
-              <div class="view overlay waves-light" style="border-radius: 5px;" mdbWavesEffect>
-                <mdb-card-img src="http://alum3.iesfsl.org/assets/img/tienda/{{producto.imagen}}" class="img-fluid" alt="Responsive image"></mdb-card-img>
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-      
+              <a routerLink="/vista-producto/{{producto.id}}" class="dark-grey-text">
+                <!--Card image-->
+                <div class="view overlay waves-light" style="border-radius: 5px;" mdbWavesEffect>
+                  <mdb-card-img src="http://alum3.iesfsl.org/assets/img/tienda/{{producto.imagen}}" class="img-fluid" alt="Responsive image"></mdb-card-img>
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+              </a>
               <!--Card content-->
               <mdb-card-body class="text-center">
                 <!--Categoria Producto-->
@@ -118,19 +118,22 @@
       <div class="row wrap align-items-center">
         
         <!--Grid column-->
-        <div fxFlex="25%" fxLayoutGap="16px" *ngFor="let producto of catalogo">      
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" fxLayoutGap="16px" *ngFor="let producto of catalogo">      
       
             <!--Card-->
             <mdb-card class="align-items-center testo" *ngIf="producto.disponible">
-    
-              <!--Card image-->
-              <div class="view overlay waves-light" mdbWavesEffect>
-                <mdb-card-img src="http://alum3.iesfsl.org/assets/img/tienda/{{producto.imagen}}" class="img-fluid" alt="Responsive image"></mdb-card-img>
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-      
+              
+              <a routerLink="/vista-producto/{{producto.id}}" class="dark-grey-text">
+                <!--Card image-->
+                <div class="view overlay waves-light" mdbWavesEffect>
+                  <mdb-card-img src="http://alum3.iesfsl.org/assets/img/tienda/{{producto.imagen}}" class="img-fluid" alt="Responsive image"></mdb-card-img>
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+
+              </a>
+
               <!--Card content-->
               <mdb-card-body class="text-center">
                 <!--Categoria Producto-->
@@ -156,7 +159,7 @@
         
                 <!-- Precio Producto -->
                 <h4 class="font-weight-bold blue-text">
-                  <strong> {{producto.precio--((producto.precio *producto.IVA)/100) | number: '0.0-2'}} €</strong>
+                  <strong> {{producto.precio--((producto.precio *producto.IVA)/100) | currency:'EUR':true}}</strong>
                 </h4>
                 
                 <!-- Stock Disponible -->
@@ -178,6 +181,7 @@
 
         </div>
         <!--Grid column-->
+        
       </div>
       <!-- row -->
     </ng-template>

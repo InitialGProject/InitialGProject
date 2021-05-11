@@ -20,7 +20,7 @@ const categorias = GlobalVars.ruta+'productoscategoria';
 })
 export class TiendaService {
   /**Servicios para el carrito*/
-  //Declaramos los articulos del carrito
+  //Declaramos los articulos del carrito para testeo
   items = [
     {it:{
       "id": 1,
@@ -54,14 +54,14 @@ export class TiendaService {
     private http: HttpClient,
     private dataSharingService: DataSharingService,
   ) { 
-    //Para probetear cosas
+    //Precio total para el DS
     this.dataSharingService.precio_total.subscribe( value => {
       this.precio_total = value;
       }); 
   }
 
   //Añadir al carrito el producto {it:objetos, can:valor}
-  addToCart(it, can){
+  addToCart(it:any, can:number){
     //Si no está se añadirá, si está se modificará el producto
     if(!this.items.find(item=>item.it.id==it.id)){
       console.log("Añadiendo al carrito");
@@ -71,6 +71,7 @@ export class TiendaService {
       this.items.find(item=>item.it.id==it.id).can=can;
       this.items.find(item=>item.it.id==it.id).total=can*(it.precio- -(it.precio*it.IVA)/100);
     }
+      //testeo
       console.log(this.items);
   }
 
