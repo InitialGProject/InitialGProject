@@ -6,6 +6,8 @@ import jQuery from 'jquery';
 
 //recibir parametros
 import { ActivatedRoute, Params } from '@angular/router';
+import { LoginComponent } from 'src/app/account/login/login.component';
+
 
 @Component({
   selector: 'app-juegos-vista-juegos',
@@ -16,11 +18,14 @@ export class VistaJuegosComponent implements OnInit {
   tipo: {clase: string};
   juego: Juegos;
 
-  constructor(private servicioJuegos: JuegosService, private rutaActiva: ActivatedRoute) { }
+  constructor(private servicioJuegos: JuegosService, private rutaActiva: ActivatedRoute,    private CargaLogin:LoginComponent,
+) { }
 
   ngOnInit(): void {
     this.dameJuegos();
-    this.secret();
+    this.secret();    
+    this.CargaLogin.ngOnInit();
+
   }
 
   secret(){

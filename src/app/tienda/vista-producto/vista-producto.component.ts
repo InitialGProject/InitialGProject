@@ -31,6 +31,7 @@ export class VistaProductoComponent implements OnInit {
   ngOnInit(): void {
     this.cargarTodo(); 
     this.cantidad_articulos=1;
+    this.servicioTienda.getUserLog();
   }
 
   cargarTodo(): void {

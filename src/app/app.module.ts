@@ -39,6 +39,7 @@ import {  CardsModule } from 'angular-bootstrap-md'
 
 //Test bs
 import { DataSharingService } from './data-sharing.service';
+import { LoginComponent } from './account/login/login.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +72,7 @@ import { DataSharingService } from './data-sharing.service';
       provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
       GlobalVars,
       DataSharingService,
+      LoginComponent
   ],
   bootstrap: [AppComponent]
 })

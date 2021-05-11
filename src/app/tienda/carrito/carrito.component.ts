@@ -23,13 +23,31 @@ export class CarritoComponent implements OnInit {
     //Cargar valor del PT en su BS
     this.dataSharingService.precio_total.subscribe( value => {
       this.precio_total = value;
-      });  
+      }); 
+
+    // //Cargar valor del Carro en su BS
+    // this.dataSharingService.carro.subscribe( value => {
+    //   this.items = value;
+    // });  
    }
+   
 
   ngOnInit(): void {
     //Cargar componentes
     this.cargarTodo(); 
     
+    //Cargar precio carrito
+    this.carritoService.setTo0();
+    this.dataSharingService.precio_total.next(this.carritoService.getPrecioTot());
+    
+    //Cargamos el usuario local
+    this.carritoService.getUserLog();
+
+    //Cargamos el carro local
+    if(localStorage.getItem('carrito')){
+      this.carritoService.getCarroLoc();
+    }
+
     //Cargar precio carrito
     this.carritoService.setTo0();
     this.dataSharingService.precio_total.next(this.carritoService.getPrecioTot());
@@ -55,12 +73,20 @@ export class CarritoComponent implements OnInit {
     // Si negativo no está, sino borra
     if (index !== -1) {
       this.items.splice( index, 1 );
-      console.log("Borrado "+index);
-      console.log(uploadItem);
+      console.log("Borrado "+index+" "+console.log(uploadItem));
       
+      this.dataSharingService.carro.next(this.items);
+      this.carritoService.setItems(this.items);
+      localStorage.setItem('carrito', JSON.stringify(this.items));
+      console.log("Se queda");
+      console.log(this.items);
+
+
       //Reiniciar el precio total
       this.carritoService.setTo0();
-      this.dataSharingService.precio_total.next(this.carritoService.getPrecioTot());
+      let total=this.carritoService.getPrecioTot();
+      this.dataSharingService.precio_total.next(total);
+      console.log(total);
 
     }
   }

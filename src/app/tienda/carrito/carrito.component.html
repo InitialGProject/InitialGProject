@@ -15,33 +15,33 @@
 
             <table class="table product-table">
 
-                <!-- Rows de cada articulo -->
-                <div *ngFor="let item of items">
-                  <tr>
-                    <th scope="row" class="imagen">
-                        <img src="http://alum3.iesfsl.org/assets/img/tienda/{{item.it.imagen}}" alt="" class="img-fluid z-depth-0"> 
-                    </th>
-                    <td><a routerLink="/vista-producto/{{item.it.id}}" class="dark-grey-text">{{item.it.nombre}}</a></td>
-                    <td>{{item.it.precio--((item.it.precio *item.it.IVA)/100) | currency:'EUR':true}}</td>
-                    <td class="text-center text-md-left">
-                      <span class="qty">{{item.can}} </span>
-                    </td>
-                    <td class="font-weight-bold">
-                      <strong>{{item.total | currency:'EUR':true}} </strong>
-                    </td>
-                    <td>
-                    <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="removeUpload(item)">X
-                    </button>
-                    </td>
-                  </tr>
-                </div>
-                <!-- Rows de cada articulo -->
-                
-                <hr>
-                <!-- Linea inferior, total -->
-                <div *ngIf="precio_total!=0"> PRECIO TOTAL {{precio_total | currency:'EUR':true}}</div>
-                <div *ngIf="precio_total==0" style="text-align: center;"> AÑADE ALGUN PRODUCTO AL CARRITO</div>
-                <!-- Linea inferior, total -->
+              <!-- Rows de cada articulo -->
+              <div *ngFor="let item of items">
+                <tr>
+                  <th scope="row" class="imagen">
+                      <img src="http://alum3.iesfsl.org/assets/img/tienda/{{item.it.imagen}}" alt="" class="img-fluid z-depth-0"> 
+                  </th>
+                  <td><a routerLink="/vista-producto/{{item.it.id}}" class="dark-grey-text">{{item.it.nombre}}</a></td>
+                  <td>{{item.it.precio--((item.it.precio *item.it.IVA)/100) | currency:'EUR':true}}</td>
+                  <td class="text-center text-md-left">
+                    <span class="qty">{{item.can}} </span>
+                  </td>
+                  <td class="font-weight-bold">
+                    <strong>{{item.total | currency:'EUR':true}} </strong>
+                  </td>
+                  <td>
+                  <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="removeUpload(item)">X
+                  </button>
+                  </td>
+                </tr>
+              </div>
+              <!-- Rows de cada articulo -->
+              
+              <hr>
+              <!-- Linea inferior, total -->
+              <div *ngIf="precio_total!=0"> PRECIO TOTAL {{precio_total | currency:'EUR':true}}</div>
+              <div *ngIf="precio_total==0" style="text-align: center;"> AÑADE ALGUN PRODUCTO AL CARRITO</div>
+              <!-- Linea inferior, total -->
 
           </table>
 

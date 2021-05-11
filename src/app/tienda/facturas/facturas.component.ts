@@ -41,7 +41,8 @@ export class FacturasComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.cargarTodo();  
+    this.cargarTodo(); 
+    this.servicioTienda.getUserLog(); 
   }
 
   cargarTodo(): void {

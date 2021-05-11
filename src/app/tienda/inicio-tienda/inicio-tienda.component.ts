@@ -41,6 +41,7 @@ export class InicioTiendaComponent implements OnInit {
 
   ngOnInit(): void {
     this.cargarTodo(); 
+    this.servicioTienda.getUserLog(); 
   }
 
   cargarTodo(): void {

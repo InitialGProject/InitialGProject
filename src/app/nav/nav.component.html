@@ -63,9 +63,9 @@
           <a routerLink='account/register' class="dropdown-item waves-light" mdbWavesEffect *ngIf="!isUserLoggedIn">REGISTRO</a>
           <a routerLink='account/login' class="dropdown-item waves-light" mdbWavesEffect *ngIf="!isUserLoggedIn">LOGIN</a>
           <a routerLink='account/profile' class="dropdown-item waves-light" mdbWavesEffect *ngIf="isUserLoggedIn">PERFIL</a>
-          <a routerLink='compras' class="dropdown-item waves-light" mdbWavesEffect *ngIf="isUserLoggedIn">COMPRAS</a>
           <a routerLink='account/suscripciones' class="dropdown-item waves-light" mdbWavesEffect>SUSCRIPCIONES</a>
-          <a href='' class="dropdown-item waves-light" mdbWavesEffect *ngIf="isUserLoggedIn">LOGOUT</a>
+          <a routerLink='compras' class="dropdown-item waves-light" mdbWavesEffect *ngIf="isUserLoggedIn">COMPRAS</a>
+          <a href='' class="dropdown-item waves-light" (click)="borrarUser()" mdbWavesEffect *ngIf="isUserLoggedIn">LOGOUT</a>
 
         </div>
       </li>

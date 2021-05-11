@@ -32,4 +32,8 @@ export class NavComponent implements OnInit {
   ngOnInit() {
 
   }
+
+  borrarUser(){
+    localStorage.removeItem('usuario');
+  }
 }

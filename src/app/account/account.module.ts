@@ -36,4 +36,6 @@ import { MatPaginatorModule } from '@angular/material/paginator';
       //RouterModule
   ]
 })
-export class AccountModule { }
+export class AccountModule { 
+  LoginComponent;
+}

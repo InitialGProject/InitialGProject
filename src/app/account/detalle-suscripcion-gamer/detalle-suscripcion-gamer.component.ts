@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
+import { LoginComponent } from '../login/login.component';
 
 
 @Component({
@@ -11,10 +12,13 @@ import { ActivatedRoute, Params } from '@angular/router';
 export class DetalleSuscripcionGamerComponent implements OnInit {
 
   constructor(
-    private rutaActiva: ActivatedRoute
+    private rutaActiva: ActivatedRoute,
+    private loginComponent:LoginComponent,
+
   ) { }
 
   ngOnInit() {
+    this.loginComponent.userLocal();
   }
 
 }

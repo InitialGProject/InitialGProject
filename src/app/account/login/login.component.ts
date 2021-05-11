@@ -39,6 +39,23 @@ export class LoginComponent implements OnInit {
       password: ['', Validators.required]
     });
     this.nombre = this.globalVars.getGlobalUser()
+    
+    if (localStorage.getItem('usuario')) {
+      this.user = JSON.parse(localStorage.getItem('usuario'));
+      console.log("Cargado");
+
+      this.nombre = this.user.nombre
+      this.globalVars.setGlobalToken(this.user.token)
+      this.globalVars.setGlobalUser(this.user.nombre)
+      this.globalVars.setglobalUserToken(this.user)
+      console.log(this.user);
+      this.alertService.success('Login Correcto', { keepAfterRouteChange: true });
+      //this.router.navigate(['/'], { relativeTo: this.route });
+      
+      //Para el BS actualice cosas
+      this.cuandoUserLogea(this.user);
+    }
+
   }
 
   // convenience getter for easy access to form fields
@@ -59,6 +76,12 @@ export class LoginComponent implements OnInit {
       data => {
         if (data.token) {
           this.user = data;
+          
+          //Guardamos user en local
+          localStorage.setItem('usuario', JSON.stringify(this.user));
+          console.log("Guardado");
+          console.log(localStorage.getItem('usuario'));
+
           this.nombre = this.user.nombre
           this.globalVars.setGlobalToken(this.user.token)
           this.globalVars.setGlobalUser(this.user.nombre)
@@ -79,6 +102,8 @@ export class LoginComponent implements OnInit {
 
   //Funcion para actualizar el BS
   cuandoUserLogea(data) {
+
+    
     //Si esta logueado es true
     this.dataSharingService.isUserLoggedIn.next(true);
     
@@ -88,5 +113,23 @@ export class LoginComponent implements OnInit {
     //Este es para testear
     this.dataSharingService.testeo.next("AHORA_SI");
     //console.log(this.dataSharingService.testeo);
+  }
+
+  userLocal(){
+    if (localStorage.getItem('usuario')) {
+      this.user = JSON.parse(localStorage.getItem('usuario'));
+      console.log("Cargado");
+
+      this.nombre = this.user.nombre
+      this.globalVars.setGlobalToken(this.user.token)
+      this.globalVars.setGlobalUser(this.user.nombre)
+      this.globalVars.setglobalUserToken(this.user)
+      console.log(this.user);
+      this.alertService.success('Login Correcto', { keepAfterRouteChange: true });
+      //this.router.navigate(['/'], { relativeTo: this.route });
+      
+      //Para el BS actualice cosas
+      this.cuandoUserLogea(this.user);
+    }
   }
 }
