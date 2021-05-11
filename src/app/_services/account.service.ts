@@ -50,7 +50,7 @@ export class AccountService {
   }
 
   register(user: User) {
-    return this.http.post(`${registroUrl}` + `/usuarios`, user);
+    return this.http.post(`${registroUrl}` + `usuarios`, user);
   }
 
   getAll() {
