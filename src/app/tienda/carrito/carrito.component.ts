@@ -36,15 +36,15 @@ export class CarritoComponent implements OnInit {
     //Cargar componentes
     this.cargarTodo(); 
     
+    //Cargamos el usuario local
+    this.carritoService.getUserLog();
+    
     //Cargar precio carrito
     this.carritoService.setTo0();
     this.dataSharingService.precio_total.next(this.carritoService.getPrecioTot());
-    
-    //Cargamos el usuario local
-    this.carritoService.getUserLog();
 
     //Cargamos el carro local
-    if(localStorage.getItem('carrito')){
+    if(localStorage.getItem('carrito')!=null){
       this.carritoService.getCarroLoc();
     }
 

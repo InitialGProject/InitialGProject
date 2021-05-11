@@ -70,7 +70,9 @@ export class TiendaService {
 
   //Cargar el carro local
   getCarroLoc() {
-    this.items = JSON.parse(localStorage.getItem('carrito'));
+    let test=JSON.parse(localStorage.getItem('carrito'));
+    if(test!=null)
+      this.items = test; 
   }
 
   //Añadir al carrito el producto {it:objetos, can:valor}
