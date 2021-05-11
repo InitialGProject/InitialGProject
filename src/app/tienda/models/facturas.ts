@@ -1,4 +1,8 @@
 export interface Facturas {
     id: number;
-    nombre: string;
+    id_usuario: number;
+    fecha_compra: Date;
+    enviado: boolean;
+    fecha_envio: Date;
+    total: number;
 }

@@ -1,12 +1,56 @@
 <section class="text-center pb-3 my-5">
     <!-- Detalles de compras -->
-    <div class="datos" *ngIf="isUserLoggedIn; else no">
+    <!-- <div class="datos" *ngIf="isUserLoggedIn; else no"> -->
+    <div class="datos">
+        <div class="barra"></div>
         <h2 class="h1 py-5">HISTORIAL DE COMPRAS</h2>
-        <hr>
-        <div *ngFor="let producto of catalogo">
+        <center>
+            <table class="table table-striped">
+                
+                <thead> 
+                    <tr>
+                        <th>
+                            Nº Factura
+                        </th>
+                        <th>
+                            Fecha Compra
+                        </th>
+                        <th>
+                            Enviado
+                        </th>
+                        <th>
+                            Fecha Envio
+                        </th>
+                        <th>
+                            Total
+                        </th>
+                    </tr>
+                </thead>
 
-        </div>
-        TEXTO
+                <tbody>
+                    <tr *ngFor="let facturas of factura">
+                        <th>
+                            <p>{{facturas.id}}</p>
+                        </th>
+                        <th>
+                            <p>{{facturas.fecha_compra}}</p>
+                        </th>
+                        <th>
+                            <p *ngIf="!facturas.enviado">NO</p>
+                            <p *ngIf="facturas.enviado">SI</p>
+                        </th>
+                        <th>
+                            <p *ngIf="!facturas.fecha_envio">---</p>
+                            <p *ngIf="facturas.fecha_envio">{{facturas.fecha_envio}}</p>
+                            
+                        </th>
+                        <th>
+                            <p>{{facturas.total | currency:'EUR':true}}</p>
+                        </th>
+                    </tr>    
+                </tbody>                
+            </table>
+        </center>
     </div>
     <!-- Detalles de compras -->
 
