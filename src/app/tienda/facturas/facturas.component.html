@@ -1,0 +1,23 @@
+<section class="text-center pb-3 my-5">
+    <!-- Detalles de compras -->
+    <div class="datos" *ngIf="isUserLoggedIn; else no">
+        <h2 class="h1 py-5">HISTORIAL DE COMPRAS</h2>
+        <hr>
+        <div *ngFor="let producto of catalogo">
+
+        </div>
+        TEXTO
+    </div>
+    <!-- Detalles de compras -->
+
+    <!-- Si no estas logueado boton login -->
+    <ng-template #no>
+        <div class="datos">
+            <h2 class="h1 py-5">INICIA SESIÓN PARA CONTINUAR</h2>
+            <hr>
+            <a routerLink='/account/login' class="dropdown-item waves-light" mdbWavesEffect *ngIf="!isUserLoggedIn">LOGIN</a>
+        </div>
+    </ng-template>
+    <!-- Si no estas logueado boton login -->
+
+</section>

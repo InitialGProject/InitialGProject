@@ -26,8 +26,11 @@ export class InicioTiendaComponent implements OnInit {
 
   testeo:string;
   
-  constructor(private servicioTienda: TiendaService, private rutaActiva: ActivatedRoute, 
-    private router:Router, private dataSharingService: DataSharingService
+  constructor(
+    private servicioTienda: TiendaService, 
+    private rutaActiva: ActivatedRoute, 
+    private router:Router, 
+    private dataSharingService: DataSharingService,
     ){
       
       //Para probetear cosas

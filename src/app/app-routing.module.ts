@@ -28,6 +28,7 @@ import { DetalleSuscripcionGamerComponent } from './account/detalle-suscripcion-
 // Tienda
 import { InicioTiendaComponent } from './tienda/inicio-tienda/inicio-tienda.component';
 import { CarritoComponent } from './tienda/carrito/carrito.component';
+import { FacturasComponent } from './tienda/facturas/facturas.component';
 
 
 // Perfil
@@ -72,7 +73,12 @@ const routes: Routes = [
     component: InicioTiendaComponent
   },
   {
-    path: 'carrito', component: CarritoComponent,
+    path: 'carrito', 
+    component: CarritoComponent,
+  },
+  {
+    path: 'compras',
+    component: FacturasComponent,
   },
   {
     path: 'vista-foro',

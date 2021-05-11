@@ -4,6 +4,8 @@ import { Observable } from 'rxjs';
 
 import { Catalogo } from '../models/catalogo';
 import { Categorias } from '../models/categorias';
+import { Facturas } from '../models/facturas';
+import { Linfac } from '../models/lineafactura';
 
 //BS
 import { DataSharingService } from '../../data-sharing.service';
@@ -14,6 +16,9 @@ import {GlobalVars} from '../../globalVars';
 //Ruta de la api
 const productos = GlobalVars.ruta+'productos';
 const categorias = GlobalVars.ruta+'productoscategoria';
+const facturas = GlobalVars.ruta+'productosfacturacion';
+const lineafactura = GlobalVars.ruta+'productosfactura';
+
 
 @Injectable({
   providedIn: 'root'
@@ -109,5 +114,15 @@ export class TiendaService {
   //Cargar ddbb de categorias
   getCategorias(): Observable<Categorias> {
     return this.http.get<Categorias>(categorias);
+  }
+
+  //Cargar ddbb de facturas
+  getFacturas(): Observable<Facturas> {
+    return this.http.get<Facturas>(facturas);
+  }
+
+  //Cargar ddbb de linea_Factura
+  getLinFacturas(): Observable<Linfac> {
+    return this.http.get<Linfac>(lineafactura);
   }
 }

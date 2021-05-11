@@ -8,9 +8,10 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { CarritoComponent } from './carrito/carrito.component';
 
 import {FormsModule} from '@angular/forms';
+import { FacturasComponent } from './facturas/facturas.component';
 
 @NgModule({
-  declarations: [InicioTiendaComponent, VistaProductoComponent, CarritoComponent],
+  declarations: [InicioTiendaComponent, VistaProductoComponent, CarritoComponent, FacturasComponent],
   imports: [
     CommonModule,
     MDBBootstrapModule.forRoot(),
