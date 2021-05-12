@@ -12,39 +12,59 @@
 
         <!-- Tabla del carro -->
         <div class="table-responsive">
+          <table class="table product-table">
 
-            <table class="table product-table">
+            <!-- Rows de cada articulo -->
+            <div *ngFor="let item of items">
+              <tr>
+                <th scope="row" class="imagen">
+                    <img src="http://alum3.iesfsl.org/assets/img/tienda/{{item.it.imagen}}" alt="" class="img-fluid z-depth-0"> 
+                </th>
+                <td><a routerLink="/vista-producto/{{item.it.id}}" class="dark-grey-text">{{item.it.nombre}}</a></td>
+                <td>{{item.it.precio--((item.it.precio *item.it.IVA)/100) | currency:'EUR':true}}</td>
+                <td class="text-center text-md-left">
+                  <span class="qty">{{item.can}} </span>
+                </td>
+                <td class="font-weight-bold">
+                  <strong>{{item.total | currency:'EUR':true}} </strong>
+                </td>
+                <td>
+                <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="removeUpload(item)">X
+                </button>
+                </td>
+              </tr>
+            </div>
+            <!-- Rows de cada articulo -->
+            
+            <hr>
+            <!-- Linea inferior, total -->
+            <div *ngIf="precio_total!=0"> PRECIO TOTAL {{precio_total | currency:'EUR':true}}</div>
+            <button *ngIf="precio_total!=0&&!isUserLoggedIn" type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="removeUpload(item)">Vaciar Carro
+            </button>
+            <div *ngIf="precio_total==0" style="text-align: center;"> AÑADE ALGUN PRODUCTO AL CARRITO</div>
+            <!-- Linea inferior, total -->
 
-              <!-- Rows de cada articulo -->
-              <div *ngFor="let item of items">
-                <tr>
-                  <th scope="row" class="imagen">
-                      <img src="http://alum3.iesfsl.org/assets/img/tienda/{{item.it.imagen}}" alt="" class="img-fluid z-depth-0"> 
-                  </th>
-                  <td><a routerLink="/vista-producto/{{item.it.id}}" class="dark-grey-text">{{item.it.nombre}}</a></td>
-                  <td>{{item.it.precio--((item.it.precio *item.it.IVA)/100) | currency:'EUR':true}}</td>
-                  <td class="text-center text-md-left">
-                    <span class="qty">{{item.can}} </span>
-                  </td>
-                  <td class="font-weight-bold">
-                    <strong>{{item.total | currency:'EUR':true}} </strong>
-                  </td>
-                  <td>
-                  <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="removeUpload(item)">X
-                  </button>
-                  </td>
-                </tr>
-              </div>
-              <!-- Rows de cada articulo -->
-              
-              <hr>
-              <!-- Linea inferior, total -->
-              <div *ngIf="precio_total!=0"> PRECIO TOTAL {{precio_total | currency:'EUR':true}}</div>
-              <div *ngIf="precio_total==0" style="text-align: center;"> AÑADE ALGUN PRODUCTO AL CARRITO</div>
-              <!-- Linea inferior, total -->
-
+            
           </table>
+          <!-- Form para comprar -->
+          <div *ngIf="isUserLoggedIn; else logeate">
 
+            <form *ngIf="precio_total!=0&&idus!=0" [formGroup]="form" (ngSubmit)="onSubmit()">
+              
+              <!-- <input type="hidden" formControlName="id_usuario"  ngModel='4'/> -->
+              
+              <input type="hidden" formControlName="total" ngModel="{{precio_total}}"/>
+              <button *ngIf="precio_total!=0" type="submit" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="clearCart(item)">Vaciar Carro
+              </button>
+              <button type="submit" class="btn btn-sm btn-primary">Confirmar</button>
+              
+            </form> 
+          </div>
+          <ng-template #logeate>
+            Inicia sesión para comprar
+          </ng-template>
+          <!-- Form para comprar -->
+        
         </div>
         <!-- Tabla del carro -->
 

@@ -9,7 +9,7 @@ export class GlobalVars {
     private globalUser:string;
     private globalUserToken:object;
     static ruta:string="http://alum3.iesfsl.org/api/";
-    // private ruta:string="http://localhost:8080/";
+    // static ruta:string="http://localhost:8080/";
 
 
 //--------------------------------------------------------

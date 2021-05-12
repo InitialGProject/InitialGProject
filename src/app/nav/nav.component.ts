@@ -25,7 +25,7 @@ export class NavComponent implements OnInit {
     //Datos del token sobrecargado
     this.dataSharingService.token.subscribe( value => {
       this.token = value;
-      console.log("test"+this.token);
+      //console.log("test"+this.token);
     });
   }
 

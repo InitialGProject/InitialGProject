@@ -50,8 +50,7 @@ export class LoginComponent implements OnInit {
       this.globalVars.setglobalUserToken(this.user)
       console.log(this.user);
       this.alertService.success('Login Correcto', { keepAfterRouteChange: true });
-      //this.router.navigate(['/'], { relativeTo: this.route });
-      
+
       //Para el BS actualice cosas
       this.cuandoUserLogea(this.user);
     }
@@ -79,14 +78,14 @@ export class LoginComponent implements OnInit {
           
           //Guardamos user en local
           localStorage.setItem('usuario', JSON.stringify(this.user));
-          console.log("Guardado");
-          console.log(localStorage.getItem('usuario'));
+          // console.log("Guardado");
+          // console.log(localStorage.getItem('usuario'));
 
           this.nombre = this.user.nombre
           this.globalVars.setGlobalToken(this.user.token)
           this.globalVars.setGlobalUser(this.user.nombre)
           this.globalVars.setglobalUserToken(this.user)
-          console.log(this.user);
+          // console.log(this.user);
           this.alertService.success('Login Correcto', { keepAfterRouteChange: true });
           this.router.navigate(['/'], { relativeTo: this.route });
           
@@ -109,27 +108,27 @@ export class LoginComponent implements OnInit {
     
     //Guarda el token sobrecargado para actualizar la pagina
     this.dataSharingService.token.next(data);
-    
-    //Este es para testear
-    this.dataSharingService.testeo.next("AHORA_SI");
-    //console.log(this.dataSharingService.testeo);
+
+    //Guardara el id usuario activo
+    this.dataSharingService.iduseract.next(data.id);
+
+
   }
 
   userLocal(){
     if (localStorage.getItem('usuario')) {
       this.user = JSON.parse(localStorage.getItem('usuario'));
-      console.log("Cargado");
+      
+      //Para el BS actualice cosas
+      this.cuandoUserLogea(this.user);
 
       this.nombre = this.user.nombre
       this.globalVars.setGlobalToken(this.user.token)
       this.globalVars.setGlobalUser(this.user.nombre)
       this.globalVars.setglobalUserToken(this.user)
-      console.log(this.user);
-      this.alertService.success('Login Correcto', { keepAfterRouteChange: true });
-      //this.router.navigate(['/'], { relativeTo: this.route });
       
-      //Para el BS actualice cosas
-      this.cuandoUserLogea(this.user);
+      console.log("Logueo func:")
+      console.log(this.user);
     }
   }
 }

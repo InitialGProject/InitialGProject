@@ -13,6 +13,7 @@ import { DataSharingService } from '../../data-sharing.service';
 //variable
 import {GlobalVars} from '../../globalVars';
 
+
 import { LoginComponent } from 'src/app/account/login/login.component';
 
 //Ruta de la api
@@ -20,15 +21,17 @@ const productos = GlobalVars.ruta+'productos';
 const categorias = GlobalVars.ruta+'productoscategoria';
 const facturas = GlobalVars.ruta+'productosfacturacion';
 const lineafactura = GlobalVars.ruta+'productosfactura';
+const facturaUrl = GlobalVars.ruta;
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class TiendaService {
+  
   /**Servicios para el carrito*/
-  //Declaramos los articulos del carrito para testeo
   items = [
+    //Declaramos los articulos del carrito para testeo
     // {it:{
     //   "id": 1,
     //   "cat_id": 1,
@@ -56,6 +59,7 @@ export class TiendaService {
   ];
 
   precio_total: number;
+  idus:number;
 
   constructor(
     private http: HttpClient,
@@ -65,7 +69,13 @@ export class TiendaService {
     //Precio total para el DS
     this.dataSharingService.precio_total.subscribe( value => {
       this.precio_total = value;
-      }); 
+    }); 
+    
+    //id usuariologged
+    this.dataSharingService.iduseract.subscribe( value => {
+      this.idus = value;
+    }); 
+
   }
 
   //Cargar el carro local
@@ -103,15 +113,17 @@ export class TiendaService {
     return this.items;
   }
 
+  //Asignar items al carro
   setItems(val){
     this.items=val;
   }
 
-  //Vaciara carrito
+  //Vaciar carrito
   clearCart(){
     this.items=[];
     localStorage.setItem('carrito', JSON.stringify(this.items));
-    return this.items;
+    window.location.reload()
+    //return this.items;
   }
 
   //Vaciar contador
@@ -151,6 +163,22 @@ export class TiendaService {
 
   //Sacar el usuario logueado
   getUserLog(){
-    this.CargaLogin.ngOnInit();
+    this.CargaLogin.userLocal();
   }
+
+  //Sacar el id del usuario logueado
+  getIdUsu(){
+    return this.idus;
+  }
+
+  //Enviar datos para facturar a la api
+  facturar(factura: Facturas) {
+    return this.http.post(`${facturaUrl}`+ `productosfacturacion`, factura);
+  }
+
+  //Enviar datos para facturar a la api
+  facturarLinea(linea: Linfac) {
+    return this.http.post(`${facturaUrl}`+ `productosfactura`, linea);
+  }
+
 }
