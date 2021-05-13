@@ -5,7 +5,7 @@
         <h4>LAS NOTICIAS MÁS RECIENTES</h4>
 
         <mdb-carousel class="carousel slide carousel-fade w-100" [animation]="'fade'">
-            <mdb-carousel-item class="cuadro" *ngFor="let noticia of noticias | slice:0:3">
+            <mdb-carousel-item class="cuadro" *ngFor="let noticia of noticias | slice:-3">
 
                 <a routerLink="./../vista-noticias/detalle-noticia/{{noticia.titulo}}">
 
