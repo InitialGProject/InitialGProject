@@ -102,8 +102,8 @@ export class TiendaService {
       //Almacenamos el carro en local
       localStorage.setItem('carrito', JSON.stringify(this.items));
 
-      //testeo
-      console.log("Carro queda");
+      //Testeo
+      console.log("Carro actualizado:");
       console.log(localStorage.getItem('carrito'));
   }
 
@@ -178,7 +178,29 @@ export class TiendaService {
 
   //Enviar datos para facturar a la api
   facturarLinea(linea: Linfac) {
-    return this.http.post(`${facturaUrl}`+ `productosfactura`, linea);
+    return this.http.post(`${facturaUrl}`+ `productosfactura`, linea)
+    .subscribe(
+      data => {
+        
+        this.restarStock(data);
+      }
+    );
   }
 
+  //Cambiar stock de los productos comprados
+  restarStock(objeto:any){
+    this.http.get(`${facturaUrl}`+ `productos/`+objeto["id_producto"])
+    .subscribe(
+      async data=>{
+        this.http.put(`${facturaUrl}`+ `productos/`+objeto["id_producto"], {stock: data['stock']-objeto['cantidad']})
+        .subscribe(
+          data=>{
+            //Testeo
+            console.log("DDBB Actualizada");
+            console.log(data);
+          }
+        )
+      }
+    );
+  }
 }

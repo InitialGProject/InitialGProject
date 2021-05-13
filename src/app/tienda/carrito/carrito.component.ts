@@ -97,48 +97,41 @@ export class CarritoComponent implements OnInit {
       this.dataSharingService.carro.next(this.items);
       this.carritoService.setItems(this.items);
       localStorage.setItem('carrito', JSON.stringify(this.items));
-      console.log("Se queda");
-      console.log(this.items);
-
 
       //Reiniciar el precio total
       this.carritoService.setTo0();
       let total=this.carritoService.getPrecioTot();
       this.dataSharingService.precio_total.next(total);
-      console.log(total);
+      console.log("Precio total en carro:"+total);
 
     }
   }
   
   //Mandar a la api
-  async  onSubmit(){
+  async onSubmit(){
     this.form.setValue=this.datosFactura();
     
-    console.log("Objeto:");
-    console.log(this.form.value)
+    //Testeo   
+    // console.log("Objeto:");
+    // console.log(this.form.value)
 
     // Pasamos a la api
-    await this.carritoService.facturar(this.datosFactura())
+    this.carritoService.facturar(await this.datosFactura())
     .subscribe(
       data => {
         //por cada contenido de la factura se creará su relación
-        this.items.forEach(linea => {          
+        this.items.forEach(async linea => {          
           //Mandamos cada linea a la api
-          this.carritoService.facturarLinea(this.lineaFactura(data['id'], linea.it.id, linea.can))
-          .subscribe(
-            data => {
-              console.log("Se ha guardado");
-              console.log(data)
-            }
-          )
-          
+          this.carritoService.facturarLinea(await this.lineaFactura(data['id'], linea.it.id, linea.can))
         });
       });
+      
+      
+      // Vaciamos el carro al acabar
       setTimeout(() => {
        this.carritoService.clearCart();
       }, 2000);
-      //Vaciamos el carro al acabar
-
+      
   }
 
   //Funcion para cargar los datos del form y el user para mandar a la api

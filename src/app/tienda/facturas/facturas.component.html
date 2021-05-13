@@ -28,26 +28,32 @@
                 </thead>
 
                 <tbody>
-                    <tr *ngFor="let facturas of factura">
-                        <th>
-                            <p>{{facturas.id}}</p>
-                        </th>
-                        <th>
-                            <p>{{facturas.fecha_compra}}</p>
-                        </th>
-                        <th>
-                            <p *ngIf="!facturas.enviado">NO</p>
-                            <p *ngIf="facturas.enviado">SI</p>
-                        </th>
-                        <th>
-                            <p *ngIf="!facturas.fecha_envio">---</p>
-                            <p *ngIf="facturas.fecha_envio">{{facturas.fecha_envio}}</p>
+                    
+                    <ng-container *ngFor="let facturas of factura">
+                        <tr *ngIf="token.id==facturas.id_usuario">
                             
-                        </th>
-                        <th>
-                            <p>{{facturas.total | currency:'EUR':true}}</p>
-                        </th>
-                    </tr>    
+                            <th>
+                                <p>{{facturas.id}}</p>
+                            </th>
+                            <th>
+                                <p>{{facturas.fecha_compra}}</p>
+                            </th>
+                            <th>
+                                <p *ngIf="!facturas.enviado">NO</p>
+                                <p *ngIf="facturas.enviado">SI</p>
+                            </th>
+                            <th>
+                                <p *ngIf="!facturas.fecha_envio">---</p>
+                                <p *ngIf="facturas.fecha_envio">{{facturas.fecha_envio}}</p>
+                                
+                            </th>
+                            <th>
+                                <p>{{facturas.total | currency:'EUR':true}}</p>
+                            </th>
+
+                        </tr>
+                    </ng-container> 
+
                 </tbody>                
             </table>
         
