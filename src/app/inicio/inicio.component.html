@@ -5,12 +5,13 @@
         <h4>LAS NOTICIAS MÁS RECIENTES</h4>
 
         <mdb-carousel class="carousel slide carousel-fade w-100" [animation]="'fade'">
-            <mdb-carousel-item class="cuadro" *ngFor="let noticia of noticias | slice:'start:end'">
+            <mdb-carousel-item class="cuadro" *ngFor="let noticia of noticias | slice:-3">
 
                 <a routerLink="./../vista-noticias/detalle-noticia/{{noticia.titulo}}">
 
                     <div class="view w-100">
                         <img class="Aimg d-block w-100" src="http://alum3.iesfsl.org/assets/img/noticias/{{noticia.imagen}}" alt="Slider de Noticias">
+                        <!-- <img class="Aimg d-block w-100" src="./../../../assets/img/noticias/{{noticia.imagen}}" alt="Slider de Noticias"> -->
                         <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
                     </div>
 
@@ -68,6 +69,7 @@
                 <div>
                     <a class="juego" routerLink="/vista-juegos/detalle-juegos/{{juegos.id}}">
                         <img class="Cimg" src="http://alum3.iesfsl.org/assets/img/juegos/{{juegos.imagen}}" alt="Juego">
+                        <!-- <img class="Cimg" src="./../../../img/juegos/{{juegos.imagen}}" alt="Juego"> -->
                         <p>{{juegos.titulo}}</p>
                     </a>
                 </div>

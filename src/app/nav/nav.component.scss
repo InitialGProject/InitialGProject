@@ -19,3 +19,44 @@
     width: 2rem;
   }
 }
+
+//???
+.panel {
+  text-align: center;
+  display: block;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#403f3f', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+}
+
+.panel:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.panel ul {
+  font-family: helvetica, arial, sans-serif;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.panel ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.dino {
+  display: none;
+  width: 371px;
+  height: 460px;
+  position: absolute;
+  right: 0px;
+  bottom: -440px;
+  z-index: 9999;
+}

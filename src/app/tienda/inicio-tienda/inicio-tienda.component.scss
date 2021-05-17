@@ -1,0 +1,19 @@
+@import "./../../../mixins";
+@import "./../../../variables"; 
+
+
+.datos{
+    box-shadow: 10px 10px 5px rgb(255, 255, 255);
+}
+
+.card{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 5px;     
+}
+
+.oferta{
+    background-color: rgb(33, 197, 33);
+}
+

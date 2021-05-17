@@ -8,6 +8,9 @@ import { AlertService } from './../../_services/alert.service';
 import { User } from 'src/app/_models/user';
 import { GlobalVars } from '../../globalVars';
 
+//test BS
+import { DataSharingService } from '../../data-sharing.service';
+
 @Component({ templateUrl: 'login.component.html' })
 
 export class LoginComponent implements OnInit {
@@ -24,8 +27,11 @@ export class LoginComponent implements OnInit {
     private alertService: AlertService,
     private route: ActivatedRoute,
     private router: Router,
-    private globalVars: GlobalVars
-  ) { }
+    private globalVars: GlobalVars,
+    private dataSharingService: DataSharingService
+  ) { 
+
+  }
 
   ngOnInit() {
     this.form = this.formBuilder.group({
@@ -33,6 +39,22 @@ export class LoginComponent implements OnInit {
       password: ['', Validators.required]
     });
     this.nombre = this.globalVars.getGlobalUser()
+    
+    if (localStorage.getItem('usuario')) {
+      this.user = JSON.parse(localStorage.getItem('usuario'));
+      console.log("Cargado");
+
+      this.nombre = this.user.nombre
+      this.globalVars.setGlobalToken(this.user.token)
+      this.globalVars.setGlobalUser(this.user.nombre)
+      this.globalVars.setglobalUserToken(this.user)
+      console.log(this.user);
+      this.alertService.success('Login Correcto', { keepAfterRouteChange: true });
+
+      //Para el BS actualice cosas
+      this.cuandoUserLogea(this.user);
+    }
+
   }
 
   // convenience getter for easy access to form fields
@@ -53,18 +75,60 @@ export class LoginComponent implements OnInit {
       data => {
         if (data.token) {
           this.user = data;
+          
+          //Guardamos user en local
+          localStorage.setItem('usuario', JSON.stringify(this.user));
+          // console.log("Guardado");
+          // console.log(localStorage.getItem('usuario'));
+
           this.nombre = this.user.nombre
           this.globalVars.setGlobalToken(this.user.token)
           this.globalVars.setGlobalUser(this.user.nombre)
           this.globalVars.setglobalUserToken(this.user)
-          console.log(this.user);
+          // console.log(this.user);
           this.alertService.success('Login Correcto', { keepAfterRouteChange: true });
           this.router.navigate(['/'], { relativeTo: this.route });
+          
+          //Para el BS actualice cosas
+          this.cuandoUserLogea(this.user);
         }
       },
       error => {
         this.alertService.error(error);
         this.loading = false;
       });
+  }
+
+  //Funcion para actualizar el BS
+  cuandoUserLogea(data) {
+
+    
+    //Si esta logueado es true
+    this.dataSharingService.isUserLoggedIn.next(true);
+    
+    //Guarda el token sobrecargado para actualizar la pagina
+    this.dataSharingService.token.next(data);
+
+    //Guardara el id usuario activo
+    this.dataSharingService.iduseract.next(data.id);
+
+
+  }
+
+  userLocal(){
+    if (localStorage.getItem('usuario')) {
+      this.user = JSON.parse(localStorage.getItem('usuario'));
+      
+      //Para el BS actualice cosas
+      this.cuandoUserLogea(this.user);
+
+      this.nombre = this.user.nombre
+      this.globalVars.setGlobalToken(this.user.token)
+      this.globalVars.setGlobalUser(this.user.nombre)
+      this.globalVars.setglobalUserToken(this.user)
+      
+      console.log("Logueo func:")
+      console.log(this.user);
+    }
   }
 }

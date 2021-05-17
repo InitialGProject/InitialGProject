@@ -25,8 +25,10 @@ import { SuscripcionesComponent } from './account/suscripciones/suscripciones.co
 import { DetalleSuscripcionBasicaComponent } from './account/detalle-suscripcion-basica/detalle-suscripcion-basica.component';
 import { DetalleSuscripcionGamerComponent } from './account/detalle-suscripcion-gamer/detalle-suscripcion-gamer.component';
 
-
-
+// Tienda
+import { InicioTiendaComponent } from './tienda/inicio-tienda/inicio-tienda.component';
+import { CarritoComponent } from './tienda/carrito/carrito.component';
+import { FacturasComponent } from './tienda/facturas/facturas.component';
 
 
 // Perfil
@@ -60,6 +62,23 @@ const routes: Routes = [
   {
     path: 'vista-torneos',
     component: VistaTorneosComponent
+  },
+  {
+    path: 'vista-noticias',
+    component: VistaNoticiaComponent
+  },
+  // Tienda
+  {
+    path: 'tienda',
+    component: InicioTiendaComponent
+  },
+  {
+    path: 'carrito', 
+    component: CarritoComponent,
+  },
+  {
+    path: 'compras',
+    component: FacturasComponent,
   },
   {
     path: 'vista-foro',

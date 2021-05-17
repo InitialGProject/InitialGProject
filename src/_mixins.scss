@@ -21,3 +21,24 @@ h2 {
     text-align: center;
   }
 }
+
+.datos{
+  background-color: $grisLum;
+  border-radius: 5px;
+  margin: 2%;
+  font-weight: bold;
+}
+
+.barra{
+  border-top-left-radius: 5px;
+  border: solid 10px $rojo;
+}
+
+.barra2{
+  border-bottom-left-radius: 5px;
+  border: solid 10px $rojo;
+}
+
+.motto{
+  color:whitesmoke;
+}

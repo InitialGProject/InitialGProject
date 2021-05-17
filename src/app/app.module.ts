@@ -19,6 +19,7 @@ import { NoticiasModule } from './noticias/noticias.module';
 import { AudiovisualesModule } from './audiovisuales/audiovisuales.module';
 import { JuegosModule } from './juegos/juegos.module';
 import { TorneosModule } from './torneos/torneos.module';
+import { TiendaModule } from './tienda/tienda.module';
 import { ForoModule } from './foro/foro.module';
 import { PerfilModule } from './perfil/perfil.module';
 import { ContactModule } from './contact/contact.module';
@@ -32,6 +33,16 @@ import { ErrorInterceptor } from './_helpers/error.interceptor';
 
 //variables globales
 import { GlobalVars } from './globalVars';
+
+//Cards
+import {  CardsModule } from 'angular-bootstrap-md'
+
+//Test bs
+import { DataSharingService } from './data-sharing.service';
+import { LoginComponent } from './account/login/login.component';
+
+//Bootstrap model
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -50,16 +61,22 @@ import { GlobalVars } from './globalVars';
     AudiovisualesModule,
     JuegosModule,
     TorneosModule,
+    TiendaModule,
     ForoModule,
     PerfilModule,
     ContactModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    CardsModule,
+    NgbModule,
   ],
   providers: [
-    { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
-    GlobalVars
+    { 
+      provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
+      GlobalVars,
+      DataSharingService,
+      LoginComponent
   ],
   bootstrap: [AppComponent]
 })

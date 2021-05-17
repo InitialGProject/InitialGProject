@@ -5,9 +5,11 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { User } from './../_models/user';
 
-// const baseUrl = 'http://alum3.iesfsl.org/api/user';
-const baseUrl = 'http://localhost:8080/user';
-const registroUrl = 'http://alum3.iesfsl.org/api';
+import {GlobalVars} from '../globalVars';
+
+//Ruta de la api
+const baseUrl = GlobalVars.ruta+'user';
+const registroUrl = GlobalVars.ruta;
 
 @Injectable({ providedIn: 'root' })
 
@@ -48,7 +50,7 @@ export class AccountService {
   }
 
   register(user: User) {
-    return this.http.post(`${registroUrl}` + `/usuarios`, user);
+    return this.http.post(`${registroUrl}` + `usuarios`, user);
   }
 
   getAll() {

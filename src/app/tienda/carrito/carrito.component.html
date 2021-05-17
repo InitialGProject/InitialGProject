@@ -1,0 +1,80 @@
+<div class="datos">
+  <!--Titulo-->
+  <div class="barra"></div>
+  <h2 class="h1 py-5">TU CARRITO</h2>
+  <!--Main Layout-->
+  <main>
+
+    <!-- Main Container -->
+    <div class="container">
+
+      <section class="section my-5 pb-5">
+
+        <!-- Tabla del carro -->
+        <div class="table-responsive">
+          <table class="table product-table">
+            <br>
+            
+            <!-- Rows de cada articulo -->
+            <div style="background-color: rgb(226, 222, 217); border-radius: 20px; margin: 1em; padding: 1em;"  *ngFor="let item of items">
+              <tr>
+                <th scope="row" class="imagen">
+                    <img src="http://alum3.iesfsl.org/assets/img/tienda/{{item.it.imagen}}" alt="" class="img-fluid z-depth-0"> 
+                </th>
+                <td><a routerLink="/vista-producto/{{item.it.id}}" class="dark-grey-text">{{item.it.nombre}}</a></td>
+                <td>{{item.it.precio--((item.it.precio *item.it.IVA)/100) | currency:'EUR':true}}</td>
+                <td class="text-center text-md-left">
+                  <span class="qty">{{item.can}} </span>
+                </td>
+                <td class="font-weight-bold">
+                  <strong>{{item.total | currency:'EUR':true}} </strong>
+                </td>
+                <td>
+                <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="removeUpload(item)">X
+                </button>
+                </td>
+              </tr>
+            </div>
+            <!-- Rows de cada articulo -->
+            
+            <hr>
+            <!-- Linea inferior, total -->
+            <div style="color: whitesmoke;" *ngIf="precio_total!=0"> PRECIO TOTAL {{precio_total | currency:'EUR':symbol}}</div>
+            <button *ngIf="precio_total!=0&&!isUserLoggedIn" type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="removeUpload(item)">Vaciar Carro
+            </button>
+            <div *ngIf="precio_total==0" class="motto" style="text-align: center; margin-top: 2em;margin-bottom: -5em; padding-bottom: -2em;"> AÑADE ALGUN PRODUCTO AL CARRITO</div>
+            <!-- Linea inferior, total -->
+
+            
+          </table>
+          <!-- Form para comprar -->
+          <div *ngIf="isUserLoggedIn; else logeate">
+
+            <form *ngIf="precio_total!=0&&idus!=0" [formGroup]="form" (ngSubmit)="onSubmit()">
+              
+              <!-- <input type="hidden" formControlName="id_usuario"  ngModel='4'/> -->
+              
+              <input type="hidden" formControlName="total" ngModel="{{precio_total}}"/>
+              <button *ngIf="precio_total!=0" type="submit" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="clearCart(item)">Vaciar Carro
+              </button>
+              <button type="submit" class="btn btn-sm btn-primary">Confirmar</button>
+              
+            </form> 
+          </div>
+          <ng-template #logeate>
+            Inicia sesión para comprar los articulos
+          </ng-template>
+          <!-- Form para comprar -->
+        
+        </div>
+        <!-- Tabla del carro -->
+
+      </section>
+
+    </div>
+    <!-- /Main Container -->
+
+  </main>
+  <!--Main Layout-->
+  <div class="barra2"></div>
+</div>

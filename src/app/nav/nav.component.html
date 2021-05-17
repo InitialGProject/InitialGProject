@@ -38,22 +38,35 @@
           <a routerLink='vista-torneos/vista-reglamento' class="dropdown-item waves-light" mdbWavesEffect>REGLAMENTO</a>
         </div>
       </li>
+      <!-- TIENDA ALEX -->
       <li class="nav-item">
-        <a routerLink='vista-foro' class="nav-link waves-light" mdbWavesEffect>FORO</a>
+        <a routerLink='tienda' class="nav-link waves-light" mdbWavesEffect>TIENDA<span class="sr-only">(current)</span></a>
       </li>
+      <li class="nav-item">
+        <a routerLink='carrito' class="nav-link waves-light" mdbWavesEffect><i class="fas fa-shopping-cart ml-1"></i><span class="sr-only">(current)</span></a>
+      </li>
+      <!-- FIN TIENDA -->
+
+      <!-- <li class="nav-item">
+        <a routerLink='vista-foro' class="nav-link waves-light" mdbWavesEffect>FORO</a>
+      </li> -->
     </ul>
+
     <!-- Links -->
 
     <ul class="navbar-nav ml-auto nav-flex-icons">
       <li class="nav-item avatar dropdown" dropdown>
         <a dropdownToggle type="button" class="perfil nav-link dropdown-toggle waves-light" tabindex="0">
-          <img src="./../../assets/img/perfil.png" alt="Usuario" class="img-fluid rounded-circle z-depth-0"></a>
+          <img mdbWavesEffect *ngIf="!isUserLoggedIn" src="./../../assets/img/perfil.png" alt="Usuario" class="img-fluid rounded-circle z-depth-0">
+          <img mdbWavesEffect *ngIf="isUserLoggedIn" tabindex=0 src="./../../assets/img/perfiles/{{token.avatar}}" alt="registrado" class="img-fluid rounded-circle z-depth-0"></a>
         <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
-          <a routerLink='account/register' class="dropdown-item waves-light" mdbWavesEffect>REGISTRO</a>
-          <a routerLink='account/login' class="dropdown-item waves-light" mdbWavesEffect>LOGIN</a>
-          <a routerLink='account/profile' class="dropdown-item waves-light" mdbWavesEffect>PERFIL</a>
+          <a routerLink='account/register' class="dropdown-item waves-light" mdbWavesEffect *ngIf="!isUserLoggedIn">REGISTRO</a>
+          <a routerLink='account/login' class="dropdown-item waves-light" mdbWavesEffect *ngIf="!isUserLoggedIn">LOGIN</a>
+          <a routerLink='account/profile' class="dropdown-item waves-light" mdbWavesEffect *ngIf="isUserLoggedIn">PERFIL</a>
           <a routerLink='account/suscripciones' class="dropdown-item waves-light" mdbWavesEffect>SUSCRIPCIONES</a>
-          
+          <a routerLink='compras' class="dropdown-item waves-light" mdbWavesEffect *ngIf="isUserLoggedIn">COMPRAS</a>
+          <a href='' class="dropdown-item waves-light" (click)="borrarUser()" mdbWavesEffect *ngIf="isUserLoggedIn">LOGOUT</a>
+
         </div>
       </li>
     </ul>
@@ -117,3 +130,17 @@
   <a class="icon">&#9776;</a>
 
 </div> -->
+
+<!-- Secreto Gamer -->
+<div class="panel" style="display: none;"></div>
+      
+<!-- Secreto Foto -->
+<div class="dino">
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/95637/angry-cat-face-masked.png" alt="" />
+</div>
+
+<!-- Secreto Sonido -->
+<audio id="meow">
+<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/95637/angryCat.mp3" type="audio/mpeg">
+<source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/95637/angryCat.ogg" type="audio/ogg">
+</audio>

@@ -1,0 +1,23 @@
+@import "./../../../mixins";
+@import "./../../../variables"; 
+
+.tablilla{
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1em;
+    overflow-x: scroll;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: rgb(177, 177, 175);
+}
+
+.table-striped>tbody>tr:nth-child(even)>td, 
+.table-striped>tbody>tr:nth-child(even)>th {
+    background-color: #ccc;
+}
+
+.table-striped>thead>tr>th {
+    background-color: #eee;
+}

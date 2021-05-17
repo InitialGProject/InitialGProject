@@ -1,0 +1,198 @@
+<section class="text-center pb-3 my-5">
+  
+  <!-- Listado productos -->
+  <div class="datos">
+
+    <!--Titulo-->
+    <h2 class="h1 py-5">TIENDA INITIALG</h2>
+
+    <!-- Menu Categorias -->
+      <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark default-color ie-nav bg-dark" [containerInside]="false">
+        <mdb-navbar-brand>
+            <a class="logo navbar-brand"><strong>Categorias</strong></a>
+        </mdb-navbar-brand>
+        <links>
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item waves-light" mdbWavesEffect>
+                    <a routerLink='/tienda' class="nav-link">Todas</a>
+
+                </li>
+
+                <!-- Listar categorias -->
+                <div *ngFor="let cat of categoria">
+                  <li class="nav-item waves-light" mdbWavesEffect>
+                      <a routerLink='/tienda/{{cat.id}}' class="nav-link" (click)='redirectTo(cat.id)'>{{cat.nombre}}</a>
+                  </li>
+                </div>
+
+            </ul>
+        </links>
+      </mdb-navbar>
+    <!-- MENU -->
+    
+    <!--Section description-->
+    <br>
+    <p class="motto mb-5">Los mejores articulos Gaming y de apoyo a tu web favorita.</p>
+      
+    <!-- Articulos con Filtro -->
+    <div class="contenido" *ngIf="filtro.clase; else todo">
+
+      <!--Grid row-->
+      <div class="row justify-content-center">
+        
+        <!--Grid column-->
+        <ng-container *ngFor="let producto of catalogo">  
+      
+            <!--Card-->
+            <mdb-card class="
+            col-11 col-sm-4 col-md-4 col-lg-3 col-xl-2 
+            " 
+            *ngIf="filtro.clase==producto.cat_id&&producto.disponible">
+              <a routerLink="/vista-producto/{{producto.id}}" class="dark-grey-text">
+                <!--Card image-->
+                <div class="view overlay waves-light" style="border-radius: 5px;" mdbWavesEffect>
+                  <mdb-card-img src="http://alum3.iesfsl.org/assets/img/tienda/{{producto.imagen}}" class="img-fluid" alt="Responsive image"></mdb-card-img>
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+              </a>
+              <!--Card content-->
+              <mdb-card-body class="text-center">
+                <!--Categoria Producto-->
+                <a class="grey-text">
+                  <div *ngFor="let cat of categoria">
+                    <div *ngIf="producto.cat_id == cat.id"><h5>{{cat.nombre}}</h5></div>
+                  </div>
+                </a>
+
+                <!-- Nombre Producto -->
+                <h5>
+                  <strong>
+                    <a routerLink="/vista-producto/{{producto.id}}" class="dark-grey-text">{{producto.nombre}}
+                      <div *ngIf="producto.estado == '1'">
+                        <mdb-badge pill="true" danger="true">NEW</mdb-badge>
+                      </div>
+                      <div *ngIf="producto.estado == '2'">
+                        <mdb-badge pill="true" class="oferta">OFERTA</mdb-badge>
+                      </div>
+                    </a>
+                  </strong>
+                </h5>
+        
+                <!-- Precio Producto -->
+                <h4 class="font-weight-bold blue-text">
+                  <strong> {{producto.precio--((producto.precio *producto.IVA)/100) | currency:'EUR':symbol}}</strong>
+                </h4>
+                
+                <!-- Stock Disponible -->
+                <div *ngIf="producto.stock <= '10'; else mucho">
+                  <div style="color:#804200" *ngIf="producto.stock<='10'&&producto.stock>'1'"> {{producto.stock}} Unidades Restantes</div>
+                  <div style="color:#803D00" *ngIf="producto.stock=='1'"> Ultima Unidad </div>
+                  <div style="color:#800000" *ngIf="producto.stock=='0'"> Sin Stock</div>
+                </div>
+                
+                <ng-template #mucho>
+                  <div style="color:#006100" *ngIf="producto.stock>'10'"> En Stock</div>
+                </ng-template>
+  
+              </mdb-card-body>
+              <!--Card content-->
+
+            </mdb-card>
+            <!--Card-->
+
+          
+        </ng-container>
+        <!--Grid column-->
+      </div>
+      <!-- row -->
+    
+    </div> 
+    <!-- Filtro -->
+    
+    <!-- Articulos sin Filtro -->
+    <ng-template #todo>
+
+      <!--Grid row-->
+      <div class="row justify-content-center">
+        
+        <!--Grid column-->
+        <ng-container *ngFor="let producto of catalogo">      
+      
+          <!--Card-->
+          <mdb-card class="
+            col-11 col-sm-5 col-md-3 col-lg-3 col-xl-2 
+          " *ngIf="producto.disponible">
+              
+            <a routerLink="/vista-producto/{{producto.id}}" class="dark-grey-text">
+              <!--Card image-->
+              <div class="view overlay waves-light" mdbWavesEffect>
+                <mdb-card-img src="http://alum3.iesfsl.org/assets/img/tienda/{{producto.imagen}}" class="img-fluid" alt="Responsive image"></mdb-card-img>
+                <a>
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+
+            </a>
+
+            <!--Card content-->
+            <mdb-card-body class="text-center">
+              <!--Categoria Producto-->
+              <a class="grey-text">
+                <div *ngFor="let cat of categoria">
+                  <div *ngIf="producto.cat_id == cat.id"><h5>{{cat.nombre}}</h5></div>
+                </div>
+              </a>
+
+              <!-- Nombre Producto -->
+              <h5>
+                <strong>
+                  <a routerLink="/vista-producto/{{producto.id}}" class="dark-grey-text">{{producto.nombre}}
+                    <div *ngIf="producto.estado == '1'">
+                      <mdb-badge pill="true" danger="true">NEW</mdb-badge>
+                    </div>
+                    <div *ngIf="producto.estado == '2'">
+                      <mdb-badge pill="true" class="oferta">OFERTA</mdb-badge>
+                    </div>
+                  </a>
+                </strong>
+              </h5>
+      
+              <!-- Precio Producto -->
+              <h4 class="font-weight-bold blue-text">
+                <strong> {{producto.precio--((producto.precio *producto.IVA)/100) | currency:'EUR':symbol}}</strong>
+              </h4>
+              
+              <!-- Stock Disponible -->
+              <div *ngIf="producto.stock <= '10'; else mucho">
+                <div style="color:#804200" *ngIf="producto.stock<='10'&&producto.stock>'1'"> {{producto.stock}} Unidades Restantes</div>
+                <div style="color:#803D00" *ngIf="producto.stock=='1'"> Ultima Unidad </div>
+                <div style="color:#800000" *ngIf="producto.stock=='0'"> Sin Stock</div>
+              </div>
+
+              <ng-template #mucho>
+                <div style="color:#006100" *ngIf="producto.stock>'10'"> En Stock</div>
+              </ng-template>
+
+            </mdb-card-body>
+            <!--Card content-->
+
+          </mdb-card>
+          <!--Card-->  
+
+        </ng-container>
+        <!--Grid column-->
+        
+      </div>
+
+      <!-- row -->
+      <br>
+    </ng-template>
+    <!-- Todo -->
+    
+  </div> 
+  <!-- Listado productos -->
+
+</section>

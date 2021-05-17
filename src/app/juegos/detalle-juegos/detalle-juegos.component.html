@@ -29,9 +29,9 @@
         </ng-template>
 
         <div class="datos">
-            <p>NOMBRE: {{juegos.titulo}}</p>
-            <p>DESCRIPCON: {{juegos.descipcion}}</p>
-            <p>CREADOR: {{juegos.creador}}</p>
+            NOMBRE:         <p> {{juegos.titulo}}</p>
+            <hr>DESCRIPCIÓN:<p [innerHtml]="juegos.descipcion"></p>
+            <hr>CREADOR:    <p> {{juegos.creador}}</p>
 
             <!--             
             <div *ngFor="let categorias of categoria">

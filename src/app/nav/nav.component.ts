@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 // import * as $ from 'jquery';
 
+//BS
+import { DataSharingService } from '../data-sharing.service';
+
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -8,21 +11,30 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class NavComponent implements OnInit {
-  // @Input() opciones: string[];
-  // @Input() colorfondo: string;
-  // @Output() presionopcion = new EventEmitter();
+  isUserLoggedIn: boolean;
+  token: any;
 
-  constructor() { }
+
+  constructor(private dataSharingService: DataSharingService) { 
+    // Suscribir para que se actualice auto 
+    // "isUserLoggedIn" o el que sea cuando cambie el valor.
+    this.dataSharingService.isUserLoggedIn.subscribe( value => {
+      this.isUserLoggedIn = value;
+    });
+
+    //Datos del token sobrecargado
+    this.dataSharingService.token.subscribe( value => {
+      this.token = value;
+      //console.log("test"+this.token);
+    });
+  }
 
   ngOnInit() {
 
-    // $(".icon").on("click", function () {
-    //   $("#navbar").hasClass("navbar")
-    //   $("#navbar").toggleClass("responsive");
-    // });
   }
 
-  /*presion(i: number): void {
-    this.presionopcion.emit(i);
-  }*/
+  borrarUser(){
+    localStorage.removeItem('usuario');
+    //localStorage.clear();
+  }
 }

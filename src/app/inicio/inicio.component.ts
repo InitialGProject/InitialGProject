@@ -16,6 +16,7 @@ import { AudiovisualesService } from '../audiovisuales/services/audiovisuales.se
 
 
 import { ActivatedRoute, Params } from '@angular/router';
+import { LoginComponent } from '../account/login/login.component';
 
 @Component({
   selector: 'app-inicio',
@@ -37,7 +38,9 @@ export class InicioComponent implements OnInit {
     private servicioJuegos: JuegosService, 
     private rutaActiva: ActivatedRoute,
     public dialog: MatDialog, 
-    private servicioVideos: AudiovisualesService
+    private servicioVideos: AudiovisualesService,
+    private CargaLogin:LoginComponent,
+    
 
   ) { this.user = this.accountService.userValue; }
 
@@ -45,6 +48,7 @@ export class InicioComponent implements OnInit {
     this.dameNoticias();
     this.dameJuegos();
     this.dameVideos();
+    this.CargaLogin.ngOnInit();
   }
 
   

@@ -1,0 +1,100 @@
+<div class="datos">
+  <div *ngFor="let producto of catalogo">
+    <div *ngIf="articulo.id==producto.id">
+
+      <!--Main layout-->
+      <main *ngIf="producto.disponible; else no">
+        <div class="barra"></div>
+        <div class="container dark-grey-text mt-5 ">
+
+          <!--Grid row-->
+          <div class="row wow fadeIn">
+
+            <!--Imagen Col Izquierda-->
+            <div class="col-md-6 mb-4 align-items-center" >
+
+              <img src="http://alum3.iesfsl.org/assets/img/tienda/{{producto.imagen}}" class="img-fluid z-depth-0" style="height: 600px; width: 600px;"alt="">
+
+            </div>
+            <!--Imagen Col Izquierda-->
+
+            <!--Datos Col Derecha-->
+            <div class="col-md-6 mb-4 texto">
+
+              <!--Content-->
+              <div class="p-4">
+
+                <!-- Iconos estado -->
+                <div class="mb-3">
+                  <!-- Si es nuevo -->
+                  <div *ngIf="producto.estado == '1'">
+                    <mdb-badge pill="true" danger="true">NEW</mdb-badge>
+                  </div>
+
+                  <!-- Si esta de oferta -->
+                  <div *ngIf="producto.estado == '2'">
+                    <mdb-badge pill="true" class="oferta">OFF</mdb-badge>
+                  </div>
+
+                </div>
+
+                <!-- Precio -->
+                <p class="lead font-weight-bold">Precio</p>
+                <p class="lead">
+                  <!-- Para ofertas -->
+                  <!-- <span class="mr-1">
+                    <del>$200</del>
+                  </span> -->
+                  <span>Sin IVA: {{producto.precio}}€</span>
+                  <br>
+                  <span>Con IVA: {{producto.precio--((producto.precio *producto.IVA)/100) | number: '1.0-2'}}€</span>
+
+                </p>
+                <hr>
+                <p class="lead font-weight-bold">Descripción</p>
+                <p>{{producto.descripcion}}</p>
+                <hr>
+                <!-- Cantidad -->
+                <p class="lead font-weight-bold">Stock</p>
+                <div *ngIf="producto.stock <= '10'; else mucho"></div>
+                <p style="color:#ff8400" *ngIf="producto.stock<='10'&&producto.stock>'1'"> {{producto.stock}} Unidades Restantes</p>
+                <p style="color:#ff6f00" *ngIf="producto.stock=='1'"> {{producto.stock}} Unidad Restante</p>
+                <p style="color:#FF0000" *ngIf="producto.stock=='0'"> Sin Stock</p>
+                
+                <ng-template #mucho>
+                  <p style="color:#00ff00" *ngIf="producto.stock>'10'"> En Stock</p>
+                </ng-template>
+                <hr>
+                <!-- Agregar cantidad -->
+                <form name="c" class="d-flex justify-content-left">
+                  <input *ngIf="producto.stock!='0'" type="number" value="1" [(ngModel)]="cantidad_articulos" name="cantidad" placeholder="Nº"  min="1" max="{{producto.stock}}" aria-label="Search" style="width: 50px">
+                  <button *ngIf="producto.stock!='0'" [disabled]="cantidad_articulos<1||cantidad_articulos>producto.stock" class="btn btn-primary btn-md my-0 p" (click)="addToCart(producto)">Añadir
+                    <i class="fas fa-shopping-cart ml-1"></i>
+                  </button>&nbsp;
+                  <button class="btn btn-primary btn-md my-0 p" (click)="goBack()">Volver</button>&nbsp;
+                  <a routerLink='/carrito' class="nav-link waves-light" mdbWavesEffect><i class="fas fa-shopping-cart ml-1"></i><span class="sr-only">(current)</span></a>
+                </form>
+
+              </div>
+              <!--Content-->
+
+            </div>
+            <!--Datos Col Derecha-->
+
+          </div>
+          <!--Grid row-->
+
+        </div>
+      </main>
+      <!--Main layout-->
+      <ng-template #no>
+        <div class="barra"></div>
+        <center>
+          <h2>NO EXISTE EL PRODUCTO ELEGIDO</h2>
+          <hr>  
+          <button class="btn btn-primary btn-md my-0 p" (click)="goBack()">Volver</button>&nbsp;
+        </center>
+      </ng-template>
+    </div>
+  </div>
+</div>

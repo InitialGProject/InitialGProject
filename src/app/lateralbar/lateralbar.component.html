@@ -6,14 +6,14 @@
     <a routerLink="./vista-streammings">En directo</a>
     <hr>
     <a routerLink="./vista-juegos/">Juegos Destacados</a>
+    <!-- <hr>
+    <a routerLink="./vista-foro">Mejores comentarios</a> -->
     <hr>
-    <a routerLink="./vista-foro">Mejores comentarios</a>
-    <hr>
-    <a class="contenido" routerLink="account/register" title="Suscribirse">
+    <a class="contenido" routerLink="account/register" title="Suscribirse" *ngIf="!isUserLoggedIn">
         <img src="../../assets/img/suscribir_banner.png" alt="Pulsa aqui para suscribirte" />
     </a>
-    <hr>
-    <a class="icono tw-ic" href="https://twitter.com/InitialG20">Síguenos en
+    <hr *ngIf="!isUserLoggedIn">
+    <a class="icono tw-ic" href="https://twitter.com/InitialG20">Síguenos en 
         <mdb-icon fab icon="twitter" size="2x" class="white-text"></mdb-icon>
     </a>
 </div>
