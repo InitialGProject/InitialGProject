@@ -10,6 +10,7 @@ import { AuthGuardService } from './perfil/services/auth-guard.service';
 export class AppComponent {
 
   login: boolean;
+  title: any;
 
   constructor(private auth: AuthGuardService) {
     this.auth.isLoggedIn()
