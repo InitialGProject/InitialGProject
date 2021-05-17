@@ -13,7 +13,7 @@ import { DataSharingService } from '../../data-sharing.service';
 //variable
 import {GlobalVars} from '../../globalVars';
 
-
+//Login
 import { LoginComponent } from 'src/app/account/login/login.component';
 
 //Ruta de la api
@@ -160,6 +160,7 @@ export class TiendaService {
   getLinFacturas(): Observable<Linfac> {
     return this.http.get<Linfac>(lineafactura);
   }
+  /**!Servicios para cargar datos*/
 
   //Sacar el usuario logueado
   getUserLog(){

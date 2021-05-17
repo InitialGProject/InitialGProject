@@ -58,7 +58,7 @@
       <li class="nav-item avatar dropdown" dropdown>
         <a dropdownToggle type="button" class="perfil nav-link dropdown-toggle waves-light" tabindex="0">
           <img mdbWavesEffect *ngIf="!isUserLoggedIn" src="./../../assets/img/perfil.png" alt="Usuario" class="img-fluid rounded-circle z-depth-0">
-          <img mdbWavesEffect *ngIf="isUserLoggedIn" src="./../../assets/img/perfiles/{{token.avatar}}" alt="registrado" class="img-fluid rounded-circle z-depth-0"></a>
+          <img mdbWavesEffect *ngIf="isUserLoggedIn" tabindex=0 src="./../../assets/img/perfiles/{{token.avatar}}" alt="registrado" class="img-fluid rounded-circle z-depth-0"></a>
         <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
           <a routerLink='account/register' class="dropdown-item waves-light" mdbWavesEffect *ngIf="!isUserLoggedIn">REGISTRO</a>
           <a routerLink='account/login' class="dropdown-item waves-light" mdbWavesEffect *ngIf="!isUserLoggedIn">LOGIN</a>

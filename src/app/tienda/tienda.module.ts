@@ -6,6 +6,8 @@ import { TiendaRoutingModule } from './tienda.routing';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { CarritoComponent } from './carrito/carrito.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { FacturasComponent } from './facturas/facturas.component';
@@ -17,7 +19,8 @@ import { FacturasComponent } from './facturas/facturas.component';
     MDBBootstrapModule.forRoot(),
     TiendaRoutingModule,
     FormsModule,
-    ReactiveFormsModule,  
+    ReactiveFormsModule, 
+    NgbModule, 
 
   ]
 })

@@ -1,21 +1,17 @@
 @import "./../../../mixins";
 @import "./../../../variables"; 
 
- 
 
-.testo{
-    height: 25em;
-    width: 12em;
-    margin-left: 2.5em;
-    margin-right: 1.5em;
-    margin-top: 1em;
-    border-radius: 5px;
-    
+.datos{
+    box-shadow: 10px 10px 5px rgb(255, 255, 255);
 }
 
-mdb-card-img{
-    height: 190px;
-    width: 190px;
+
+.card{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 5px;     
 }
 
 .oferta{

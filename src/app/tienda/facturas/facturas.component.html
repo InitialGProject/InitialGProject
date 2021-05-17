@@ -1,13 +1,15 @@
 <section class="text-center pb-3 my-5">
+
     <!-- Detalles de compras -->
-    <!-- <div class="datos" *ngIf="isUserLoggedIn; else no"> -->
-    <div class="datos">
+    <div class="datos" *ngIf="isUserLoggedIn; else no">
         <div class="barra"></div>
         <h2 class="h1 py-5">HISTORIAL DE COMPRAS</h2>
         
+        <div class="tablilla" *ngIf="hayRegistros; else compra">
+            <!-- Tabla de facturas -->
             <table class="table table-striped">
-                
-                <thead> 
+
+                <thead>
                     <tr>
                         <th>
                             Nº Factura
@@ -28,12 +30,15 @@
                 </thead>
 
                 <tbody>
-                    
+
                     <ng-container *ngFor="let facturas of factura">
                         <tr *ngIf="token.id==facturas.id_usuario">
-                            
+
                             <th>
-                                <p>{{facturas.id}}</p>
+                                <p>
+                                    <button class="btn btn-danger" (click)="triggerModal(modalData)">
+                                        Factura: {{facturas.id}}</button>
+                                </p>
                             </th>
                             <th>
                                 <p>{{facturas.fecha_compra}}</p>
@@ -45,27 +50,96 @@
                             <th>
                                 <p *ngIf="!facturas.fecha_envio">---</p>
                                 <p *ngIf="facturas.fecha_envio">{{facturas.fecha_envio}}</p>
-                                
+
                             </th>
                             <th>
-                                <p>{{facturas.total | currency:'EUR':true}}</p>
+                                <p>{{facturas.total | currency:'EUR':'symbol'}}</p>
                             </th>
 
-                        </tr>
-                    </ng-container> 
+                            <!-- Modal para ver la factura -->
+                            <ng-template #modalData let-modal>
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="facturaDetalle">Factura: {{facturas.id}}</h4>
+                                    <button type="button" class="close" aria-label="Close"
+                                        (click)="modal.dismiss()">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
 
-                </tbody>                
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Articulo
+                                            </th>
+                                            <th>
+                                                Cantidad
+                                            </th>
+                                            <th>
+                                                Precio
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <ng-container *ngFor="let linea of lineafactura">
+                                            <tr *ngIf="linea.id_facturacion==facturas.id">
+
+                                                <ng-container *ngFor="let articulo of catalogo">
+
+                                                    <th *ngIf="linea.id_producto==articulo.id">
+                                                        {{articulo.nombre}}
+                                                    </th>
+
+                                                    <th *ngIf="linea.id_producto==articulo.id">
+                                                        {{linea.cantidad}}
+                                                    </th>
+
+                                                    <th *ngIf="linea.id_producto==articulo.id">
+                                                        {{articulo.precio | currency:'EUR':'symbol'}}
+                                                    </th>
+
+                                                </ng-container>
+                                            </tr>
+                                        </ng-container>
+                                    </tbody>
+                                </table>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger"
+                                        (click)="modal.close()">Cerrar</button>
+                                </div>
+                            </ng-template>
+                            <!-- Modal para ver la factura -->
+
+                        </tr>
+                    </ng-container>
+
+                </tbody>
             </table>
-        
+            <!-- Tabla de facturas -->
+        </div>
+
+        <!-- Si no hay articulos en la tienda no mostrará nada -->
+        <ng-template #compra>
+            <hr>
+            <h1>Compra algo en nuestra tienda!</h1>
+            <hr>
+        </ng-template>
+
+        <div class="barra2"></div>
     </div>
     <!-- Detalles de compras -->
 
     <!-- Si no estas logueado boton login -->
     <ng-template #no>
         <div class="datos">
+            <div class="barra"></div>
             <h2 class="h1 py-5">INICIA SESIÓN PARA CONTINUAR</h2>
             <hr>
-            <a routerLink='/account/login' class="dropdown-item waves-light" mdbWavesEffect *ngIf="!isUserLoggedIn">LOGIN</a>
+            <a routerLink='/account/login' class="dropdown-item waves-light" mdbWavesEffect
+                *ngIf="!isUserLoggedIn">LOGIN</a>
+            <div class="barra2"></div>
         </div>
     </ng-template>
     <!-- Si no estas logueado boton login -->

@@ -31,10 +31,11 @@ export class DetalleJuegosComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.servicioJuegos.getUserLog();
     this.dameJuegos();    
     this.dameCategorias();
     this.TUser=this.globalVars.getglobalUserToken();
-    console.log(this.TUser)
+    //console.log(this.TUser)
 
 
   }

@@ -31,5 +31,14 @@ h2 {
 
 .barra{
   border-top-left-radius: 5px;
-  border: solid 10px #80000b;
+  border: solid 10px $rojo;
+}
+
+.barra2{
+  border-bottom-left-radius: 5px;
+  border: solid 10px $rojo;
+}
+
+.motto{
+  color:whitesmoke;
 }

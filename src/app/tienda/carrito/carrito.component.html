@@ -13,9 +13,10 @@
         <!-- Tabla del carro -->
         <div class="table-responsive">
           <table class="table product-table">
-
+            <br>
+            
             <!-- Rows de cada articulo -->
-            <div *ngFor="let item of items">
+            <div style="background-color: rgb(226, 222, 217); border-radius: 20px; margin: 1em; padding: 1em;"  *ngFor="let item of items">
               <tr>
                 <th scope="row" class="imagen">
                     <img src="http://alum3.iesfsl.org/assets/img/tienda/{{item.it.imagen}}" alt="" class="img-fluid z-depth-0"> 
@@ -38,10 +39,10 @@
             
             <hr>
             <!-- Linea inferior, total -->
-            <div *ngIf="precio_total!=0"> PRECIO TOTAL {{precio_total | currency:'EUR':true}}</div>
+            <div style="color: whitesmoke;" *ngIf="precio_total!=0"> PRECIO TOTAL {{precio_total | currency:'EUR':symbol}}</div>
             <button *ngIf="precio_total!=0&&!isUserLoggedIn" type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="removeUpload(item)">Vaciar Carro
             </button>
-            <div *ngIf="precio_total==0" style="text-align: center;"> AÑADE ALGUN PRODUCTO AL CARRITO</div>
+            <div *ngIf="precio_total==0" class="motto" style="text-align: center; margin-top: 2em;margin-bottom: -5em; padding-bottom: -2em;"> AÑADE ALGUN PRODUCTO AL CARRITO</div>
             <!-- Linea inferior, total -->
 
             
@@ -61,7 +62,7 @@
             </form> 
           </div>
           <ng-template #logeate>
-            Inicia sesión para comprar
+            Inicia sesión para comprar los articulos
           </ng-template>
           <!-- Form para comprar -->
         
@@ -75,4 +76,5 @@
 
   </main>
   <!--Main Layout-->
+  <div class="barra2"></div>
 </div>
