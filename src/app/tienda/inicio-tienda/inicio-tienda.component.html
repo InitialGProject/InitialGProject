@@ -1,6 +1,7 @@
-<!-- Listado productos -->
 <section class="text-center pb-3 my-5">
-  <div class="datos align-content-center container">
+  
+  <!-- Listado productos -->
+  <div class="datos">
 
     <!--Titulo-->
     <h2 class="h1 py-5">TIENDA INITIALG</h2>
@@ -44,7 +45,9 @@
         <ng-container *ngFor="let producto of catalogo">  
       
             <!--Card-->
-            <mdb-card class="col- col-sm-5 col-md-4 col-lg-3 col-xl-2" 
+            <mdb-card class="
+            col-11 col-sm-4 col-md-4 col-lg-3 col-xl-2 
+            " 
             *ngIf="filtro.clase==producto.cat_id&&producto.disponible">
               <a routerLink="/vista-producto/{{producto.id}}" class="dark-grey-text">
                 <!--Card image-->
@@ -80,7 +83,7 @@
         
                 <!-- Precio Producto -->
                 <h4 class="font-weight-bold blue-text">
-                  <strong> {{producto.precio--((producto.precio *producto.IVA)/100) | currency:'EUR':symbol}} €</strong>
+                  <strong> {{producto.precio--((producto.precio *producto.IVA)/100) | currency:'EUR':symbol}}</strong>
                 </h4>
                 
                 <!-- Stock Disponible -->
@@ -109,7 +112,7 @@
     </div> 
     <!-- Filtro -->
     
-    <!-- Todos los Articulos -->
+    <!-- Articulos sin Filtro -->
     <ng-template #todo>
 
       <!--Grid row-->
@@ -120,7 +123,7 @@
       
           <!--Card-->
           <mdb-card class="
-            col- col-sm-5 col-md-4 col-lg-3 col-xl-2 
+            col-11 col-sm-5 col-md-3 col-lg-3 col-xl-2 
           " *ngIf="producto.disponible">
               
             <a routerLink="/vista-producto/{{producto.id}}" class="dark-grey-text">
@@ -190,4 +193,6 @@
     <!-- Todo -->
     
   </div> 
+  <!-- Listado productos -->
+
 </section>
