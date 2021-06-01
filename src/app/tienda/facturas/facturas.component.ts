@@ -13,6 +13,7 @@ import { Catalogo } from '../models/catalogo';
 import { Categorias } from '../models/categorias';
 import { Facturas } from '../models/facturas';
 import { Linfac } from '../models/lineafactura';
+import { Usuarios } from '../models/usuarios';
 
 @Component({
   selector: 'app-facturas',
@@ -38,6 +39,8 @@ export class FacturasComponent implements OnInit {
 
   //Valores Modal
   closeModal: string;
+  tolosdatos:Usuarios;
+
 
   constructor(
     private dataSharingService: DataSharingService,
@@ -61,6 +64,11 @@ export class FacturasComponent implements OnInit {
   ngOnInit(): void {
     this.cargarTodo(); 
     this.servicioTienda.getUserLog();
+    this.servicioTienda.sacardatosLog(this.iduseract).subscribe(
+      data=>{
+        this.tolosdatos=data;
+      }
+    );
   }
 
   cargarTodo(): void {

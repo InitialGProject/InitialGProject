@@ -33,7 +33,7 @@ export class AccountService {
 
   login(usuario, password): Observable<User> {
     const user = { usuario: this.usuario, password: this.password };
-    let body = { "nombre": usuario, "password": password }
+    let body = { "nombre": usuario, "password": password };
     return this.http.post<User>(`${baseUrl}` + `/authenticate`, body)
     //     .pipe(map(user => {
     //       // store user details and jwt token in local storage to keep user logged in between page refreshes

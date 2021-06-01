@@ -81,30 +81,54 @@
                                         </tr>
                                     </thead>
 
-                                    <tbody>
-                                        <ng-container *ngFor="let linea of lineafactura">
-                                            <tr *ngIf="linea.id_facturacion==facturas.id">
+                                    <ng-container *ngFor="let linea of lineafactura">
+                                        <tr *ngIf="linea.id_facturacion==facturas.id">
+                                            
+                                            <ng-container *ngFor="let articulo of catalogo">
 
-                                                <ng-container *ngFor="let articulo of catalogo">
+                                                <th *ngIf="linea.id_producto==articulo.id">
+                                                    {{articulo.nombre}}
+                                                </th>
 
-                                                    <th *ngIf="linea.id_producto==articulo.id">
-                                                        {{articulo.nombre}}
-                                                    </th>
+                                                <th *ngIf="linea.id_producto==articulo.id">
+                                                    {{linea.cantidad}}
+                                                </th>
 
-                                                    <th *ngIf="linea.id_producto==articulo.id">
-                                                        {{linea.cantidad}}
-                                                    </th>
+                                                <th *ngIf="linea.id_producto==articulo.id">
+                                                    {{articulo.precio--((articulo.precio *articulo.IVA)/100)| currency:'EUR':'symbol'}}
+                                                </th>
 
-                                                    <th *ngIf="linea.id_producto==articulo.id">
-                                                        {{articulo.precio | currency:'EUR':'symbol'}}
-                                                    </th>
-
-                                                </ng-container>
-                                            </tr>
-                                        </ng-container>
-                                    </tbody>
+                                            </ng-container>
+                                        </tr>
+                                    </ng-container>
+                                    
                                 </table>
-
+                                
+                                <!-- Datos cliente -->
+                                <table class="table table-striped">
+                                    <tr>
+                                        <th>
+                                            Pais:
+                                            {{facturas.pais}}
+                                        </th>
+                                        <th>
+                                            Provincia:
+                                            {{facturas.provincia}}
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            CP:
+                                            {{facturas.cp}}
+                                        </th>
+                                        <th>
+                                            Direccion:
+                                            {{facturas.direccion}}
+                                        </th>
+                                    </tr>
+                                </table>
+                                <br>
+ 
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-danger"
                                         (click)="modal.close()">Cerrar</button>

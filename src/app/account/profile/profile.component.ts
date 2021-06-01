@@ -24,11 +24,12 @@ export class ProfileComponent implements OnInit {
     
     // this.user = this.authService.getCurrentUser();
     this.TUser=this.globalVars.getglobalUserToken();
-    console.log(this.TUser);
+    //console.log(this.TUser);
   }
 
   logout(){
     this.TUser===undefined;
+    localStorage.removeItem('usuario');
     window.location.reload();
   }
 }

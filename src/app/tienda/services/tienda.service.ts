@@ -15,12 +15,13 @@ import {GlobalVars} from '../../globalVars';
 
 //Login
 import { LoginComponent } from 'src/app/account/login/login.component';
+import { Usuarios } from '../models/usuarios';
 
 //Ruta de la api
-const productos = GlobalVars.ruta+'productos';
-const categorias = GlobalVars.ruta+'productoscategoria';
-const facturas = GlobalVars.ruta+'productosfacturacion';
-const lineafactura = GlobalVars.ruta+'productosfactura';
+const productos = GlobalVars.ruta+'productos?per-page=99999';
+const categorias = GlobalVars.ruta+'productoscategoria?per-page=99999';
+const facturas = GlobalVars.ruta+'productosfacturacion?per-page=99999';
+const lineafactura = GlobalVars.ruta+'productosfactura?per-page=99999';
 const facturaUrl = GlobalVars.ruta;
 
 
@@ -28,6 +29,11 @@ const facturaUrl = GlobalVars.ruta;
   providedIn: 'root'
 })
 export class TiendaService {
+
+  //Cargar ddbb del usuario conectado
+  sacardatosLog(id): Observable<Usuarios> {
+    return this.http.get<Usuarios>(GlobalVars.ruta+"usuarios/"+id);
+  }
   
   /**Servicios para el carrito*/
   items = [
@@ -60,6 +66,7 @@ export class TiendaService {
 
   precio_total: number;
   idus:number;
+  isUserLoggedIn:boolean;
 
   constructor(
     private http: HttpClient,
@@ -74,6 +81,11 @@ export class TiendaService {
     //id usuariologged
     this.dataSharingService.iduseract.subscribe( value => {
       this.idus = value;
+    });
+    
+    //id usuariologged
+    this.dataSharingService.isUserLoggedIn.subscribe( value => {
+      this.isUserLoggedIn = value;
     }); 
 
   }
@@ -160,11 +172,14 @@ export class TiendaService {
   getLinFacturas(): Observable<Linfac> {
     return this.http.get<Linfac>(lineafactura);
   }
+
+
   /**!Servicios para cargar datos*/
 
   //Sacar el usuario logueado
   getUserLog(){
-    this.CargaLogin.userLocal();
+    if(!this.isUserLoggedIn)
+      this.CargaLogin.userLocal();
   }
 
   //Sacar el id del usuario logueado
@@ -174,7 +189,13 @@ export class TiendaService {
 
   //Enviar datos para facturar a la api
   facturar(factura: Facturas) {
-    return this.http.post(`${facturaUrl}`+ `productosfacturacion`, factura);
+    return this.http.post(`${facturaUrl}`+ `productosfacturacion?per-page=999`, factura);
+  }
+
+  //Enviar datos para facturar a la api
+  updateUser(user, datos) {
+    console.log(datos);
+    return this.http.put(`${facturaUrl}`+ `usuarios/`+user, datos);
   }
 
   //Enviar datos para facturar a la api
@@ -182,7 +203,6 @@ export class TiendaService {
     return this.http.post(`${facturaUrl}`+ `productosfactura`, linea)
     .subscribe(
       data => {
-        
         this.restarStock(data);
       }
     );

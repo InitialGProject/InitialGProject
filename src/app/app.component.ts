@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { AuthGuardService } from './perfil/services/auth-guard.service';
 
+import { LoginComponent } from 'src/app/account/login/login.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,7 +14,13 @@ export class AppComponent {
   login: boolean;
   title: any;
 
-  constructor(private auth: AuthGuardService) {
+  constructor(
+    private auth: AuthGuardService,
+    private CargaLogin:LoginComponent,
+
+    ) {
+    this.CargaLogin.userLocal();
+
     this.auth.isLoggedIn()
       .subscribe(
         data => {

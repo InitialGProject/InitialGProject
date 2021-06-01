@@ -6,6 +6,9 @@ import { Catalogo } from '../models/catalogo';
 //BS
 import { DataSharingService } from '../../data-sharing.service';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Usuarios } from '../models/usuarios';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-carrito',
@@ -19,13 +22,19 @@ export class CarritoComponent implements OnInit {
   form: FormGroup;
   isUserLoggedIn: boolean;
   iduseract:number;
+  direc:any;
+
+  tolosdatos:Usuarios;
 
   constructor(
     private carritoService: TiendaService,
     private dataSharingService: DataSharingService,
     private formBuilder: FormBuilder,
+    private modalService: NgbModal, 
+    private router: Router,
 
   ) {
+
     //Cargar valor del PT en su BS
     this.dataSharingService.precio_total.subscribe( value => {
       this.precio_total = value;
@@ -37,15 +46,16 @@ export class CarritoComponent implements OnInit {
     this.dataSharingService.iduseract.subscribe( value => {
       this.iduseract = value;
     });
-    // //Cargar valor del Carro en su BS
-    // this.dataSharingService.carro.subscribe( value => {
-    //   this.items = value;
-    // });  
+
    }
    
 
   ngOnInit(): void {
-    
+    this.carritoService.sacardatosLog(this.iduseract).subscribe(
+      data=>{
+        this.tolosdatos=data;
+      }
+    );
     //Cargar componentes
     this.cargarTodo(); 
     
@@ -69,6 +79,11 @@ export class CarritoComponent implements OnInit {
     this.form = this.formBuilder.group({
       id_usuario: [this.iduseract],
       total: [''],
+      direccion:[''],
+      pais:[''],
+      cp:[''],
+      provincia:[''],
+
     });
   }
   
@@ -106,7 +121,10 @@ export class CarritoComponent implements OnInit {
 
     }
   }
-  
+  submit() {
+    this.onSubmit();
+  }
+
   //Mandar a la api
   async onSubmit(){
     this.form.setValue=this.datosFactura();
@@ -123,15 +141,46 @@ export class CarritoComponent implements OnInit {
         this.items.forEach(async linea => {          
           //Mandamos cada linea a la api
           this.carritoService.facturarLinea(await this.lineaFactura(data['id'], linea.it.id, linea.can))
+        })
+      }, error => {
+        console.log(error)
+        console.log(error.error)
+        //alert("Has introducido mal algun campo, revisa tus datos");
+        error.error.forEach(element => {
+          let datos=element[Object.keys(element)[0]];
+          console.log(datos);
+          alert(datos+" está mal")
+          
         });
       });
       
       
       // Vaciamos el carro al acabar
+      //testeo
       setTimeout(() => {
        this.carritoService.clearCart();
+       this.router.navigate(['/compras']);
       }, 2000);
       
+  }
+
+  async guardar(){
+    this.form.setValue=this.datosFactura();
+
+    this.carritoService.updateUser(this.iduseract, 
+        {
+          cp: this.form.get(["cp"]).value,
+          pais: this.form.get(["pais"]).value,
+          provincia: this.form.get(["provincia"]).value,
+          direccion: this.form.get(["direccion"]).value,
+        }
+      )
+      .subscribe(
+      data => {
+        console.log(data);
+      }, error => {
+       alert(error);
+     });
   }
 
   //Funcion para cargar los datos del form y el user para mandar a la api
@@ -139,6 +188,10 @@ export class CarritoComponent implements OnInit {
     return {
       id_usuario: this.iduseract,
       total: this.form.get(["total"]).value,
+      cp: this.form.get(["cp"]).value,
+      pais: this.form.get(["pais"]).value,
+      provincia: this.form.get(["provincia"]).value,
+      direccion: this.form.get(["direccion"]).value,
     };
   }
 
@@ -160,5 +213,13 @@ export class CarritoComponent implements OnInit {
     this.carritoService.setTo0();
     let total=this.carritoService.getPrecioTot();
     this.dataSharingService.precio_total.next(total);
+  }
+
+  /**
+   * MODAL activarlo
+   */
+  triggerModal(content:any) {
+    this.modalService.open(content, {ariaLabelledBy: 'verifica'});
+    return false;
   }
 }
