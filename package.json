@@ -24,11 +24,13 @@
     "@angular/youtube-player": "^11.1.2",
     "@ng-bootstrap/ng-bootstrap": "^9.1.1",
     "@types/gapi": "0.0.39",
+    "@types/socket.io-client": "^3.0.0",
     "angular-bootstrap-md": "^10.1.1",
     "angular-google-gapi": "^1.0.1",
     "jquery": "^3.5.1",
     "mdbootstrap": "^4.19.2",
     "rxjs": "~6.6.0",
+    "socket.io-client": "^4.1.2",
     "ts-md5": "^1.2.7",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

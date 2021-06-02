@@ -5,7 +5,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 41rem;
+  min-height: 71vh;
+  width: 80%;
 }
 
 .barra-lateral {
@@ -13,6 +14,7 @@
   border-top: none;
   border-bottom: none;
   padding-bottom: 1%;
+  width: 20%;
 }
 
 @media screen and (max-width: 767px) {
@@ -24,6 +26,70 @@
 @media screen and (max-width: 576px) {
   .content {
     padding: 1% 2%;
+    width: 100%;
+  }
+  .barra-lateral {
+    width: 100%;
   }
 }
+
+.sidenav {
+  height: 79vh;
+  width: 0;
+  position: fixed;
+  background-color: #111;
+  overflow: hidden;
+  transition: 0.5s;
+  top: 7vh;
+  right: 0;
+  bottom: 0vh;
+}
+
+/* .sidenav {
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  display: none;
+  transition: 0.5s;
+  right: 0vh;
+  top: 8.5rem;
+  width: 18rem;
+} */
+
+/* .sideapp {
+  position: sticky;
+  top: 3.5rem;
+} */
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 36px;
+  margin-left: 50px;
+  z-index: 99;
+}
+/*
+@media screen and (max-height: 450px) {
+.sidenav {
+//padding-top: 15px;
+}
+.sidenav a {
+font-size: 18px;
+}
+}
+*/
 /*# sourceMappingURL=app.component.css.map */

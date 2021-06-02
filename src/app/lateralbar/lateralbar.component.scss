@@ -6,6 +6,7 @@
   top: 4rem;
   padding-top: 0.5rem;
   right: 0;
+  text-align: center;
 
   a {
     text-decoration: none;
@@ -15,7 +16,7 @@
     padding: 1rem 0;
     line-height: 2rem;
 
-    .icono{
+    .icono {
       padding: 0.1rem 0;
     }
 
@@ -32,7 +33,7 @@
   .contenido {
     width: 100%;
 
-    img{
+    img {
       width: 100%;
       max-width: 250px;
       max-height: 150px;
@@ -40,8 +41,8 @@
       border: 0;
     }
 
-    &:hover{
-      opacity: 0.7;    
+    &:hover {
+      opacity: 0.7;
     }
   }
 }

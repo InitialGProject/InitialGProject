@@ -4,14 +4,27 @@
 <div class="container-fluid">
     <div class="row">
 
-        <div class="content col-lg-10 col-md-10 col-sm-12 col-12">
+        <!-- <span style="font-size:30px;cursor:pointer; position: fixed; top: 8vh; right: 0; z-index: 3;"
+            (click)="openNavi()">💬</span> -->
+
+        <div class="content col-xl-10 col-md-9 col-12">
             <router-outlet></router-outlet>
         </div>
 
-        <div class="barra-lateral col-lg-2 col-md-2 col-sm-12 col-12">
+        <div class="barra-lateral col-xl-2 col-md-3 col-12">
             <app-lateralbar></app-lateralbar>
 
         </div>
+        <!-- <div class="barra-lateral col-xl-2 col-md-3 col-12 pb-0">
+            <app-sidechat-layout></app-sidechat-layout>
+        </div> -->
+
+
+        <!-- <div id="mySidenav" class="sidenav p-0">
+            <a href="javascript:void(0)" class="closebtn" (click)="closeNavi()">&times;</a>
+            <app-sidechat-layout></app-sidechat-layout>
+        </div> -->
+
 
     </div>
 </div>
