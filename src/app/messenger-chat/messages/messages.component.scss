@@ -1,0 +1,144 @@
+.white {
+  background-color: white;
+  border-radius: 10px;
+}
+
+textarea.bas {
+  height: auto;
+}
+
+.friend-list li {
+  border-bottom: 1px solid #e0e0e0;
+}
+.friend-list li:last-of-type {
+  border-bottom: none;
+}
+
+img.rounded-circle {
+  border-radius: 50%;
+}
+
+img.avatar {
+  height: 3rem;
+  width: 3rem;
+}
+
+.text-small {
+  font-size: 0.95rem;
+}
+
+.text-smaller {
+  font-size: 0.85rem;
+}
+
+.avatar {
+  width: 3rem;
+}
+
+// .chat-message {
+//   background-color: transparentize($color: gray, $amount: 0.5);
+//   // max-height: 80%;
+// }
+.chat {
+  overflow-y: scroll;
+  scrollbar-width: thin; /* "auto" or "thin" */
+  -webkit-scrollbar-width: thin;
+  scrollbar-color: white black;
+  -webkit-scrollbar-color: white black;
+  max-height: 63vh;
+  // height: 35rem;
+  height: 100vh;
+  background-color: transparentize($color: gray, $amount: 0.5);
+}
+
+.info-chat {
+  display: flex;
+  background-color: gray;
+  background: linear-gradient(
+    to right,
+    #80000b 0%,
+    gray 40%,
+    gray 90%,
+    black 100%
+  );
+  border-bottom: solid 2px transparent;
+  border-image: linear-gradient(to right, #80000b, gray, black);
+  border-image-slice: 1;
+  // z-index: 99;
+  top: 0;
+  position: sticky;
+  // height: 7.5vh;
+  height: 3.5rem;
+  // max-height: 4rem;
+}
+
+@media screen and (max-height: 683px) {
+  .info-chat {
+    top: 3.5rem;
+  }
+}
+
+.textarea-chat {
+  bottom: 0;
+  position: sticky;
+  // height: 7.5vh;
+  height: 3rem;
+  // max-height: 4rem;
+
+  .form-group {
+    border-right: 8px double black;
+    display: flex;
+    background-color: rgb(80, 80, 80);
+    background: linear-gradient(
+      to bottom,
+      rgb(39, 39, 39) 0%,
+      rgb(80, 80, 80) 10%,
+      rgb(80, 80, 80) 90%,
+      rgb(39, 39, 39) 100%
+    );
+    height: 100%;
+
+    input {
+      width: 90%;
+      resize: none;
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 10px;
+      color: black;
+    }
+
+    // button {
+    //   background-color: white;
+    //   border: 2px solid black;
+    //   border-radius: 10px;
+
+    //   i {
+    //     color: black;
+    //   }
+
+    //   &:hover {
+    //     background-color: #bb0011;
+
+    //     i {
+    //       color: white;
+    //     }
+    //   }
+    // }
+
+    a {
+      cursor: pointer;
+    }
+  }
+}
+
+.header {
+  background-color: transparentize($color: gray, $amount: 0.9);
+  border-radius: 5px;
+}
+
+.local {
+  justify-content: start;
+}
+.amigo {
+  justify-content: end;
+}

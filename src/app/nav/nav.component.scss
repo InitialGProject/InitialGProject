@@ -1,21 +1,22 @@
-@import "./../../variables"; 
+@import "./../../variables";
 
-.test{
+.test {
   background-color: $rojo;
+  z-index: 3;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-weight: bold;
 }
 
-.navbar-nav{
+.navbar-nav {
   font-weight: bold;
 }
 
-.perfil{
+.perfil {
   padding: 0.3rem;
-  
-  img{
+
+  img {
     width: 2rem;
   }
 }
@@ -28,7 +29,7 @@
 }
 
 .panel:before {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
@@ -46,7 +47,7 @@
 }
 
 .panel ul:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }

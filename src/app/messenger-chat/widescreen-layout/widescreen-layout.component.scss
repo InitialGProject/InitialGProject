@@ -1,0 +1,46 @@
+.chat {
+  margin-left: -6%;
+  margin-top: -1.4%;
+  margin-bottom: -1.4%;
+  width: 112%;
+  max-height: 79vh;
+  // overflow: hidden;
+}
+@media screen and (min-width: 1200px) {
+  .chat {
+    margin-left: -5.3%;
+    width: 110.6%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .chat {
+    margin-top: -1.5%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .chat {
+    margin-left: -4.3%;
+    margin-top: -1.2%;
+    width: 108.6%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .chat {
+    margin-left: -2%;
+    width: 104%;
+  }
+
+  .messages {
+    border: none;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .messages {
+    border-left: 5px #80000b solid;
+  }
+}
+
+.messages .contacts {
+  height: 79vh;
+}

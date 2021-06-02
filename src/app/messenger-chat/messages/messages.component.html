@@ -1,0 +1,65 @@
+<!-- <div class="chat-message"> -->
+
+<!-- <div class="info-chat m-0 p-1">
+    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="avatar"
+        class="avatar rounded-circle d-flex align-self-start mx-2 z-depth-1">
+    <div class="row mx-1">
+        <strong class="col-12 primary-font">Brad Pitt</strong>
+        <p class="col-12 mb-0" style="color: greenyellow;">Online</p>
+    </div>
+</div> -->
+
+<!-- Header datails field -->
+<div class="info-chat d-flex justify-content-around m-0 p-1">
+    <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="avatar"
+        class="avatar rounded-circle d-flex align-self-start mx-2 z-depth-1">
+    <strong class="primary-font my-auto">Brad Pitt</strong>
+    <!-- <p class=" my-auto" style="color: greenyellow;">Online <i class="fas fa-circle"></i></p> -->
+</div>
+
+<!-- Messages field -->
+<div class="chat p-2">
+
+    <li class="d-flex justify-content-start mb-2" *ngFor="let message of messages">
+        <div class="chat-body white p-2 ml-2 z-depth-1">
+            <div class="header">
+                <strong class="primary-font">{{message.nombre}}</strong>
+                <small class="pull-right text-muted">
+                    <mdb-icon far icon="clock"></mdb-icon>{{message.mdate}}
+                </small>
+            </div>
+            <hr class="w-100 m-1">
+            <p class="text-small mb-0">
+                {{message.message}}
+            </p>
+        </div>
+    </li>
+    <li [ngClass]="{'local':message.sender_id == iduseract, 'amigo': message.sender_id != iduseract }"
+        class="d-flex mb-2" *ngFor="let message of sM.mensajes">
+        <div class="chat-body white p-2 ml-2 z-depth-1">
+            <div class="header">
+                <strong class="primary-font">{{message.sender_id}}</strong>
+                <small class="pull-right text-muted">
+                    <mdb-icon far icon="clock"></mdb-icon>Hace 2 min
+                </small>
+            </div>
+            <hr class="w-100 m-1">
+            <p class="text-small mb-0">
+                {{message.text}}
+            </p>
+        </div>
+    </li>
+
+    <!-- ---------------------------------------------------------------------------------------- -->
+</div>
+
+<!-- TextArea field -->
+<!-- <div class="textarea" style="border: 2px solid brown;bottom: 0; position: absolute; width: 98%;"> -->
+<div class=" textarea-chat mb-0">
+    <form (submit)="sendMessage()" class="form-group mb-0">
+        <input type="text" class="form-control my-1 mx-2" placeholder="Envia mensaje" [(ngModel)]="text"
+            [ngModelOptions]="{standalone:true}">
+        <a class="waves-effect waves-light float-right m-2 px-2 py-0" type="submit" (click)="sendMessage()">
+            <img src="./../../../assets/img/arrow.png" style="width: 2rem;"></a>
+    </form>
+</div>
