@@ -10,6 +10,7 @@ import { GlobalVars } from '../../globalVars';
 
 //test BS
 import { DataSharingService } from '../../data-sharing.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({ templateUrl: 'login.component.html' })
 
@@ -20,6 +21,7 @@ export class LoginComponent implements OnInit {
   nombre: any;
   password: any;
   user: User;
+  isUserLoggedIn:boolean;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -28,9 +30,14 @@ export class LoginComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private globalVars: GlobalVars,
-    private dataSharingService: DataSharingService
-  ) { 
+    private dataSharingService: DataSharingService,
+    private http: HttpClient,
 
+  ) { 
+    //id usuariologged
+    this.dataSharingService.isUserLoggedIn.subscribe( value => {
+      this.isUserLoggedIn = value;
+    }); 
   }
 
   ngOnInit() {
@@ -116,19 +123,30 @@ export class LoginComponent implements OnInit {
   }
 
   userLocal(){
-    if (localStorage.getItem('usuario')) {
-      this.user = JSON.parse(localStorage.getItem('usuario'));
-      
-      //Para el BS actualice cosas
-      this.cuandoUserLogea(this.user);
+    if(!this.isUserLoggedIn)
+      if (localStorage.getItem('usuario')) {
+        this.user = JSON.parse(localStorage.getItem('usuario'));
+        
+        //Para el BS actualice cosas
+        this.cuandoUserLogea(this.user);
 
-      this.nombre = this.user.nombre
-      this.globalVars.setGlobalToken(this.user.token)
-      this.globalVars.setGlobalUser(this.user.nombre)
-      this.globalVars.setglobalUserToken(this.user)
-      
-      console.log("Logueo func:")
-      console.log(this.user);
-    }
+        this.nombre = this.user.nombre
+        this.globalVars.setGlobalToken(this.user.token)
+        this.globalVars.setGlobalUser(this.user.nombre)
+        this.globalVars.setglobalUserToken(this.user)
+        
+        console.log("Logueo func:")
+        console.log(this.user);
+      }
   }
+
+  sacardatosLog(link:number){
+    console.log("TESTEAMOS ->localhost:8080/usuarios/"+link, link);
+    this.http.get<any>("localhost:8080/usuarios/"+link)
+       .subscribe(data => {
+        this.teto = data.total;
+   });
+  }
+
+  teto:any;
 }

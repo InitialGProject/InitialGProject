@@ -70,7 +70,7 @@
           <a dropdownToggle type="button" class="perfil nav-link dropdown-toggle waves-light" tabindex="0">
             <img mdbWavesEffect *ngIf="!isUserLoggedIn" src="./../../assets/img/perfil.png" alt="Usuario"
               class="img-fluid rounded-circle z-depth-0">
-            <img mdbWavesEffect *ngIf="isUserLoggedIn" src="./../../assets/img/perfiles/{{token.avatar}}"
+            <img mdbWavesEffect *ngIf="isUserLoggedIn" tabindex=0 src="./../../assets/img/perfiles/{{token.avatar}}"
               alt="registrado" class="img-fluid rounded-circle z-depth-0"></a>
           <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
             <a routerLink='account/register' class="dropdown-item waves-light" mdbWavesEffect
@@ -97,56 +97,6 @@
 
 
 
-
-<!-- <div class="navbar" id="navbar">
-
-  <div class="dropdown effect01">
-    <a routerLink='vista-noticias'>NOTICIAS</a>
-  </div>
-
-  <div class="dropdown">
-    <a routerLink='vista-audiovisuales'>VIDEOS</a>
-    <div class="dropdown-content effect01">
-      <a routerLink='vista-streammings'>STREAMINGS</a>
-    </div>
-  </div>
-
-  <div class="dropdown">
-    <a routerLink='vista-juegos'>JUEGOS</a>
-    <div class="dropdown-content effect01">
-      <a routerLink='vista-juegos/RE'>RETRO</a>
-    </div>
-  </div>
-
-  <div class="dropdown">
-    <a routerLink='vista-torneos'>TORNEOS</a>
-    <div class="dropdown-content effect01">
-      <a routerLink='vista-torneos/vista-reglamento'>REGLAMENTO</a>
-    </div>
-  </div>
-
-  <div class="dropdown effect01">
-    <a routerLink='vista-foro'>FORO</a>
-  </div>
-
-  <div class="dropdown">
-    <a routerLink='account/register'>REGISTRO</a>
-    <div class="dropdown-content effect01">
-      <a routerLink='account/login'>LOGIN</a>
-    </div>
-  </div>
-
-  <div class="dropdown login effect01">
-    <a routerLink='/'>INICIO</a>
-  </div>
-
-  <div class="dropdown login effect01">
-    <a routerLink='/account/login'>LOGIN</a>
-  </div>
-
-  <a class="icon">&#9776;</a>
-
-</div> -->
 
 <!-- Secreto Gamer -->
 <div class="panel" style="display: none;"></div>

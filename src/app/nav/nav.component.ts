@@ -35,6 +35,6 @@ export class NavComponent implements OnInit {
 
   borrarUser(){
     localStorage.removeItem('usuario');
-    //localStorage.clear();
+    localStorage.clear();
   }
 }

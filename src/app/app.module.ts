@@ -42,6 +42,9 @@ import { CardsModule } from "angular-bootstrap-md";
 import { DataSharingService } from "./data-sharing.service";
 import { LoginComponent } from "./account/login/login.component";
 
+//Bootstrap model
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,6 +71,7 @@ import { LoginComponent } from "./account/login/login.component";
     BrowserAnimationsModule,
     MDBBootstrapModule.forRoot(),
     CardsModule,
+    NgbModule,
   ],
   providers: [
     {

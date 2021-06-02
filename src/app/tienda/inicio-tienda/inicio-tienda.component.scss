@@ -1,23 +1,26 @@
 @import "./../../../mixins";
 @import "./../../../variables"; 
 
- 
 
-.testo{
-    height: 25em;
-    width: 12em;
-    margin-left: 2.5em;
-    margin-right: 1.5em;
-    margin-top: 1em;
-    border-radius: 5px;
-    
+.datos{
+    box-shadow: 10px 10px 5px rgb(255, 255, 255);
 }
 
-mdb-card-img{
-    height: 190px;
-    width: 190px;
+.card{
+    margin: 0.5em;
+    border-radius: 5px;     
 }
 
 .oferta{
     background-color: rgb(33, 197, 33);
+}
+
+.cimagen{
+    margin-top: 0.5em;
+    border-radius: 5px;
+    height: 170px;   
+}
+
+.brillibrilli{
+    box-shadow: 3px 4px 5px rgb(255, 0, 0);
 }

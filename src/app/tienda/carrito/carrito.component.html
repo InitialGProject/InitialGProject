@@ -13,20 +13,21 @@
         <!-- Tabla del carro -->
         <div class="table-responsive">
           <table class="table product-table">
-
+            <br>
+            
             <!-- Rows de cada articulo -->
-            <div *ngFor="let item of items">
+            <div style="background-color: rgb(226, 222, 217); border-radius: 20px; margin: 1em; padding: 1em;"  *ngFor="let item of items">
               <tr>
                 <th scope="row" class="imagen">
                     <img src="http://alum3.iesfsl.org/assets/img/tienda/{{item.it.imagen}}" alt="" class="img-fluid z-depth-0"> 
                 </th>
                 <td><a routerLink="/vista-producto/{{item.it.id}}" class="dark-grey-text">{{item.it.nombre}}</a></td>
-                <td>{{item.it.precio--((item.it.precio *item.it.IVA)/100) | currency:'EUR':true}}</td>
+                <td>{{item.it.precio--((item.it.precio *item.it.IVA)/100) | currency:'EUR':symbol}}</td>
                 <td class="text-center text-md-left">
                   <span class="qty">{{item.can}} </span>
                 </td>
                 <td class="font-weight-bold">
-                  <strong>{{item.total | currency:'EUR':true}} </strong>
+                  <strong>{{item.total | currency:'EUR':symbol}} </strong>
                 </td>
                 <td>
                 <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="removeUpload(item)">X
@@ -38,30 +39,101 @@
             
             <hr>
             <!-- Linea inferior, total -->
-            <div *ngIf="precio_total!=0"> PRECIO TOTAL {{precio_total | currency:'EUR':true}}</div>
+            <div style="color: whitesmoke;" *ngIf="precio_total!=0"> PRECIO TOTAL {{precio_total | currency:'EUR':symbol}}</div>
             <button *ngIf="precio_total!=0&&!isUserLoggedIn" type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="removeUpload(item)">Vaciar Carro
             </button>
-            <div *ngIf="precio_total==0" style="text-align: center;"> AÑADE ALGUN PRODUCTO AL CARRITO</div>
             <!-- Linea inferior, total -->
-
             
           </table>
           <!-- Form para comprar -->
           <div *ngIf="isUserLoggedIn; else logeate">
 
-            <form *ngIf="precio_total!=0&&idus!=0" [formGroup]="form" (ngSubmit)="onSubmit()">
+            <button *ngIf="precio_total!=0" type="submit" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="clearCart(item)">Vaciar Carro
+            </button>
+
+            <button *ngIf="precio_total!=0" class="btn btn-danger" (click)="triggerModal(modalData)">Verificar Datos</button>
+
+            <div *ngIf="precio_total==0" class="motto" style="text-align: center; "> <br>AÑADE ALGUN PRODUCTO AL CARRITO</div>
+
+            <!-- Modal para ver la factura -->
+            <ng-template #modalData let-modal>
+              <div class="modal-header">
+                  <h4 class="modal-title" id="verifica">Verifica tus datos</h4>
+                  <button type="button" class="close" aria-label="Close"
+                      (click)="modal.dismiss()">
+                      <span aria-hidden="true">×</span>
+                  </button>
+              </div>
+
+              <form *ngIf="precio_total!=0&&idus!=0" [formGroup]="form" (ngSubmit)="onSubmit()">
+                              
+                <input type="hidden" formControlName="total" ngModel="{{precio_total}}" />
+                
+                <div style="text-align: center;">
+                  -Introduce tus datos-
+
+                  <table style="text-align: center;">
+                    <!-- 1era fila -->
+                    <tr>
+                      
+                      <th>
+                        <label>
+                          Calle<br>
+                          <input type="text" formControlName="direccion" ngModel="{{tolosdatos.direccion}}" />
+                        </label>
+                      </th>
+                      
+                      <th>
+                        <label>
+                          Pais:<br>
+                          <input type="text" formControlName="pais" ngModel="{{tolosdatos.pais}}" />
+                        </label>
+                      </th>
+                    </tr>
+                                          
+                    <!-- 2da fila -->
+                    <tr>
+                      <th>
+                        <label>
+                          Provincia<br>
+                          <input type="text" formControlName="provincia" ngModel="{{tolosdatos.provincia}}" />
+                        </label>
+                      </th>
+                      <th>
+                        <label>
+                          CP<br>
+                          <input type="text" formControlName="cp" ngModel="{{tolosdatos.cp}}" min="0" max="99999" />
+                        </label>
+                      </th>
+                    </tr>
+                    
+                  </table>
+                </div>
+                <button type="button" class="btn btn-alert"
+                (click)="guardar()">Guardar Datos</button>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" (click)="modal.close()">Cancelar</button>
+
+                    <button type="submit" class="btn btn-primary" [disabled]=""
+                    >Confirmar</button>
+                </div>
+
+              </form>
+
+            </ng-template>
+            <!-- Modal para ver la factura -->
+
               
-              <!-- <input type="hidden" formControlName="id_usuario"  ngModel='4'/> -->
-              
-              <input type="hidden" formControlName="total" ngModel="{{precio_total}}"/>
-              <button *ngIf="precio_total!=0" type="submit" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="clearCart(item)">Vaciar Carro
-              </button>
-              <button type="submit" class="btn btn-sm btn-primary">Confirmar</button>
-              
-            </form> 
           </div>
-          <ng-template #logeate>
-            Inicia sesión para comprar
+
+          <ng-template #logeate style="text-align: center;">
+            <a *ngIf="!precio_total==0" class="motto" style="text-align: center;" routerLink='/account/login'>
+              Inicia sesión para comprar articulos
+            </a>
+            <a *ngIf="precio_total==0" class="motto" style="text-align: center;" routerLink='/account/login'>
+              Añade algun producto e inicia sesión para poder comprarlo!
+            </a>
           </ng-template>
           <!-- Form para comprar -->
         
@@ -75,4 +147,5 @@
 
   </main>
   <!--Main Layout-->
+  <div class="barra2"></div>
 </div>
