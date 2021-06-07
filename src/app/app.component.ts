@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { RouterLink } from "@angular/router";
 import { AuthGuardService } from "./perfil/services/auth-guard.service";
+import { DataSharingService } from "./data-sharing.service";
 
 import { LoginComponent } from "src/app/account/login/login.component";
 
@@ -13,10 +14,12 @@ export class AppComponent {
   login: boolean;
   title: any;
   sidechat = true;
+  isUserLoggedIn: boolean;
 
   constructor(
     private auth: AuthGuardService,
-    private CargaLogin: LoginComponent
+    private CargaLogin: LoginComponent,
+    private dataSharingService: DataSharingService
   ) {
     this.CargaLogin.userLocal();
 
@@ -28,6 +31,10 @@ export class AppComponent {
         console.log(error);
       }
     );
+
+    this.dataSharingService.isUserLoggedIn.subscribe((value) => {
+      this.isUserLoggedIn = value;
+    });
   }
 
   onEdit() {

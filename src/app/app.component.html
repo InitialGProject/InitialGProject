@@ -4,8 +4,10 @@
 <div class="container-fluid">
     <div class="row">
 
-        <span class="openbtn d-none d-md-block" *ngIf="sidechat" (click)="openNavi(); sidechat=false"
-            title="Chat Lateral!">💬</span>
+        <div *ngIf="isUserLoggedIn">
+            <span class="openbtn d-none d-md-block" *ngIf="sidechat" (click)="openNavi(); sidechat=false"
+                title="Chat Lateral!">💬</span>
+        </div>
 
         <div class="content col-xl-10 col-md-9 col-12">
             <router-outlet></router-outlet>
