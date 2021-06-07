@@ -3,8 +3,10 @@
   margin-top: -1.4%;
   margin-bottom: -1.4%;
   width: 112%;
-  max-height: 79vh;
-  // overflow: hidden;
+  max-height: 90vh;
+  // height: 100vh;
+  overflow: hidden;
+  z-index: 1;
 }
 @media screen and (min-width: 1200px) {
   .chat {
@@ -28,6 +30,7 @@
   .chat {
     margin-left: -2%;
     width: 104%;
+    overflow: auto;
   }
 
   .messages {
@@ -41,6 +44,22 @@
   }
 }
 
-.messages .contacts {
-  height: 79vh;
+section {
+  background-color: black;
+  opacity: 0.9;
+  color: white;
+  width: 80%;
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 10px;
+  padding: 2%;
+  text-align: center;
+
+  .center a {
+    color: #bb0011;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    font-weight: bold;
+  }
 }

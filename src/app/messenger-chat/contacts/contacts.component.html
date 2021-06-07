@@ -1,9 +1,10 @@
 <!-- Header de Contactos -->
-<div class="info-chat d-flex justify-content-around align-items-center px-2">
+
+<div class="info-chat d-flex justify-content-around align-items-center p-1">
     <!-- Titulo seccion -->
-    <strong class="col-9 primary-font" *ngIf="b">IG-Chats</strong>
-    <strong class="col-9 primary-font" *ngIf="a">IG-Agenda</strong>
-    <strong class="col-9 primary-font" *ngIf="c">IG-Agrega un amigo</strong>
+    <strong class="col-9 primary-font" *ngIf="b">Chats</strong>
+    <strong class="col-9 primary-font" *ngIf="a">Agenda</strong>
+    <strong class="col-9 primary-font" *ngIf="c">Agregar amigo</strong>
 
     <!-- Menu opciones -->
     <a *ngIf="!b" (click)="a=false; b=true; c=false" title="Chats abiertos"><i class="mx-2 fa fa-arrow-left"></i></a>
@@ -11,54 +12,62 @@
     <a *ngIf="!a" (click)="a=true; b=false; c=false" title="Agenda"><i class="mx-2 far fa-address-book"></i></a>
 </div>
 
-
 <!-- Contactos (tabla useruser) -->
-<div class="contacts" *ngIf="a">
-    <li class="contacto p-1" *ngFor="let contact of contacts">
-        <a routerLink="/messages/{{contact.id}}" class="bloque d-flex justify-content-between">
-            <img src="./../../../assets/img/perfiles/{{contact.avatar}}" alt="avatar"
-                class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
-            <div>
-                <strong>{{contact.nombre}}</strong>
-                <p class="m-0" style="color: gray;">#7145{{contact.added_user}}</p>
-            </div>
-            <div class="chat-footer">
-                <mdb-badge danger="true" class="float-right"></mdb-badge>
-            </div>
-        </a>
-    </li>
-</div>
 
+<div class="contacts" *ngIf="a">
+    <div *ngFor="let contact of contacts">
+        <div class="contacto p-1" *ngIf="contact.user_id === iduseract">
+            <a (click)="openChat(contact.added_user)" class="bloque d-flex justify-content-between">
+                <img src="./../../../assets/img/perfiles/{{contact.avatar}}" alt="avatar"
+                    class="avatar rounded-circle d-flex align-self-center mr-2 z-depth-1">
+                <div>
+                    <strong>{{contact.nombre}}</strong>
+                    <p class="m-0" style="color: gray;">#7145{{contact.added_user}}</p>
+                </div>
+                <div class="chat-footer">
+                    <mdb-badge danger="true" class="float-right"></mdb-badge>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
 
 <!-- Conversaciones abiertas (tabla chat) -->
-<div class="contacts" *ngIf="b">
-    <li class="contacto p-1" *ngFor="let chat of chats">
-        <a (click)="openChat(chat)" class="bloque d-flex">
-            <img src="./../../../assets/img/perfiles/{{chat.avatar}}" alt="avatar"
-                class="avatar rounded-circle col-auto p-0 z-depth-1">
-            <div class="text-small col-10 col-sm-12 col-lg-10 px-2 justify-content-between"
-                *ngFor="let message of messages">
-                <strong>{{chat.name}}</strong>
-                <mdb-badge class="float-right">{{message.mdate}} </mdb-badge>
 
-                <p class="last-message text-muted text-truncate  mb-0">{{message.message}}
-                </p>
-            </div>
-        </a>
-    </li>
+<div class="contacts" *ngIf="b">
+    <div *ngFor="let chat of chatuser">
+        <div class="contacto p-1" *ngIf="chat.user_id === iduseract">
+            <a (click)="selectChat(chat.chat_id)" class="bloque d-flex">
+                <img src="./../../../assets/img/perfiles/{{chat.avatar}}" alt="avatar"
+                    class="avatar rounded-circle col-auto p-0 z-depth-1">
+                <div class="text-small col-10 col-sm-12 col-lg-10 px-2 justify-content-between"
+                    *ngFor="let message of messages">
+                    <strong>{{chat.nombre}}</strong>
+                    <mdb-badge class="float-right">{{message.mdate}} </mdb-badge>
+                    <p class="last-message text-muted text-truncate mb-0">{{message.message}}</p>
+                </div>
+            </a>
+        </div>
+    </div>
 </div>
 
-
 <!-- Agregar amigo -->
+
 <div class="agregar p-2" *ngIf="c">
     <form class="campo form-group">
         <label><strong>Identificador</strong>
             <input type="text" class="form-control" placeholder="Identificador" [(ngModel)]="id"
                 [ngModelOptions]="{standalone:true}"></label>
-        <label><strong>Nombre</strong>
-            <input type="text" class="form-control" placeholder="Nombre" [(ngModel)]="nom"
-                [ngModelOptions]="{standalone:true}"></label>
-        <button class="waves-effect waves-light m-2" type="submit" (click)="agregarAmigo()">
+        <button class="waves-effect waves-light m-2" type="submit" (click)="setContacts()">
             Agregar</button>
     </form>
+
+    <details>
+        <summary><em>Info</em></summary>
+        <p class="text-justify font-weight-light">Para agregar un amigo, se tiene que poner en el campo el identificador
+            de la persona. <br>El identificador se encuentra en el apartado perfil de usuario y esta resaltado en color
+            rojo: <strong>#7145</strong><b style="color: #bb0011">99</b>. <br>Una vez agregado, puede iniciar un chat
+            desde la agenda.
+        </p>
+    </details>
 </div>

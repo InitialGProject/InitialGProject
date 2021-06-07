@@ -1,12 +1,12 @@
-<div class="chat p-0">
-    <!-- <div class="chat p-0" style="position: sticky; top: 0;"> -->
+<div class="chat p-0 m-0">
 
-    <div class="contacts">
+    <div class="contacts" *ngIf="!sM.parametro">
         <app-contacts></app-contacts>
     </div>
 
-    <div class="messages">
-        <!-- <app-messages></app-messages> -->
+    <div class="messages" *ngIf="sM.parametro">
+        <a class="closebtn p-0" (click)="sM.parametro=false">🢨</a>
+        <app-messages></app-messages>
     </div>
 
 </div>

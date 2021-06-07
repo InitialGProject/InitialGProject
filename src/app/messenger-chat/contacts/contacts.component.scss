@@ -1,70 +1,25 @@
-// .bloque {
-//   background-color: black;
-
-//   height: 110%;
-//   margin-left: -6%;
-//   margin-right: -5%;
-//   margin-top: -1%;
-// }
-
-// div.content {
-//   padding: 0px;
-// }
+.seccion {
+  max-height: 79vh;
+}
 
 .contacts {
   background-color: white;
   // min-height: 41rem;
-  // width: 25%;
-  // position: sticky;
   max-height: 70vh;
-  // height: 38rem;
   height: 100vh;
   overflow-x: hidden;
-
-  // overflow-y: scroll;
   scrollbar-width: thin; /* "auto" or "thin" */
   -webkit-scrollbar-width: thin;
   scrollbar-color: gray black;
   -webkit-scrollbar-color: gray black;
-  // height: 56vh;
-  // background-color: transparentize($color: gray, $amount: 0.5);ç
 
   .contacto {
-    // width: 100%;
     z-index: 0;
 
     &:hover {
       background-color: transparentize($color: gray, $amount: 0.7);
     }
   }
-}
-
-.basic-textarea textarea.bas {
-  height: auto;
-}
-
-.card.chat-room .friend-list li {
-  border-bottom: 1px solid #e0e0e0;
-}
-.card.chat-room .friend-list li:last-of-type {
-  border-bottom: none;
-}
-
-.card.chat-room img.rounded-circle {
-  border-radius: 50%;
-}
-
-.card.chat-room img.avatar {
-  height: 3rem;
-  width: 3rem;
-}
-
-.card.chat-room .text-small {
-  font-size: 0.95rem;
-}
-
-.card.chat-room .text-smaller {
-  font-size: 0.75rem;
 }
 
 .avatar {
@@ -93,21 +48,17 @@
   background: linear-gradient(to right, black 60%, #80000b 100%);
   color: white;
   border-bottom: solid 2px #80000b;
-  // z-index: 99;
   z-index: 1;
-
   top: 0;
   position: sticky;
-  // height: 7.5vh;
   height: 3.5rem;
-  // max-height: 4rem;
 }
 
-@media screen and (max-height: 683px) {
-  .info-chat {
-    top: 3.5rem;
-  }
-}
+// @media screen and (max-height: 683px) {
+//   .info-chat {
+//     top: 3.5rem;
+//   }
+// }
 
 a {
   text-decoration: none;

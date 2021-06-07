@@ -12,25 +12,27 @@
       <div class="row">
 
         <div class="col-md-12" style="margin-bottom: 5%; text-align: center;">
-          <img src="../../../assets/img/perfiles/{{TUser.avatar}}" class="rounded-circle img-thumbnail" style="max-width: 10rem;" alt="profile">
+          <img src="../../../assets/img/perfiles/{{TUser.avatar}}" class="rounded-circle img-thumbnail"
+            style="max-width: 10rem;" alt="profile">
         </div>
 
         <div class="col-md-12">
           <p>Nombre: {{TUser.nombre}}</p>
-          <p>Token: {{TUser.token}}</p>
+          <p>Identificador: #7145<b style="color: #bb0011">{{TUser.id}}</b></p>
           <p>Tipo de suscripción: {{TUser.suscripcion}}</p>
         </div>
       </div>
 
       <div class="row">
         <div *ngIf="TUser.suscripcion=='Admin'" class="text-center text-md-left">
-          <a class="btn" mdbBtn mdbWavesEffect title="Back" style="color: #bb0011;" href='http://alum3.iesfsl.org/bck/index.php'>Acceder al Back</a>
+          <a class="btn" mdbBtn mdbWavesEffect title="Back" style="color: #bb0011;"
+            href='http://alum3.iesfsl.org/bck/index.php'>Acceder al Back</a>
           <!-- <a class="btn" mdbBtn mdbWavesEffect title="Back" style="color: #bb0011;" href='localhost:8081/index.php'>Acceder al Back</a> -->
         </div>
 
         <div class="text-center text-md-left">
-          <a class="dropdown-item waves-light" mdbWavesEffect title="Desconectarse" (click)="logout()" 
-          style="color: #bb0011; border-radius: 10px; font-weight: bold; cursor: pointer;">LogOut</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect title="Desconectarse" (click)="logout()"
+            style="color: #bb0011; border-radius: 10px; font-weight: bold; cursor: pointer;">LogOut</a>
         </div>
       </div>
 
@@ -43,13 +45,15 @@
       margin: auto; border-radius: 10px; padding: 2%; text-align: center;">
       <div class="center">
         <p>Inicia sesion para ver tu perfil</p>
-        <a routerLink='/account/login' class="dropdown-item waves-light" 
-        style="color: #bb0011; border-radius: 10px; width: 80%; margin: auto; font-weight: bold;" mdbWavesEffect>LOGIN</a>
+        <a routerLink='/account/login' class="dropdown-item waves-light"
+          style="color: #bb0011; border-radius: 10px; width: 80%; margin: auto; font-weight: bold;"
+          mdbWavesEffect>LOGIN</a>
       </div>
       <div class="center">
         <p>Registrate si no dispones de una cuenta</p>
-        <a routerLink='/account/register' class="dropdown-item waves-light" 
-        style="color: #bb0011; border-radius: 10px; width: 80%; margin: auto; font-weight: bold;" mdbWavesEffect>REGISTRATE</a>
+        <a routerLink='/account/register' class="dropdown-item waves-light"
+          style="color: #bb0011; border-radius: 10px; width: 80%; margin: auto; font-weight: bold;"
+          mdbWavesEffect>REGISTRATE</a>
       </div>
 
     </section>

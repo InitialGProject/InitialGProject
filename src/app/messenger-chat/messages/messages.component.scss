@@ -1,10 +1,11 @@
+.seccion {
+  max-height: 79vh;
+}
+
 .white {
   background-color: white;
   border-radius: 10px;
-}
-
-textarea.bas {
-  height: auto;
+  max-width: 90%;
 }
 
 .friend-list li {
@@ -33,22 +34,26 @@ img.avatar {
 
 .avatar {
   width: 3rem;
+  background-color: white;
 }
 
-// .chat-message {
-//   background-color: transparentize($color: gray, $amount: 0.5);
-//   // max-height: 80%;
-// }
 .chat {
-  overflow-y: scroll;
-  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-width: thin;
   -webkit-scrollbar-width: thin;
-  scrollbar-color: white black;
-  -webkit-scrollbar-color: white black;
-  max-height: 63vh;
+  scrollbar-color: gray black;
+  -webkit-scrollbar-color: gray black;
+  max-height: 63.5vh;
   // height: 35rem;
   height: 100vh;
+  overflow-x: hidden;
   background-color: transparentize($color: gray, $amount: 0.5);
+
+  .default {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
 }
 
 .info-chat {
@@ -63,13 +68,11 @@ img.avatar {
   );
   border-bottom: solid 2px transparent;
   border-image: linear-gradient(to right, #80000b, gray, black);
-  border-image-slice: 1;
-  // z-index: 99;
+  // border-image-slice: 1;
+  z-index: 1;
   top: 0;
   position: sticky;
-  // height: 7.5vh;
   height: 3.5rem;
-  // max-height: 4rem;
 }
 
 @media screen and (max-height: 683px) {
@@ -81,9 +84,8 @@ img.avatar {
 .textarea-chat {
   bottom: 0;
   position: sticky;
-  // height: 7.5vh;
+  position: -webkit-sticky;
   height: 3rem;
-  // max-height: 4rem;
 
   .form-group {
     border-right: 8px double black;
@@ -106,24 +108,6 @@ img.avatar {
       border-radius: 10px;
       color: black;
     }
-
-    // button {
-    //   background-color: white;
-    //   border: 2px solid black;
-    //   border-radius: 10px;
-
-    //   i {
-    //     color: black;
-    //   }
-
-    //   &:hover {
-    //     background-color: #bb0011;
-
-    //     i {
-    //       color: white;
-    //     }
-    //   }
-    // }
 
     a {
       cursor: pointer;

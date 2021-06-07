@@ -1,8 +1,26 @@
 .chat {
-  margin-left: -6%;
-  margin-top: -1.4%;
-  margin-bottom: -1.4%;
-  //   width: 112%;
-  max-height: 79vh;
-  // overflow: hidden;
+  max-height: 100%;
+  position: sticky;
+  top: 5rem;
+}
+
+.messages a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  &:hover {
+    color: rgb(91, 103, 156);
+  }
+}
+.messages .closebtn {
+  position: absolute;
+  top: 0;
+  right: 15rem;
+  font-size: 36px;
+  margin-left: 50px;
+  z-index: 99;
+  cursor: pointer;
 }

@@ -30,14 +30,13 @@
 .sidenav {
   height: 79vh;
   width: 0;
-  position: sticky;
-  z-index: 3;
-  top: 0;
-  right: 0;
+  position: fixed;
   background-color: #111;
   overflow: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  top: 7vh;
+  right: 0;
+  bottom: 0vh;
 }
 
 .sidenav a {
@@ -56,17 +55,8 @@
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 0;
   font-size: 36px;
   margin-left: 50px;
-  z-index: 1;
+  z-index: 99;
 }
-
-// @media screen and (max-height: 450px) {
-//   .sidenav {
-//     padding-top: 15px;
-//   }
-//   .sidenav a {
-//     font-size: 18px;
-//   }
-// }

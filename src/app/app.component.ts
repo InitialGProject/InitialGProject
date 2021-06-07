@@ -12,6 +12,7 @@ import { LoginComponent } from "src/app/account/login/login.component";
 export class AppComponent {
   login: boolean;
   title: any;
+  sidechat = true;
 
   constructor(
     private auth: AuthGuardService,
@@ -34,7 +35,7 @@ export class AppComponent {
   }
 
   openNavi() {
-    document.getElementById("mySidenav").style.width = "20vw";
+    document.getElementById("mySidenav").style.width = "18rem";
   }
 
   closeNavi() {

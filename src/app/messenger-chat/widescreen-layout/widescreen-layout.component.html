@@ -2,31 +2,26 @@
     <div class="chat row p-0">
 
 
-        <!-- <div class="contacts col-xl-3 col-sm-4 col-12"> -->
-        <app-contacts class="contacts col-sm-4 col-md-3 col-lg-4 col-xl-3 p-0" style="height: 100%;"></app-contacts>
-        <!-- </div> -->
+        <div class="contacts col-sm-4 col-md-3 col-lg-4 col-xl-3 p-0">
+            <app-contacts></app-contacts>
+        </div>
 
-        <!-- <div class="messages col-xl-9 col-sm-8 col-12"> -->
-        <app-messages class="messages col-sm-8 col-md-9 col-lg-8 col-xl-9 p-0" style="height: 100%;"></app-messages>
-        <!-- </div> -->
+        <div class="messages col-sm-8 col-md-9 col-lg-8 col-xl-9 p-0">
+            <app-messages></app-messages>
+        </div>
 
 
     </div>
 </div>
 <ng-template #login>
-    <section style="background-color: black; opacity: 0.9; color: white; width: 80%; 
-          margin: auto; margin-top: 10%; border-radius: 10px; padding: 2%; text-align: center;">
+    <section>
         <div class="center">
             <p>Inicia sesion para acceder al Chat</p>
-            <a routerLink='/account/login' class="dropdown-item waves-light"
-                style="color: #bb0011; border-radius: 10px; width: 80%; margin: auto; font-weight: bold;"
-                mdbWavesEffect>LOGIN</a>
+            <a routerLink='/account/login' class="dropdown-item waves-light" mdbWavesEffect>LOGIN</a>
         </div>
         <div class="center">
             <p>Registrate si no dispones de una cuenta</p>
-            <a routerLink='/account/register' class="dropdown-item waves-light"
-                style="color: #bb0011; border-radius: 10px; width: 80%; margin: auto; font-weight: bold;"
-                mdbWavesEffect>REGISTRATE</a>
+            <a routerLink='/account/register' class="dropdown-item waves-light" mdbWavesEffect>REGISTRATE</a>
         </div>
 
     </section>

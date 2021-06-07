@@ -2,6 +2,8 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { MDBBootstrapModule } from "angular-bootstrap-md";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { MessengerRoutingModule } from "./messenger-routing.module";
+
 // Componentes del messenger
 import { ContactsComponent } from "./contacts/contacts.component";
 import { MessagesComponent } from "./messages/messages.component";
@@ -22,6 +24,7 @@ import { SidechatLayoutComponent } from "./sidechat-layout/sidechat-layout.compo
     CommonModule,
     ReactiveFormsModule,
     FormsModule,
+    MessengerRoutingModule,
     MDBBootstrapModule.forRoot(),
   ],
   providers: [MessengerService],

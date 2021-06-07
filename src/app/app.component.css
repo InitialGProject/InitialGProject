@@ -34,62 +34,50 @@
 }
 
 .sidenav {
-  height: 79vh;
+  height: 80%;
+  max-height: 50rem;
+  z-index: 99;
   width: 0;
   position: fixed;
-  background-color: #111;
   overflow: hidden;
   transition: 0.5s;
-  top: 7vh;
+  top: 12%;
   right: 0;
-  bottom: 0vh;
+  background-color: black;
+  margin-top: 0%;
+  margin-bottom: 15%;
 }
-
-/* .sidenav {
-  position: absolute;
-  z-index: 2;
-  background-color: white;
-  display: none;
-  transition: 0.5s;
-  right: 0vh;
-  top: 8.5rem;
-  width: 18rem;
-} */
-
-/* .sideapp {
-  position: sticky;
-  top: 3.5rem;
-} */
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: white;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: rgb(91, 103, 156);
 }
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 2%;
+  right: 5rem;
   font-size: 36px;
   margin-left: 50px;
   z-index: 99;
+  cursor: pointer;
 }
-/*
-@media screen and (max-height: 450px) {
-.sidenav {
-//padding-top: 15px;
+
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 8vh;
+  right: 0;
+  z-index: 99;
 }
-.sidenav a {
-font-size: 18px;
-}
-}
-*/
+
 /*# sourceMappingURL=app.component.css.map */
