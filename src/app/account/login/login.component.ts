@@ -142,7 +142,7 @@ export class LoginComponent implements OnInit {
 
   sacardatosLog(link:number){
     console.log("TESTEAMOS ->localhost:8080/usuarios/"+link, link);
-    this.http.get<any>("localhost:8080/usuarios/"+link)
+    this.http.get<any>(GlobalVars.ruta+link)
        .subscribe(data => {
         this.teto = data.total;
    });
