@@ -56,6 +56,8 @@ export class VistaProductoComponent implements OnInit {
     window.alert("Producto añadido al carrito");
     this.servicioTienda.setTo0();
     this.dataSharingService.precio_total.next(this.servicioTienda.getPrecioTot());
+    this.dataSharingService.precio_si.next(this.servicioTienda.getPrecioTotSi());
+
     return false;
   }
 

@@ -16,29 +16,67 @@
             <br>
             
             <!-- Rows de cada articulo -->
-            <div style="background-color: rgb(226, 222, 217); border-radius: 20px; margin: 1em; padding: 1em;"  *ngFor="let item of items">
+            <div *ngIf="precio_total!=0" style="background-color: rgb(226, 222, 217); border-radius: 20px; margin: 1em; padding: 1em;">
+              <!-- Nombres contenido -->
               <tr>
-                <th scope="row" class="imagen">
+                <th>
+
+                </th>
+                <th>
+                  Nombre
+                </th>
+                <th>
+                  Precio
+                </th>
+                <th>
+                  Precio+IVA
+                </th>
+                <th>
+                  Cantidad
+                </th>
+                <th>
+                  Total
+                </th>
+                <th>
+                  Borrar
+                </th>
+              </tr>
+
+              <!-- Articulos del carro -->
+              <ng-container *ngFor="let item of items">
+                <tr>
+                  <th scope="row" class="imagen">
                     <img src="http://alum3.iesfsl.org/assets/img/tienda/{{item.it.imagen}}" alt="" class="img-fluid z-depth-0"> 
                 </th>
+
                 <td><a routerLink="/vista-producto/{{item.it.id}}" class="dark-grey-text">{{item.it.nombre}}</a></td>
+                
+                <td>{{item.it.precio | currency:'EUR':symbol}}</td>
+                
                 <td>{{item.it.precio--((item.it.precio *item.it.IVA)/100) | currency:'EUR':symbol}}</td>
+
                 <td class="text-center text-md-left">
                   <span class="qty">{{item.can}} </span>
                 </td>
+
                 <td class="font-weight-bold">
                   <strong>{{item.total | currency:'EUR':symbol}} </strong>
                 </td>
+                
                 <td>
-                <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="removeUpload(item)">X
-                </button>
+                  <button type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="removeUpload(item)">X
+                  </button>
                 </td>
-              </tr>
+                </tr>
+              </ng-container>
+
             </div>
             <!-- Rows de cada articulo -->
             
             <hr>
             <!-- Linea inferior, total -->
+            <div style="color: whitesmoke;" *ngIf="total_si!=0"> PRECIO  {{total_si | currency:'EUR':symbol}}</div>
+            <div style="color: whitesmoke;" *ngIf="total_si!=0&&precio_total!=0"> IVA  {{precio_total-total_si | currency:'EUR':symbol}}</div>
             <div style="color: whitesmoke;" *ngIf="precio_total!=0"> PRECIO TOTAL {{precio_total | currency:'EUR':symbol}}</div>
             <button *ngIf="precio_total!=0&&!isUserLoggedIn" type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="removeUpload(item)">Vaciar Carro
             </button>
@@ -55,7 +93,7 @@
 
             <div *ngIf="precio_total==0" class="motto" style="text-align: center; "> <br>AÑADE ALGUN PRODUCTO AL CARRITO</div>
 
-            <!-- Modal para ver la factura -->
+            <!-- Modal para insertar datos -->
             <ng-template #modalData let-modal>
               <div class="modal-header">
                   <h4 class="modal-title" id="verifica">Verifica tus datos</h4>
@@ -68,9 +106,9 @@
               <form *ngIf="precio_total!=0&&idus!=0" [formGroup]="form" (ngSubmit)="onSubmit()">
                               
                 <input type="hidden" formControlName="total" ngModel="{{precio_total}}" />
+                <input type="hidden" formControlName="total_si" ngModel="{{total_si}}" />
                 
-                <div style="text-align: center;">
-                  -Introduce tus datos-
+                <div class="bg-white rounded-lg shadow-sm p-5">
 
                   <table style="text-align: center;">
                     <!-- 1era fila -->
@@ -106,23 +144,110 @@
                         </label>
                       </th>
                     </tr>
-                    
+
+                    <!-- 3a fila -->
+                    <tr>
+                      <a data-toggle="pill"  class="nav-link active rounded-pill">
+                        <button type="button"  class="nav-link active rounded-pill"
+                        (click)="guardar()">Guardar Datos</button>
+                      </a>
+                    </tr>
                   </table>
                 </div>
-                <button type="button" class="btn btn-alert"
-                (click)="guardar()">Guardar Datos</button>
+                
+                <hr>
+                <!-- Tarjeta  -->
+                  <div class="bg-white rounded-lg shadow-sm p-5">
+                   
+                    <!-- Credit card form tabs -->
+                    <ul role="tablist" class="nav bg-light nav-pills rounded-pill nav-fill mb-3">
+                      <li class="nav-item">
+                        <a data-toggle="pill"  class="nav-link active rounded-pill">
+                          <i class="fa fa-credit-card"></i>
+                          Tarjeta de Credito
+                      </a>
+                      </li>
+
+                      <!-- <li class="nav-item">
+                        <a data-toggle="pill"  class="nav-link rounded-pill">
+                          <i class="fa fa-paypal"></i>
+                          Paypal
+                        </a>
+                      </li> -->
+                    </ul>
+                    <!-- End -->
+            
+            
+                    <!-- Credit card form content -->
+                    <div class="tab-content">
+            
+                      <!-- Tarjeta-->
+                      <div id="nav-tab-card" class="tab-pane fade show active">
+                        
+                          <div class="form-group">
+                            <label for="username">Nombre del titular</label>
+                            <input type="text" name="username" placeholder="Nombre Apellidos" required [(ngModel)]="nombre_tarjeta" formControlName="nombre_tarjeta" class="form-control">
+                          </div>
+                          <div class="form-group">
+                            <label for="cardNumber">Nº Tarjeta</label>
+                            <div class="input-group">
+                              <input type="text" name="cardNumber" minlength="16" placeholder="1234 5678 9012 3456" [(ngModel)]="numero_tarjeta" formControlName="numero_tarjeta" class="form-control" required>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-8">
+                              <div class="form-group">
+                                <label><span class="hidden-xs">Fecha Expiracion</span></label>
+                                <div class="input-group">
+                                  <input type="number" min="01" max="12" placeholder="MM" name="" [(ngModel)]="mes_tarjeta" formControlName="mes_tarjeta" class="form-control" required>
+                                  <input type="number" min="2021" max="2099" placeholder="YYYY" name="" [(ngModel)]="ano_tarjeta" formControlName="año_tarjeta" class="form-control" required>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-4">
+                              <div class="form-group mb-4">
+                                <label title="Tres digitos de la tarjeta">CVV
+                                  <i class="fa fa-question-circle"></i>
+                                </label>
+                                <input type="text" required [(ngModel)]="cvv_tarjeta" min="1" max="999" minlength="3" formControlName="cvv_tarjeta" class="form-control">
+                              </div>
+                            </div>
+
+                          </div>
+                          <!-- <button type="button" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm"> Confirm  </button> -->
+                        
+                      </div>
+                      <!-- End -->
+            
+                      <!-- Paypal -->
+                      <!-- <div id="nav-tab-paypal" class="tab-pane fade">
+                        <p>Paypal is easiest way to pay online</p>
+                        <p>
+                          <button type="button" class="btn btn-primary rounded-pill"><i class="fa fa-paypal mr-2"></i> Log into my Paypal</button>
+                        </p>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                      </div> -->
+                      <!-- End -->
+
+                      <!-- End -->
+                    </div>
+                    <!-- End -->
+            
+                  </div>
+                <!-- Fin tarjeta -->
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" (click)="modal.close()">Cancelar</button>
 
-                    <button type="submit" class="btn btn-primary" [disabled]=""
+                    <button type="submit" class="btn btn-primary" [disabled]="!numero_tarjeta || numero_tarjeta.length<16 || !nombre_tarjeta || !mes_tarjeta || !ano_tarjeta || !cvv_tarjeta || cvv_tarjeta.length>3|| cvv_tarjeta.length<3 "
                     >Confirmar</button>
                 </div>
 
               </form>
 
             </ng-template>
-            <!-- Modal para ver la factura -->
+            <!-- Modal para insertar datos -->
 
               
           </div>

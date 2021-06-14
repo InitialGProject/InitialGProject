@@ -64,6 +64,7 @@ export class TiendaService {
     // }, can:1, total:22400},
   ];
 
+  precio_si: number;
   precio_total: number;
   idus:number;
   isUserLoggedIn:boolean;
@@ -76,6 +77,9 @@ export class TiendaService {
     //Precio total para el DS
     this.dataSharingService.precio_total.subscribe( value => {
       this.precio_total = value;
+    }); 
+    this.dataSharingService.precio_si.subscribe( value => {
+      this.precio_si = value;
     }); 
     
     //id usuariologged
@@ -102,11 +106,13 @@ export class TiendaService {
     //Si no está se añadirá, si está se modificará el producto
     if(!this.items.find(item=>item.it.id==it.id)){
       console.log("Añadiendo al carrito");
-      this.items.push({it, can, total:can*(it.precio- -(it.precio*it.IVA)/100)});
+      this.items.push({it, can, total:can*(it.precio- -(it.precio*it.IVA)/100), totsiva:it.precio*can});
     }else{
       console.log("Modificando el carrito");
       this.items.find(item=>item.it.id==it.id).can=can;
       this.items.find(item=>item.it.id==it.id).total=can*(it.precio- -(it.precio*it.IVA)/100);
+      this.items.find(item=>item.it.id==it.id).totsiva=can*(it.precio);
+      console.log("Cantidad "+can+" precio "+it.precio+" da "+this.items.find(item=>item.it.id==it.id).totsiva)
     }
       //Guardamos el carro en BS
       this.dataSharingService.carro.next(this.items);
@@ -141,15 +147,25 @@ export class TiendaService {
   //Vaciar contador
   setTo0(){
     this.precio_total=0;
+    this.precio_si=0;
   }
 
-  //Sumar total del carro
+  //Sumar total del carro + IVA
   getPrecioTot(){
     this.setTo0();
     this.items.forEach(element => {
       this.precio_total+=element.total;
     });
     return this.precio_total;
+  }
+
+  //Sumar total del carro
+  getPrecioTotSi(){
+    this.setTo0();
+    this.items.forEach(element => {
+      this.precio_si+=element.totsiva;
+    });
+    return this.precio_si;
   }
 
   /**Servicios para cargar datos*/

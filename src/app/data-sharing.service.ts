@@ -17,6 +17,7 @@ export class DataSharingService {
 
     //precio total del carro
     public precio_total: BehaviorSubject<number> = new BehaviorSubject<number>(0);
+    public precio_si: BehaviorSubject<number> = new BehaviorSubject<number>(0);
 
     //id Usuario
     public iduseract: BehaviorSubject<number> = new BehaviorSubject<number>(0);

@@ -5,7 +5,7 @@ import io from "socket.io-client";
   providedIn: "root",
 })
 export class WebsocketService {
-  io = io("http://localhost:3000/", {
+  io = io("http://alum3.iesfsl.org:4202/", {
     withCredentials: true,
     autoConnect: true,
   });

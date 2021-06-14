@@ -57,12 +57,12 @@
                 <!-- Cantidad -->
                 <p class="lead font-weight-bold">Stock</p>
                 <div *ngIf="producto.stock <= '10'; else mucho"></div>
-                <p style="color:#ff8400" *ngIf="producto.stock<='10'&&producto.stock>'1'"> {{producto.stock}} Unidades Restantes</p>
-                <p style="color:#ff6f00" *ngIf="producto.stock=='1'"> {{producto.stock}} Unidad Restante</p>
+                <p style="color:#804200" *ngIf="producto.stock<='10'&&producto.stock>'1'"> {{producto.stock}} Unidades Restantes</p>
+                <p style="color:#803D00" *ngIf="producto.stock=='1'"> {{producto.stock}} Unidad Restante</p>
                 <p style="color:#FF0000" *ngIf="producto.stock=='0'"> Sin Stock</p>
                 
                 <ng-template #mucho>
-                  <p style="color:#00ff00" *ngIf="producto.stock>'10'"> En Stock</p>
+                  <p style="color:#194919" *ngIf="producto.stock>'10'"> En Stock</p>
                 </ng-template>
                 <hr>
                 <!-- Agregar cantidad -->

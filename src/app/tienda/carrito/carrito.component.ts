@@ -18,6 +18,7 @@ import { Router } from '@angular/router';
 export class CarritoComponent implements OnInit {
   items = this.carritoService.getItems();
   precio_total: number;
+  total_si: number;
   catalogo: Catalogo;
   form: FormGroup;
   isUserLoggedIn: boolean;
@@ -36,8 +37,11 @@ export class CarritoComponent implements OnInit {
   ) {
 
     //Cargar valor del PT en su BS
-    this.dataSharingService.precio_total.subscribe( value => {
+    this.dataSharingService.precio_total.subscribe( value => {  //precio con iva
       this.precio_total = value;
+    }); 
+    this.dataSharingService.precio_si.subscribe( value => {     //precio sin iva
+      this.total_si = value;
     }); 
     this.dataSharingService.isUserLoggedIn.subscribe( value => {
       this.isUserLoggedIn = value;
@@ -49,7 +53,6 @@ export class CarritoComponent implements OnInit {
 
    }
    
-
   ngOnInit(): void {
     this.carritoService.sacardatosLog(this.iduseract).subscribe(
       data=>{
@@ -65,25 +68,34 @@ export class CarritoComponent implements OnInit {
     //Cargar precio carrito
     this.carritoService.setTo0();
     this.dataSharingService.precio_total.next(this.carritoService.getPrecioTot());
+    this.dataSharingService.precio_si.next(this.carritoService.getPrecioTotSi());
+
     
-    //Cargamos el carro local
+    //Cargamos el carro local si lo hay
     if(localStorage.getItem('carrito')!=null){
       this.carritoService.getCarroLoc();
+      
+      //Cargar precio carrito
+      this.carritoService.setTo0();
+      this.dataSharingService.precio_si.next(this.carritoService.getPrecioTotSi());
+      this.dataSharingService.precio_total.next(this.carritoService.getPrecioTot());
     }
-    
-    //Cargar precio carrito
-    this.carritoService.setTo0();
-    this.dataSharingService.precio_total.next(this.carritoService.getPrecioTot());
     
     //Creamos el form para pasarlo a la api
     this.form = this.formBuilder.group({
       id_usuario: [this.iduseract],
       total: [''],
+      total_si: [''],
       direccion:[''],
       pais:[''],
       cp:[''],
       provincia:[''],
-
+      
+      nombre_tarjeta:[''],
+      numero_tarjeta:[''],
+      mes_tarjeta:[''],
+      año_tarjeta:[''],
+      cvv_tarjeta:[''],
     });
   }
   
@@ -128,10 +140,6 @@ export class CarritoComponent implements OnInit {
   //Mandar a la api
   async onSubmit(){
     this.form.setValue=this.datosFactura();
-    
-    //Testeo   
-    // console.log("Objeto:");
-    // console.log(this.form.value)
 
     // Pasamos a la api
     this.carritoService.facturar(await this.datosFactura())
@@ -145,7 +153,7 @@ export class CarritoComponent implements OnInit {
       }, error => {
         console.log(error)
         console.log(error.error)
-        //alert("Has introducido mal algun campo, revisa tus datos");
+        // alert("Has introducido mal algun campo, revisa tus datos");
         error.error.forEach(element => {
           let datos=element[Object.keys(element)[0]];
           console.log(datos);
@@ -153,10 +161,10 @@ export class CarritoComponent implements OnInit {
           
         });
       });
-      
+      // testeo
+      console.log(this.form);
       
       // Vaciamos el carro al acabar
-      //testeo
       setTimeout(() => {
        this.carritoService.clearCart();
        this.router.navigate(['/compras']);
@@ -188,6 +196,7 @@ export class CarritoComponent implements OnInit {
     return {
       id_usuario: this.iduseract,
       total: this.form.get(["total"]).value,
+      total_si: this.form.get(["total_si"]).value,
       cp: this.form.get(["cp"]).value,
       pais: this.form.get(["pais"]).value,
       provincia: this.form.get(["provincia"]).value,
