@@ -65,4 +65,6 @@ export class VistaProductoComponent implements OnInit {
     this.router.navigate(['/tienda']);
     }
 
+  
+
 }

@@ -5,6 +5,8 @@ import { DataSharingService } from "./data-sharing.service";
 
 import { LoginComponent } from "src/app/account/login/login.component";
 
+//generar pdfs
+
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",

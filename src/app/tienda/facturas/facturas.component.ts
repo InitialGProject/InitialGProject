@@ -15,6 +15,10 @@ import { Facturas } from '../models/facturas';
 import { Linfac } from '../models/lineafactura';
 import { Usuarios } from '../models/usuarios';
 
+//generar pdf
+import { jsPDF } from "jspdf";
+import html2canvas from 'html2canvas';
+
 @Component({
   selector: 'app-facturas',
   templateUrl: './facturas.component.html',
@@ -22,11 +26,11 @@ import { Usuarios } from '../models/usuarios';
 })
 
 export class FacturasComponent implements OnInit {
-
   //Valores BS
   isUserLoggedIn: boolean;
   token: any;
   iduseract:number;
+
 
   //Valores Pagina
   catalogo: Catalogo;
@@ -59,6 +63,37 @@ export class FacturasComponent implements OnInit {
     this.dataSharingService.iduseract.subscribe( value => {
       this.iduseract = value;
     });
+
+    //this.downloadPDF();
+  }
+
+  public downloadPDF(id:number): void {
+    console.log("Nos llega "+id)
+    const DATA = document.getElementById('factura'+id);
+    const doc = new jsPDF('p', 'pt', 'a4');
+    const options = {
+      background: 'white',
+      scale: 3
+    };
+    
+    html2canvas(DATA, options).then((canvas) => {
+
+      const img = canvas.toDataURL('image/PNG');
+
+      // Add image Canvas to PDF
+      const bufferX = 15;
+      const bufferY = 15;
+      const imgProps = (doc as any).getImageProperties(img);
+      const pdfWidth = doc.internal.pageSize.getWidth() - 2 * bufferX;
+      const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+      doc.addImage(img, 'PNG', bufferX, bufferY, pdfWidth, pdfHeight, undefined, 'FAST');
+      return doc;
+    }).then((docResult) => {
+    
+      docResult.save(`factura`+id+`.pdf`);
+    });
+
+    //doc.save("factura.pdf");
   }
 
   ngOnInit(): void {
@@ -125,4 +160,5 @@ export class FacturasComponent implements OnInit {
     this.modalService.open(content, {ariaLabelledBy: 'facturaDetalle'});
   }
 
+  
 }

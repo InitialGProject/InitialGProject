@@ -59,77 +59,147 @@
                             <!-- Modal para ver la factura -->
                             <ng-template #modalData let-modal>
                                 <div class="modal-header">
-                                    <h4 class="modal-title" id="facturaDetalle">Factura: {{facturas.id}}</h4>
                                     <button type="button" class="close" aria-label="Close"
-                                        (click)="modal.dismiss()">
-                                        <span aria-hidden="true">×</span>
+                                    (click)="modal.dismiss()">
+                                    <span aria-hidden="true">×</span>
                                     </button>
                                 </div>
+                                
+                                <div id="factura{{facturas.id}}">
+                                
+                                    <h1 class="modal-title" id="facturaDetalle">Factura Nº - {{facturas.id}}</h1>
+                                    <br>
+                                    <!-- Tabla Datos Pedido -->
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Articulo comprado
+                                                </th>
+                                                <th>
+                                                    Cantidad
+                                                </th>
+                                                <th>
+                                                    Precio
+                                                </th>
+                                            </tr>
+                                        </thead>
 
-                                <table class="table table-striped">
-                                    <thead>
+                                        <ng-container *ngFor="let linea of lineafactura">
+                                            <tr *ngIf="linea.id_facturacion==facturas.id">
+                                                
+                                                <ng-container *ngFor="let articulo of catalogo">
+
+                                                    <th *ngIf="linea.id_producto==articulo.id">
+                                                        {{articulo.nombre}}
+                                                    </th>
+
+                                                    <th *ngIf="linea.id_producto==articulo.id">
+                                                        {{linea.cantidad}}
+                                                    </th>
+
+                                                    <th *ngIf="linea.id_producto==articulo.id">
+                                                        {{articulo.precio--((articulo.precio *articulo.IVA)/100)| currency:'EUR':'symbol'}}
+                                                    </th>
+
+                                                </ng-container>
+                                            </tr>
+                                        </ng-container>
+                                        
+                                    </table>
+                                    
+                                    <!-- Tabla Datos cliente -->
+                                    
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Informacion del pedido
+                                                </th>
+                                                <th>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <!-- <tr>
+                                            <th>
+                                                Nombre:
+                                                {{facturas.pais}}
+                                            </th>
+                                            <th>
+                                                Provincia:
+                                                {{facturas.provincia}}
+                                            </th>
+                                        </tr> -->
                                         <tr>
                                             <th>
-                                                Articulo
+                                                Pais:
+                                                {{facturas.pais}}
                                             </th>
                                             <th>
-                                                Cantidad
+                                                Provincia:
+                                                {{facturas.provincia}}
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                CP:
+                                                {{facturas.cp}}
                                             </th>
                                             <th>
-                                                Precio
+                                                Direccion:
+                                                {{facturas.direccion}}
                                             </th>
                                         </tr>
-                                    </thead>
-
-                                    <ng-container *ngFor="let linea of lineafactura">
-                                        <tr *ngIf="linea.id_facturacion==facturas.id">
-                                            
-                                            <ng-container *ngFor="let articulo of catalogo">
-
-                                                <th *ngIf="linea.id_producto==articulo.id">
-                                                    {{articulo.nombre}}
-                                                </th>
-
-                                                <th *ngIf="linea.id_producto==articulo.id">
-                                                    {{linea.cantidad}}
-                                                </th>
-
-                                                <th *ngIf="linea.id_producto==articulo.id">
-                                                    {{articulo.precio--((articulo.precio *articulo.IVA)/100)| currency:'EUR':'symbol'}}
-                                                </th>
-
-                                            </ng-container>
-                                        </tr>
-                                    </ng-container>
                                     
-                                </table>
-                                
-                                <!-- Datos cliente -->
-                                <table class="table table-striped">
-                                    <tr>
-                                        <th>
-                                            Pais:
-                                            {{facturas.pais}}
-                                        </th>
-                                        <th>
-                                            Provincia:
-                                            {{facturas.provincia}}
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th>
-                                            CP:
-                                            {{facturas.cp}}
-                                        </th>
-                                        <th>
-                                            Direccion:
-                                            {{facturas.direccion}}
-                                        </th>
-                                    </tr>
-                                </table>
-                                <br>
- 
+                                        <tr>
+                                            <th>
+                                                Fecha de compra:
+                                                {{facturas.fecha_compra}}
+                                            </th>
+                                            <th>
+                                                
+                                            </th>
+                                        </tr>
+
+                                        <tr>
+                                            <th>
+                                                Precio base:
+                                                {{facturas.total_si| currency:'EUR':'symbol'}}
+                                            </th>
+                                            <th>
+                                                
+                                            </th>
+                                        </tr>
+
+                                        <tr>
+                                            <th>
+                                                Precio Total:
+                                                {{facturas.total| currency:'EUR':'symbol'}}
+                                            </th>
+                                            <th>
+                                                IVA:
+                                                {{facturas.total-facturas.total_si| currency:'EUR':'symbol'}}
+                                            </th>
+                                        </tr>
+
+                                     
+
+                                        <tr>
+                                            <th>
+                                            </th>
+                                            <th>
+                                            </th>
+                                        </tr>
+
+                                       
+
+                                    </table>
+                                    <br>
+                                </div>
+
                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger"
+                                        (click)="downloadPDF(facturas.id)">Generar Factura</button>
                                     <button type="button" class="btn btn-danger"
                                         (click)="modal.close()">Cerrar</button>
                                 </div>
