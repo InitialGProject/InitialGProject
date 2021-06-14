@@ -69,6 +69,7 @@ export class FacturasComponent implements OnInit {
 
   public downloadPDF(id:number): void {
     console.log("Nos llega "+id)
+    window.scrollTo(0,0);
     const DATA = document.getElementById('factura'+id);
     const doc = new jsPDF('p', 'pt', 'a4');
     const options = {
@@ -77,7 +78,6 @@ export class FacturasComponent implements OnInit {
     };
     
     html2canvas(DATA, options).then((canvas) => {
-
       const img = canvas.toDataURL('image/PNG');
 
       // Add image Canvas to PDF

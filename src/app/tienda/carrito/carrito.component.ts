@@ -128,7 +128,10 @@ export class CarritoComponent implements OnInit {
       //Reiniciar el precio total
       this.carritoService.setTo0();
       let total=this.carritoService.getPrecioTot();
+      let siva=this.carritoService.getPrecioTotSi();
+      this.dataSharingService.precio_si.next(siva);
       this.dataSharingService.precio_total.next(total);
+
       console.log("Precio total en carro:"+total);
 
     }

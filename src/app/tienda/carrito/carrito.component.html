@@ -75,7 +75,7 @@
             
             <hr>
             <!-- Linea inferior, total -->
-            <div style="color: whitesmoke;" *ngIf="total_si!=0"> PRECIO  {{total_si | currency:'EUR':symbol}}</div>
+            <div style="color: whitesmoke;" *ngIf="precio_total!=0"> PRECIO  {{total_si | currency:'EUR':symbol}}</div>
             <div style="color: whitesmoke;" *ngIf="total_si!=0&&precio_total!=0"> IVA  {{precio_total-total_si | currency:'EUR':symbol}}</div>
             <div style="color: whitesmoke;" *ngIf="precio_total!=0"> PRECIO TOTAL {{precio_total | currency:'EUR':symbol}}</div>
             <button *ngIf="precio_total!=0&&!isUserLoggedIn" type="button" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Remove item" (click)="removeUpload(item)">Vaciar Carro
