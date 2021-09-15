@@ -92,7 +92,7 @@
             <button *ngIf="precio_total!=0" class="btn btn-danger" (click)="triggerModal(modalData)">Verificar Datos</button>
 
             <div *ngIf="precio_total==0" class="motto" style="text-align: center; "> <br>AÑADE ALGUN PRODUCTO AL CARRITO</div>
-
+            
             <!-- Modal para insertar datos -->
             <ng-template #modalData let-modal>
               <div class="modal-header">
@@ -189,7 +189,7 @@
                             <input type="text" name="username" placeholder="Nombre Apellidos" required [(ngModel)]="nombre_tarjeta" formControlName="nombre_tarjeta" class="form-control">
                           </div>
                           <div class="form-group">
-                            <label for="cardNumber">Nº Tarjeta</label>
+                            
                             <div class="input-group">
                               <input type="text" name="cardNumber" minlength="16" placeholder="1234 5678 9012 3456" [(ngModel)]="numero_tarjeta" formControlName="numero_tarjeta" class="form-control" required>
                             </div>
@@ -212,6 +212,12 @@
                                 <input type="text" required [(ngModel)]="cvv_tarjeta" min="1" max="999" minlength="3" formControlName="cvv_tarjeta" class="form-control">
                               </div>
                             </div>
+                            <div class="form-group">
+                              <label for="noretorno">Este producto no tiene devolución</label>
+                              <div class="input-group">
+                                  Aceptar<input type="checkbox" name="noretorno"  [(ngModel)]="noretorno" formControlName="noretorno" required>
+                              </div>
+                            </div>
 
                           </div>
                           <!-- <button type="button" class="subscribe btn btn-primary btn-block rounded-pill shadow-sm"> Confirm  </button> -->
@@ -220,14 +226,10 @@
                       <!-- End -->
             
                       <!-- Paypal -->
-                      <!-- <div id="nav-tab-paypal" class="tab-pane fade">
-                        <p>Paypal is easiest way to pay online</p>
-                        <p>
-                          <button type="button" class="btn btn-primary rounded-pill"><i class="fa fa-paypal mr-2"></i> Log into my Paypal</button>
-                        </p>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                      </div> -->
+                      <div id="nav-tab-paypal" class="tab-pane show">
+                        <p>Pago por paypal:</p>
+                        <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+                      </div>
                       <!-- End -->
 
                       <!-- End -->
@@ -240,7 +242,7 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" (click)="modal.close()">Cancelar</button>
 
-                    <button type="submit" class="btn btn-primary" [disabled]="!numero_tarjeta || numero_tarjeta.length<16 || !nombre_tarjeta || !mes_tarjeta || !ano_tarjeta || !cvv_tarjeta || cvv_tarjeta.length>3|| cvv_tarjeta.length<3 "
+                    <button type="submit" class="btn btn-primary" [disabled]="!numero_tarjeta || numero_tarjeta.length<16 || !nombre_tarjeta || !mes_tarjeta || !ano_tarjeta || !cvv_tarjeta || cvv_tarjeta.length>3|| cvv_tarjeta.length<3 || !noretorno"
                     >Confirmar</button>
                 </div>
 

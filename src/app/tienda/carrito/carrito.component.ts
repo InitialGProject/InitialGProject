@@ -10,12 +10,19 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Usuarios } from '../models/usuarios';
 import { Router } from '@angular/router';
 
+//pp
+import { ICreateOrderRequest, IPayPalConfig } from 'ngx-paypal';
+// import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+// import { NgxSpinnerService } from 'ngx-spinner';
+
 @Component({
   selector: 'app-carrito',
   templateUrl: './carrito.component.html',
   styleUrls: ['./carrito.component.scss']
 })
 export class CarritoComponent implements OnInit {
+  public payPalConfig?: IPayPalConfig;
+  
   items = this.carritoService.getItems();
   precio_total: number;
   total_si: number;
@@ -59,6 +66,23 @@ export class CarritoComponent implements OnInit {
         this.tolosdatos=data;
       }
     );
+
+    this.payPalConfig = {
+      currency: 'EUR',
+      clientId: 'sb',
+      advanced: {
+        commit: 'true'
+      },
+      style: {
+        label: 'paypal'
+      },
+      onApprove: (data, actions) => {
+        actions.order.get().then(details => {
+          console.log('onApprove - you can get full order details inside onApprove: ', details);
+        });
+    
+      },
+    };
     //Cargar componentes
     this.cargarTodo(); 
     
@@ -90,6 +114,7 @@ export class CarritoComponent implements OnInit {
       pais:[''],
       cp:[''],
       provincia:[''],
+      noretorno:false,
       
       nombre_tarjeta:[''],
       numero_tarjeta:[''],

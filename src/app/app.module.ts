@@ -45,6 +45,9 @@ import { LoginComponent } from "./account/login/login.component";
 //Bootstrap model
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+//pp
+import { NgxPayPalModule } from 'ngx-paypal';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -72,6 +75,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MDBBootstrapModule.forRoot(),
     CardsModule,
     NgbModule,
+    NgxPayPalModule,
   ],
   providers: [
     {

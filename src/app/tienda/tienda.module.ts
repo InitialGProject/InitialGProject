@@ -12,6 +12,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { FacturasComponent } from './facturas/facturas.component';
 
+//pp
+import { NgxPayPalModule } from 'ngx-paypal';
+
 @NgModule({
   declarations: [InicioTiendaComponent, VistaProductoComponent, CarritoComponent, FacturasComponent],
   imports: [
@@ -20,7 +23,8 @@ import { FacturasComponent } from './facturas/facturas.component';
     TiendaRoutingModule,
     FormsModule,
     ReactiveFormsModule, 
-    NgbModule, 
+    NgbModule,
+    NgxPayPalModule, 
 
   ]
 })
