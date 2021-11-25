@@ -11,9 +11,10 @@ import { Usuarios } from '../models/usuarios';
 import { Router } from '@angular/router';
 
 //pp
-import { ICreateOrderRequest, IPayPalConfig } from 'ngx-paypal';
-// import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { IPayPalConfig, ICreateOrderRequest, IPurchaseUnit  } from 'ngx-paypal';// import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 // import { NgxSpinnerService } from 'ngx-spinner';
+
+// declare let paypal: any;
 
 @Component({
   selector: 'app-carrito',
@@ -21,8 +22,13 @@ import { ICreateOrderRequest, IPayPalConfig } from 'ngx-paypal';
   styleUrls: ['./carrito.component.scss']
 })
 export class CarritoComponent implements OnInit {
+
+  // public payPalConfig: any ;
   public payPalConfig?: IPayPalConfig;
-  
+  showSuccess;
+
+  public showPaypalButtons: boolean;
+  public data: any;
   items = this.carritoService.getItems();
   precio_total: number;
   total_si: number;
@@ -31,7 +37,6 @@ export class CarritoComponent implements OnInit {
   isUserLoggedIn: boolean;
   iduseract:number;
   direc:any;
-
   tolosdatos:Usuarios;
 
   constructor(
@@ -59,7 +64,99 @@ export class CarritoComponent implements OnInit {
     });
 
    }
-   
+
+  cargarPaypal(){
+    var jsonx = [];
+    
+    this.items.forEach(element => {
+      
+      jsonx.push({
+        name: ""+element.it.nombre, 
+        quantity: "1", 
+        category: "DIGITAL_GOODS", 
+        unit_amount: { 
+          currency_code: "EUR", 
+          value: ""+element.total, 
+        }
+      })
+
+      console.log(
+        "carro->",
+        element
+      )
+    });
+
+    this.payPalConfig = {
+      currency: 'EUR',
+      clientId: 'sb',
+      createOrderOnClient: (data) => <ICreateOrderRequest> {
+        intent: 'CAPTURE',
+        purchase_units: [
+          {
+            amount: {
+              currency_code: 'EUR',
+              value: ''+this.precio_total+'',
+              breakdown: {
+                item_total: {
+                  currency_code: 'EUR',
+                  value: ''+this.precio_total+''
+                }
+              }
+            },
+            items: 
+              jsonx
+          }
+        ]
+      },
+      advanced: {
+          commit: "true"
+      },
+      style: {
+        label: 'paypal',
+        layout: 'vertical'
+      },
+      onApprove: (data, actions) => {
+        console.log(
+          'onApprove - transacción aprobada, aún no autorizada', 
+          data, 
+          actions
+        );
+        actions.order.get().then(details => {
+          console.log(
+            'onApprove - detalles completos en onApprove: ', 
+            details
+          );
+        });
+      },
+
+      /**
+       * Cuando PayPal nos de el OK a la transacción, procesaremos el producto aqui
+       * @param data Respuesta OK de paypal
+       */
+      onClientAuthorization: (data) => {
+        console.log(
+          "onClientAuthorization - Informando al servidor de la transacción completa", 
+          data,
+          "Carrito->",
+          this.items,
+          this.precio_total ,        
+          );
+          this.showSuccess = true;
+          //testeo
+          // this.onSubmit(data);
+      },
+      onCancel: (data, actions) => {
+        console.log('OnCancel', data, actions);
+      },
+      onError: err => {
+        console.log('OnError', err);
+      },
+      onClick: (data, actions) => {
+        console.log("onClick", data, actions, "pulsado");
+      },
+    };
+  }
+
   ngOnInit(): void {
     this.carritoService.sacardatosLog(this.iduseract).subscribe(
       data=>{
@@ -67,22 +164,6 @@ export class CarritoComponent implements OnInit {
       }
     );
 
-    this.payPalConfig = {
-      currency: 'EUR',
-      clientId: 'sb',
-      advanced: {
-        commit: 'true'
-      },
-      style: {
-        label: 'paypal'
-      },
-      onApprove: (data, actions) => {
-        actions.order.get().then(details => {
-          console.log('onApprove - you can get full order details inside onApprove: ', details);
-        });
-    
-      },
-    };
     //Cargar componentes
     this.cargarTodo(); 
     
@@ -122,6 +203,11 @@ export class CarritoComponent implements OnInit {
       año_tarjeta:[''],
       cvv_tarjeta:[''],
     });
+
+    this.cargarPaypal();
+    console.log('payPalConfig is ' + this.payPalConfig);
+
+
   }
   
   cargarTodo(): void {
@@ -166,7 +252,7 @@ export class CarritoComponent implements OnInit {
   }
 
   //Mandar a la api
-  async onSubmit(){
+  async onSubmit(okPaypal=null){
     this.form.setValue=this.datosFactura();
 
     // Pasamos a la api
@@ -194,8 +280,9 @@ export class CarritoComponent implements OnInit {
       
       // Vaciamos el carro al acabar
       setTimeout(() => {
-       this.carritoService.clearCart();
-       this.router.navigate(['/compras']);
+        //testeo
+       //this.carritoService.clearCart();
+       //this.router.navigate(['/compras']);
       }, 2000);
       
   }
@@ -258,5 +345,14 @@ export class CarritoComponent implements OnInit {
   triggerModal(content:any) {
     this.modalService.open(content, {ariaLabelledBy: 'verifica'});
     return false;
+  }
+
+  
+  pay() {
+    this.showPaypalButtons = true;
+  }
+
+  back(){
+    this.showPaypalButtons = false;
   }
 }

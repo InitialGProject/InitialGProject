@@ -13,6 +13,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { FacturasComponent } from './facturas/facturas.component';
 
 //pp
+import { BrowserModule } from '@angular/platform-browser';
 import { NgxPayPalModule } from 'ngx-paypal';
 
 @NgModule({
@@ -24,7 +25,10 @@ import { NgxPayPalModule } from 'ngx-paypal';
     FormsModule,
     ReactiveFormsModule, 
     NgbModule,
-    NgxPayPalModule, 
+    NgxPayPalModule,
+    BrowserModule,
+    FormsModule,
+    NgxPayPalModule  
 
   ]
 })
