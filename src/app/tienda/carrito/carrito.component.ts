@@ -72,11 +72,11 @@ export class CarritoComponent implements OnInit {
       
       jsonx.push({
         name: ""+element.it.nombre, 
-        quantity: "1", 
+        quantity: ""+element.can, 
         category: "DIGITAL_GOODS", 
         unit_amount: { 
           currency_code: "EUR", 
-          value: ""+element.total, 
+          value: ""+element.total/element.can, 
         }
       })
 
@@ -139,11 +139,14 @@ export class CarritoComponent implements OnInit {
           data,
           "Carrito->",
           this.items,
-          this.precio_total ,        
+          this.precio_total ,
+          "comprador->",           
+          data.payer,
+       
           );
           this.showSuccess = true;
           //testeo
-          // this.onSubmit(data);
+          this.onSubmit(data);
       },
       onCancel: (data, actions) => {
         console.log('OnCancel', data, actions);
@@ -205,7 +208,7 @@ export class CarritoComponent implements OnInit {
     });
 
     this.cargarPaypal();
-    console.log('payPalConfig is ' + this.payPalConfig);
+    console.log('payPalConfig is ' ,this.payPalConfig);
 
 
   }
@@ -253,16 +256,16 @@ export class CarritoComponent implements OnInit {
 
   //Mandar a la api
   async onSubmit(okPaypal=null){
-    this.form.setValue=this.datosFactura();
+    this.form.setValue=this.datosFactura(okPaypal);
 
     // Pasamos a la api
-    this.carritoService.facturar(await this.datosFactura())
+    this.carritoService.facturar(await this.datosFactura(okPaypal))
     .subscribe(
       data => {
         //por cada contenido de la factura se creará su relación
         this.items.forEach(async linea => {          
           //Mandamos cada linea a la api
-          this.carritoService.facturarLinea(await this.lineaFactura(data['id'], linea.it.id, linea.can))
+          this.carritoService.facturarLinea(await this.lineaFactura(data['id'], linea.it.id, linea.can, linea.total, linea.totsiva))
         })
       }, error => {
         console.log(error)
@@ -287,44 +290,54 @@ export class CarritoComponent implements OnInit {
       
   }
 
-  async guardar(){
-    this.form.setValue=this.datosFactura();
+  // async guardar(){
+  //   this.form.setValue=this.datosFactura();
 
-    this.carritoService.updateUser(this.iduseract, 
-        {
-          cp: this.form.get(["cp"]).value,
-          pais: this.form.get(["pais"]).value,
-          provincia: this.form.get(["provincia"]).value,
-          direccion: this.form.get(["direccion"]).value,
-        }
-      )
-      .subscribe(
-      data => {
-        console.log(data);
-      }, error => {
-       alert(error);
-     });
-  }
+  //   this.carritoService.updateUser(this.iduseract, 
+  //       {
+  //         cp: this.form.get(["cp"]).value,
+  //         pais: this.form.get(["pais"]).value,
+  //         provincia: this.form.get(["provincia"]).value,
+  //         direccion: this.form.get(["direccion"]).value,
+  //       }
+  //     )
+  //     .subscribe(
+  //     data => {
+  //       console.log(data);
+  //     }, error => {
+  //      alert(error);
+  //    });
+  // }
 
   //Funcion para cargar los datos del form y el user para mandar a la api
-  private datosFactura():any{
-    return {
-      id_usuario: this.iduseract,
+  private datosFactura(okPaypal):any{
+    /**
       total: this.form.get(["total"]).value,
       total_si: this.form.get(["total_si"]).value,
       cp: this.form.get(["cp"]).value,
       pais: this.form.get(["pais"]).value,
       provincia: this.form.get(["provincia"]).value,
       direccion: this.form.get(["direccion"]).value,
+     */
+    return {
+      id_usuario: this.iduseract,
+      total: this.form.get(["total"]).value,
+      total_si: this.form.get(["total_si"]).value,
+      cp: okPaypal.payer.address.postal_code,
+      pais: okPaypal.payer.address.country_code,
+      provincia: okPaypal.payer.address.admin_area_1,
+      direccion: okPaypal.payer.address.address_line_1,
     };
   }
 
   //Funcion para generar cuerpo de las facturas
-  private lineaFactura(idf:number,idp:number,can:number):any{
+  private lineaFactura(idf:number,idp:number,can:number,onIVA:number,inIVA:number):any{
     return {
       id_facturacion: idf,
       id_producto: idp,
       cantidad: can,
+      conIVA: onIVA,
+      sinIVA: inIVA,
     };
   }
 
