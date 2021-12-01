@@ -66,9 +66,9 @@
                                     </button>
                                 </div>
                                 
+                                <h1 class="modal-title" id="facturaDetalle">Factura Nº - {{facturas.id}}</h1>
                                 <div id="factura{{facturas.id}}">
                                 
-                                    <h1 class="modal-title" id="facturaDetalle">Factura Nº - {{facturas.id}}</h1>
                                     <br>
                                     <!-- Tabla Datos Pedido -->
                                     <table class="table table-striped">
@@ -100,7 +100,7 @@
                                                     </th>
 
                                                     <th *ngIf="linea.id_producto==articulo.id">
-                                                        {{articulo.precio--((articulo.precio *articulo.IVA)/100)| currency:'EUR':'symbol'}}
+                                                        {{linea.conIVA}}
                                                     </th>
 
                                                 </ng-container>
@@ -248,9 +248,9 @@
                                     </button>
                                 </div>
                                 
+                                <h1 class="modal-title" id="facturaDetalle">Factura Nº - {{facturas.id}}</h1>
                                 <div id="factura{{facturas.id}}">
                                 
-                                    <h1 class="modal-title" id="facturaDetalle">Factura Nº - {{facturas.id}}</h1>
                                     <br>
                                     <!-- Tabla Datos Pedido -->
                                     <table class="table table-striped">
@@ -282,7 +282,7 @@
                                                     </th>
 
                                                     <th *ngIf="linea.id_producto==articulo.id">
-                                                        {{articulo.precio--((articulo.precio *articulo.IVA)/100)| currency:'EUR':'symbol'}}
+                                                        {{linea.conIVA}}
                                                     </th>
 
                                                 </ng-container>
