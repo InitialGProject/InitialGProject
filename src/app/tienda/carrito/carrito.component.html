@@ -105,78 +105,44 @@
             <!-- Modal para insertar datos -->
             <ng-template #modalData let-modal>
               <div class="modal-header">
-                <h4 class="modal-title" id="verifica">Verifica tus datos</h4>
+                <h4 class="modal-title" id="verifica">Terminos de Compra</h4>
                 <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
                   <span aria-hidden="true">×</span>
                 </button>
               </div>
 
               <form *ngIf="precio_total!=0&&idus!=0" [formGroup]="form" (ngSubmit)="onSubmit()">
-
                 <input type="hidden" formControlName="total" ngModel="{{precio_total}}" />
                 <input type="hidden" formControlName="total_si" ngModel="{{total_si}}" />
-
+                
                 <div class="bg-white rounded-lg shadow-sm p-5">
+                  Al realizar la compra aceptas que los productos vendidos por InitialG son productos digitales o limitados y que una vez comprados no se podrá realizar la devolución de estos.
+                  Al marcar el checkbox o realizar una compra aceptas estass condiciones de venta.<br>
 
-                  <table style="text-align: center;">
-                    <!-- 1era fila -->
-                    <tr>
+                  <div class="form-group">
+                    <label for="noretorno"><b>Este producto no tiene devolución</b></label>
+                    <div class="input-group">
+                        Aceptar<input type="checkbox" name="noretorno"  [(ngModel)]="noretorno" formControlName="noretorno" required>
+                    </div>
+                  </div>
 
-                      <th>
-                        <label>
-                          Calle<br>
-                          <input type="text" formControlName="direccion" ngModel="{{tolosdatos.direccion}}" />
-                        </label>
-                      </th>
-
-                      <th>
-                        <label>
-                          Pais:<br>
-                          <input type="text" formControlName="pais" ngModel="{{tolosdatos.pais}}" />
-                        </label>
-                      </th>
-                    </tr>
-
-                    <!-- 2da fila -->
-                    <tr>
-                      <th>
-                        <label>
-                          Provincia<br>
-                          <input type="text" formControlName="provincia" ngModel="{{tolosdatos.provincia}}" />
-                        </label>
-                      </th>
-                      <th>
-                        <label>
-                          CP<br>
-                          <input type="text" formControlName="cp" ngModel="{{tolosdatos.cp}}" min="0" max="99999" />
-                        </label>
-                      </th>
-                    </tr>
-
-                    <!-- 3a fila -->
-                    <tr>
-                      <a data-toggle="pill" class="nav-link active rounded-pill">
-                        <button type="button" class="nav-link active rounded-pill" (click)="guardar()">Guardar
-                          Datos</button>
-                      </a>
-                    </tr>
-                  </table>
                 </div>
 
                 <!-- Paypal  -->
-                <div class="bg-white rounded-lg shadow-sm p-5">
+                <div class="bg-white rounded-lg shadow-sm p-5" >
 
                   <ngx-paypal *ngIf="showPaypalButtons" 
-                    [config]="payPalConfig">
+                    [config]="payPalConfig" [disabled]="!noretorno">
                   </ngx-paypal>
 
                 </div>
                 <!-- Fin Paypal -->
 
                 <div class="modal-footer">
+                  
                   <button type="button" class="btn btn-danger" (click)="modal.close()">Cancelar</button>
 
-                  <button class="btn btn-primary" *ngIf="!showPaypalButtons" (click)="pay()">Pagar</button>
+                  <button class="btn btn-primary" *ngIf="!showPaypalButtons" (click)="pay()" [disabled]="!noretorno">Pagar</button>
 
                   <button class="btn btn-primary" *ngIf="showPaypalButtons" (click)="back()">Volver atras</button>               
                 </div>

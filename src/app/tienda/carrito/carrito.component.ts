@@ -265,7 +265,7 @@ export class CarritoComponent implements OnInit {
         //por cada contenido de la factura se creará su relación
         this.items.forEach(async linea => {          
           //Mandamos cada linea a la api
-          this.carritoService.facturarLinea(await this.lineaFactura(data['id'], linea.it.id, linea.can, linea.total, linea.totsiva))
+          this.carritoService.facturarLinea(await this.lineaFactura(data['id'], linea.it.id, linea.can, linea.total, linea.totsiva, linea.facturaPP))
         })
       }, error => {
         console.log(error)
@@ -290,25 +290,6 @@ export class CarritoComponent implements OnInit {
       
   }
 
-  // async guardar(){
-  //   this.form.setValue=this.datosFactura();
-
-  //   this.carritoService.updateUser(this.iduseract, 
-  //       {
-  //         cp: this.form.get(["cp"]).value,
-  //         pais: this.form.get(["pais"]).value,
-  //         provincia: this.form.get(["provincia"]).value,
-  //         direccion: this.form.get(["direccion"]).value,
-  //       }
-  //     )
-  //     .subscribe(
-  //     data => {
-  //       console.log(data);
-  //     }, error => {
-  //      alert(error);
-  //    });
-  // }
-
   //Funcion para cargar los datos del form y el user para mandar a la api
   private datosFactura(okPaypal):any{
     /**
@@ -319,6 +300,7 @@ export class CarritoComponent implements OnInit {
       provincia: this.form.get(["provincia"]).value,
       direccion: this.form.get(["direccion"]).value,
      */
+    console.log("factura_>"+okPaypal.id);
     return {
       id_usuario: this.iduseract,
       total: this.form.get(["total"]).value,
@@ -327,17 +309,19 @@ export class CarritoComponent implements OnInit {
       pais: okPaypal.payer.address.country_code,
       provincia: okPaypal.payer.address.admin_area_1,
       direccion: okPaypal.payer.address.address_line_1,
+      facturaPP: okPaypal.id,
     };
   }
 
   //Funcion para generar cuerpo de las facturas
-  private lineaFactura(idf:number,idp:number,can:number,onIVA:number,inIVA:number):any{
+  private lineaFactura(idf:number,idp:number,can:number,onIVA:number,inIVA:number, facturaPP:string):any{
     return {
       id_facturacion: idf,
       id_producto: idp,
       cantidad: can,
       conIVA: onIVA,
       sinIVA: inIVA,
+      facturaPP: facturaPP
     };
   }
 
