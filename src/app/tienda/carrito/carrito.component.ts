@@ -283,9 +283,10 @@ export class CarritoComponent implements OnInit {
       
       // Vaciamos el carro al acabar
       setTimeout(() => {
-        //testeo
-       //this.carritoService.clearCart();
-       //this.router.navigate(['/compras']);
+        
+        //testeo -> Comentar estas lineas
+       this.carritoService.clearCart();
+       this.router.navigate(['/compras']);
       }, 2000);
       
   }

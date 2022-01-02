@@ -67,7 +67,7 @@ export class FacturasComponent implements OnInit {
     //this.downloadPDF();
   }
 
-  public downloadPDF(id:number): void {
+  public downloadPDF(id:number,pp:string): void {
     console.log("Nos llega "+id)
     window.scrollTo(0,0);
     const DATA = document.getElementById('factura'+id);
@@ -86,7 +86,7 @@ export class FacturasComponent implements OnInit {
       const imgProps = (doc as any).getImageProperties(img);
       const pdfWidth = doc.internal.pageSize.getWidth() - 2 * bufferX;
       const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-      doc.text(["INITIAL G","NIF:123456789ASDF","C/Falsa de prueba 666", "VALENCIA", "FACTURA Nº"+id], 10, 15);
+      doc.text(["INITIAL G","NIF:123456789ASDF","C/Falsa de prueba 666", "VALENCIA", "FACTURA Nº"+id+" // "+pp], 10, 15);
       doc.addImage(img, 'PNG', bufferX, bufferY, pdfWidth, pdfHeight, undefined, 'FAST');
       return doc;
     }).then((docResult) => {

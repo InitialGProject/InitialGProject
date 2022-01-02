@@ -67,6 +67,7 @@
                                 </div>
                                 
                                 <h1 class="modal-title" id="facturaDetalle">Factura Nº - {{facturas.id}}</h1>
+                                Nº PAYPAL : {{facturas.facturaPP}}
                                 <div id="factura{{facturas.id}}">
                                 
                                     <br>
@@ -200,7 +201,7 @@
 
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-danger"
-                                        (click)="downloadPDF(facturas.id)">Generar Factura</button>
+                                        (click)="downloadPDF(facturas.id,facturas.facturaPP)">Generar Factura</button>
                                     <button type="button" class="btn btn-danger"
                                         (click)="modal.close()">Cerrar</button>
                                 </div>
@@ -249,6 +250,8 @@
                                 </div>
                                 
                                 <h1 class="modal-title" id="facturaDetalle">Factura Nº - {{facturas.id}}</h1>
+                                Nº PAYPAL : {{facturas.facturaPP}}
+
                                 <div id="factura{{facturas.id}}">
                                 
                                     <br>
@@ -382,7 +385,7 @@
 
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-danger"
-                                        (click)="downloadPDF(facturas.id)">Generar Factura</button>
+                                        (click)="downloadPDF(facturas.id,facturas.facturaPP)">Generar Factura</button>
                                     <button type="button" class="btn btn-danger"
                                         (click)="modal.close()">Cerrar</button>
                                 </div>
