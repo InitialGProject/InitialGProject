@@ -14,6 +14,11 @@ import { Router } from '@angular/router';
 import { IPayPalConfig, ICreateOrderRequest, IPurchaseUnit  } from 'ngx-paypal';// import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 // import { NgxSpinnerService } from 'ngx-spinner';
 
+//factura
+//generar pdf
+import { jsPDF } from "jspdf";
+import html2canvas from 'html2canvas';
+
 // declare let paypal: any;
 
 @Component({
@@ -38,6 +43,7 @@ export class CarritoComponent implements OnInit {
   iduseract:number;
   direc:any;
   tolosdatos:Usuarios;
+  idFactura: any;
 
   constructor(
     private carritoService: TiendaService,
@@ -257,15 +263,22 @@ export class CarritoComponent implements OnInit {
   //Mandar a la api
   async onSubmit(okPaypal=null){
     this.form.setValue=this.datosFactura(okPaypal);
-
+    let facPP=okPaypal.id;
+    let idFAC=0;
     // Pasamos a la api
     this.carritoService.facturar(await this.datosFactura(okPaypal))
     .subscribe(
       data => {
+        this.idFactura=data['id'];
+        if(idFAC==0) {
+          idFAC=data['id'];
+          this.downloadPDF(idFAC,facPP);
+        }
+
         //por cada contenido de la factura se creará su relación
         this.items.forEach(async linea => {          
           //Mandamos cada linea a la api
-          this.carritoService.facturarLinea(await this.lineaFactura(data['id'], linea.it.id, linea.can, linea.total, linea.totsiva, linea.facturaPP))
+          this.carritoService.facturarLinea(await this.lineaFactura(data['id'], linea.it.id, linea.can, linea.total, linea.totsiva, linea.facturaPP));
         })
       }, error => {
         console.log(error)
@@ -278,30 +291,25 @@ export class CarritoComponent implements OnInit {
           
         });
       });
+
       // testeo
       console.log(this.form);
-      
+
       // Vaciamos el carro al acabar
       setTimeout(() => {
         
         //testeo -> Comentar estas lineas
-       this.carritoService.clearCart();
-       this.router.navigate(['/compras']);
+      //  this.carritoService.clearCart();
+      //  this.router.navigate(['/compras']);
       }, 2000);
       
   }
 
   //Funcion para cargar los datos del form y el user para mandar a la api
   private datosFactura(okPaypal):any{
-    /**
-      total: this.form.get(["total"]).value,
-      total_si: this.form.get(["total_si"]).value,
-      cp: this.form.get(["cp"]).value,
-      pais: this.form.get(["pais"]).value,
-      provincia: this.form.get(["provincia"]).value,
-      direccion: this.form.get(["direccion"]).value,
-     */
+    //testeo
     console.log("factura_>"+okPaypal.id);
+
     return {
       id_usuario: this.iduseract,
       total: this.form.get(["total"]).value,
@@ -344,13 +352,30 @@ export class CarritoComponent implements OnInit {
     this.modalService.open(content, {ariaLabelledBy: 'verifica'});
     return false;
   }
-
-  
+ 
   pay() {
     this.showPaypalButtons = true;
   }
 
   back(){
     this.showPaypalButtons = false;
+  }
+
+  public downloadPDF(id:number,pp:string): void {
+    //testeo
+    console.log("Nos llega "+id)
+    
+    window.scrollTo(0,0);
+    const doc = new jsPDF('p', 'pt', 'a4');
+    const options = {
+      background: 'white',
+      scale: 3
+    };
+    doc.text(["INITIAL G","NIF:123456789ASDF","C/Falsa de prueba 666", "VALENCIA", "FACTURA Nº"+id+"//"+pp], 10, 15);
+
+    
+
+
+    doc.save(`factura_`+id+`.pdf`);
   }
 }

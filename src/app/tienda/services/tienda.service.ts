@@ -205,7 +205,7 @@ export class TiendaService {
 
   //Enviar datos para facturar a la api
   facturar(factura: Facturas) {
-    return this.http.post(`${facturaUrl}`+ `productosfacturacion?per-page=999`, factura);
+    return this.http.post(`${facturaUrl}`+ `productosfacturacion?per-page=9999`, factura);
   }
 
   //Enviar datos para facturar a la api
