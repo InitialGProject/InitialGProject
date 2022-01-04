@@ -17,8 +17,9 @@ import { IPayPalConfig, ICreateOrderRequest, IPurchaseUnit  } from 'ngx-paypal';
 //factura
 //generar pdf
 import { jsPDF } from "jspdf";
+// import 'jspdf-autotable'
+import autoTable from 'jspdf-autotable'
 import html2canvas from 'html2canvas';
-
 // declare let paypal: any;
 
 @Component({
@@ -86,10 +87,11 @@ export class CarritoComponent implements OnInit {
         }
       })
 
-      console.log(
-        "carro->",
-        element
-      )
+      //testeo
+      // console.log(
+      //   "carro->",
+      //   element
+      // )
     });
 
     this.payPalConfig = {
@@ -122,16 +124,18 @@ export class CarritoComponent implements OnInit {
         layout: 'vertical'
       },
       onApprove: (data, actions) => {
-        console.log(
-          'onApprove - transacción aprobada, aún no autorizada', 
-          data, 
-          actions
-        );
+        //testeo
+        // console.log(
+        //   'onApprove - transacción aprobada, aún no autorizada', 
+        //   data, 
+        //   actions
+        // );
         actions.order.get().then(details => {
-          console.log(
-            'onApprove - detalles completos en onApprove: ', 
-            details
-          );
+          //testeo
+          // console.log(
+          //   'onApprove - detalles completos en onApprove: ', 
+          //   details
+          // );
         });
       },
 
@@ -140,16 +144,18 @@ export class CarritoComponent implements OnInit {
        * @param data Respuesta OK de paypal
        */
       onClientAuthorization: (data) => {
-        console.log(
-          "onClientAuthorization - Informando al servidor de la transacción completa", 
-          data,
-          "Carrito->",
-          this.items,
-          this.precio_total ,
-          "comprador->",           
-          data.payer,
+        //testeo
+        // console.log(
+        //   "onClientAuthorization - Informando al servidor de la transacción completa", 
+        //   data,
+        //   "Carrito->",
+        //   this.items,
+        //   this.precio_total ,
+        //   "comprador->",           
+        //   data.payer,
        
-          );
+        //   );
+
           this.showSuccess = true;
           //testeo
           this.onSubmit(data);
@@ -214,7 +220,8 @@ export class CarritoComponent implements OnInit {
     });
 
     this.cargarPaypal();
-    console.log('payPalConfig is ' ,this.payPalConfig);
+    //testeo
+    // console.log('payPalConfig is ' ,this.payPalConfig);
 
 
   }
@@ -272,7 +279,7 @@ export class CarritoComponent implements OnInit {
         this.idFactura=data['id'];
         if(idFAC==0) {
           idFAC=data['id'];
-          this.downloadPDF(idFAC,facPP);
+          this.downloadPDF(idFAC,facPP,okPaypal);
         }
 
         //por cada contenido de la factura se creará su relación
@@ -293,7 +300,7 @@ export class CarritoComponent implements OnInit {
       });
 
       // testeo
-      console.log(this.form);
+      // console.log(this.form);
 
       // Vaciamos el carro al acabar
       setTimeout(() => {
@@ -308,7 +315,7 @@ export class CarritoComponent implements OnInit {
   //Funcion para cargar los datos del form y el user para mandar a la api
   private datosFactura(okPaypal):any{
     //testeo
-    console.log("factura_>"+okPaypal.id);
+    // console.log("factura_>"+okPaypal.id);
 
     return {
       id_usuario: this.iduseract,
@@ -361,18 +368,73 @@ export class CarritoComponent implements OnInit {
     this.showPaypalButtons = false;
   }
 
-  public downloadPDF(id:number,pp:string): void {
+  public downloadPDF(id:number,pp:string, okPaypal): void {
     //testeo
-    console.log("Nos llega "+id)
-    
+    console.log("Nos llega "+id,
+      "ARRAY ->",
+      okPaypal,
+      "productos ->",
+      okPaypal.purchase_units[0].items
+    )
+    let simple=okPaypal.purchase_units[0].items;
     window.scrollTo(0,0);
     const doc = new jsPDF('p', 'pt', 'a4');
     const options = {
       background: 'white',
-      scale: 3
+      scale: 3,
+      fontSize : 8
     };
-    doc.text(["INITIAL G","NIF:123456789ASDF","C/Falsa de prueba 666", "VALENCIA", "FACTURA Nº"+id+"//"+pp], 10, 15);
 
+    let varY=20;
+    doc.setFontSize(8);
+    doc.text([
+      "INITIAL G",
+      "NIF:123456789ASDF",
+      "C/Falsa de prueba 666", 
+      "VALENCIA", 
+      "FACTURA Nº"+id+"//"+pp], 10, varY).setFontSize(8);
+      
+    //Sumamos 20 por linea
+    varY+=60;
+
+    //Logo IG
+    var img = new Image()
+    img.src = 'http://alum3.iesfsl.org/assets/img/logo.png';
+    doc.addImage(img, 'png', 450, 5, 140, 55);
+
+    doc.text([
+      "DATOS DEL COMPRADOR",
+      "",
+      "FECHA: "+okPaypal.create_time, 
+      "NOMBRE: "+okPaypal.payer.name.given_name+" "+okPaypal.payer.name.surname, 
+      "DIRECCION "+okPaypal.payer.address.address_line_1,
+      "CP: "+okPaypal.payer.address.postal_code,
+      "PROVINCIA: "+okPaypal.payer.address.admin_area_1,
+      "PAIS "+okPaypal.payer.address.country_code,
+      "EMAIL: "+okPaypal.payer.email_address,
+      "TLF: "+okPaypal.payer.phone.phone_number.national_number,
+      ], 10, varY).setFontSize(8);
+
+    //Sumamos 20 por linea
+    varY+=90;
+
+    let body_factura = [];
+    let contar_total = 0;
+    let articulos = 0;
+
+    simple.forEach(se => {
+      body_factura.push ([se.name, se.quantity, se.unit_amount.value, se.quantity*se.unit_amount.value]);
+      contar_total+=se.quantity*se.unit_amount.value;
+      articulos++;
+    })
+    body_factura.push ([""]);    
+    body_factura.push(["Total " + articulos + " articulos", "IVA 12%", " ", "Precio Total " + contar_total]);
+
+    autoTable(doc, {
+      startY: varY,
+      head: [['Nombre', 'Cantidad', 'Precio Unitario', 'Precio Total']],
+      body: body_factura,
+    })
     
 
 
