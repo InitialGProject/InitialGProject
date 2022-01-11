@@ -393,7 +393,8 @@ export class CarritoComponent implements OnInit {
       "C/Falsa de prueba 666", 
       "VALENCIA", 
       "FACTURA Nº"+id+"//"+pp], 10, varY).setFontSize(8);
-      
+      doc.line(0, 80, 600, 80) // horizontal line
+
     //Sumamos 20 por linea
     varY+=60;
 
@@ -416,7 +417,7 @@ export class CarritoComponent implements OnInit {
       ], 10, varY).setFontSize(8);
 
     //Sumamos 20 por linea
-    varY+=90;
+    varY+=100;
 
     let body_factura = [];
     let contar_total = 0;
@@ -435,8 +436,6 @@ export class CarritoComponent implements OnInit {
       head: [['Nombre', 'Cantidad', 'Precio Unitario', 'Precio Total']],
       body: body_factura,
     })
-    
-
 
     doc.save(`factura_`+id+`.pdf`);
   }

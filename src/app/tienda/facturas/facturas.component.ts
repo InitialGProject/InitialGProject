@@ -18,6 +18,8 @@ import { Usuarios } from '../models/usuarios';
 //generar pdf
 import { jsPDF } from "jspdf";
 import html2canvas from 'html2canvas';
+import autoTable from 'jspdf-autotable'
+
 
 @Component({
   selector: 'app-facturas',
@@ -97,6 +99,110 @@ export class FacturasComponent implements OnInit {
     //doc.save("factura.pdf");
   }
 
+  public downloadPDF2(id:number,pp:string, Fac, Lin:object, Art:object): void {
+    //testeo
+    console.log(
+      "Nos llega "+id,
+      "ARRAY 1->",
+      Fac,
+      "ARRAY 2->",
+      Lin,
+      "ARRAY 3->",
+      Art
+    )
+
+    let simple=[];
+    let body_factura = [];
+    let contar_total = 0;
+    let articulos = 0;
+
+    Object.values(Lin).forEach(it => {
+      
+       if(it.id_facturacion==id){
+         simple.push ({
+           name: it.id_producto, 
+           quantity: it.cantidad, 
+           value: it.conIVA/it.cantidad, 
+           total: it.conIVA
+         });
+
+         contar_total+=it.conIVA;
+         articulos++;
+       }
+    });
+
+    console.log(
+      "simple->",
+      simple
+    );
+    
+    window.scrollTo(0,0);
+    const doc = new jsPDF('p', 'pt', 'a4');
+    const options = {
+      background: 'white',
+      scale: 3,
+      fontSize : 8
+    };
+
+    let varY=20;
+    doc.setFontSize(8);
+    doc.text([
+      "INITIAL G",
+      "NIF:123456789ASDF",
+      "C/Falsa de prueba 666", 
+      "VALENCIA", 
+      "FACTURA Nº"+id+"//"+pp], 10, varY).setFontSize(8);
+      doc.line(0, 80, 600, 80) // horizontal line
+
+    //Sumamos 20 por linea
+    varY+=70;
+
+    //Logo IG
+    var img = new Image()
+    img.src = 'http://alum3.iesfsl.org/assets/img/logo.png';
+    doc.addImage(img, 'png', 450, 5, 140, 55);
+
+    doc.text([
+      "DATOS DEL COMPRADOR",
+      "",
+      "FECHA: "+Fac.fecha_compra, 
+      //"NOMBRE: "+okPaypal.payer.name.given_name+" "+okPaypal.payer.name.surname, 
+      "DIRECCION "+Fac.direccion,
+      "CP: "+Fac.cp,
+      "PROVINCIA: "+Fac.provincia,
+      "PAIS "+Fac.pais,
+      //"EMAIL: "+okPaypal.payer.email_address,
+      //"TLF: "+okPaypal.payer.phone.phone_number.national_number,
+      ], 10, varY).setFontSize(8);
+
+    //Sumamos 20 por linea
+    varY+=100;
+
+    simple.forEach(se => {
+      Object.values(Art).forEach(it => {
+        
+        console.log(
+          it
+        )
+
+        if(it.id==se.name) body_factura.push ([it.nombre, se.quantity, se.value, se.total]);
+
+      })
+    })
+    body_factura.push ([""]);    
+    body_factura.push(["Total " + articulos + " articulos", "IVA 12%", " ", "Precio Total " + contar_total]);
+
+    autoTable(doc, {
+      startY: varY,
+      head: [['Nombre', 'Cantidad', 'Precio Unitario', 'Precio Total']],
+      body: body_factura,
+    })
+
+    doc.save(`factura_`+id+`.pdf`);
+  }
+
+  ////////////////////////////////////////////
+  
   ngOnInit(): void {
     this.cargarTodo(); 
     this.servicioTienda.getUserLog();
