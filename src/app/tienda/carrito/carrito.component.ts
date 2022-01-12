@@ -204,6 +204,9 @@ export class CarritoComponent implements OnInit {
     //Creamos el form para pasarlo a la api
     this.form = this.formBuilder.group({
       id_usuario: [this.iduseract],
+      nombre_compra: [''],
+      email_compra: [''],
+      telefono_compra: [''],
       total: [''],
       total_si: [''],
       direccion:[''],
@@ -306,8 +309,8 @@ export class CarritoComponent implements OnInit {
       setTimeout(() => {
         
         //testeo -> Comentar estas lineas
-      //  this.carritoService.clearCart();
-      //  this.router.navigate(['/compras']);
+       this.carritoService.clearCart();
+       this.router.navigate(['/compras']);
       }, 2000);
       
   }
@@ -319,6 +322,9 @@ export class CarritoComponent implements OnInit {
 
     return {
       id_usuario: this.iduseract,
+      nombre_compra: okPaypal.payer.name.given_name+" "+okPaypal.payer.name.surname,
+      email_compra: okPaypal.payer.email_address,
+      telefono_compra: okPaypal.payer.phone.phone_number.national_number,
       total: this.form.get(["total"]).value,
       total_si: this.form.get(["total_si"]).value,
       cp: okPaypal.payer.address.postal_code,
@@ -396,7 +402,7 @@ export class CarritoComponent implements OnInit {
       doc.line(0, 80, 600, 80) // horizontal line
 
     //Sumamos 20 por linea
-    varY+=60;
+    varY+=70;
 
     //Logo IG
     var img = new Image()
