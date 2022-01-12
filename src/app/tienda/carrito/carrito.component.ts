@@ -76,7 +76,12 @@ export class CarritoComponent implements OnInit {
     var jsonx = [];
     
     this.items.forEach(element => {
-      
+      //  //testeo
+      // console.log(
+      //   "carro->",
+      //   element,
+      //   "Saco"+element.total/element.can,
+      // )
       jsonx.push({
         name: ""+element.it.nombre, 
         quantity: ""+element.can, 
@@ -87,11 +92,6 @@ export class CarritoComponent implements OnInit {
         }
       })
 
-      //testeo
-      // console.log(
-      //   "carro->",
-      //   element
-      // )
     });
 
     this.payPalConfig = {
@@ -103,11 +103,11 @@ export class CarritoComponent implements OnInit {
           {
             amount: {
               currency_code: 'EUR',
-              value: ''+this.precio_total+'',
+              value: ''+this.precio_total.toFixed(2)+'',
               breakdown: {
                 item_total: {
                   currency_code: 'EUR',
-                  value: ''+this.precio_total+''
+                  value: ''+this.precio_total.toFixed(2)+''
                 }
               }
             },
@@ -435,7 +435,10 @@ export class CarritoComponent implements OnInit {
       articulos++;
     })
     body_factura.push ([""]);    
-    body_factura.push(["Total " + articulos + " articulos", "IVA 12%", " ", "Precio Total " + contar_total]);
+    body_factura.push(["Total " + articulos + " articulos", "IVA 12%", " ", "Precio Total " + contar_total.toLocaleString('es-ES', {
+      style: 'currency',
+      currency: 'EUR',
+    })]);
 
     autoTable(doc, {
       startY: varY,

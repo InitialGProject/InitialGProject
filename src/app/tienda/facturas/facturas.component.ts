@@ -190,7 +190,10 @@ export class FacturasComponent implements OnInit {
       })
     })
     body_factura.push ([""]);    
-    body_factura.push(["Total " + articulos + " articulos", "IVA 12%", " ", "Precio Total " + contar_total]);
+    body_factura.push(["Total " + articulos + " articulos", "IVA 12%", " ", "Precio Total " + contar_total.toLocaleString('es-ES', {
+      style: 'currency',
+      currency: 'EUR',
+    })]);
 
     autoTable(doc, {
       startY: varY,
