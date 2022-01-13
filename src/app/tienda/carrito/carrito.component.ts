@@ -20,6 +20,7 @@ import { jsPDF } from "jspdf";
 // import 'jspdf-autotable'
 import autoTable from 'jspdf-autotable'
 import html2canvas from 'html2canvas';
+import { toInteger } from '@ng-bootstrap/ng-bootstrap/util/util';
 // declare let paypal: any;
 
 @Component({
@@ -76,6 +77,8 @@ export class CarritoComponent implements OnInit {
     var jsonx = [];
     
     this.items.forEach(element => {
+      let simplificar = element.total/element.can;
+
       //  //testeo
       // console.log(
       //   "carro->",
@@ -88,7 +91,7 @@ export class CarritoComponent implements OnInit {
         category: "DIGITAL_GOODS", 
         unit_amount: { 
           currency_code: "EUR", 
-          value: ""+element.total/element.can, 
+          value: simplificar.toFixed(2), 
         }
       })
 
@@ -161,9 +164,11 @@ export class CarritoComponent implements OnInit {
           this.onSubmit(data);
       },
       onCancel: (data, actions) => {
+        alert("Operacion Cancelada");
         console.log('OnCancel', data, actions);
       },
       onError: err => {
+        alert("Error de comunicación, refresca la página e intentalo de nuevo");
         console.log('OnError', err);
       },
       onClick: (data, actions) => {
@@ -186,20 +191,7 @@ export class CarritoComponent implements OnInit {
     this.carritoService.getUserLog();
     
     //Cargar precio carrito
-    this.carritoService.setTo0();
-    this.dataSharingService.precio_total.next(this.carritoService.getPrecioTot());
-    this.dataSharingService.precio_si.next(this.carritoService.getPrecioTotSi());
-
-    
-    //Cargamos el carro local si lo hay
-    if(localStorage.getItem('carrito')!=null){
-      this.carritoService.getCarroLoc();
-      
-      //Cargar precio carrito
-      this.carritoService.setTo0();
-      this.dataSharingService.precio_si.next(this.carritoService.getPrecioTotSi());
-      this.dataSharingService.precio_total.next(this.carritoService.getPrecioTot());
-    }
+    this.cargaCarroCompra();
     
     //Creamos el form para pasarlo a la api
     this.form = this.formBuilder.group({
@@ -229,6 +221,23 @@ export class CarritoComponent implements OnInit {
 
   }
   
+  private cargaCarroCompra() {
+    this.carritoService.setTo0();
+    this.dataSharingService.precio_total.next(this.carritoService.getPrecioTot());
+    this.dataSharingService.precio_si.next(this.carritoService.getPrecioTotSi());
+
+
+    //Cargamos el carro local si lo hay
+    if (localStorage.getItem('carrito') != null) {
+      this.carritoService.getCarroLoc();
+
+      //Cargar precio carrito
+      this.carritoService.setTo0();
+      this.dataSharingService.precio_si.next(this.carritoService.getPrecioTotSi());
+      this.dataSharingService.precio_total.next(this.carritoService.getPrecioTot());
+    }
+  }
+
   cargarTodo(): void {
     //Recibir productos
     this.carritoService.getProd()
@@ -261,9 +270,13 @@ export class CarritoComponent implements OnInit {
       let siva=this.carritoService.getPrecioTotSi();
       this.dataSharingService.precio_si.next(siva);
       this.dataSharingService.precio_total.next(total);
+      this.items = this.carritoService.getItems();
+      this.cargaCarroCompra();
+      this.cargarPaypal();
 
+      //location.reload(); 
       console.log("Precio total en carro:"+total);
-
+      
     }
   }
   submit() {
@@ -282,13 +295,20 @@ export class CarritoComponent implements OnInit {
         this.idFactura=data['id'];
         if(idFAC==0) {
           idFAC=data['id'];
-          this.downloadPDF(idFAC,facPP,okPaypal);
+          this.downloadPDF(idFAC,facPP,okPaypal, this.items);
         }
 
         //por cada contenido de la factura se creará su relación
-        this.items.forEach(async linea => {          
+        this.items.forEach(async linea => {  
+          
+          //testeo
+          // console.log(
+          //   "item",
+          //   linea
+          // )  
+
           //Mandamos cada linea a la api
-          this.carritoService.facturarLinea(await this.lineaFactura(data['id'], linea.it.id, linea.can, linea.total, linea.totsiva, linea.facturaPP));
+          this.carritoService.facturarLinea(await this.lineaFactura(data['id'], linea.it.id, linea.can, linea.total, linea.totsiva, linea.facturaPP, linea.it.IVA, linea.it.precio, linea.it.nombre));
         })
       }, error => {
         console.log(error)
@@ -308,9 +328,9 @@ export class CarritoComponent implements OnInit {
       // Vaciamos el carro al acabar
       setTimeout(() => {
         
-        //testeo -> Comentar estas lineas
-       this.carritoService.clearCart();
-       this.router.navigate(['/compras']);
+  //testeo -> Comentar estas lineas
+      this.carritoService.clearCart();
+      this.router.navigate(['/compras']);
       }, 2000);
       
   }
@@ -336,14 +356,18 @@ export class CarritoComponent implements OnInit {
   }
 
   //Funcion para generar cuerpo de las facturas
-  private lineaFactura(idf:number,idp:number,can:number,onIVA:number,inIVA:number, facturaPP:string):any{
+  private lineaFactura(idf:number,idp:number,can:number,onIVA:number,inIVA:number, facturaPP:string, ivaP:number, precioP:number, nombreP:string):any{
     return {
       id_facturacion: idf,
       id_producto: idp,
       cantidad: can,
       conIVA: onIVA,
       sinIVA: inIVA,
-      facturaPP: facturaPP
+      facturaPP: facturaPP,
+      IVA: ivaP,
+      unidad: precioP,
+      nombre: nombreP
+
     };
   }
 
@@ -374,14 +398,17 @@ export class CarritoComponent implements OnInit {
     this.showPaypalButtons = false;
   }
 
-  public downloadPDF(id:number,pp:string, okPaypal): void {
+  public downloadPDF(id:number,pp:string, okPaypal, lineas): void {
     //testeo
     console.log("Nos llega "+id,
-      "ARRAY ->",
-      okPaypal,
-      "productos ->",
-      okPaypal.purchase_units[0].items
+      // "ARRAY ->",
+      // okPaypal,
+      // "productos ->",
+      // okPaypal.purchase_units[0].items
+      "lineas",
+      lineas
     )
+
     let simple=okPaypal.purchase_units[0].items;
     window.scrollTo(0,0);
     const doc = new jsPDF('p', 'pt', 'a4');
@@ -428,21 +455,46 @@ export class CarritoComponent implements OnInit {
     let body_factura = [];
     let contar_total = 0;
     let articulos = 0;
+    let IVAAdd = 0;
 
     simple.forEach(se => {
-      body_factura.push ([se.name, se.quantity, se.unit_amount.value, se.quantity*se.unit_amount.value]);
-      contar_total+=se.quantity*se.unit_amount.value;
-      articulos++;
+      lineas.forEach(e => {
+        if(e.it.nombre==se.name){
+
+          let total = se.quantity*se.unit_amount.value;
+          let totalSI =  parseInt(e.it.precio)*se.quantity;
+          let totalIV = total-totalSI;
+
+          body_factura.push ([
+            se.name, se.quantity, e.it.precio+" €", e.it.IVA+"%", se.unit_amount.value+" €", total.toFixed(2)+" €", totalIV.toFixed(2)+" €"
+          ]);
+
+        contar_total+=se.quantity*se.unit_amount.value;
+        articulos+=parseInt(se.quantity);
+        IVAAdd+=totalIV;
+        }
+      });
     })
     body_factura.push ([""]);    
-    body_factura.push(["Total " + articulos + " articulos", "IVA 12%", " ", "Precio Total " + contar_total.toLocaleString('es-ES', {
-      style: 'currency',
-      currency: 'EUR',
-    })]);
+    body_factura.push([
+      "",
+      "Total "+articulos+" articulos", 
+      "", 
+      "", 
+      (contar_total-IVAAdd).toLocaleString('es-ES', {
+        style: 'currency',
+        currency: 'EUR',
+      })+" Base",
+      contar_total.toLocaleString('es-ES', {
+        style: 'currency',
+        currency: 'EUR',
+      })+" Total", 
+      IVAAdd.toFixed(2)+" € IVA", 
+    ]);
 
     autoTable(doc, {
       startY: varY,
-      head: [['Nombre', 'Cantidad', 'Precio Unitario', 'Precio Total']],
+      head: [['Nombre', 'Cantidad', 'Precio Base', 'IVA', 'Precio+IVA', 'Precio Total', 'IVA Añadido']],
       body: body_factura,
     })
 

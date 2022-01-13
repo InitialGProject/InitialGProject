@@ -127,7 +127,7 @@ export class FacturasComponent implements OnInit {
          });
 
          contar_total+=it.conIVA;
-         articulos++;
+         articulos+=parseInt(it.cantidad);
        }
     });
 
@@ -161,43 +161,70 @@ export class FacturasComponent implements OnInit {
     var img = new Image()
     img.src = 'http://alum3.iesfsl.org/assets/img/logo.png';
     doc.addImage(img, 'png', 450, 5, 140, 55);
-
+    
+    let cp="";
+    if(Fac.cp<10000) cp="0"+Fac.cp;
+    else cp=Fac.cp;
     doc.text([
       "DATOS DEL COMPRADOR",
       "",
       "FECHA: "+Fac.fecha_compra, 
-      //"NOMBRE: "+okPaypal.payer.name.given_name+" "+okPaypal.payer.name.surname, 
+      "NOMBRE: "+Fac.nombre_compra, 
       "DIRECCION "+Fac.direccion,
-      "CP: "+Fac.cp,
+      "CP: "+cp,
       "PROVINCIA: "+Fac.provincia,
       "PAIS "+Fac.pais,
-      //"EMAIL: "+okPaypal.payer.email_address,
-      //"TLF: "+okPaypal.payer.phone.phone_number.national_number,
+      "EMAIL: "+Fac.email_compra,
+      "TLF: "+Fac.telefono_compra,
       ], 10, varY).setFontSize(8);
 
     //Sumamos 20 por linea
     varY+=100;
 
+    let TotalIVA=0;
     simple.forEach(se => {
       Object.values(Art).forEach(it => {
         
-        console.log(
-          it
-        )
+        // console.log(
+        //   it
+        // )
 
-        if(it.id==se.name) body_factura.push ([it.nombre, se.quantity, se.value, se.total]);
+        if(it.id==se.name){ 
 
+          let iva = se.total - it.precio*se.quantity;
+          TotalIVA+=iva;
+          body_factura.push ([
+            it.nombre, 
+            se.quantity, 
+            it.precio+" €", 
+            it.IVA+"%", 
+            se.value.toFixed(2)+" €", 
+            se.total.toFixed(2)+" €", 
+            iva.toFixed(2)+" €"
+          ]);
+        }
       })
     })
     body_factura.push ([""]);    
-    body_factura.push(["Total " + articulos + " articulos", "IVA 12%", " ", "Precio Total " + contar_total.toLocaleString('es-ES', {
-      style: 'currency',
-      currency: 'EUR',
-    })]);
+    body_factura.push([
+      "",
+      "Total " + articulos + " articulos", 
+      "", 
+      "", 
+      Fac.total_si.toLocaleString('es-ES', {
+        style: 'currency',
+        currency: 'EUR',
+      })+" Base",
+      contar_total.toLocaleString('es-ES', {
+        style: 'currency',
+        currency: 'EUR',
+      })+" Total",
+      TotalIVA.toFixed(2)+"€ IVA",
+    ]);
 
     autoTable(doc, {
       startY: varY,
-      head: [['Nombre', 'Cantidad', 'Precio Unitario', 'Precio Total']],
+      head: [['Nombre', 'Cantidad', 'Precio Base', 'IVA', 'Precio+IVA', 'Precio Total', 'IVA Añadido']],
       body: body_factura,
     })
 

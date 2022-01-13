@@ -18,10 +18,10 @@ import { LoginComponent } from 'src/app/account/login/login.component';
 import { Usuarios } from '../models/usuarios';
 
 //Ruta de la api
-const productos = GlobalVars.ruta+'productos?per-page=99999';
-const categorias = GlobalVars.ruta+'productoscategoria?per-page=99999';
-const facturas = GlobalVars.ruta+'productosfacturacion?per-page=99999';
-const lineafactura = GlobalVars.ruta+'productosfactura?per-page=99999';
+const productos = GlobalVars.ruta+'productos?per-page=999999';
+const categorias = GlobalVars.ruta+'productoscategoria?per-page=999999';
+const facturas = GlobalVars.ruta+'productosfacturacion?per-page=999999';
+const lineafactura = GlobalVars.ruta+'productosfactura?per-page=999999';
 const facturaUrl = GlobalVars.ruta;
 
 
